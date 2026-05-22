@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0"/>
+<title>Disease by Number of Drugs — Chronic Biologics Dashboard</title>
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<style>
+:root {
+  --bg:#F0F4F8; --card:#fff; --blue:#2563EB; --violet:#7C3AED;
+  --teal:#0891B2; --green:#059669; --orange:#D97706;
+  --text:#1E293B; --sub:#64748B; --border:#E2E8F0;
+  --pad: clamp(10px, 3vw, 24px);
+  --r: 12px;
+}
+*,*::before,*::after { box-sizing:border-box; margin:0; padding:0; }
+html { font-size:16px; }
+body { font-family: system-ui,-apple-system,"Segoe UI",sans-serif;
+       background:var(--bg); color:var(--text); overflow-x:hidden; }
+
+header {
+  background: linear-gradient(135deg,#1E3A5F 0%,#2563EB 55%,#7C3AED 100%);
+  color:#fff; padding: clamp(14px,4vw,28px) var(--pad);
+}
+header h1 {
+  font-size: clamp(1rem,3.5vw,1.5rem);
+  font-weight:700; line-height:1.25; letter-spacing:-0.01em;
+}
+header p {
+  margin-top:6px; opacity:.85;
+  font-size: clamp(0.75rem,2.2vw,0.88rem); line-height:1.4;
+}
+
+.stats-row {
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap:12px; padding: var(--pad);
+}
+.stat-card {
+  background:var(--card); border-radius:var(--r);
+  padding:14px 16px; border:1px solid var(--border);
+  box-shadow:0 1px 4px rgba(0,0,0,.06);
+}
+.stat-card .num {
+  font-size:1.7rem; font-weight:800; line-height:1;
+  color:var(--blue);
+}
+.stat-card .lbl {
+  font-size:0.75rem; color:var(--sub); margin-top:4px; line-height:1.3;
+}
+
+.card {
+  background:var(--card); border-radius:var(--r);
+  padding: var(--pad); margin: 0 var(--pad) var(--pad);
+  border:1px solid var(--border);
+  box-shadow:0 1px 4px rgba(0,0,0,.06);
+}
+.card h2 {
+  font-size: clamp(0.85rem,2.2vw,1rem);
+  font-weight:700; color:var(--text); margin-bottom:4px;
+}
+.card .sub {
+  font-size:0.78rem; color:var(--sub); margin-bottom:12px;
+}
+
+.filter-row {
+  display:flex; flex-wrap:wrap; gap:8px;
+  margin:0 var(--pad) 12px;
+  align-items:center;
+}
+.filter-row label {
+  font-size:0.78rem; color:var(--sub); font-weight:600;
+}
+.filter-row select {
+  font-size:0.8rem; padding:5px 10px;
+  border:1px solid var(--border); border-radius:6px;
+  background:#fff; color:var(--text); cursor:pointer;
+}
+.filter-row input[type=range] { cursor:pointer; }
+.filter-row span { font-size:0.78rem; color:var(--sub); }
+
+footer {
+  text-align:center; padding:20px var(--pad);
+  font-size:0.75rem; color:var(--sub);
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Disease vs. Number of Targeting Drugs — Chronic Biologics</h1>
+  <p>FDA-approved biologics with chronic use; data from chronic_drugs_indications2.csv &nbsp;·&nbsp; 114 indications &nbsp;·&nbsp; May 2026</p>
+</header>
+
+<div class="stats-row">
+  <div class="stat-card"><div class="num" id="st-diseases">114</div><div class="lbl">Total Disease<br>Indications</div></div>
+  <div class="stat-card"><div class="num" id="st-drugs">—</div><div class="lbl">Unique Drugs<br>/ Biologics</div></div>
+  <div class="stat-card"><div class="num" id="st-max">9</div><div class="lbl">Max Drugs for<br>One Disease</div></div>
+  <div class="stat-card"><div class="num" id="st-cats">30</div><div class="lbl">Disease<br>Categories</div></div>
+  <div class="stat-card"><div class="num" id="st-multi">—</div><div class="lbl">Diseases with<br>≥ 2 Drugs</div></div>
+</div>
+
+<div class="filter-row">
+  <label>Category:</label>
+  <select id="catFilter">
+    <option value="">All categories</option>
+  </select>
+  <label>Min drugs:</label>
+  <input type="range" id="minDrugs" min="1" max="9" value="1" step="1"/>
+  <span id="minDrugsVal">≥ 1</span>
+  <label style="margin-left:8px">Show top:</label>
+  <select id="topN">
+    <option value="30">30</option>
+    <option value="50">50</option>
+    <option value="114" selected>All (114)</option>
+  </select>
+</div>
+
+<div class="card">
+  <h2>Diseases Ranked by Number of Approved Biologics</h2>
+  <div class="sub">Hover a bar for full drug list · Drug labels shown as drugName(Target) · Bars colored by disease category</div>
+  <div id="chart" style="width:100%"></div>
+</div>
+
+<div class="card">
+  <h2>Distribution: Drug Count per Disease</h2>
+  <div class="sub">How many diseases have exactly N approved drugs</div>
+  <div id="hist" style="width:100%; height:320px"></div>
+</div>
+
+<footer>Data: FDA-approved chronic-use biologics &nbsp;·&nbsp; Dashboard generated May 2026</footer>
+
+<script>
+const RAW = [{"disease":"Psoriatic arthritis","count":9,"drugs":"adalimumab(TNF), etanercept(TNF), infliximab(TNF), secukinumab(IL17A), ixekizumab(IL17A), guselkumab(IL23A), bimekizumab(IL17A, IL17F), risankizumab(IL23A), ustekinumab(IL12B)","category":"Autoimmune – Rheumatology"},{"disease":"Plaque psoriasis","count":9,"drugs":"adalimumab(TNF), etanercept(TNF), infliximab(TNF), secukinumab(IL17A), ixekizumab(IL17A), guselkumab(IL23A), risankizumab(IL23A), bimekizumab(IL17A, IL17F), ustekinumab(IL12B)","category":"Autoimmune – Dermatology"},{"disease":"Crohn's disease","count":6,"drugs":"adalimumab(TNF), infliximab(TNF), ustekinumab(IL12B), vedolizumab(ITGA4, ITGB7), risankizumab(IL23A), natalizumab-sztn(ITGA4)","category":"Autoimmune – Gastroenterology"},{"disease":"Ulcerative colitis","count":6,"drugs":"adalimumab(TNF), infliximab(TNF), ustekinumab(IL12B), vedolizumab(ITGA4, ITGB7), risankizumab(IL23A), mirikizumab(IL23A)","category":"Autoimmune – Gastroenterology"},{"disease":"Type 2 diabetes mellitus","count":5,"drugs":"insulin lispro(INSR), insulin glargine(INSR), insulin aspart(INSR), insulin icodec(INSR), dulaglutide(GLP1R)","category":"Endocrinology – Diabetes"},{"disease":"Rheumatoid arthritis","count":4,"drugs":"adalimumab(TNF), etanercept(TNF), infliximab(TNF), tocilizumab(IL6R)","category":"Autoimmune – Rheumatology"},{"disease":"Generalized myasthenia gravis","count":4,"drugs":"efgartigimod alfa and hyaluronidase(FCGRT), rozanolixizumab(FCGRT), nipocalimab(FCGRT), ravulizumab(C5)","category":"Neurology – Neuromuscular"},{"disease":"Neovascular (wet) AMD","count":4,"drugs":"ranibizumab(VEGFA), brolucizumab-dbll(VEGFA), aflibercept(VEGFA, PGF), faricimab(VEGFA, ANGPT2)","category":"Ophthalmology"},{"disease":"Diabetic macular edema (DME)","count":4,"drugs":"ranibizumab(VEGFA), brolucizumab-dbll(VEGFA), aflibercept(VEGFA, PGF), faricimab(VEGFA, ANGPT2)","category":"Ophthalmology"},{"disease":"Atopic dermatitis","count":3,"drugs":"tralokinumab(IL13), lebrikizumab(IL13), nemolizumab-ilto(IL31RA)","category":"Autoimmune – Dermatology"},{"disease":"Relapsing multiple sclerosis","count":3,"drugs":"ofatumumab(MS4A1), natalizumab-sztn(ITGA4), ublituximab-xiiy(MS4A1)","category":"Neurology – Demyelinating"},{"disease":"Paroxysmal nocturnal hemoglobinuria (PNH)","count":3,"drugs":"eculizumab(C5), ravulizumab(C5), crovalimab-akkz(C5)","category":"Hematology – Complement"},{"disease":"Type 1 diabetes mellitus","count":3,"drugs":"insulin lispro(INSR), insulin glargine(INSR), insulin aspart(INSR)","category":"Endocrinology – Diabetes"},{"disease":"Pediatric growth hormone deficiency","count":3,"drugs":"somapacitan(GHR), lonapegsomatropin(GHR), somatrogon(GHR)","category":"Endocrinology – Growth"},{"disease":"Ankylosing spondylitis / axSpA","count":2,"drugs":"adalimumab(TNF), infliximab(TNF)","category":"Autoimmune – Rheumatology"},{"disease":"Juvenile idiopathic arthritis","count":2,"drugs":"adalimumab(TNF), etanercept(TNF)","category":"Autoimmune – Rheumatology"},{"disease":"Ankylosing spondylitis","count":2,"drugs":"etanercept(TNF), ixekizumab(IL17A)","category":"Autoimmune – Rheumatology"},{"disease":"Non-radiographic axSpA","count":2,"drugs":"secukinumab(IL17A), ixekizumab(IL17A)","category":"Autoimmune – Rheumatology"},{"disease":"Prurigo nodularis","count":2,"drugs":"dupilumab(IL4R), nemolizumab-ilto(IL31RA)","category":"Autoimmune – Dermatology"},{"disease":"Severe eosinophilic asthma","count":2,"drugs":"mepolizumab(IL5), benralizumab(IL5RA)","category":"Autoimmune – Pulmonology"},{"disease":"NMOSD (AQP4-IgG+)","count":2,"drugs":"satralizumab-mwge(IL6R), eculizumab(C5)","category":"Neurology – Demyelinating"},{"disease":"NMOSD","count":2,"drugs":"inebilizumab-cdon(CD19), ravulizumab(C5)","category":"Neurology – Demyelinating"},{"disease":"Hemophilia A (prophylaxis)","count":2,"drugs":"antihemophilic factor (recombinant), rAHF(F8), antihemophilic factor (recombinant), pegylated-aucl(F8)","category":"Hematology – Hemophilia"},{"disease":"Ankylosing spondylitis / AS","count":1,"drugs":"secukinumab(IL17A)","category":"Autoimmune – Rheumatology"},{"disease":"Giant cell arteritis","count":1,"drugs":"tocilizumab(IL6R)","category":"Autoimmune – Rheumatology"},{"disease":"Juvenile idiopathic arthritis (SJIA/PJIA)","count":1,"drugs":"tocilizumab(IL6R)","category":"Autoimmune – Rheumatology"},{"disease":"Rheumatoid arthritis (anti-TNF inadequate responders)","count":1,"drugs":"rituximab(MS4A1)","category":"Autoimmune – Rheumatology"},{"disease":"ANCA-associated vasculitis (GPA / MPA)","count":1,"drugs":"rituximab(MS4A1)","category":"Autoimmune – Rheumatology"},{"disease":"Pemphigus vulgaris","count":1,"drugs":"rituximab(MS4A1)","category":"Autoimmune – Dermatology"},{"disease":"Ankylosing spondylitis / nr-axSpA","count":1,"drugs":"bimekizumab(IL17A, IL17F)","category":"Autoimmune – Rheumatology"},{"disease":"Hidradenitis suppurativa","count":1,"drugs":"adalimumab(TNF)","category":"Autoimmune – Dermatology"},{"disease":"Non-infectious uveitis","count":1,"drugs":"adalimumab(TNF)","category":"Autoimmune – Dermatology"},{"disease":"Atopic dermatitis (adults)","count":1,"drugs":"dupilumab(IL4R)","category":"Autoimmune – Dermatology"},{"disease":"Generalized pustular psoriasis – acute flare","count":1,"drugs":"spesolimab(IL1RL2)","category":"Autoimmune – Dermatology"},{"disease":"Generalized pustular psoriasis – maintenance","count":1,"drugs":"spesolimab(IL1RL2)","category":"Autoimmune – Dermatology"},{"disease":"Moderate-to-severe asthma","count":1,"drugs":"dupilumab(IL4R)","category":"Autoimmune – Pulmonology"},{"disease":"CRSwNP (chronic rhinosinusitis with nasal polyps)","count":1,"drugs":"dupilumab(IL4R)","category":"Autoimmune – Pulmonology"},{"disease":"Eosinophilic esophagitis (EoE)","count":1,"drugs":"dupilumab(IL4R)","category":"Autoimmune – Gastroenterology"},{"disease":"COPD with type-2 inflammation (eosinophilic)","count":1,"drugs":"dupilumab(IL4R)","category":"Autoimmune – Pulmonology"},{"disease":"Moderate-to-severe allergic asthma","count":1,"drugs":"omalizumab(IGHE)","category":"Autoimmune – Pulmonology"},{"disease":"Chronic spontaneous urticaria","count":1,"drugs":"omalizumab(IGHE)","category":"Autoimmune – Dermatology"},{"disease":"Nasal polyps / CRSwNP","count":1,"drugs":"omalizumab(IGHE)","category":"Autoimmune – Pulmonology"},{"disease":"IgE-mediated food allergy (multi-food)","count":1,"drugs":"omalizumab(IGHE)","category":"Allergy / Immunology"},{"disease":"EGPA (eosinophilic granulomatosis with polyangiitis)","count":1,"drugs":"mepolizumab(IL5)","category":"Autoimmune – Rheumatology"},{"disease":"Hypereosinophilic syndrome (HES)","count":1,"drugs":"mepolizumab(IL5)","category":"Hematology – Rare Blood"},{"disease":"CRSwNP","count":1,"drugs":"mepolizumab(IL5)","category":"Autoimmune – Pulmonology"},{"disease":"Severe asthma (uncontrolled)","count":1,"drugs":"tezepelumab(TSLP)","category":"Autoimmune – Pulmonology"},{"disease":"Severe eosinophilic asthma / EGPA","count":1,"drugs":"depemokimab(IL5)","category":"Autoimmune – Pulmonology"},{"disease":"Peanut allergy (desensitization)","count":1,"drugs":"peanut (arachis hypogaea) allergen powder(FCER1A, IL4R)","category":"Allergy / Immunology"},{"disease":"Ragweed allergic rhinitis","count":1,"drugs":"short ragweed pollen allergen extract(FCER1A, IL4R)","category":"Allergy / Immunology"},{"disease":"Relapsing MS","count":1,"drugs":"ocrelizumab and hyaluronidase-ocsq(MS4A1)","category":"Neurology – Demyelinating"},{"disease":"Primary progressive MS (PPMS)","count":1,"drugs":"ocrelizumab and hyaluronidase-ocsq(MS4A1)","category":"Neurology – Demyelinating"},{"disease":"Generalized myasthenia gravis (gMG)","count":1,"drugs":"efgartigimod alfa-fcab(FCGRT)","category":"Neurology – Neuromuscular"},{"disease":"Systemic lupus erythematosus (SLE)","count":1,"drugs":"anifrolumab(IFNAR1)","category":"Autoimmune – Rheumatology"},{"disease":"Chronic graft-versus-host disease (cGVHD)","count":1,"drugs":"axatilimab-csfr(CSF1R)","category":"Hematology – Rare Blood"},{"disease":"IgA nephropathy (IgAN)","count":1,"drugs":"sibeprenlimab-szsi(TNFSF13)","category":"Nephrology"},{"disease":"Polycythemia vera (PV)","count":1,"drugs":"ropeginterferon alfa-2b-njft(IFNAR1, IFNAR2)","category":"Hematology – Myeloproliferative"},{"disease":"Atypical hemolytic uremic syndrome (aHUS)","count":1,"drugs":"eculizumab(C5)","category":"Hematology – Complement"},{"disease":"Generalized myasthenia gravis (refractory)","count":1,"drugs":"eculizumab(C5)","category":"Neurology – Neuromuscular"},{"disease":"Atypical HUS (aHUS)","count":1,"drugs":"ravulizumab(C5)","category":"Hematology – Complement"},{"disease":"Cold agglutinin disease (CAD)","count":1,"drugs":"sutimlimab-jome(C1S)","category":"Hematology – Complement"},{"disease":"CHAPLE disease (CD55 deficiency)","count":1,"drugs":"pozelimab-bbfg(C5)","category":"Hematology – Complement"},{"disease":"Hemophilia A with inhibitors (prophylaxis)","count":1,"drugs":"emicizumab(F9, F10)","category":"Hematology – Hemophilia"},{"disease":"Hemophilia A without inhibitors (prophylaxis)","count":1,"drugs":"emicizumab(F9, F10)","category":"Hematology – Hemophilia"},{"disease":"Hemophilia A or B with inhibitors","count":1,"drugs":"concizumab(TFPI)","category":"Hematology – Hemophilia"},{"disease":"Hemophilia A / B (with or without inhibitors)","count":1,"drugs":"marstacimab(TFPI)","category":"Hematology – Hemophilia"},{"disease":"Hemophilia A (prophylaxis, extended half-life)","count":1,"drugs":"antihemophilic factor (recombinant), fc(F8)","category":"Hematology – Hemophilia"},{"disease":"Hemophilia B (prophylaxis)","count":1,"drugs":"coagulation factor ix (recombinant), glycopegylated(F9)","category":"Hematology – Hemophilia"},{"disease":"Hemophilia A/B with inhibitors (prophylaxis)","count":1,"drugs":"coagulation factor viia (recombinant)(F7)","category":"Hematology – Hemophilia"},{"disease":"Hemophilia A/B with inhibitors","count":1,"drugs":"coagulation factor viia (recombinant)-jncw(F7)","category":"Hematology – Hemophilia"},{"disease":"Hereditary angioedema (HAE) – attack prevention","count":1,"drugs":"lanadelumab(KLKB1)","category":"Rare \/ Orphan – Immunology"},{"disease":"Hereditary angioedema (HAE) prevention","count":1,"drugs":"garadacimab(F12)","category":"Rare \/ Orphan – Immunology"},{"disease":"Retinal vein occlusion (BRVO / CRVO)","count":1,"drugs":"ranibizumab(VEGFA)","category":"Ophthalmology"},{"disease":"Diabetic retinopathy","count":1,"drugs":"ranibizumab(VEGFA)","category":"Ophthalmology"},{"disease":"Macular edema from retinal vein occlusion (RVO)","count":1,"drugs":"aflibercept(VEGFA, PGF)","category":"Ophthalmology"},{"disease":"Diabetic retinopathy (all DR)","count":1,"drugs":"aflibercept(VEGFA, PGF)","category":"Ophthalmology"},{"disease":"Cardiovascular risk reduction (T2DM with CVD)","count":1,"drugs":"dulaglutide(GLP1R)","category":"Endocrinology – Diabetes"},{"disease":"Adult growth hormone deficiency (AGHD)","count":1,"drugs":"somapacitan(GHR)","category":"Endocrinology – Growth"},{"disease":"HIV-associated lipodystrophy (abdominal fat excess)","count":1,"drugs":"tesamorelin(GHRHR)","category":"Endocrinology – Metabolic"},{"disease":"Homozygous familial hypercholesterolemia (HoFH)","count":1,"drugs":"evinacumab(ANGPTL3)","category":"Endocrinology – Lipid"},{"disease":"LDL-C reduction (HeFH / ASCVD)","count":1,"drugs":"lerodalcibep-liga(PCSK9)","category":"Endocrinology – Lipid"},{"disease":"Postmenopausal osteoporosis","count":1,"drugs":"denosumab(TNFSF11)","category":"Bone \/ Metabolic"},{"disease":"Glucocorticoid-induced osteoporosis","count":1,"drugs":"denosumab(TNFSF11)","category":"Bone \/ Metabolic"},{"disease":"Osteoporosis in men at high fracture risk","count":1,"drugs":"denosumab(TNFSF11)","category":"Bone \/ Metabolic"},{"disease":"Anemia of chronic kidney disease (dialysis)","count":1,"drugs":"epoetin alfa(EPOR)","category":"Hematology – Anemia"},{"disease":"Anemia of CKD (non-dialysis)","count":1,"drugs":"epoetin alfa(EPOR)","category":"Hematology – Anemia"},{"disease":"Severe chronic neutropenia (SCN)","count":1,"drugs":"filgrastim(CSF3R)","category":"Hematology – Rare Blood"},{"disease":"Early Alzheimer's disease (mild cognitive impairment / mild AD)","count":1,"drugs":"lecanemab(APP)","category":"Neurology – Neurodegeneration"},{"disease":"Early Alzheimer's disease","count":1,"drugs":"aducanumab(APP)","category":"Neurology – Neurodegeneration"},{"disease":"Early symptomatic Alzheimer's disease","count":1,"drugs":"donanemab-azbt(APP)","category":"Neurology – Neurodegeneration"},{"disease":"Episodic migraine prevention","count":1,"drugs":"eptinezumab-jjmr(CALCA)","category":"Neurology – Pain \/ Headache"},{"disease":"Chronic migraine prevention","count":1,"drugs":"eptinezumab-jjmr(CALCA)","category":"Neurology – Pain \/ Headache"},{"disease":"Pulmonary arterial hypertension (PAH) – WHO Group I","count":1,"drugs":"sotatercept(INHBA)","category":"Cardiovascular \/ Pulmonary"},{"disease":"Congenital sucrase-isomaltase deficiency (CSID)","count":1,"drugs":"sacrosidase(SI)","category":"Enzyme Deficiency"},{"disease":"Exocrine pancreatic insufficiency (EPI)","count":1,"drugs":"pancrelipase(PNLIP)","category":"Enzyme Deficiency"},{"disease":"Fabry disease","count":1,"drugs":"pegunigalsidase alfa(GLA)","category":"Enzyme Deficiency"},{"disease":"Alpha-mannosidosis","count":1,"drugs":"velmanase alfa-tycv(MAN2B1)","category":"Enzyme Deficiency"},{"disease":"Acid sphingomyelinase deficiency (ASMD \/ NPD-A\/B)","count":1,"drugs":"olipudase alfa(SMPD1)","category":"Enzyme Deficiency"},{"disease":"Late-onset Pompe disease (LOPD)","count":1,"drugs":"avalglucosidase alfa-ngpt(GAA)","category":"Enzyme Deficiency"},{"disease":"Late-onset Pompe disease (+miglustat)","count":1,"drugs":"cipaglucosidase alfa-atga(GAA)","category":"Enzyme Deficiency"},{"disease":"MPS II (Hunter syndrome)","count":1,"drugs":"tividenofusp alfa-eknm(IDS)","category":"Enzyme Deficiency"},{"disease":"Arginase 1 deficiency (hyperargininemia)","count":1,"drugs":"pegzilarginase(ARG1)","category":"Enzyme Deficiency"},{"disease":"Alpha-1 antitrypsin deficiency (AATD) with emphysema","count":1,"drugs":"alpha(SERPINA1)","category":"Enzyme Deficiency"},{"disease":"Primary immunodeficiency disease (PIDD)","count":1,"drugs":"immune globulin intravenous, human(IGHG1 (polyclonal IgG))","category":"Hematology – Immunodeficiency"},{"disease":"Chronic inflammatory demyelinating polyneuropathy (CIDP)","count":1,"drugs":"immune globulin intravenous, human(IGHG1 (polyclonal IgG))","category":"Neurology – Neuromuscular"},{"disease":"Immune thrombocytopenic purpura (ITP) – acute","count":1,"drugs":"immune globulin intravenous, human(IGHG1 (polyclonal IgG))","category":"Hematology – Rare Blood"},{"disease":"Primary immunodeficiency disease","count":1,"drugs":"immune globulin subcutaneous (human), 20% liquid(IGHG1 (polyclonal IgG))","category":"Hematology – Immunodeficiency"},{"disease":"CIDP","count":1,"drugs":"immune globulin subcutaneous (human), 20% liquid(IGHG1 (polyclonal IgG))","category":"Neurology – Neuromuscular"},{"disease":"Cervical dystonia","count":1,"drugs":"daxibotulinumtoxina(SNAP25)","category":"Neurology – Movement Disorder"},{"disease":"Glabellar (frown) lines","count":1,"drugs":"letibotulinumtoxina(SNAP25)","category":"Aesthetic \/ Neurology"},{"disease":"RSV prevention in infants and young children","count":1,"drugs":"nirsevimab(RSV F (viral))","category":"Infectious Disease – Prevention"},{"disease":"RSV prevention in infants (≤8 months at birth; ≤24 months at high risk)","count":1,"drugs":"clesrovimab-cfor(RSV F (viral))","category":"Infectious Disease – Prevention"},{"disease":"Refractory chronic gout","count":1,"drugs":"pegloticase(UOX)","category":"Rheumatology \/ Metabolic"},{"disease":"Recurrent respiratory papillomatosis (HPV-associated)","count":1,"drugs":"papzimeos(HPV E6\/E7 (viral))","category":"Rare \/ ENT"}];
+
+// ── Color palette per category ────────────────────────────────────────────
+const CAT_COLORS = {
+  "Autoimmune – Rheumatology":   "#2563EB",
+  "Autoimmune – Dermatology":    "#7C3AED",
+  "Autoimmune – Gastroenterology":"#0891B2",
+  "Autoimmune – Pulmonology":    "#06B6D4",
+  "Endocrinology – Diabetes":    "#059669",
+  "Endocrinology – Growth":      "#34D399",
+  "Endocrinology – Lipid":       "#10B981",
+  "Endocrinology – Metabolic":   "#6EE7B7",
+  "Neurology – Neuromuscular":   "#D97706",
+  "Neurology – Demyelinating":   "#F59E0B",
+  "Neurology – Neurodegeneration":"#FBBF24",
+  "Neurology – Pain / Headache": "#FCD34D",
+  "Neurology – Movement Disorder":"#FDE68A",
+  "Ophthalmology":                  "#DC2626",
+  "Hematology – Complement":    "#EF4444",
+  "Hematology – Hemophilia":    "#F87171",
+  "Hematology – Rare Blood":    "#FCA5A5",
+  "Hematology – Anemia":        "#FECACA",
+  "Hematology – Myeloproliferative":"#FEE2E2",
+  "Hematology – Immunodeficiency":"#F9A8D4",
+  "Allergy / Immunology":           "#BE185D",
+  "Enzyme Deficiency":              "#9333EA",
+  "Rare \/ Orphan – Immunology": "#A855F7",
+  "Rare \/ ENT":                    "#C084FC",
+  "Bone \/ Metabolic":              "#78716C",
+  "Nephrology":                     "#0EA5E9",
+  "Cardiovascular \/ Pulmonary":    "#1D4ED8",
+  "Infectious Disease – Prevention":"#15803D",
+  "Aesthetic \/ Neurology":         "#B45309",
+  "Rheumatology \/ Metabolic":      "#64748B"
+};
+
+function getColor(cat) {
+  return CAT_COLORS[cat] || "#94A3B8";
+}
+
+// Populate category filter
+const cats = [...new Set(RAW.map(d => d.category))].sort();
+const catSel = document.getElementById('catFilter');
+cats.forEach(c => {
+  const opt = document.createElement('option');
+  opt.value = c; opt.textContent = c;
+  catSel.appendChild(opt);
+});
+
+// Stats
+const uniqueDrugs = new Set();
+RAW.forEach(r => r.drugs.split(', ').forEach(d => uniqueDrugs.add(d.split('(')[0].trim())));
+document.getElementById('st-drugs').textContent = uniqueDrugs.size;
+document.getElementById('st-multi').textContent = RAW.filter(r => r.count >= 2).length;
+
+function getFiltered() {
+  const cat = catSel.value;
+  const min = parseInt(document.getElementById('minDrugs').value);
+  const top = parseInt(document.getElementById('topN').value);
+  let d = RAW.filter(r => (!cat || r.category === cat) && r.count >= min);
+  d = d.slice(0, top);
+  return d;
+}
+
+function wrapDrugs(drugsStr, maxPerLine = 3) {
+  const drugs = drugsStr.split(', ');
+  const lines = [];
+  for (let i = 0; i < drugs.length; i += maxPerLine) {
+    lines.push(drugs.slice(i, i + maxPerLine).join(', '));
+  }
+  return lines.join('<br>');
+}
+
+function buildChart() {
+  const filtered = getFiltered();
+  // Show bottom→top (ascending so highest at top in horizontal bar)
+  const diseases = filtered.map(r => r.disease).reverse();
+  const counts   = filtered.map(r => r.count).reverse();
+  const drugs    = filtered.map(r => r.drugs).reverse();
+  const cats2    = filtered.map(r => r.category).reverse();
+  const colors   = cats2.map(getColor);
+
+  // Hover text: wrap drug names for readability
+  const hover = drugs.map((d, i) =>
+    `<b>${diseases[i]}</b><br><i>${cats2[i]}</i><br><br>` +
+    `<b>${counts[i]} drug${counts[i]>1?'s':''}</b><br>` +
+    wrapDrugs(d, 2)
+  );
+
+  // Annotation text (short drug labels on bar end)
+  const annotations = diseases.map((dis, i) => ({
+    x: counts[i] + 0.12,
+    y: i,
+    text: '',  // handled via customdata shown on hover
+    showarrow: false,
+    xanchor: 'left',
+    font: { size: 9, color: '#64748B' }
+  }));
+
+  const barH = Math.max(22, Math.min(36, 800 / filtered.length));
+  const chartH = Math.max(400, filtered.length * barH + 80);
+
+  const trace = {
+    type: 'bar',
+    orientation: 'h',
+    y: diseases,
+    x: counts,
+    marker: { color: colors, opacity: 0.88, line: { width: 0 } },
+    hovertemplate: '%{customdata}<extra></extra>',
+    customdata: hover,
+    text: counts.map(String),
+    textposition: 'outside',
+    textfont: { size: 11, color: '#1E293B' },
+    cliponaxis: false,
+  };
+
+  const layout = {
+    height: chartH,
+    margin: { l: 270, r: 80, t: 20, b: 40 },
+    xaxis: {
+      title: { text: 'Number of Approved Drugs', font: { size: 12 } },
+      tickfont: { size: 11 },
+      gridcolor: '#E2E8F0',
+      zeroline: false,
+      range: [0, 11],
+    },
+    yaxis: {
+      tickfont: { size: 11 },
+      automargin: true,
+    },
+    paper_bgcolor: '#fff',
+    plot_bgcolor: '#F8FAFC',
+    hoverlabel: {
+      bgcolor: '#1E293B',
+      font: { color: '#fff', size: 12 },
+      bordercolor: '#334155',
+      align: 'left'
+    },
+    showlegend: false,
+  };
+
+  Plotly.react('chart', [trace], layout, { responsive: true, displayModeBar: false });
+  document.getElementById('chart').style.height = chartH + 'px';
+
+  // Update stat
+  document.getElementById('st-diseases').textContent = filtered.length;
+}
+
+function buildHist() {
+  const filtered = getFiltered();
+  const countMap = {};
+  filtered.forEach(r => { countMap[r.count] = (countMap[r.count] || 0) + 1; });
+  const xs = Object.keys(countMap).map(Number).sort((a,b) => a-b);
+  const ys = xs.map(x => countMap[x]);
+
+  const trace = {
+    type: 'bar',
+    x: xs.map(String),
+    y: ys,
+    marker: { color: xs.map(x => {
+      if (x >= 7) return '#2563EB';
+      if (x >= 4) return '#7C3AED';
+      if (x >= 2) return '#0891B2';
+      return '#94A3B8';
+    }), opacity: 0.85 },
+    hovertemplate: '%{y} disease(s) have exactly %{x} drug(s)<extra></extra>',
+    text: ys.map(String),
+    textposition: 'outside',
+    textfont: { size: 12 }
+  };
+
+  const layout = {
+    height: 300,
+    margin: { l: 50, r: 30, t: 20, b: 50 },
+    xaxis: { title: { text: 'Number of Drugs per Disease', font: {size: 12} }, tickfont:{size:12} },
+    yaxis: { title: { text: 'Number of Diseases', font: {size: 12} }, tickfont:{size:11}, gridcolor:'#E2E8F0' },
+    paper_bgcolor: '#fff',
+    plot_bgcolor: '#F8FAFC',
+    hoverlabel: { bgcolor:'#1E293B', font:{color:'#fff',size:12}, bordercolor:'#334155' },
+    showlegend: false,
+  };
+
+  Plotly.react('hist', [trace], layout, { responsive: true, displayModeBar: false });
+}
+
+function render() { buildChart(); buildHist(); }
+
+// wire controls
+catSel.addEventListener('change', render);
+document.getElementById('topN').addEventListener('change', render);
+const slider = document.getElementById('minDrugs');
+const sliderVal = document.getElementById('minDrugsVal');
+slider.addEventListener('input', () => {
+  sliderVal.textContent = '≥ ' + slider.value;
+  render();
+});
+
+render();
+</script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+*.ipynb_checkpoints/
+fda_indications_cache*.json
+*.log
+*.bak
+purplebook_csvs/
+Primus/

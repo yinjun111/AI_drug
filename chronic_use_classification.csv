@@ -1,0 +1,209 @@
+Proper Name,Proprietary Name,BLA Number,Category,Subcategory,Primary Indication,Rationale,Long-term Use
+ofatumumab,Kesimpta,125326,CHRONIC,Autoimmune biologic,Relapsing MS,Anti-CD20; self-administered monthly for long-term MS control,YES
+"Influenza Vaccine, Adjuvanted","Fluad,Fluad Quadrivalent",125510,PERIODIC,Vaccine,Influenza prevention,Annual vaccination; not chronic daily medication,YES
+Coagulation Factor VIIa (Recombinant),Sevenfact,125641,PERIODIC,Coagulation factor,Hemophilia A/B with inhibitors / rare bleeding,Factor VIIa (NovoSeven/Sevenfact); on-demand for bleeds or prophylaxis; hemophilia care is lifelong,YES
+"Influenza A (H5N1) Monovalent Vaccine, Adjuvanted",Audenz,125692,ONE-TIME,Vaccine,H5N1 pandemic influenza prevention,Pre-pandemic stockpile vaccine; 2-dose primary series,NO
+Peanut (Arachis hypogaea) Allergen Powder,Palforzia,125696,LONG-TERM,Allergen immunotherapy,Peanut allergy desensitization,Daily oral immunotherapy; 3+ years of build-up and maintenance,YES
+"Meningococcal (Groups A, C, Y, W) Conjugate Vaccine",Menquadfi,125701,ONE-TIME,Vaccine,Meningococcal disease prevention,Primary series ± booster; not chronic,NO
+Brexucabtagene Autoleucel,Tecartus,125703,ONE-TIME,CAR-T cell therapy,Mantle cell lymphoma / B-ALL,Single CAR-T infusion after lymphodepletion,NO
+emapalumab,Gamifant,761107,SHORT,Anti-IFN-γ antibody,Primary hemophagocytic lymphohistiocytosis (HLH),"Used until HSCT conditioning; weeks to months, not indefinite",NO
+satralizumab-mwge,Enspryng,761149,CHRONIC,Autoimmune biologic,NMOSD (AQP4-IgG positive),IL-6R inhibitor; NMOSD relapses require indefinite prevention,YES
+somapacitan,Sogroya,761156,CHRONIC,Growth hormone analog,Adult GHD / pediatric GHD,Weekly GH analog; adult GHD may require lifelong replacement,YES
+belantamab mafodotin,Blenrep,761158|761440,LONG-TERM,ADC (anti-BCMA),Relapsed/refractory myeloma,Every 3 weeks until progression; reversible corneal toxicity limits duration,YES
+tafasitamab-cxix,Monjuvi,761163,LONG-TERM,Anti-CD19 + lenalidomide,Relapsed/refractory DLBCL,Induction + maintenance dosing until progression,YES
+rituximab,Riabni,761140,LONG-TERM,Anti-CD20,NHL / CLL / RA / pemphigus / MS,Lymphoma maintenance: 2 years; RA/MS: indefinite; CLL: until progression,YES
+margetuximab-cmkb,Margenza,761150,LONG-TERM,HER2 inhibitor,HER2+ metastatic breast cancer,Until disease progression in metastatic setting,YES
+ansuvimab-zykl,Ebanga,761172,SHORT,Monoclonal antibody,Ebola virus disease,Single IV infusion for acute Ebola infection,NO
+adalimumab,Hulio|Yusimry|Hadlima|Idacio|Hyrimoz|Amjevita|Yuflyma|Simlandi|Cyltezo,761154|761216|761059|761255|761071|761024|761219|761299|761058,CHRONIC,Autoimmune biologic,RA / psoriasis / IBD / AS / uveitis,TNF inhibitor for multiple chronic autoimmune diseases; discontinuation causes relapse,YES
+"pertuzumab, trastuzumab, and hyaluronidase",Phesgo,761170,LONG-TERM,HER2 inhibitor combination,HER2+ breast cancer,Adjuvant: 1 year; metastatic maintenance until progression,YES
+collagenase clostridium histolyticum,Qwo,761146,SHORT,Collagenase enzyme,Dupuytren's / Peyronie's disease,1-3 injection sessions; limited course,NO
+epoetin alfa,Retacrit,125545,CHRONIC,Erythropoiesis-stimulating agent,Anemia (CKD / oncology),EPO replacement; CKD anemia is permanent; ongoing dosing,YES
+dupilumab,Dupixent,761055,CHRONIC,Autoimmune biologic,Atopic dermatitis / asthma / CRSwNP / EoE / PN,IL-4Rα inhibitor; type-2 inflammation requires indefinite control,YES
+insulin lispro,Lyumjev|Humalog,761109|205747,CHRONIC,Insulin,Diabetes mellitus (T1D/T2D),Insulin replacement; lifelong daily dosing,YES
+pegfilgrastim,Nyvepria|Fylnetra|Stimufend|Udenyca|Udenyca Onbody|Armlupeg,761111|761084|761173|761039|761212,PERIODIC,G-CSF,Chemotherapy-induced neutropenia,Each chemo cycle gets one dose; long-term only while on chemo,YES
+insulin glargine,Semglee|Rezvoglar,210605|761215|761201,CHRONIC,Insulin,Diabetes mellitus,Long-acting insulin; lifelong daily basal dosing,YES
+inebilizumab-cdon,Uplizna,761142,CHRONIC,Autoimmune biologic,NMOSD,CD19 B-cell depletion; NMOSD requires long-term relapse prevention,YES
+trastuzumab,Trazimera|Hercessi,761081|761346,LONG-TERM,HER2 inhibitor,HER2+ breast / gastric cancer,Adjuvant: 1 year. Metastatic: until progression (months to years),YES
+naxitamab-gqgk,Danyelza,761171,LONG-TERM,Anti-GD2 antibody,Relapsed/refractory neuroblastoma,5-day cycles every 4 weeks; ongoing until progression,YES
+ravulizumab,Ultomiris,761108,CHRONIC,Complement inhibitor,PNH / aHUS / gMG / NMOSD / HSCT-TMA,Long-acting C5 inhibitor; same lifelong need as eculizumab,YES
+"atoltivimab, maftivimab, and odesivimab-ebgn",Inmazeb,761169,SHORT,Monoclonal antibody cocktail,Ebola virus disease,Single IV infusion for acute Ebola; one-time acute treatment,NO
+dulaglutide,Trulicity,125469,CHRONIC,GLP-1 receptor agonist,Type 2 diabetes,"Weekly GLP-1 agonist; T2DM is chronic, indefinite maintenance",YES
+polatuzumab vedotin-piiq,Polivy,761121,LONG-TERM,ADC (anti-CD79b),DLBCL / follicular lymphoma,6 cycles + maintenance; some patients may receive extended dosing,YES
+Short Ragweed Pollen Allergen Extract,Ragwitek,125478,LONG-TERM,Allergen immunotherapy,Allergic rhinitis (ragweed),Subcutaneous immunotherapy; 3-5 year course,YES
+risankizumab,Skyrizi,761105,CHRONIC,Autoimmune biologic,Psoriasis / PsA / Crohn's / UC,IL-23 inhibitor; maintenance every 12 weeks,YES
+dostarlimab-gxly,Jemperli,761174,LONG-TERM,Checkpoint inhibitor (PD-1),Endometrial / dMMR solid tumors,Until progression; maintenance phase every 6 weeks indefinitely,YES
+loncastuximab tesirine-lpyl,Zynlonta,761196,LONG-TERM,ADC (anti-CD19),Relapsed/refractory DLBCL,Until progression or unacceptable toxicity,YES
+avalglucosidase alfa-ngpt,Nexviazyme,761194,CHRONIC,Enzyme replacement,Pompe disease (LOPD),"Acid α-glucosidase; biweekly IV, lifelong",YES
+eptinezumab-jjmr,Vyepti,761119,CHRONIC,Anti-CGRP antibody,Episodic / chronic migraine prevention,Quarterly IV; migraine is recurrent; long-term preventive therapy,YES
+lonapegsomatropin,Skytrofa,761177,CHRONIC,Growth hormone analog,Pediatric GHD,Weekly GH; used until adequate adult height achieved (years),YES
+COVID,Comirnaty|Spikevax|mnexspike|NUVAXOVID,125742|125752|125835|125817,PERIODIC,mRNA / adjuvanted vaccine,COVID-19 prevention,Primary series + annual boosters; not daily medication,YES
+tezepelumab,Tezspire,761224,CHRONIC,Autoimmune biologic,Severe asthma,TSLP inhibitor; add-on maintenance therapy,YES
+efgartigimod alfa-fcab,Vyvgart,761195,CHRONIC,Autoimmune biologic,Generalized myasthenia gravis,FcRn blocker reducing IgG; cyclic infusions every 4 weeks indefinitely,YES
+tralokinumab,Adbry,761180,CHRONIC,Autoimmune biologic,Atopic dermatitis,IL-13 inhibitor; chronic skin disease needs continuous treatment,YES
+evinacumab,Evkeeza,761181,CHRONIC,Lipid-lowering biologic,Homozygous familial hypercholesterolemia (HoFH),"ANGPTL3 inhibitor; HoFH is lifelong, monthly infusions",YES
+Cholera Vaccine Live Oral,Vaxchora,125597,ONE-TIME,Vaccine,Cholera prevention (travelers),Single dose; not long-term,NO
+Pneumococcal 15-valent Conjugate Vaccine,Vaxneuvance,125741,ONE-TIME,Vaccine,Pneumococcal disease prevention,One or two doses per schedule; not ongoing,NO
+"Zoster Vaccine Recombinant, Adjuvanted",Shingrix,125614,ONE-TIME,Vaccine,Herpes zoster (shingles) prevention,2-dose series in adults ≥50; not repeated annually,NO
+anifrolumab,Saphnelo,761123|761451,CHRONIC,Autoimmune biologic,Systemic lupus erythematosus,IFNAR1 inhibitor; SLE is lifelong; monthly maintenance,YES
+"Allogeneic Keratinocyte Cell Line (NIKS), Seeded on Rat Collagen (BD) Conditioned with Human Dermal Fibroblasts (Clonetics)",StrataGraft,125730,SHORT,Cellular wound therapy,Dystrophic epidermolysis bullosa / chronic wounds,Temporary biological wound dressing; not a permanent treatment,NO
+aducanumab,Aduhelm,761178,CHRONIC,Anti-amyloid antibody,Early Alzheimer's disease,Aβ plaque clearance; monthly infusions indefinitely,YES
+asparaginase erwinia chrysanthemi (recombinant)-rywn,Rylaze,761179,SHORT,Enzyme (antineoplastic),ALL / LBL,IM/IV doses 3× per week × 6 doses in a single course; fixed course,NO
+Influenza Vaccine,"Flucelvax, Flucelvax Quadrivalent|Flublok",125408|125285,PERIODIC,Vaccine,Seasonal influenza prevention,Annual dose; seasonal prevention,YES
+idecabtagene vicleucel,Abecma,125736,ONE-TIME,CAR-T cell therapy,Relapsed/refractory myeloma,Single CAR-T infusion,NO
+secukinumab,Cosentyx,125504|761349,CHRONIC,Autoimmune biologic,Psoriasis / PsA / AS / nr-axSpA,IL-17A inhibitor; disease recurs upon discontinuation,YES
+amivantamab-vmjw,Rybrevant,761210,LONG-TERM,EGFR/MET bispecific,NSCLC (EGFR exon 20),Biweekly IV until progression,YES
+ropeginterferon alfa-2b-njft,Besremi,761166,CHRONIC,Pegylated interferon,Polycythemia vera (PV),"Every 2-week SC injection; PV is chronic, requires indefinite cytoreduction",YES
+Hepatitis B Vaccine (Recombinant),Prehevbrio,125737,ONE-TIME,Vaccine,Hepatitis B prevention,3-dose primary series,NO
+Allogeneic processed Thymus Tissue,Rethymic,125685,ONE-TIME,Thymus tissue implant,Complete DiGeorge anomaly,Single surgical implantation; immune reconstitution over months,NO
+ranibizumab,Susvimo|Byooviz|Cimerli|Nufymco,761197|761202|761165|761473,CHRONIC,Anti-VEGF,AMD / DME / RVO / DR,VEGF inhibitor; retinal neovascular diseases require monthly-quarterly injections indefinitely,YES
+tisotumab vedotin-tftv,Tivdak,761208,LONG-TERM,ADC (anti-TF),Recurrent cervical cancer,Every 3 weeks until progression,YES
+bevacizumab,Alymsys|Vegzelma|Avzivi|Jobevne,761231|761268|761198|761175,LONG-TERM,Anti-VEGF / cancer,Colorectal / lung / cervical / glioblastoma cancer + retinal,Cancer use: until progression. Ophthalmic compounded use: chronic,YES
+betibeglogene autotemcel,Zynteglo,125717,ONE-TIME,Gene therapy (HSC),Transfusion-dependent β-thalassemia,Single ex vivo gene addition via autologous HSC transplant,NO
+"Fecal Microbiota Transplantation, Frozen Preparation",Rebyota,125739,SHORT,Microbiome therapy,Recurrent C. difficile infection,1-3 administrations; not ongoing long-term therapy,NO
+nadofaragene firadenovec-vncg,Adstiladrin,125700,LONG-TERM,Gene therapy (intravesical),BCG-unresponsive NMIBC,Quarterly intravesical instillation as long as response maintained,YES
+mosunetuzumab,Lunsumio|Lunsumio Velo,761263,LONG-TERM,CD20×CD3 bispecific,Follicular lymphoma,Fixed 8-cycle treatment; time-limited course,YES
+sutimlimab-jome,Enjaymo,761164,CHRONIC,Complement inhibitor,Cold agglutinin disease,C1s inhibitor; CAD requires ongoing hemolysis prevention,YES
+filgrastim,Releuko|Nypozi|Zarxio,761082|761126|125553,PERIODIC,G-CSF,Chemotherapy-induced neutropenia / SCN,Used per chemo cycle or daily in SCN (SCN = lifelong),YES
+ciltacabtagene autoleucel,Carvykti,125746,ONE-TIME,CAR-T cell therapy,Relapsed/refractory myeloma,Single BCMA-targeting CAR-T infusion,NO
+mepolizumab,Nucala,125526|761122,CHRONIC,Autoimmune biologic,Severe eosinophilic asthma / EGPA / HES,IL-5 inhibitor; asthma/EGPA maintenance,YES
+tebentafusp-tebn,Kimmtrak,761228,LONG-TERM,TCR bispecific (gp100),Uveal melanoma,Weekly until progression; median duration ~months,YES
+faricimab,Vabysmo,761235,CHRONIC,Anti-VEGF,AMD / DME,"Ang-2/VEGF bispecific; extended up to every 16 weeks, indefinitely",YES
+"Antihemophilic Factor (Recombinant), rAHF",Nuwiq,125555,CHRONIC,Coagulation factor,Hemophilia A,Factor VIII (Advate/Kogenate); lifelong prophylaxis every 2-3 days,YES
+"Measles, Mumps and Rubella Virus Vaccine Live",PRIORIX|M-M-R Ii,125748|101069,ONE-TIME,Vaccine,MMR prevention,2-dose primary series in childhood; lifelong protection,NO
+nivolumab and relatlimab,Opdualag,761234,LONG-TERM,Checkpoint inhibitor,Unresectable / metastatic melanoma,PD-1 + LAG-3; until progression or up to 2 years per label,YES
+brolucizumab-dbll,Beovu,761125,CHRONIC,Anti-VEGF,AMD / DME,Anti-VEGF; long-term maintenance every 8-12 weeks,YES
+sacrosidase,Sucraid,020772,CHRONIC,Enzyme replacement,Congenital sucrase-isomaltase deficiency,Oral sucrase replacement; lifelong with every meal,YES
+etanercept,Erelzi|Eticovo,761042|761066,CHRONIC,Autoimmune biologic,RA / psoriasis / AS,TNF inhibitor; disease relapses off therapy,YES
+mirvetuximab soravtansine-gynx,Elahere,761310,LONG-TERM,ADC (anti-FRα),FRα+ ovarian cancer,Weekly until progression in relapsed setting,YES
+teplizumab-mzwv,Tzield,761183,SHORT,Anti-CD3 antibody,Delay of clinical T1D in at-risk individuals,14-day IV course; single course; does not cure T1D but delays onset,NO
+"Rotavirus Vaccine, Live, Oral",Rotarix,125265,ONE-TIME,Vaccine,Rotavirus gastroenteritis prevention,2-3 dose infant series; not ongoing,NO
+etranacogene dezaparvovec,Hemgenix,125772,ONE-TIME,Gene therapy (AAV),Hemophilia B,Single IV AAV5-FIX infusion,NO
+Alpha,"Prolastin, Prolastin-C|Glassia",103174|125325,CHRONIC,Protein replacement,Alpha-1 antitrypsin deficiency (AATD),Weekly IV AAT augmentation therapy; lifelong lung protection,YES
+"Meningococcal (Groups A, C, Y, and W-135) Oligosaccharide Diphtheria CRM197 Conjugate Vaccine",Menveo,125300,ONE-TIME,Vaccine,Meningococcal prevention,Primary series ± booster,NO
+tremelimumab,Imjudo,761289,LONG-TERM,Checkpoint inhibitor (CTLA-4),Hepatocellular carcinoma,Single priming dose + durvalumab maintenance; primarily short priming phase,YES
+teclistamab,Tecvayli,761291,LONG-TERM,BCMA×CD3 bispecific,Relapsed/refractory myeloma,Weekly then biweekly; until progression — typically months,YES
+olipudase alfa,Xenpozyme,761261,CHRONIC,Enzyme replacement,Acid sphingomyelinase deficiency (ASMD),"ASM replacement; biweekly IV, lifelong",YES
+spesolimab,Spevigo,761244,CHRONIC,Autoimmune biologic,Generalized pustular psoriasis (GPP),IL-36R inhibitor; used for flare treatment and maintenance,YES
+daxibotulinumtoxinA,Daxxify,761127,PERIODIC,Botulinum toxin,Cervical dystonia,IM injection every ~24 weeks; not daily but indefinitely repeated for chronic condition,YES
+eflapegrastim-xnst,Rolvedon,761148,PERIODIC,G-CSF,Chemotherapy-induced neutropenia,Once-per-cycle G-CSF; duration tied to chemotherapy,YES
+elivaldogene autotemcel,Skysona,125755,ONE-TIME,Gene therapy (HSC),Metachromatic leukodystrophy (MLD),Single HSC gene therapy infusion,NO
+omidubicel,OMISIRGE,125738,ONE-TIME,Stem cell graft enhancement,Hematopoietic reconstitution,Single nicotinamide-expanded cord blood transplant; one-time procedure,NO
+talquetamab,Talvey,761342,LONG-TERM,GPRC5D×CD3 bispecific,Relapsed/refractory myeloma,Weekly or biweekly; until progression,YES
+elranatamab,Elrexfio,761345,LONG-TERM,BCMA×CD3 bispecific,Relapsed/refractory myeloma,Weekly then biweekly; until progression,YES
+pozelimab-bbfg,Veopoz,761339,CHRONIC,Complement inhibitor,CHAPLE disease (CD55 deficiency),C5 inhibitor; ultra-rare lifelong complement-mediated disease,YES
+aflibercept,Eylea HD|Enzeevu|Pavblu|Ahzantive|Yesafili|Opuviz|Eydenzelt,761355|761382|761298|761378|761274|761350|761377,CHRONIC,Anti-VEGF,AMD / DME / RVO,VEGF trap; chronic intravitreal maintenance,YES
+"Prothrombin complex concentrate, human",Balfaxar,125776,SHORT,Coagulation factor concentrate,Acute coagulopathy / vitamin K antagonist reversal,Acute dosing for bleeding reversal; not chronic,NO
+"immune globulin intravenous, human",Alyglo|YIMMUGO,125743|125810,CHRONIC,Immunoglobulin replacement,Primary immunodeficiency / ITP / CIDP,Regular infusions (every 3-4 weeks for PIDD); lifelong in immunodeficiency,YES
+Exagamglogene autotemcel,Casgevy,125787,ONE-TIME,"Gene therapy (HSC, gene editing)",Sickle cell / TDT,CRISPR-edited autologous HSC; one-time infusion,NO
+lovotibeglogene autotemcel,LYFGENIA,125788,ONE-TIME,Gene therapy (HSC),Sickle cell disease,Single autologous HSC gene addition,NO
+lanadelumab,Takhzyro,761090,CHRONIC,HAE prophylaxis,Hereditary angioedema (HAE),Kallikrein inhibitor; every 2-4 weeks indefinitely to prevent HAE attacks,YES
+velmanase alfa-tycv,Lamzede,761278,CHRONIC,Enzyme replacement,Alpha-mannosidosis,α-mannosidase replacement; lifelong biweekly IV infusions,YES
+"antihemophilic factor (recombinant), Fc",ALTUVIIIO,125771,CHRONIC,Coagulation factor,Hemophilia A,Extended half-life Factor VIII; lifelong prophylaxis,YES
+ublituximab-xiiy,Briumvi,761238,CHRONIC,Autoimmune biologic,Relapsing MS,Anti-CD20; MS requires indefinite disease modification,YES
+anacaulase,Nexobrid,761192,SHORT,Bromelain enzyme,Burn wound debridement,Topical enzymatic debridement; single or few-day application during acute wound care,NO
+lecanemab,Leqembi|Leqembi IQLIK,761269|761375,CHRONIC,Anti-amyloid antibody,Early Alzheimer's disease,"Aβ protofibril clearance; disease is progressive, ongoing infusions",YES
+rozanolixizumab,Rystiggo,761286,CHRONIC,Autoimmune biologic,Generalized myasthenia gravis,FcRn inhibitor; recurring cycles for chronic MG control,YES
+somatrogon,Ngenla,761184,CHRONIC,Growth hormone analog,Pediatric GHD,Weekly GH; used through childhood/adolescence,YES
+nirsevimab,Beyfortus,761328,PERIODIC,Anti-RSV mAb,RSV prevention in infants/toddlers,Single dose each RSV season; annual seasonal prophylaxis,YES
+valoctocogene roxaparvovec-rvox,Roctavian,125720,ONE-TIME,Gene therapy (AAV),Hemophilia A,Single IV AAV5-FVIII infusion; expected durable effect,NO
+donislecel-jujn,Lantidra,125734,ONE-TIME,Islet cell transplant,Type 1 diabetes (labile),"Allogeneic islet infusion; one to several infusions, then maintenance immunosuppression",NO
+"Anthrax Vaccine Adsorbed, Adjuvanted",CYFENDUS,125761,ONE-TIME,Vaccine,Anthrax prevention,Pre-exposure: 3-dose series + boosters; special populations only,NO
+Albumin (Human),Albutein,102478,SHORT,Plasma protein,Hypoalbuminemia / cirrhosis / shock,Acute or supportive use; typically not taken indefinitely at home,NO
+"Coagulation Factor IX (Recombinant), GlycoPEGylated",Rebinyn,125611,CHRONIC,Coagulation factor,Hemophilia B,"Long-acting Factor IX; weekly prophylaxis, lifelong",YES
+Respiratory Syncytial Virus Vaccine,Abrysvo,125769,ONE-TIME,Vaccine,RSV prevention (older adults),Single dose recommended once; not annual,NO
+delandistrogene moxeparvovec-rokl,ELEVIDYS,125781,ONE-TIME,Gene therapy (AAV),Duchenne muscular dystrophy,Single IV AAVrh74-micro-dystrophin,NO
+insulin aspart,Fiasp|Kirsty|Merilog,208751|761188|761325,CHRONIC,Insulin,Diabetes mellitus,Rapid-acting insulin; lifelong mealtime dosing,YES
+glofitamab,Columvi,761309,LONG-TERM,CD20×CD3 bispecific,Relapsed/refractory DLBCL,Fixed 12-cycle course; time-limited treatment,YES
+efgartigimod alfa and hyaluronidase,Vyvgart Hytrulo,761304,CHRONIC,Autoimmune biologic,Generalized myasthenia gravis,SC formulation of FcRn blocker; long-term cyclic treatment,YES
+retifanlimab-dlwr,Zynyz,761334,LONG-TERM,Checkpoint inhibitor (PD-1),Merkel cell / anal canal carcinoma,Until progression or unacceptable toxicity,YES
+Varicella Virus Vaccine Live,Varivax,103552,ONE-TIME,Vaccine,Varicella prevention,2-dose childhood series,NO
+"Measles, Mumps, Rubella and Varicella Virus Vaccine Live",Proquad,125108,ONE-TIME,Vaccine,MMRV prevention,Childhood 2-dose series,NO
+Fecal Microbiota Spores,Vowst,125757,SHORT,Microbiome therapy,Recurrent C. difficile,3-day oral course; not chronic,NO
+"Respiratory Syncytial Virus Vaccine, Adjuvanted",Arexvy,125775,ONE-TIME,Vaccine,RSV prevention (maternal),Single dose in pregnancy,NO
+beremagene geperpavec-svdt,VYJUVEK,125774,PERIODIC,Topical gene therapy,Dystrophic epidermolysis bullosa,Topical wound gel applied repeatedly to open wounds; chronic condition but applied per wound,YES
+pegunigalsidase alfa,Elfabrio,761161,CHRONIC,Enzyme replacement,Fabry disease,"PEGylated α-galactosidase A; biweekly IV, lifelong",YES
+epcoritamab,Epkinly,761324,LONG-TERM,CD20×CD3 bispecific,DLBCL / follicular lymphoma,SC; weekly then biweekly then monthly; until progression,YES
+pancrelipase,Zenpep,22210,CHRONIC,Enzyme replacement,Exocrine pancreatic insufficiency,Pancreatic enzyme replacement; lifelong with every meal,YES
+natalizumab-sztn,Tyruko,761322,CHRONIC,Autoimmune biologic,Relapsing MS / Crohn's disease,α4-integrin blocker; long-term disease modification for MS/CD,YES
+ustekinumab,Wezlana|Selarsdi|Pyzchiva|Yesintek|Steqeyma|Otulfi|Imuldosa|Starjemza,761285|761331|761343|761373|761406|761338|761425|761379|761364|761419,CHRONIC,Autoimmune biologic,Psoriasis / PsA / Crohn's / UC,IL-12/23 inhibitor; used as long-term maintenance,YES
+mirikizumab,Omvoh,761279,CHRONIC,Autoimmune biologic,Ulcerative colitis / Crohn's disease,IL-23 inhibitor; IBD requires indefinite maintenance,YES
+toripalimab-tpzi,Loqtorzi,761240,LONG-TERM,Checkpoint inhibitor (PD-1),NPC / mucosal melanoma,Concurrent then maintenance until progression,YES
+efbemalenograstim alfa-vuxw,Ryzneuta,761134,PERIODIC,G-CSF,Chemotherapy-induced neutropenia,Once-per-cycle G-CSF,YES
+"Meningococcal Groups A, B, C, W and Y Vaccine",PENBRAYA|PENMENVY,125770|125819,ONE-TIME,Vaccine,Meningococcal prevention,Primary series,NO
+vedolizumab,Entyvio|Entyvio Pen,761133,CHRONIC,Autoimmune biologic,UC / Crohn's disease,α4β7 integrin blocker; gut-selective long-term IBD maintenance,YES
+cipaglucosidase alfa-atga,Pombiliti,761204,CHRONIC,Enzyme replacement,Pompe disease,"Next-gen GAA + miglustat; biweekly IV, lifelong",YES
+tocilizumab,Tofidence|Tyenne|Avtozma,761354|761275|761420,CHRONIC,Autoimmune biologic,RA / GCA / PJIA / SJIA,IL-6R inhibitor; disease relapses without maintenance,YES
+bimekizumab,Bimzelx,761151,CHRONIC,Autoimmune biologic,Psoriasis / PsA / AS / nr-axSpA,IL-17A/F dual inhibitor; long-term use,YES
+infliximab,Zymfentra,761358,CHRONIC,Autoimmune biologic,IBD / RA / psoriasis / AS,TNF inhibitor; maintenance infusions every 8 weeks indefinitely,YES
+benralizumab,Fasenra,761070,CHRONIC,Autoimmune biologic,Severe eosinophilic asthma,IL-5Rα blocker; maintenance every 8 weeks indefinitely,YES
+nogapendekin alfa inbakicept-pmln,Anktiva,761336,LONG-TERM,IL-15 superagonist fusion,BCG-unresponsive NMIBC,Adjuvant intravesical instillation; quarterly maintenance up to 3 years,YES
+ixekizumab,Taltz,125521,CHRONIC,Autoimmune biologic,Psoriasis / PsA / AS,IL-17A inhibitor; long-term maintenance dosing,YES
+denileukin diftitox-cxdl,Lymphir,761312,LONG-TERM,IL-2–diphtheria toxin fusion,CTCL,Cycles of 5 days every 3 weeks; until progression,YES
+nemolizumab-ilto,Nemluvio,761390,CHRONIC,Autoimmune biologic,Atopic dermatitis / prurigo nodularis,IL-31Rα inhibitor; chronic pruritic conditions,YES
+axatilimab-csfr,Niktimvo,761411,CHRONIC,Autoimmune biologic,Chronic graft-versus-host disease,CSF-1R inhibitor; cGVHD is a prolonged condition,YES
+afamitresgene autoleucel,tecelra,125789,ONE-TIME,TCR-T cell therapy,Synovial sarcoma / MRCLS,Single MAGE-A4-targeting TCR-T infusion,NO
+remestemcel-L-rknd,ryoncil,125706,SHORT,Mesenchymal stromal cells,Steroid-refractory acute GvHD,8 weekly infusions in acute setting; not indefinite,NO
+"HPC, Cord Blood",regenecyte,125764,ONE-TIME,Hematopoietic progenitor cells,Hematopoietic reconstitution,Single cord blood transplant for malignant/non-malignant hematologic conditions,NO
+acellular tissue engineered vessel-tyod,symvess,125812,ONE-TIME,Tissue-engineered graft,Vascular access / bypass,Surgical implant; permanent once implanted,NO
+nivolumab and hyaluronidase,Opdivo Qvantig,761381,LONG-TERM,Checkpoint inhibitor,Multiple cancers,SC formulation; used until progression,YES
+zenocutuzumab-zbco,Bizengri,761352,LONG-TERM,NRG1 fusion bispecific (HER2×HER3),NRG1+ cancer,Biweekly until progression,YES
+cosibelimab-ipdl,Unloxcyt,761297,LONG-TERM,Checkpoint inhibitor (PD-L1),Cutaneous SCC,Until progression; flat dosing every 3 weeks,YES
+concizumab,Alhemo,761315,CHRONIC,Hemophilia prophylaxis,Hemophilia A/B with inhibitors,"TFPI inhibitor; subcutaneous prophylaxis, indefinite",YES
+Lifileucel,AMTAGVI,125773,ONE-TIME,TIL cell therapy,Advanced melanoma,Single infusion of expanded tumor-infiltrating lymphocytes,NO
+omalizumab,Xolair|Omlyclo,103976|761399,CHRONIC,Autoimmune biologic,Allergic asthma / chronic urticaria / food allergy,Anti-IgE; chronic conditions require ongoing dosing,YES
+crovalimab-akkz,Piasky,761388,CHRONIC,Complement inhibitor,PNH,C5 inhibitor; PNH is a lifelong condition,YES
+donanemab-azbt,Kisunla,761248,LONG-TERM,Anti-amyloid antibody,Early symptomatic Alzheimer's,Dosing until plaque clearance (~12-18 months); may discontinue after target reached,YES
+eculizumab,Epysqli|Bkemv,761340|761333,CHRONIC,Complement inhibitor,PNH / aHUS / gMG / NMOSD,C5 inhibitor; PNH/aHUS require lifelong complement blockade,YES
+"Immune Globulin Subcutaneous (Human), 20% Liquid",Hizentra,125350,CHRONIC,Immunoglobulin replacement,Primary immunodeficiency / CIDP,Weekly SC infusions; lifelong in primary immunodeficiency,YES
+coagulation factor VIIa (recombinant)-jncw,Sevenfact,125641,PERIODIC,Coagulation factor,Hemophilia A/B with inhibitors,Next-gen rFVIIa (Alhemo or similar); prophylactic SC dosing long-term,YES
+"Respiratory Syncytial Virus Vaccine, mRNA (mRNA-1345)",mresvia,125796,ONE-TIME,Vaccine,RSV prevention (older adults),Single dose,NO
+Pneumococcal 21-valent Conjugate Vaccine,CAPVAXIVE,125814,ONE-TIME,Vaccine,Pneumococcal disease prevention,Single dose in adults,NO
+atidarsagene autotemcel,Lenmeldy,125758,ONE-TIME,Gene therapy (HSC),Metachromatic leukodystrophy,Single ex vivo lentiviral gene therapy,NO
+emicizumab,Hemlibra,761083,CHRONIC,Hemophilia prophylaxis,Hemophilia A (with/without inhibitors),Bispecific factor Xa/IXa mimic; lifelong weekly/biweekly prophylaxis,YES
+denosumab,Jubbonti|Wyost|Boncresa|Oziltus|Conexxence|Bomyntra|Ospomyv|Xbryk|Stoboclo|Osenvelt|Osvyrti|Jubereq|Enoby|Xtrenbo|Bosaya|Aukelso|Bildyos|Bilprevda|Ponlimsi,761362|761456|761457|761398|761392|761404|761424|761439|761436|761444|761385,CHRONIC,RANK-L inhibitor,Osteoporosis / bone metastases / GCTB,"Osteoporosis: 6-monthly injections, long-term; bone mets: continuous",YES
+tislelizumab-jsgr,Tevimbra,761232,LONG-TERM,Checkpoint inhibitor (PD-1),Esophageal SCC / gastric cancer,Maintenance until progression,YES
+sotatercept,Winrevair,761363,CHRONIC,ActRIIA fusion protein,Pulmonary arterial hypertension (PAH),TGF-β trap; PAH is progressive and requires indefinite treatment,YES
+tarlatamab,Imdelltra,761344,LONG-TERM,DLL3×CD3 bispecific,Extensive-stage SCLC,Biweekly IV; until progression,YES
+zanidatamab-hrii,Ziihera,761416,LONG-TERM,HER2 bispecific,Biliary tract / gastric cancer,HER2-targeting until progression,YES
+eladocagene exuparvovec-tneq,KEBILIDI,125722,ONE-TIME,Gene therapy (AAV),AADC deficiency,Single intracranial surgery + AAV2 infusion,NO
+Obecabtagene autoleucel,Aucatzyl,125813,ONE-TIME,CAR-T cell therapy,B-cell ALL,Single CD19-targeting CAR-T infusion,NO
+marstacimab,Hympavzi,761369,CHRONIC,Hemophilia prophylaxis,Hemophilia A/B,TFPI inhibitor; long-term prophylaxis,YES
+zolbetuximab,Vyloy,761365,LONG-TERM,Anti-claudin 18.2,Gastric / GEJ adenocarcinoma,Q3W + Q6W with chemo; until progression,YES
+atezolizumab and hyaluronidase-tqjs,Tecentriq Hybreza,761347,LONG-TERM,Checkpoint inhibitor (PD-L1),NSCLC / TNBC / HCC / UC,SC formulation; until progression,YES
+guselkumab,Tremfya,761061,CHRONIC,Autoimmune biologic,Psoriasis / PsA,IL-23 inhibitor; indefinite maintenance,YES
+ocrelizumab and hyaluronidase-ocsq,Ocrevus Zunovo,761371,CHRONIC,Autoimmune biologic,MS (relapsing and PPMS),Anti-CD20; MS disease modification is lifelong,YES
+lebrikizumab,Ebglyss,761306,CHRONIC,Autoimmune biologic,Atopic dermatitis,IL-13 inhibitor; long-term maintenance required,YES
+"Antihemophilic factor (recombinant), PEGylated-aucl",Jivi,125661,CHRONIC,Coagulation factor,Hemophilia A,PEGylated Factor VIII; long-term prophylaxis,YES
+"Smallpox and Mpox Vaccine, Live, Non-replicating",Jynneos,125678,ONE-TIME,Vaccine,Smallpox / mpox prevention,2-dose series; not repeated annually,NO
+PAPZIMEOS,PAPZIMEOS,125832,LONG-TERM,DNA immunotherapy,HPV-associated recurrent respiratory papillomatosis,Precigen BLA 125832; repeated dosing cycles for RRP; ongoing until disease control,YES
+acellular nerve allograft-arwx,avance nerve graft,125816,ONE-TIME,Nerve graft,Peripheral nerve repair,Single surgical implantation for nerve gap repair,NO
+"fibrinogen, human–chmt",FESILTY,125833,SHORT,Clotting protein,Congenital fibrinogen deficiency / acute bleeding,Prophylaxis in severe deficiency may be chronic; acute use is short-term,NO
+etuvetidigene autotemcel,waskyra,125846,ONE-TIME,Gene therapy (HSC),Rare hematologic disease,Single autologous HSC gene therapy,NO
+onasemnogene abeparvovec-brve,ITVISMA,125856,ONE-TIME,Gene therapy (AAV),Spinal muscular atrophy type 1,Single IV AAV9-SMN1 infusion,NO
+narsoplimab-wuug,Yartemlea,761152,LONG-TERM,Complement inhibitor,HSCT-TMA,MASP-2 inhibitor; TMA treatment is finite but may extend months,YES
+lerodalcibep-liga,Lerochol,761427,CHRONIC,Lipid-lowering biologic,Hypercholesterolemia / HeFH,PCSK9 inhibitor fusion protein; lifelong monthly dosing,YES
+depemokimab,Exdensur,761458,CHRONIC,Autoimmune biologic,Severe eosinophilic asthma / EGPA,Long-acting IL-5 inhibitor; every 6-month maintenance,YES
+datopotamab deruxtecan,Datroway,761394,LONG-TERM,ADC (TROP2-DXd),NSCLC / HR+ breast cancer,Q3W until progression; newer approvals for chronic maintenance use,YES
+letibotulinumtoxinA,Letybo,761225,PERIODIC,Botulinum toxin,Cervical dystonia / blepharospasm,Repeated injections every 3-6 months for chronic neurological condition,YES
+"Chikungunya Vaccine, Recombinant",VIMKUNYA,125820,ONE-TIME,Vaccine,Chikungunya prevention,Single dose,NO
+linvoseltamab,Lynozyfic,761400,LONG-TERM,BCMA×CD3 bispecific,Relapsed/refractory myeloma,Weekly then biweekly; until progression,YES
+clesrovimab-cfor,Enflonsia,761432,PERIODIC,Anti-RSV mAb,RSV prevention in infants,Seasonal prophylaxis; one dose per RSV season,YES
+garadacimab,Andembry,761367,CHRONIC,HAE prophylaxis,Hereditary angioedema (HAE),Factor XIIa inhibitor; monthly SC injection for long-term HAE prevention,YES
+tenecteplase,TNKase,103909,SHORT,Thrombolytic,Acute myocardial infarction,Single IV bolus for acute STEMI; one-time use,NO
+revakinagene taroretcel-lwey,encelto,125798,ONE-TIME,Gene therapy (retinal),Inherited retinal disease,Subretinal AAV injection; single procedure per eye,NO
+penpulimab-kcqx,,761258,LONG-TERM,Checkpoint inhibitor (PD-1),NPC / cancer,Until progression or toxicity,YES
+telisotuzumab vedotin,Emrelis,761384,LONG-TERM,ADC (anti-c-MET),NSCLC (c-MET overexpression),Biweekly until disease progression,YES
+nipocalimab,Imaavy,761430,CHRONIC,Autoimmune biologic,Generalized myasthenia gravis / HDFN,FcRn blocker; ongoing MG maintenance,YES
+Prademagene zamikeracel,zevaskyn,125807,ONE-TIME,Gene therapy (ex vivo skin),Dystrophic epidermolysis bullosa,Gene-corrected autologous keratinocyte grafts; surgical application,NO
+sibeprenlimab-szsi,Voyxact,761434,CHRONIC,Autoimmune biologic,IgA nephropathy,APRIL inhibitor; progressive kidney disease requires indefinite treatment,YES
+pertuzumab-dpzb,Poherdy,761450,LONG-TERM,HER2 inhibitor (biosimilar),HER2+ breast cancer,Biosimilar pertuzumab; same long-term maintenance use,YES
+"Immune Globulin Intravenous, Human",QIVIGY,125822,CHRONIC,Immunoglobulin replacement,Primary immunodeficiency / ITP / CIDP,Regular infusions (every 3-4 weeks for PIDD); lifelong in immunodeficiency,YES
+pegloticase,Krystexxa,125293,LONG-TERM,Uricase,Refractory chronic gout,Recombinant uricase; infused every 2 weeks for months; some patients long-term,YES
+pembrolizumab and berahyaluronidase alfa,Keytruda Qlex,761467,LONG-TERM,Checkpoint inhibitor (PD-1),Multiple cancers,SC pembrolizumab; until progression (approx. 2 years in many approvals),YES
+marnetegragene autotemcel,kresladi,125806,ONE-TIME,Gene therapy (HSC),Sickle cell / hemoglobinopathy,Ex vivo gene addition; single infusion after conditioning,NO
+lunsotogene parvec-cwha,OTARMENI,125874,ONE-TIME,Gene therapy (AAV),Rare retinal or metabolic disease,AAV-based single IV/intravitreal delivery,NO
+tividenofusp alfa-eknm,Avlayah,761485,CHRONIC,Enzyme replacement / ETV fusion,MPS II (Hunter syndrome),IDS-ETV fusion protein; lifelong IV ERT for lysosomal storage disease,YES
+insulin icodec,Awiqli,761326,CHRONIC,Insulin,Type 2 diabetes,Once-weekly ultra-long-acting insulin; indefinite use,YES
+pegzilarginase,Loargys,761211,CHRONIC,Enzyme replacement,Arginase 1 deficiency (hyperargininemia),Weekly IV arginase; lifelong urea cycle disorder management,YES
+amivantamab and hyaluronidase,Rybrevant Faspro,761484,LONG-TERM,EGFR/MET bispecific (SC),NSCLC (EGFR exon 20),SC formulation; until progression,YES
+tesamorelin,Egrifta WR,22505,CHRONIC,GHRH analog,HIV-associated lipodystrophy,Daily SC injection; condition recurs on discontinuation,YES
