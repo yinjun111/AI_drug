@@ -1,179 +1,179 @@
 Source,Drug,Brand,Disease / Indication,Disease Category,Modality,Drug Target (Gene),Annual Revenue 2024 (USD B),Dose,Frequency,Duration of Use
-Purple Book,adalimumab,Humira / biosimilars,Rheumatoid arthritis,Autoimmune – Rheumatology,Biologic,TNF,8.99,40 mg SC,Every 2 weeks,Indefinite (lifelong maintenance)
-Purple Book,adalimumab,Humira / biosimilars,Psoriatic arthritis,Autoimmune – Rheumatology,Biologic,TNF,8.99,40 mg SC,Every 2 weeks,Indefinite
-Purple Book,adalimumab,Humira / biosimilars,Ankylosing spondylitis / axSpA,Autoimmune – Rheumatology,Biologic,TNF,8.99,40 mg SC,Every 2 weeks,Indefinite
-Purple Book,adalimumab,Humira / biosimilars,Juvenile idiopathic arthritis,Autoimmune – Rheumatology,Biologic,TNF,8.99,10–20 mg SC (weight-based),Every 2 weeks,Indefinite
-Purple Book,etanercept,Enbrel / biosimilars,Rheumatoid arthritis,Autoimmune – Rheumatology,Biologic,TNF,3.5,50 mg SC,Once weekly,Indefinite
-Purple Book,etanercept,Enbrel / biosimilars,Psoriatic arthritis,Autoimmune – Rheumatology,Biologic,TNF,3.5,50 mg SC,Once weekly,Indefinite
-Purple Book,etanercept,Enbrel / biosimilars,Ankylosing spondylitis,Autoimmune – Rheumatology,Biologic,TNF,3.5,50 mg SC,Once weekly,Indefinite
-Purple Book,etanercept,Enbrel / biosimilars,Juvenile idiopathic arthritis,Autoimmune – Rheumatology,Biologic,TNF,3.5,0.8 mg/kg SC (max 50 mg),Once weekly,Indefinite
-Purple Book,infliximab,Remicade / biosimilars,Rheumatoid arthritis,Autoimmune – Rheumatology,Biologic,TNF,1.5,"3 mg/kg IV (wk 0, 2, 6 induction)",Every 8 weeks (maintenance),Indefinite
-Purple Book,infliximab,Remicade / biosimilars,Ankylosing spondylitis / axSpA,Autoimmune – Rheumatology,Biologic,TNF,1.5,"5 mg/kg IV (wk 0, 2, 6 induction)",Every 6 weeks (maintenance),Indefinite
-Purple Book,infliximab,Remicade / biosimilars,Psoriatic arthritis,Autoimmune – Rheumatology,Biologic,TNF,1.5,"5 mg/kg IV (wk 0, 2, 6 induction)",Every 8 weeks (maintenance),Indefinite
-Purple Book,secukinumab,Cosentyx,Psoriatic arthritis,Autoimmune – Rheumatology,Biologic,IL17A,6.14,"150 mg SC (weekly ×5, then q4w; or 300 mg if prior anti-TNF failure)",Every 4 weeks,Indefinite
-Purple Book,secukinumab,Cosentyx,Ankylosing spondylitis / AS,Autoimmune – Rheumatology,Biologic,IL17A,6.14,"150 mg SC (weekly ×5, then q4w)",Every 4 weeks,Indefinite
-Purple Book,secukinumab,Cosentyx,Non-radiographic axSpA,Autoimmune – Rheumatology,Biologic,IL17A,6.14,"150 mg SC (weekly ×5, then q4w)",Every 4 weeks,Indefinite
-Purple Book,ixekizumab,Taltz,Psoriatic arthritis,Autoimmune – Rheumatology,Biologic,IL17A,2.5,"160 mg SC (wk 0), then 80 mg",Every 4 weeks,Indefinite
-Purple Book,ixekizumab,Taltz,Ankylosing spondylitis,Autoimmune – Rheumatology,Biologic,IL17A,2.5,"160 mg SC (wk 0), then 80 mg",Every 4 weeks,Indefinite
-Purple Book,ixekizumab,Taltz,Non-radiographic axSpA,Autoimmune – Rheumatology,Biologic,IL17A,2.5,80 mg SC,Every 4 weeks,Indefinite
-Purple Book,guselkumab,Tremfya,Psoriatic arthritis,Autoimmune – Rheumatology,Biologic,IL23A,3.67,"100 mg SC (wk 0 & 4, then q8w)",Every 8 weeks,Indefinite
-Purple Book,tocilizumab,Actemra,Rheumatoid arthritis,Autoimmune – Rheumatology,Biologic,IL6R,1.51,4–8 mg/kg IV q4w; or 162 mg SC,Every 1–2 weeks (SC) / every 4 weeks (IV),Indefinite
-Purple Book,tocilizumab,Actemra,Giant cell arteritis,Autoimmune – Rheumatology,Biologic,IL6R,1.51,162 mg SC (+ steroid taper),Every week,Indefinite (disease recurs off therapy)
-Purple Book,tocilizumab,Actemra,Juvenile idiopathic arthritis (SJIA/PJIA),Autoimmune – Rheumatology,Biologic,IL6R,1.51,8–12 mg/kg IV (weight-based),Every 2–4 weeks,Indefinite
-Purple Book,rituximab,Rituxan / biosimilars,Rheumatoid arthritis (anti-TNF inadequate responders),Autoimmune – Rheumatology,Biologic,MS4A1,2.0,1000 mg IV ×2 doses (2 wks apart),Repeat course every 24 weeks (or on relapse),Indefinite maintenance
-Purple Book,rituximab,Rituxan / biosimilars,ANCA-associated vasculitis (GPA / MPA),Autoimmune – Rheumatology,Biologic,MS4A1,2.0,375 mg/m² IV ×4 (induction); then 500 mg IV ×2 (at 6 and 12 mo),Every 6 months (maintenance),≥2 years (long-term remission maintenance)
-Purple Book,rituximab,Rituxan / biosimilars,Pemphigus vulgaris,Autoimmune – Dermatology,Biologic,MS4A1,2.0,1000 mg IV ×2 doses (2 wks apart),"Repeat at 12 mo, 18 mo, then PRN",Indefinite (disease relapse common)
-Purple Book,bimekizumab,Bimzelx,Psoriatic arthritis,Autoimmune – Rheumatology,Biologic,"IL17A, IL17F",0.5,160 mg SC,Every 4 weeks,Indefinite
-Purple Book,bimekizumab,Bimzelx,Ankylosing spondylitis / nr-axSpA,Autoimmune – Rheumatology,Biologic,"IL17A, IL17F",0.5,160 mg SC,Every 4 weeks,Indefinite
-Purple Book,adalimumab,Humira / biosimilars,Plaque psoriasis,Autoimmune – Dermatology,Biologic,TNF,8.99,"80 mg SC (wk 0), then 40 mg (wk 1), then 40 mg",Every 2 weeks,Indefinite
-Purple Book,adalimumab,Humira / biosimilars,Hidradenitis suppurativa,Autoimmune – Dermatology,Biologic,TNF,8.99,"160 mg SC (day 1), 80 mg (day 15), then 40 mg",Weekly,Indefinite
-Purple Book,adalimumab,Humira / biosimilars,Non-infectious uveitis,Autoimmune – Dermatology,Biologic,TNF,8.99,"80 mg SC (wk 0), then 40 mg (wk 1), then 40 mg",Every 2 weeks,Indefinite
-Purple Book,etanercept,Enbrel / biosimilars,Plaque psoriasis,Autoimmune – Dermatology,Biologic,TNF,3.5,"50 mg SC twice weekly ×12 wks (induction), then 50 mg",Once weekly (maintenance),Indefinite
-Purple Book,infliximab,Remicade / biosimilars,Plaque psoriasis,Autoimmune – Dermatology,Biologic,TNF,1.5,"5 mg/kg IV (wk 0, 2, 6 induction)",Every 8 weeks,Indefinite
-Purple Book,secukinumab,Cosentyx,Plaque psoriasis,Autoimmune – Dermatology,Biologic,IL17A,6.14,"300 mg SC weekly ×5 (induction), then 300 mg",Every 4 weeks,Indefinite
-Purple Book,ixekizumab,Taltz,Plaque psoriasis,Autoimmune – Dermatology,Biologic,IL17A,2.5,160 mg SC (wk 0); 80 mg q2w ×5 doses,Every 4 weeks (maintenance),Indefinite
-Purple Book,guselkumab,Tremfya,Plaque psoriasis,Autoimmune – Dermatology,Biologic,IL23A,3.67,100 mg SC (wk 0 & 4),Every 8 weeks,Indefinite
-Purple Book,risankizumab,Skyrizi,Plaque psoriasis,Autoimmune – Dermatology,Biologic,IL23A,11.72,150 mg SC (2 × 75 mg at wk 0 & 4),Every 12 weeks,Indefinite
-Purple Book,risankizumab,Skyrizi,Psoriatic arthritis,Autoimmune – Rheumatology,Biologic,IL23A,11.72,"150 mg SC (wk 0 & 4, then q12w)",Every 12 weeks,Indefinite
-Purple Book,bimekizumab,Bimzelx,Plaque psoriasis,Autoimmune – Dermatology,Biologic,"IL17A, IL17F",0.5,320 mg SC q4w ×16 wks (induction),Every 8 weeks (maintenance),Indefinite
-Purple Book,dupilumab,Dupixent,Atopic dermatitis (adults),Autoimmune – Dermatology,Biologic,IL4R,14.15,"600 mg SC loading (2 × 300 mg), then 300 mg",Every 2 weeks,Indefinite
-Purple Book,dupilumab,Dupixent,Prurigo nodularis,Autoimmune – Dermatology,Biologic,IL4R,14.15,"600 mg SC loading, then 300 mg",Every 2 weeks,Indefinite (recurrent pruritic condition)
-Purple Book,tralokinumab,Adbry,Atopic dermatitis,Autoimmune – Dermatology,Biologic,IL13,0.3,"600 mg SC loading (4 × 150 mg), then 300 mg q2w; may step down to q4w if controlled",Every 2–4 weeks,Indefinite
-Purple Book,lebrikizumab,Ebglyss,Atopic dermatitis,Autoimmune – Dermatology,Biologic,IL13,0.1,"500 mg SC ×2 at wk 0, then 250 mg",Every 2 weeks,Indefinite
-Purple Book,nemolizumab-ilto,Nemluvio,Atopic dermatitis,Autoimmune – Dermatology,Biologic,IL31RA,0.05,30 mg SC,Every 4 weeks,Indefinite
-Purple Book,nemolizumab-ilto,Nemluvio,Prurigo nodularis,Autoimmune – Dermatology,Biologic,IL31RA,0.05,30 mg SC,Every 4 weeks,Indefinite
-Purple Book,spesolimab,Spevigo,Generalized pustular psoriasis – acute flare,Autoimmune – Dermatology,Biologic,IL1RL2,0.2,900 mg IV (single dose per flare),Per flare episode,As needed for acute flares
-Purple Book,spesolimab,Spevigo,Generalized pustular psoriasis – maintenance,Autoimmune – Dermatology,Biologic,IL1RL2,0.2,600 mg SC,Every 12 weeks,Indefinite (chronic prophylaxis)
-Purple Book,adalimumab,Humira / biosimilars,Crohn's disease,Autoimmune – Gastroenterology,Biologic,TNF,8.99,"160 mg SC (wk 0), 80 mg (wk 2), then 40 mg",Every 2 weeks,Indefinite
-Purple Book,adalimumab,Humira / biosimilars,Ulcerative colitis,Autoimmune – Gastroenterology,Biologic,TNF,8.99,"160 mg SC (wk 0), 80 mg (wk 2), then 40 mg",Every 2 weeks,Indefinite
-Purple Book,infliximab,Remicade / biosimilars,Crohn's disease,Autoimmune – Gastroenterology,Biologic,TNF,1.5,"5 mg/kg IV (wk 0, 2, 6 induction)",Every 8 weeks,Indefinite
-Purple Book,infliximab,Remicade / biosimilars,Ulcerative colitis,Autoimmune – Gastroenterology,Biologic,TNF,1.5,"5 mg/kg IV (wk 0, 2, 6 induction)",Every 8 weeks,Indefinite
-Purple Book,ustekinumab,Stelara,Crohn's disease,Autoimmune – Gastroenterology,Biologic,IL12B,4.5,"~260–520 mg IV (single weight-based induction), then 90 mg SC",Every 8 weeks (SC maintenance),Indefinite
-Purple Book,ustekinumab,Stelara,Ulcerative colitis,Autoimmune – Gastroenterology,Biologic,IL12B,4.5,"~260–520 mg IV (single induction), then 90 mg SC",Every 8 weeks,Indefinite
-Purple Book,ustekinumab,Stelara,Plaque psoriasis,Autoimmune – Dermatology,Biologic,IL12B,4.5,45 mg (≤100 kg) or 90 mg SC at wk 0 & 4,Every 12 weeks,Indefinite
-Purple Book,ustekinumab,Stelara,Psoriatic arthritis,Autoimmune – Rheumatology,Biologic,IL12B,4.5,45 mg or 90 mg SC at wk 0 & 4,Every 12 weeks,Indefinite
-Purple Book,vedolizumab,Entyvio,Ulcerative colitis,Autoimmune – Gastroenterology,Biologic,"ITGA4, ITGB7",5.4,"300 mg IV (wk 0, 2, 6 induction)",Every 8 weeks (maintenance),Indefinite
-Purple Book,vedolizumab,Entyvio,Crohn's disease,Autoimmune – Gastroenterology,Biologic,"ITGA4, ITGB7",5.4,"300 mg IV (wk 0, 2, 6 induction)",Every 8 weeks (maintenance),Indefinite
-Purple Book,risankizumab,Skyrizi,Crohn's disease,Autoimmune – Gastroenterology,Biologic,IL23A,11.72,"600 mg IV ×3 (q8w induction), then 360 mg SC",Every 8 weeks,Indefinite
-Purple Book,risankizumab,Skyrizi,Ulcerative colitis,Autoimmune – Gastroenterology,Biologic,IL23A,11.72,"600 mg IV ×3 (q8w induction), then 180 mg SC",Every 8 weeks,Indefinite
-Purple Book,mirikizumab,Omvoh,Ulcerative colitis,Autoimmune – Gastroenterology,Biologic,IL23A,0.3,"300 mg IV ×3 (q4w induction), then 200 mg SC",Every 4 weeks,Indefinite
-Purple Book,dupilumab,Dupixent,Moderate-to-severe asthma,Autoimmune – Pulmonology,Biologic,IL4R,14.15,200 or 300 mg SC (dose by eosinophil/OCS status),Every 2 weeks,Indefinite
-Purple Book,dupilumab,Dupixent,CRSwNP (chronic rhinosinusitis with nasal polyps),Autoimmune – Pulmonology,Biologic,IL4R,14.15,300 mg SC,Every 2 weeks,Indefinite
-Purple Book,dupilumab,Dupixent,Eosinophilic esophagitis (EoE),Autoimmune – Gastroenterology,Biologic,IL4R,14.15,300 mg SC,Once weekly,Indefinite
-Purple Book,dupilumab,Dupixent,COPD with type-2 inflammation (eosinophilic),Autoimmune – Pulmonology,Biologic,IL4R,14.15,300 mg SC,Every 2 weeks,Indefinite
-Purple Book,omalizumab,Xolair,Moderate-to-severe allergic asthma,Autoimmune – Pulmonology,Biologic,IGHE,3.7,75–375 mg SC (IgE- and weight-based),Every 2–4 weeks,Indefinite
-Purple Book,omalizumab,Xolair,Chronic spontaneous urticaria,Autoimmune – Dermatology,Biologic,IGHE,3.7,150 or 300 mg SC,Every 4 weeks,Indefinite (while disease is active)
-Purple Book,omalizumab,Xolair,Nasal polyps / CRSwNP,Autoimmune – Pulmonology,Biologic,IGHE,3.7,75–600 mg SC (IgE/weight-based),Every 2–4 weeks,Indefinite
-Purple Book,omalizumab,Xolair,IgE-mediated food allergy (multi-food),Allergy / Immunology,Biologic,IGHE,3.7,75–600 mg SC (IgE/weight-based),Every 2–4 weeks,Indefinite (ongoing protection)
-Purple Book,mepolizumab,Nucala,Severe eosinophilic asthma,Autoimmune – Pulmonology,Biologic,IL5,2.0,100 mg SC,Every 4 weeks,Indefinite
-Purple Book,mepolizumab,Nucala,EGPA (eosinophilic granulomatosis with polyangiitis),Autoimmune – Rheumatology,Biologic,IL5,2.0,300 mg SC (3 × 100 mg),Every 4 weeks,Indefinite
-Purple Book,mepolizumab,Nucala,Hypereosinophilic syndrome (HES),Hematology – Rare Blood,Biologic,IL5,2.0,300 mg SC (3 × 100 mg),Every 4 weeks,Indefinite
-Purple Book,mepolizumab,Nucala,CRSwNP,Autoimmune – Pulmonology,Biologic,IL5,2.0,100 mg SC,Every 4 weeks,Indefinite
-Purple Book,benralizumab,Fasenra,Severe eosinophilic asthma,Autoimmune – Pulmonology,Biologic,IL5RA,1.3,30 mg SC q4w ×3 doses (induction),Every 8 weeks (maintenance),Indefinite
-Purple Book,tezepelumab,Tezspire,Severe asthma (uncontrolled),Autoimmune – Pulmonology,Biologic,TSLP,0.8,210 mg SC,Every 4 weeks,Indefinite
-Purple Book,depemokimab,Nuraev (Asthma) / Nucala Ultra,Severe eosinophilic asthma / EGPA,Autoimmune – Pulmonology,Biologic,IL5,0.05,100 mg SC,Every 6 months,Indefinite (longest-acting IL-5 inhibitor)
-Purple Book,peanut (arachis hypogaea) allergen powder,Palforzia,Peanut allergy (desensitization),Allergy / Immunology,Biologic,"FCER1A, IL4R",0.2,Gradual oral up-titration to 300 mg/day maintenance,Daily oral dosing,≥3 years (lifelong maintenance while on therapy)
-Purple Book,short ragweed pollen allergen extract,Grastek / Ragwitek,Ragweed allergic rhinitis,Allergy / Immunology,Biologic,"FCER1A, IL4R",0.1,1 tablet (6 Amb a 1-U) sublingual daily,Daily,3–5 years (standard SLIT course)
-Purple Book,ofatumumab,Kesimpta,Relapsing multiple sclerosis,Neurology – Demyelinating,Biologic,MS4A1,1.2,"20 mg SC at wk 0, 1, 2; then 20 mg",Every 4 weeks,Indefinite
-Purple Book,natalizumab-sztn,Tysabri,Relapsing multiple sclerosis,Neurology – Demyelinating,Biologic,ITGA4,1.5,300 mg IV,Every 4 weeks,Indefinite (JC virus monitoring required)
-Purple Book,natalizumab-sztn,Tysabri,Crohn's disease,Autoimmune – Gastroenterology,Biologic,ITGA4,1.5,300 mg IV,Every 4 weeks,Indefinite
-Purple Book,ocrelizumab and hyaluronidase-ocsq,Ocrevus / Ocrevus Zunovo,Relapsing MS,Neurology – Demyelinating,Biologic,MS4A1,6.7,600 mg IV or 920 mg SC,Every 6 months,Indefinite
-Purple Book,ocrelizumab and hyaluronidase-ocsq,Ocrevus / Ocrevus Zunovo,Primary progressive MS (PPMS),Neurology – Demyelinating,Biologic,MS4A1,6.7,600 mg IV or 920 mg SC,Every 6 months,Indefinite
-Purple Book,ublituximab-xiiy,Briumvi,Relapsing multiple sclerosis,Neurology – Demyelinating,Biologic,MS4A1,0.3,150 mg IV then 450 mg IV,Every 6 months,Indefinite
-Purple Book,satralizumab-mwge,Enspryng,NMOSD (AQP4-IgG+),Neurology – Demyelinating,Biologic,IL6R,0.3,"120 mg SC at wk 0, 2, 4; then 120 mg",Every 4 weeks,Indefinite
-Purple Book,inebilizumab-cdon,Uplizna,NMOSD,Neurology – Demyelinating,Biologic,CD19,0.2,300 mg IV ×2 doses (2 wks apart induction),300 mg every 6 months,Indefinite
-Purple Book,efgartigimod alfa-fcab,Vyvgart,Generalized myasthenia gravis (gMG),Neurology – Neuromuscular,Biologic,FCGRT,0.6,10 mg/kg IV weekly ×4 doses per cycle,Repeat cycles every 4–8 weeks based on response,Indefinite cycling
-Purple Book,efgartigimod alfa and hyaluronidase,Vyvgart Hytrulo,Generalized myasthenia gravis,Neurology – Neuromuscular,Biologic,FCGRT,0.6,"1000 mg/11,250 U SC weekly ×4 per cycle",Repeat cycles every 4–8 weeks,Indefinite
-Purple Book,rozanolixizumab,Rystiggo,Generalized myasthenia gravis,Neurology – Neuromuscular,Biologic,FCGRT,0.1,7 mg/kg SC weekly ×6 weeks per cycle,Repeat cycles as needed,Indefinite
-Purple Book,nipocalimab,Imaavy,Generalized myasthenia gravis,Neurology – Neuromuscular,Biologic,FCGRT,0.05,30 mg/kg IV loading; then 15 mg/kg,Every 2 weeks,Indefinite
-Purple Book,anifrolumab,Saphnelo,Systemic lupus erythematosus (SLE),Autoimmune – Rheumatology,Biologic,IFNAR1,0.5,300 mg IV,Every 4 weeks,Indefinite
-Purple Book,axatilimab-csfr,Niktimvo,Chronic graft-versus-host disease (cGVHD),Hematology – Rare Blood,Biologic,CSF1R,0.1,0.3 mg/kg IV,Every 2 weeks,Indefinite (while cGVHD persists)
-Purple Book,sibeprenlimab-szsi,Vrumvit,IgA nephropathy (IgAN),Nephrology,Biologic,TNFSF13,0.05,3 mg/kg SC,Every 4 weeks,Indefinite (progressive disease)
-Purple Book,ropeginterferon alfa-2b-njft,Besremi,Polycythemia vera (PV),Hematology – Myeloproliferative,Biologic,"IFNAR1, IFNAR2",0.2,100–500 mcg SC (titrated),Every 2 weeks,Indefinite
-Purple Book,eculizumab,Soliris,Paroxysmal nocturnal hemoglobinuria (PNH),Hematology – Complement,Biologic,C5,1.5,600 mg IV q7d ×4; 900 mg at wk 5; then 900 mg,Every 14 days,Lifelong
-Purple Book,eculizumab,Soliris,Atypical hemolytic uremic syndrome (aHUS),Hematology – Complement,Biologic,C5,1.5,900 mg IV q7d ×4; 1200 mg at wk 5; then 1200 mg,Every 14 days,Lifelong (or until sustained remission)
-Purple Book,eculizumab,Soliris,Generalized myasthenia gravis (refractory),Neurology – Neuromuscular,Biologic,C5,1.5,900 mg IV q7d ×4; 1200 mg at wk 5; then 1200 mg,Every 14 days,Indefinite
-Purple Book,eculizumab,Soliris,NMOSD (AQP4-IgG+),Neurology – Demyelinating,Biologic,C5,1.5,900 mg IV q7d ×4; 1200 mg at wk 5; then 1200 mg,Every 2 weeks,Indefinite
-Purple Book,ravulizumab,Ultomiris,Paroxysmal nocturnal hemoglobinuria (PNH),Hematology – Complement,Biologic,C5,2.5,2400–3000 mg IV (weight-based loading); then 3000 mg,Every 8 weeks,Lifelong
-Purple Book,ravulizumab,Ultomiris,Atypical HUS (aHUS),Hematology – Complement,Biologic,C5,2.5,2400–3000 mg IV (loading); then 3000 mg,Every 8 weeks,Lifelong
-Purple Book,ravulizumab,Ultomiris,Generalized myasthenia gravis,Neurology – Neuromuscular,Biologic,C5,2.5,2700–3000 mg IV (loading); then 3000 mg,Every 8 weeks,Indefinite
-Purple Book,ravulizumab,Ultomiris,NMOSD,Neurology – Demyelinating,Biologic,C5,2.5,2700–3000 mg IV (loading); then 3000 mg,Every 8 weeks,Indefinite
-Purple Book,crovalimab-akkz,Piasky,Paroxysmal nocturnal hemoglobinuria (PNH),Hematology – Complement,Biologic,C5,0.3,341 mg IV ×1; 170 mg SC ×4 weekly; then 340 mg SC,Every 4 weeks,Lifelong
-Purple Book,sutimlimab-jome,Enjaymo,Cold agglutinin disease (CAD),Hematology – Complement,Biologic,C1S,0.2,6500 mg (<75 kg) or 7500 mg (≥75 kg) IV,Every 2 weeks,Indefinite
-Purple Book,pozelimab-bbfg,Veopoz,CHAPLE disease (CD55 deficiency),Hematology – Complement,Biologic,C5,0.05,30 mg/kg IV loading; then 12 mg/kg SC,Once weekly,Lifelong (ultra-rare)
-Purple Book,emicizumab,Hemlibra,Hemophilia A with inhibitors (prophylaxis),Hematology – Hemophilia,Biologic,"F9, F10",4.9,3 mg/kg SC q1w ×4 (loading); then 1.5 mg/kg q1w,Weekly (or 3 mg/kg q2w or 6 mg/kg q4w),Lifelong
-Purple Book,emicizumab,Hemlibra,Hemophilia A without inhibitors (prophylaxis),Hematology – Hemophilia,Biologic,"F9, F10",4.9,Same loading/maintenance dosing as above,Weekly / biweekly / monthly options,Lifelong
-Purple Book,concizumab,Alhemo,Hemophilia A or B with inhibitors,Hematology – Hemophilia,Biologic,TFPI,0.05,0.2 mg/kg SC daily,Once daily,Lifelong
-Purple Book,marstacimab,Marstacimab (trade name pending),Hemophilia A / B (with or without inhibitors),Hematology – Hemophilia,Biologic,TFPI,0.05,~300 mg SC loading; then 150–300 mg,Weekly,Lifelong
-Purple Book,"antihemophilic factor (recombinant), rAHF",Advate / Kogenate / Kovaltry,Hemophilia A (prophylaxis),Hematology – Hemophilia,Biologic,F8,0.8,20–40 IU/kg IV,Every 2–3 days,Lifelong
-Purple Book,"antihemophilic factor (recombinant), fc",Eloctate / Elocta,"Hemophilia A (prophylaxis, extended half-life)",Hematology – Hemophilia,Biologic,F8,0.6,25–65 IU/kg IV,Every 3–5 days,Lifelong
-Purple Book,"antihemophilic factor (recombinant), pegylated-aucl",Adynovate / Jivi,Hemophilia A (prophylaxis),Hematology – Hemophilia,Biologic,F8,0.5,40–60 IU/kg IV,Twice weekly,Lifelong
-Purple Book,"coagulation factor ix (recombinant), glycopegylated",Rebinyn / Refixia,Hemophilia B (prophylaxis),Hematology – Hemophilia,Biologic,F9,0.4,40 IU/kg IV,Once weekly,Lifelong
-Purple Book,coagulation factor viia (recombinant),Sevenfact / NovoSeven,Hemophilia A/B with inhibitors (prophylaxis),Hematology – Hemophilia,Biologic,F7,0.4,90 mcg/kg IV q2h until hemostasis (acute); prophylaxis varies,Per bleed (on-demand); prophylaxis daily/twice weekly,Lifelong (on-demand or prophylaxis)
-Purple Book,coagulation factor viia (recombinant)-jncw,Alhemo / Pfizer rFVIIa,Hemophilia A/B with inhibitors,Hematology – Hemophilia,Biologic,F7,0.1,Varies by indication,Daily to weekly SC (prophylaxis),Lifelong
-Purple Book,lanadelumab,Takhzyro,Hereditary angioedema (HAE) – attack prevention,Rare / Orphan – Immunology,Biologic,KLKB1,0.7,300 mg SC,Every 2 weeks (may extend to q4w after 6 months),Indefinite
-Purple Book,garadacimab,Garadacimab (trade name TBD),Hereditary angioedema (HAE) prevention,Rare / Orphan – Immunology,Biologic,F12,0.05,200 mg SC,Once monthly,Indefinite
-Purple Book,ranibizumab,Lucentis,Neovascular (wet) AMD,Ophthalmology,Biologic,VEGFA,0.3,0.5 mg intravitreal injection,Monthly (treat-and-extend after stabilization),Indefinite
-Purple Book,ranibizumab,Lucentis,Diabetic macular edema (DME),Ophthalmology,Biologic,VEGFA,0.3,0.3 mg intravitreal injection,Monthly (or PRN),Indefinite (while active)
-Purple Book,ranibizumab,Lucentis,Retinal vein occlusion (BRVO / CRVO),Ophthalmology,Biologic,VEGFA,0.3,0.5 mg intravitreal injection,"Monthly ×6, then PRN",Indefinite (chronic/recurrent)
-Purple Book,ranibizumab,Lucentis,Diabetic retinopathy,Ophthalmology,Biologic,VEGFA,0.3,0.3 mg intravitreal injection,Monthly,Indefinite
-Purple Book,brolucizumab-dbll,Beovu,Neovascular (wet) AMD,Ophthalmology,Biologic,VEGFA,0.6,6 mg intravitreal injection (monthly ×3 loading),Every 8–12 weeks (T&E),Indefinite
-Purple Book,brolucizumab-dbll,Beovu,Diabetic macular edema (DME),Ophthalmology,Biologic,VEGFA,0.6,6 mg intravitreal injection (monthly ×6 loading),Every 8–12 weeks (T&E),Indefinite
-Purple Book,aflibercept,Eylea / Eylea HD,Neovascular (wet) AMD,Ophthalmology,Biologic,"VEGFA, PGF",9.3,2 mg intravitreal (monthly ×3); or 8 mg monthly ×4 (HD),Every 8 weeks (standard) / up to every 16 weeks (HD T&E),Indefinite
-Purple Book,aflibercept,Eylea / Eylea HD,Diabetic macular edema (DME),Ophthalmology,Biologic,"VEGFA, PGF",9.3,"2 mg intravitreal monthly ×5, then q8w",Every 8 weeks,Indefinite
-Purple Book,aflibercept,Eylea / Eylea HD,Macular edema from retinal vein occlusion (RVO),Ophthalmology,Biologic,"VEGFA, PGF",9.3,"2 mg intravitreal monthly ×6, then PRN",Monthly / PRN,Indefinite
-Purple Book,aflibercept,Eylea,Diabetic retinopathy (all DR),Ophthalmology,Biologic,"VEGFA, PGF",9.3,2 mg intravitreal monthly ×5,Every 8 weeks,Indefinite
-Purple Book,faricimab,Vabysmo,Neovascular (wet) AMD,Ophthalmology,Biologic,"VEGFA, ANGPT2",4.4,6 mg intravitreal monthly ×4 (loading),Up to every 16 weeks (treat-and-extend),Indefinite
-Purple Book,faricimab,Vabysmo,Diabetic macular edema (DME),Ophthalmology,Biologic,"VEGFA, ANGPT2",4.4,6 mg intravitreal monthly ×4 (loading),Up to every 16 weeks (T&E),Indefinite
-Purple Book,insulin lispro,Humalog / Admelog / Lyumjev,Type 1 diabetes mellitus,Endocrinology – Diabetes,Biologic,INSR,2.0,0.5–1 IU/kg/day total; mealtime dose ~0.1–0.2 IU/kg,Multiple daily injections (or continuous pump),Lifelong
-Purple Book,insulin lispro,Humalog / Admelog,Type 2 diabetes mellitus,Endocrinology – Diabetes,Biologic,INSR,2.0,"4–10 IU per meal (initial), titrate","With meals, as prescribed",Lifelong (or while required)
-Purple Book,insulin glargine,Lantus / Toujeo / Basaglar,Type 1 diabetes mellitus,Endocrinology – Diabetes,Biologic,INSR,2.5,0.2–0.4 IU/kg SC once daily,"Once daily (any time, consistent)",Lifelong
-Purple Book,insulin glargine,Lantus / Toujeo,Type 2 diabetes mellitus,Endocrinology – Diabetes,Biologic,INSR,2.5,0.2 IU/kg once daily (starting); titrate to FBG target,Once daily,Lifelong
-Purple Book,insulin aspart,NovoLog / NovoRapid / Fiasp,Type 1 diabetes mellitus,Endocrinology – Diabetes,Biologic,INSR,2.0,~5–10 IU per meal or per 15 g carbohydrate (individualized),Before each meal,Lifelong
-Purple Book,insulin aspart,NovoLog / Fiasp,Type 2 diabetes mellitus,Endocrinology – Diabetes,Biologic,INSR,2.0,"4–10 IU per meal (starting), titrate",With meals,Lifelong (or while required)
-Purple Book,insulin icodec,Awiqli,Type 2 diabetes mellitus,Endocrinology – Diabetes,Biologic,INSR,0.1,~70% of total daily insulin dose equivalent SC,Once weekly,Lifelong
-Purple Book,dulaglutide,Trulicity,Type 2 diabetes mellitus,Endocrinology – Diabetes,Biologic,GLP1R,4.8,0.75 mg SC (starting); up to 4.5 mg weekly,Once weekly,Indefinite
-Purple Book,dulaglutide,Trulicity,Cardiovascular risk reduction (T2DM with CVD),Endocrinology – Diabetes,Biologic,GLP1R,4.8,0.75–1.5 mg SC weekly,Once weekly,Indefinite
-Purple Book,somapacitan,Sogroya,Adult growth hormone deficiency (AGHD),Endocrinology – Growth,Biologic,GHR,0.1,"1.5–8 mg SC (individualized, titrate)",Once weekly,Indefinite (adult GHD)
-Purple Book,somapacitan,Sogroya,Pediatric growth hormone deficiency,Endocrinology – Growth,Biologic,GHR,0.1,0.16 mg/kg SC weekly (titrate),Once weekly,Until adequate adult height
-Purple Book,lonapegsomatropin,Skytrofa,Pediatric growth hormone deficiency,Endocrinology – Growth,Biologic,GHR,0.1,0.24 mg/kg SC,Once weekly,Until adequate adult height (years)
-Purple Book,somatrogon,Ngenla,Pediatric growth hormone deficiency,Endocrinology – Growth,Biologic,GHR,0.1,0.66 mg/kg SC,Once weekly,Until adequate adult height (years)
-Purple Book,tesamorelin,Egrifta WR,HIV-associated lipodystrophy (abdominal fat excess),Endocrinology – Metabolic,Biologic,GHRHR,0.1,2 mg SC,Once daily,Indefinite (fat accumulates on discontinuation)
-Purple Book,evinacumab,Evkeeza,Homozygous familial hypercholesterolemia (HoFH),Endocrinology – Lipid,Biologic,ANGPTL3,0.1,15 mg/kg IV,Every 4 weeks,Indefinite
-Purple Book,lerodalcibep-liga,Lerodalcibep (Lepodisiran/approved name),LDL-C reduction (HeFH / ASCVD),Endocrinology – Lipid,Biologic,PCSK9,0.05,300 mg SC,Once monthly,Indefinite
-Purple Book,denosumab,Prolia,Postmenopausal osteoporosis,Bone / Metabolic,Biologic,TNFSF11,4.0,60 mg SC,Every 6 months,Indefinite (rebound fracture risk if stopped without follow-on therapy)
-Purple Book,denosumab,Prolia,Glucocorticoid-induced osteoporosis,Bone / Metabolic,Biologic,TNFSF11,4.0,60 mg SC,Every 6 months,Indefinite while on glucocorticoids
-Purple Book,denosumab,Prolia,Osteoporosis in men at high fracture risk,Bone / Metabolic,Biologic,TNFSF11,4.0,60 mg SC,Every 6 months,Indefinite
-Purple Book,epoetin alfa,Epogen / Procrit,Anemia of chronic kidney disease (dialysis),Hematology – Anemia,Biologic,EPOR,1.0,50–300 IU/kg IV/SC,3 times per week,Indefinite (until transplant or change in therapy)
-Purple Book,epoetin alfa,Epogen / Procrit,Anemia of CKD (non-dialysis),Hematology – Anemia,Biologic,EPOR,1.0,50–200 IU/kg SC,3 times per week,Indefinite
-Purple Book,filgrastim,Neupogen / Granix,Severe chronic neutropenia (SCN),Hematology – Rare Blood,Biologic,CSF3R,0.5,6–12 mcg/kg SC daily,Daily,Lifelong (congenital neutropenia)
-Purple Book,lecanemab,Leqembi,Early Alzheimer's disease (mild cognitive impairment / mild AD),Neurology – Neurodegeneration,Biologic,APP,0.4,10 mg/kg IV,Every 2 weeks,Indefinite (ongoing amyloid clearance and monitoring)
-Purple Book,aducanumab,Aduhelm,Early Alzheimer's disease,Neurology – Neurodegeneration,Biologic,APP,0.02,1–10 mg/kg IV (titrating protocol over ~6 months),Every 4 weeks,Indefinite
-Purple Book,donanemab-azbt,Kisunla,Early symptomatic Alzheimer's disease,Neurology – Neurodegeneration,Biologic,APP,0.2,700 mg IV q4w ×3 doses; then 1400 mg IV,Every 4 weeks,Until amyloid plaque clearance (~12–18 months); may discontinue after clearance
-Purple Book,eptinezumab-jjmr,Vyepti,Episodic migraine prevention,Neurology – Pain / Headache,Biologic,CALCA,0.5,100 mg IV (or 300 mg in high-frequency),Every 3 months,Indefinite (migraine is chronic)
-Purple Book,eptinezumab-jjmr,Vyepti,Chronic migraine prevention,Neurology – Pain / Headache,Biologic,CALCA,0.5,100–300 mg IV,Every 3 months,Indefinite
-Purple Book,sotatercept,Winrevair,Pulmonary arterial hypertension (PAH) – WHO Group I,Cardiovascular / Pulmonary,Biologic,INHBA,0.3,0.3 mg/kg SC (titrate up to 0.7 mg/kg),Every 3 weeks,Indefinite (progressive disease)
-Purple Book,sacrosidase,Sucraid,Congenital sucrase-isomaltase deficiency (CSID),Enzyme Deficiency,Biologic,SI,0.1,1–2 mL (8500 IU/mL) per meal (weight-adjusted),With every meal,Lifelong
-Purple Book,pancrelipase,Creon / Zenpep / Pancreaze,Exocrine pancreatic insufficiency (EPI),Enzyme Deficiency,Biologic,PNLIP,1.5,500–2500 lipase IU/kg per meal (individualized),With every meal and snack,Lifelong
-Purple Book,pegunigalsidase alfa,Elfabrio,Fabry disease,Enzyme Deficiency,Biologic,GLA,0.1,1 mg/kg IV,Every 2 weeks,Lifelong
-Purple Book,velmanase alfa-tycv,Lamzede,Alpha-mannosidosis,Enzyme Deficiency,Biologic,MAN2B1,0.05,1 IU/kg IV,Every 2 weeks,Lifelong
-Purple Book,olipudase alfa,Xenpozyme,Acid sphingomyelinase deficiency (ASMD / NPD-A/B),Enzyme Deficiency,Biologic,SMPD1,0.1,3 mg/kg IV,Every 2 weeks,Lifelong
-Purple Book,avalglucosidase alfa-ngpt,Nexviazyme,Late-onset Pompe disease (LOPD),Enzyme Deficiency,Biologic,GAA,0.4,20 mg/kg IV,Every 2 weeks,Lifelong
-Purple Book,cipaglucosidase alfa-atga,Pombiliti,Late-onset Pompe disease (+miglustat),Enzyme Deficiency,Biologic,GAA,0.2,20 mg/kg IV (+ 260 mg oral miglustat 1h prior),Every 2 weeks,Lifelong
-Purple Book,tividenofusp alfa-eknm,Avlayah,MPS II (Hunter syndrome),Enzyme Deficiency,Biologic,IDS,0.05,3 mg/kg IV,Once weekly,Lifelong
-Purple Book,pegzilarginase,Loargys,Arginase 1 deficiency (hyperargininemia),Enzyme Deficiency,Biologic,ARG1,0.05,0.1 mg/kg IV (start); titrate to 0.2 mg/kg,Once weekly,Lifelong
-Purple Book,alpha,Prolastin-C / Glassia,Alpha-1 antitrypsin deficiency (AATD) with emphysema,Enzyme Deficiency,Biologic,SERPINA1,0.4,60 mg/kg IV,Once weekly,Lifelong augmentation
-Purple Book,"immune globulin intravenous, human",Gammagard / Privigen / Gamunex / Flebogamma,Primary immunodeficiency disease (PIDD),Hematology – Immunodeficiency,Biologic,IGHG1 (polyclonal IgG),1.5,400–600 mg/kg IV,Every 3–4 weeks,Lifelong
-Purple Book,"immune globulin intravenous, human",Gammagard / Privigen,Chronic inflammatory demyelinating polyneuropathy (CIDP),Neurology – Neuromuscular,Biologic,IGHG1 (polyclonal IgG),1.5,1–2 g/kg IV (loading); then 0.5–1 g/kg,Every 3–4 weeks,Indefinite (or until CIDP remission)
-Purple Book,"immune globulin intravenous, human",Privigen / Gammagard,Immune thrombocytopenic purpura (ITP) – acute,Hematology – Rare Blood,Biologic,IGHG1 (polyclonal IgG),1.5,0.4–1 g/kg IV,1–3 days (acute); repeat courses PRN,As needed for platelet-stabilization
-Purple Book,"immune globulin subcutaneous (human), 20% liquid",Hizentra / Cuvitru,Primary immunodeficiency disease,Hematology – Immunodeficiency,Biologic,IGHG1 (polyclonal IgG),0.8,~0.2–0.4 g/kg total weekly dose SC (divided),Weekly (or every 2 weeks for facilitated SC),Lifelong
-Purple Book,"immune globulin subcutaneous (human), 20% liquid",Hizentra,CIDP,Neurology – Neuromuscular,Biologic,IGHG1 (polyclonal IgG),0.8,0.2–0.4 g/kg SC weekly,Weekly,Indefinite
-Purple Book,daxibotulinumtoxina,Daxxify,Cervical dystonia,Neurology – Movement Disorder,Biologic,SNAP25,0.15,125–250 IU IM (injected into affected muscles),Every ~24 weeks (longest-acting BoNT-A),Indefinite (repeated every ~6 months)
-Purple Book,letibotulinumtoxina,Letybo,Glabellar (frown) lines,Aesthetic / Neurology,Biologic,SNAP25,0.05,30–40 IU IM (5-point injection),Every 3–4 months,Indefinite (periodic)
-Purple Book,nirsevimab,Beyfortus,RSV prevention in infants and young children,Infectious Disease – Prevention,Biologic,RSV F (viral),1.8,50 mg IM (<5 kg) or 100 mg IM (≥5 kg),Once per RSV season,Annual (each RSV season during high-risk years)
-Purple Book,clesrovimab-cfor,Clesrovimab (approved name TBD),RSV prevention in infants (≤8 months at birth; ≤24 months at high risk),Infectious Disease – Prevention,Biologic,RSV F (viral),0.05,1000 mg IM,Once per RSV season,Annual during high-risk period
-Purple Book,pegloticase,Krystexxa,Refractory chronic gout,Rheumatology / Metabolic,Biologic,UOX,0.3,8 mg IV,Every 2 weeks,Until therapeutic goal (months to years; may stop if serum urate normalizes)
-Purple Book,papzimeos,PAPZIMEOS (Precigen),Recurrent respiratory papillomatosis (HPV-associated),Rare / ENT,Biologic,HPV E6/E7 (viral),0.01,Intralesional injection (per surgical session),Repeated at each surgical debulking (~every 1–6 months),Long-term (until disease control)
+Purple Book,adalimumab,Humira / biosimilars,Rheumatoid arthritis,Autoimmune – Rheumatology,Monoclonal Antibody,TNF,8.99,40 mg SC,Every 2 weeks,Indefinite (lifelong maintenance)
+Purple Book,adalimumab,Humira / biosimilars,Psoriatic arthritis,Autoimmune – Rheumatology,Monoclonal Antibody,TNF,8.99,40 mg SC,Every 2 weeks,Indefinite
+Purple Book,adalimumab,Humira / biosimilars,Ankylosing spondylitis / axSpA,Autoimmune – Rheumatology,Monoclonal Antibody,TNF,8.99,40 mg SC,Every 2 weeks,Indefinite
+Purple Book,adalimumab,Humira / biosimilars,Juvenile idiopathic arthritis,Autoimmune – Rheumatology,Monoclonal Antibody,TNF,8.99,10–20 mg SC (weight-based),Every 2 weeks,Indefinite
+Purple Book,etanercept,Enbrel / biosimilars,Rheumatoid arthritis,Autoimmune – Rheumatology,Fusion Protein,TNF,3.5,50 mg SC,Once weekly,Indefinite
+Purple Book,etanercept,Enbrel / biosimilars,Psoriatic arthritis,Autoimmune – Rheumatology,Fusion Protein,TNF,3.5,50 mg SC,Once weekly,Indefinite
+Purple Book,etanercept,Enbrel / biosimilars,Ankylosing spondylitis,Autoimmune – Rheumatology,Fusion Protein,TNF,3.5,50 mg SC,Once weekly,Indefinite
+Purple Book,etanercept,Enbrel / biosimilars,Juvenile idiopathic arthritis,Autoimmune – Rheumatology,Fusion Protein,TNF,3.5,0.8 mg/kg SC (max 50 mg),Once weekly,Indefinite
+Purple Book,infliximab,Remicade / biosimilars,Rheumatoid arthritis,Autoimmune – Rheumatology,Monoclonal Antibody,TNF,1.5,"3 mg/kg IV (wk 0, 2, 6 induction)",Every 8 weeks (maintenance),Indefinite
+Purple Book,infliximab,Remicade / biosimilars,Ankylosing spondylitis / axSpA,Autoimmune – Rheumatology,Monoclonal Antibody,TNF,1.5,"5 mg/kg IV (wk 0, 2, 6 induction)",Every 6 weeks (maintenance),Indefinite
+Purple Book,infliximab,Remicade / biosimilars,Psoriatic arthritis,Autoimmune – Rheumatology,Monoclonal Antibody,TNF,1.5,"5 mg/kg IV (wk 0, 2, 6 induction)",Every 8 weeks (maintenance),Indefinite
+Purple Book,secukinumab,Cosentyx,Psoriatic arthritis,Autoimmune – Rheumatology,Monoclonal Antibody,IL17A,6.14,"150 mg SC (weekly ×5, then q4w; or 300 mg if prior anti-TNF failure)",Every 4 weeks,Indefinite
+Purple Book,secukinumab,Cosentyx,Ankylosing spondylitis / AS,Autoimmune – Rheumatology,Monoclonal Antibody,IL17A,6.14,"150 mg SC (weekly ×5, then q4w)",Every 4 weeks,Indefinite
+Purple Book,secukinumab,Cosentyx,Non-radiographic axSpA,Autoimmune – Rheumatology,Monoclonal Antibody,IL17A,6.14,"150 mg SC (weekly ×5, then q4w)",Every 4 weeks,Indefinite
+Purple Book,ixekizumab,Taltz,Psoriatic arthritis,Autoimmune – Rheumatology,Monoclonal Antibody,IL17A,2.5,"160 mg SC (wk 0), then 80 mg",Every 4 weeks,Indefinite
+Purple Book,ixekizumab,Taltz,Ankylosing spondylitis,Autoimmune – Rheumatology,Monoclonal Antibody,IL17A,2.5,"160 mg SC (wk 0), then 80 mg",Every 4 weeks,Indefinite
+Purple Book,ixekizumab,Taltz,Non-radiographic axSpA,Autoimmune – Rheumatology,Monoclonal Antibody,IL17A,2.5,80 mg SC,Every 4 weeks,Indefinite
+Purple Book,guselkumab,Tremfya,Psoriatic arthritis,Autoimmune – Rheumatology,Monoclonal Antibody,IL23A,3.67,"100 mg SC (wk 0 & 4, then q8w)",Every 8 weeks,Indefinite
+Purple Book,tocilizumab,Actemra,Rheumatoid arthritis,Autoimmune – Rheumatology,Monoclonal Antibody,IL6R,1.51,4–8 mg/kg IV q4w; or 162 mg SC,Every 1–2 weeks (SC) / every 4 weeks (IV),Indefinite
+Purple Book,tocilizumab,Actemra,Giant cell arteritis,Autoimmune – Rheumatology,Monoclonal Antibody,IL6R,1.51,162 mg SC (+ steroid taper),Every week,Indefinite (disease recurs off therapy)
+Purple Book,tocilizumab,Actemra,Juvenile idiopathic arthritis (SJIA/PJIA),Autoimmune – Rheumatology,Monoclonal Antibody,IL6R,1.51,8–12 mg/kg IV (weight-based),Every 2–4 weeks,Indefinite
+Purple Book,rituximab,Rituxan / biosimilars,Rheumatoid arthritis (anti-TNF inadequate responders),Autoimmune – Rheumatology,Monoclonal Antibody,MS4A1,2.0,1000 mg IV ×2 doses (2 wks apart),Repeat course every 24 weeks (or on relapse),Indefinite maintenance
+Purple Book,rituximab,Rituxan / biosimilars,ANCA-associated vasculitis (GPA / MPA),Autoimmune – Rheumatology,Monoclonal Antibody,MS4A1,2.0,375 mg/m² IV ×4 (induction); then 500 mg IV ×2 (at 6 and 12 mo),Every 6 months (maintenance),≥2 years (long-term remission maintenance)
+Purple Book,rituximab,Rituxan / biosimilars,Pemphigus vulgaris,Autoimmune – Dermatology,Monoclonal Antibody,MS4A1,2.0,1000 mg IV ×2 doses (2 wks apart),"Repeat at 12 mo, 18 mo, then PRN",Indefinite (disease relapse common)
+Purple Book,bimekizumab,Bimzelx,Psoriatic arthritis,Autoimmune – Rheumatology,Monoclonal Antibody,"IL17A, IL17F",0.5,160 mg SC,Every 4 weeks,Indefinite
+Purple Book,bimekizumab,Bimzelx,Ankylosing spondylitis / nr-axSpA,Autoimmune – Rheumatology,Monoclonal Antibody,"IL17A, IL17F",0.5,160 mg SC,Every 4 weeks,Indefinite
+Purple Book,adalimumab,Humira / biosimilars,Plaque psoriasis,Autoimmune – Dermatology,Monoclonal Antibody,TNF,8.99,"80 mg SC (wk 0), then 40 mg (wk 1), then 40 mg",Every 2 weeks,Indefinite
+Purple Book,adalimumab,Humira / biosimilars,Hidradenitis suppurativa,Autoimmune – Dermatology,Monoclonal Antibody,TNF,8.99,"160 mg SC (day 1), 80 mg (day 15), then 40 mg",Weekly,Indefinite
+Purple Book,adalimumab,Humira / biosimilars,Non-infectious uveitis,Autoimmune – Dermatology,Monoclonal Antibody,TNF,8.99,"80 mg SC (wk 0), then 40 mg (wk 1), then 40 mg",Every 2 weeks,Indefinite
+Purple Book,etanercept,Enbrel / biosimilars,Plaque psoriasis,Autoimmune – Dermatology,Fusion Protein,TNF,3.5,"50 mg SC twice weekly ×12 wks (induction), then 50 mg",Once weekly (maintenance),Indefinite
+Purple Book,infliximab,Remicade / biosimilars,Plaque psoriasis,Autoimmune – Dermatology,Monoclonal Antibody,TNF,1.5,"5 mg/kg IV (wk 0, 2, 6 induction)",Every 8 weeks,Indefinite
+Purple Book,secukinumab,Cosentyx,Plaque psoriasis,Autoimmune – Dermatology,Monoclonal Antibody,IL17A,6.14,"300 mg SC weekly ×5 (induction), then 300 mg",Every 4 weeks,Indefinite
+Purple Book,ixekizumab,Taltz,Plaque psoriasis,Autoimmune – Dermatology,Monoclonal Antibody,IL17A,2.5,160 mg SC (wk 0); 80 mg q2w ×5 doses,Every 4 weeks (maintenance),Indefinite
+Purple Book,guselkumab,Tremfya,Plaque psoriasis,Autoimmune – Dermatology,Monoclonal Antibody,IL23A,3.67,100 mg SC (wk 0 & 4),Every 8 weeks,Indefinite
+Purple Book,risankizumab,Skyrizi,Plaque psoriasis,Autoimmune – Dermatology,Monoclonal Antibody,IL23A,11.72,150 mg SC (2 × 75 mg at wk 0 & 4),Every 12 weeks,Indefinite
+Purple Book,risankizumab,Skyrizi,Psoriatic arthritis,Autoimmune – Rheumatology,Monoclonal Antibody,IL23A,11.72,"150 mg SC (wk 0 & 4, then q12w)",Every 12 weeks,Indefinite
+Purple Book,bimekizumab,Bimzelx,Plaque psoriasis,Autoimmune – Dermatology,Monoclonal Antibody,"IL17A, IL17F",0.5,320 mg SC q4w ×16 wks (induction),Every 8 weeks (maintenance),Indefinite
+Purple Book,dupilumab,Dupixent,Atopic dermatitis (adults),Autoimmune – Dermatology,Monoclonal Antibody,IL4R,14.15,"600 mg SC loading (2 × 300 mg), then 300 mg",Every 2 weeks,Indefinite
+Purple Book,dupilumab,Dupixent,Prurigo nodularis,Autoimmune – Dermatology,Monoclonal Antibody,IL4R,14.15,"600 mg SC loading, then 300 mg",Every 2 weeks,Indefinite (recurrent pruritic condition)
+Purple Book,tralokinumab,Adbry,Atopic dermatitis,Autoimmune – Dermatology,Monoclonal Antibody,IL13,0.3,"600 mg SC loading (4 × 150 mg), then 300 mg q2w; may step down to q4w if controlled",Every 2–4 weeks,Indefinite
+Purple Book,lebrikizumab,Ebglyss,Atopic dermatitis,Autoimmune – Dermatology,Monoclonal Antibody,IL13,0.1,"500 mg SC ×2 at wk 0, then 250 mg",Every 2 weeks,Indefinite
+Purple Book,nemolizumab-ilto,Nemluvio,Atopic dermatitis,Autoimmune – Dermatology,Monoclonal Antibody,IL31RA,0.05,30 mg SC,Every 4 weeks,Indefinite
+Purple Book,nemolizumab-ilto,Nemluvio,Prurigo nodularis,Autoimmune – Dermatology,Monoclonal Antibody,IL31RA,0.05,30 mg SC,Every 4 weeks,Indefinite
+Purple Book,spesolimab,Spevigo,Generalized pustular psoriasis – acute flare,Autoimmune – Dermatology,Monoclonal Antibody,IL1RL2,0.2,900 mg IV (single dose per flare),Per flare episode,As needed for acute flares
+Purple Book,spesolimab,Spevigo,Generalized pustular psoriasis – maintenance,Autoimmune – Dermatology,Monoclonal Antibody,IL1RL2,0.2,600 mg SC,Every 12 weeks,Indefinite (chronic prophylaxis)
+Purple Book,adalimumab,Humira / biosimilars,Crohn's disease,Autoimmune – Gastroenterology,Monoclonal Antibody,TNF,8.99,"160 mg SC (wk 0), 80 mg (wk 2), then 40 mg",Every 2 weeks,Indefinite
+Purple Book,adalimumab,Humira / biosimilars,Ulcerative colitis,Autoimmune – Gastroenterology,Monoclonal Antibody,TNF,8.99,"160 mg SC (wk 0), 80 mg (wk 2), then 40 mg",Every 2 weeks,Indefinite
+Purple Book,infliximab,Remicade / biosimilars,Crohn's disease,Autoimmune – Gastroenterology,Monoclonal Antibody,TNF,1.5,"5 mg/kg IV (wk 0, 2, 6 induction)",Every 8 weeks,Indefinite
+Purple Book,infliximab,Remicade / biosimilars,Ulcerative colitis,Autoimmune – Gastroenterology,Monoclonal Antibody,TNF,1.5,"5 mg/kg IV (wk 0, 2, 6 induction)",Every 8 weeks,Indefinite
+Purple Book,ustekinumab,Stelara,Crohn's disease,Autoimmune – Gastroenterology,Monoclonal Antibody,IL12B,4.5,"~260–520 mg IV (single weight-based induction), then 90 mg SC",Every 8 weeks (SC maintenance),Indefinite
+Purple Book,ustekinumab,Stelara,Ulcerative colitis,Autoimmune – Gastroenterology,Monoclonal Antibody,IL12B,4.5,"~260–520 mg IV (single induction), then 90 mg SC",Every 8 weeks,Indefinite
+Purple Book,ustekinumab,Stelara,Plaque psoriasis,Autoimmune – Dermatology,Monoclonal Antibody,IL12B,4.5,45 mg (≤100 kg) or 90 mg SC at wk 0 & 4,Every 12 weeks,Indefinite
+Purple Book,ustekinumab,Stelara,Psoriatic arthritis,Autoimmune – Rheumatology,Monoclonal Antibody,IL12B,4.5,45 mg or 90 mg SC at wk 0 & 4,Every 12 weeks,Indefinite
+Purple Book,vedolizumab,Entyvio,Ulcerative colitis,Autoimmune – Gastroenterology,Monoclonal Antibody,"ITGA4, ITGB7",5.4,"300 mg IV (wk 0, 2, 6 induction)",Every 8 weeks (maintenance),Indefinite
+Purple Book,vedolizumab,Entyvio,Crohn's disease,Autoimmune – Gastroenterology,Monoclonal Antibody,"ITGA4, ITGB7",5.4,"300 mg IV (wk 0, 2, 6 induction)",Every 8 weeks (maintenance),Indefinite
+Purple Book,risankizumab,Skyrizi,Crohn's disease,Autoimmune – Gastroenterology,Monoclonal Antibody,IL23A,11.72,"600 mg IV ×3 (q8w induction), then 360 mg SC",Every 8 weeks,Indefinite
+Purple Book,risankizumab,Skyrizi,Ulcerative colitis,Autoimmune – Gastroenterology,Monoclonal Antibody,IL23A,11.72,"600 mg IV ×3 (q8w induction), then 180 mg SC",Every 8 weeks,Indefinite
+Purple Book,mirikizumab,Omvoh,Ulcerative colitis,Autoimmune – Gastroenterology,Monoclonal Antibody,IL23A,0.3,"300 mg IV ×3 (q4w induction), then 200 mg SC",Every 4 weeks,Indefinite
+Purple Book,dupilumab,Dupixent,Moderate-to-severe asthma,Autoimmune – Pulmonology,Monoclonal Antibody,IL4R,14.15,200 or 300 mg SC (dose by eosinophil/OCS status),Every 2 weeks,Indefinite
+Purple Book,dupilumab,Dupixent,CRSwNP (chronic rhinosinusitis with nasal polyps),Autoimmune – Pulmonology,Monoclonal Antibody,IL4R,14.15,300 mg SC,Every 2 weeks,Indefinite
+Purple Book,dupilumab,Dupixent,Eosinophilic esophagitis (EoE),Autoimmune – Gastroenterology,Monoclonal Antibody,IL4R,14.15,300 mg SC,Once weekly,Indefinite
+Purple Book,dupilumab,Dupixent,COPD with type-2 inflammation (eosinophilic),Autoimmune – Pulmonology,Monoclonal Antibody,IL4R,14.15,300 mg SC,Every 2 weeks,Indefinite
+Purple Book,omalizumab,Xolair,Moderate-to-severe allergic asthma,Autoimmune – Pulmonology,Monoclonal Antibody,IGHE,3.7,75–375 mg SC (IgE- and weight-based),Every 2–4 weeks,Indefinite
+Purple Book,omalizumab,Xolair,Chronic spontaneous urticaria,Autoimmune – Dermatology,Monoclonal Antibody,IGHE,3.7,150 or 300 mg SC,Every 4 weeks,Indefinite (while disease is active)
+Purple Book,omalizumab,Xolair,Nasal polyps / CRSwNP,Autoimmune – Pulmonology,Monoclonal Antibody,IGHE,3.7,75–600 mg SC (IgE/weight-based),Every 2–4 weeks,Indefinite
+Purple Book,omalizumab,Xolair,IgE-mediated food allergy (multi-food),Allergy / Immunology,Monoclonal Antibody,IGHE,3.7,75–600 mg SC (IgE/weight-based),Every 2–4 weeks,Indefinite (ongoing protection)
+Purple Book,mepolizumab,Nucala,Severe eosinophilic asthma,Autoimmune – Pulmonology,Monoclonal Antibody,IL5,2.0,100 mg SC,Every 4 weeks,Indefinite
+Purple Book,mepolizumab,Nucala,EGPA (eosinophilic granulomatosis with polyangiitis),Autoimmune – Rheumatology,Monoclonal Antibody,IL5,2.0,300 mg SC (3 × 100 mg),Every 4 weeks,Indefinite
+Purple Book,mepolizumab,Nucala,Hypereosinophilic syndrome (HES),Hematology – Rare Blood,Monoclonal Antibody,IL5,2.0,300 mg SC (3 × 100 mg),Every 4 weeks,Indefinite
+Purple Book,mepolizumab,Nucala,CRSwNP,Autoimmune – Pulmonology,Monoclonal Antibody,IL5,2.0,100 mg SC,Every 4 weeks,Indefinite
+Purple Book,benralizumab,Fasenra,Severe eosinophilic asthma,Autoimmune – Pulmonology,Monoclonal Antibody,IL5RA,1.3,30 mg SC q4w ×3 doses (induction),Every 8 weeks (maintenance),Indefinite
+Purple Book,tezepelumab,Tezspire,Severe asthma (uncontrolled),Autoimmune – Pulmonology,Monoclonal Antibody,TSLP,0.8,210 mg SC,Every 4 weeks,Indefinite
+Purple Book,depemokimab,Nuraev (Asthma) / Nucala Ultra,Severe eosinophilic asthma / EGPA,Autoimmune – Pulmonology,Monoclonal Antibody,IL5,0.05,100 mg SC,Every 6 months,Indefinite (longest-acting IL-5 inhibitor)
+Purple Book,peanut (arachis hypogaea) allergen powder,Palforzia,Peanut allergy (desensitization),Allergy / Immunology,Allergen / Vaccine,"FCER1A, IL4R",0.2,Gradual oral up-titration to 300 mg/day maintenance,Daily oral dosing,≥3 years (lifelong maintenance while on therapy)
+Purple Book,short ragweed pollen allergen extract,Grastek / Ragwitek,Ragweed allergic rhinitis,Allergy / Immunology,Allergen / Vaccine,"FCER1A, IL4R",0.1,1 tablet (6 Amb a 1-U) sublingual daily,Daily,3–5 years (standard SLIT course)
+Purple Book,ofatumumab,Kesimpta,Relapsing multiple sclerosis,Neurology – Demyelinating,Monoclonal Antibody,MS4A1,1.2,"20 mg SC at wk 0, 1, 2; then 20 mg",Every 4 weeks,Indefinite
+Purple Book,natalizumab-sztn,Tysabri,Relapsing multiple sclerosis,Neurology – Demyelinating,Monoclonal Antibody,ITGA4,1.5,300 mg IV,Every 4 weeks,Indefinite (JC virus monitoring required)
+Purple Book,natalizumab-sztn,Tysabri,Crohn's disease,Autoimmune – Gastroenterology,Monoclonal Antibody,ITGA4,1.5,300 mg IV,Every 4 weeks,Indefinite
+Purple Book,ocrelizumab and hyaluronidase-ocsq,Ocrevus / Ocrevus Zunovo,Relapsing MS,Neurology – Demyelinating,Monoclonal Antibody,MS4A1,6.7,600 mg IV or 920 mg SC,Every 6 months,Indefinite
+Purple Book,ocrelizumab and hyaluronidase-ocsq,Ocrevus / Ocrevus Zunovo,Primary progressive MS (PPMS),Neurology – Demyelinating,Monoclonal Antibody,MS4A1,6.7,600 mg IV or 920 mg SC,Every 6 months,Indefinite
+Purple Book,ublituximab-xiiy,Briumvi,Relapsing multiple sclerosis,Neurology – Demyelinating,Monoclonal Antibody,MS4A1,0.3,150 mg IV then 450 mg IV,Every 6 months,Indefinite
+Purple Book,satralizumab-mwge,Enspryng,NMOSD (AQP4-IgG+),Neurology – Demyelinating,Monoclonal Antibody,IL6R,0.3,"120 mg SC at wk 0, 2, 4; then 120 mg",Every 4 weeks,Indefinite
+Purple Book,inebilizumab-cdon,Uplizna,NMOSD,Neurology – Demyelinating,Monoclonal Antibody,CD19,0.2,300 mg IV ×2 doses (2 wks apart induction),300 mg every 6 months,Indefinite
+Purple Book,efgartigimod alfa-fcab,Vyvgart,Generalized myasthenia gravis (gMG),Neurology – Neuromuscular,Fusion Protein,FCGRT,0.6,10 mg/kg IV weekly ×4 doses per cycle,Repeat cycles every 4–8 weeks based on response,Indefinite cycling
+Purple Book,efgartigimod alfa and hyaluronidase,Vyvgart Hytrulo,Generalized myasthenia gravis,Neurology – Neuromuscular,Fusion Protein,FCGRT,0.6,"1000 mg/11,250 U SC weekly ×4 per cycle",Repeat cycles every 4–8 weeks,Indefinite
+Purple Book,rozanolixizumab,Rystiggo,Generalized myasthenia gravis,Neurology – Neuromuscular,Monoclonal Antibody,FCGRT,0.1,7 mg/kg SC weekly ×6 weeks per cycle,Repeat cycles as needed,Indefinite
+Purple Book,nipocalimab,Imaavy,Generalized myasthenia gravis,Neurology – Neuromuscular,Monoclonal Antibody,FCGRT,0.05,30 mg/kg IV loading; then 15 mg/kg,Every 2 weeks,Indefinite
+Purple Book,anifrolumab,Saphnelo,Systemic lupus erythematosus (SLE),Autoimmune – Rheumatology,Monoclonal Antibody,IFNAR1,0.5,300 mg IV,Every 4 weeks,Indefinite
+Purple Book,axatilimab-csfr,Niktimvo,Chronic graft-versus-host disease (cGVHD),Hematology – Rare Blood,Monoclonal Antibody,CSF1R,0.1,0.3 mg/kg IV,Every 2 weeks,Indefinite (while cGVHD persists)
+Purple Book,sibeprenlimab-szsi,Vrumvit,IgA nephropathy (IgAN),Nephrology,Monoclonal Antibody,TNFSF13,0.05,3 mg/kg SC,Every 4 weeks,Indefinite (progressive disease)
+Purple Book,ropeginterferon alfa-2b-njft,Besremi,Polycythemia vera (PV),Hematology – Myeloproliferative,Enzyme / Protein Replacement,"IFNAR1, IFNAR2",0.2,100–500 mcg SC (titrated),Every 2 weeks,Indefinite
+Purple Book,eculizumab,Soliris,Paroxysmal nocturnal hemoglobinuria (PNH),Hematology – Complement,Monoclonal Antibody,C5,1.5,600 mg IV q7d ×4; 900 mg at wk 5; then 900 mg,Every 14 days,Lifelong
+Purple Book,eculizumab,Soliris,Atypical hemolytic uremic syndrome (aHUS),Hematology – Complement,Monoclonal Antibody,C5,1.5,900 mg IV q7d ×4; 1200 mg at wk 5; then 1200 mg,Every 14 days,Lifelong (or until sustained remission)
+Purple Book,eculizumab,Soliris,Generalized myasthenia gravis (refractory),Neurology – Neuromuscular,Monoclonal Antibody,C5,1.5,900 mg IV q7d ×4; 1200 mg at wk 5; then 1200 mg,Every 14 days,Indefinite
+Purple Book,eculizumab,Soliris,NMOSD (AQP4-IgG+),Neurology – Demyelinating,Monoclonal Antibody,C5,1.5,900 mg IV q7d ×4; 1200 mg at wk 5; then 1200 mg,Every 2 weeks,Indefinite
+Purple Book,ravulizumab,Ultomiris,Paroxysmal nocturnal hemoglobinuria (PNH),Hematology – Complement,Monoclonal Antibody,C5,2.5,2400–3000 mg IV (weight-based loading); then 3000 mg,Every 8 weeks,Lifelong
+Purple Book,ravulizumab,Ultomiris,Atypical HUS (aHUS),Hematology – Complement,Monoclonal Antibody,C5,2.5,2400–3000 mg IV (loading); then 3000 mg,Every 8 weeks,Lifelong
+Purple Book,ravulizumab,Ultomiris,Generalized myasthenia gravis,Neurology – Neuromuscular,Monoclonal Antibody,C5,2.5,2700–3000 mg IV (loading); then 3000 mg,Every 8 weeks,Indefinite
+Purple Book,ravulizumab,Ultomiris,NMOSD,Neurology – Demyelinating,Monoclonal Antibody,C5,2.5,2700–3000 mg IV (loading); then 3000 mg,Every 8 weeks,Indefinite
+Purple Book,crovalimab-akkz,Piasky,Paroxysmal nocturnal hemoglobinuria (PNH),Hematology – Complement,Monoclonal Antibody,C5,0.3,341 mg IV ×1; 170 mg SC ×4 weekly; then 340 mg SC,Every 4 weeks,Lifelong
+Purple Book,sutimlimab-jome,Enjaymo,Cold agglutinin disease (CAD),Hematology – Complement,Monoclonal Antibody,C1S,0.2,6500 mg (<75 kg) or 7500 mg (≥75 kg) IV,Every 2 weeks,Indefinite
+Purple Book,pozelimab-bbfg,Veopoz,CHAPLE disease (CD55 deficiency),Hematology – Complement,Monoclonal Antibody,C5,0.05,30 mg/kg IV loading; then 12 mg/kg SC,Once weekly,Lifelong (ultra-rare)
+Purple Book,emicizumab,Hemlibra,Hemophilia A with inhibitors (prophylaxis),Hematology – Hemophilia,Monoclonal Antibody,"F9, F10",4.9,3 mg/kg SC q1w ×4 (loading); then 1.5 mg/kg q1w,Weekly (or 3 mg/kg q2w or 6 mg/kg q4w),Lifelong
+Purple Book,emicizumab,Hemlibra,Hemophilia A without inhibitors (prophylaxis),Hematology – Hemophilia,Monoclonal Antibody,"F9, F10",4.9,Same loading/maintenance dosing as above,Weekly / biweekly / monthly options,Lifelong
+Purple Book,concizumab,Alhemo,Hemophilia A or B with inhibitors,Hematology – Hemophilia,Monoclonal Antibody,TFPI,0.05,0.2 mg/kg SC daily,Once daily,Lifelong
+Purple Book,marstacimab,Marstacimab (trade name pending),Hemophilia A / B (with or without inhibitors),Hematology – Hemophilia,Monoclonal Antibody,TFPI,0.05,~300 mg SC loading; then 150–300 mg,Weekly,Lifelong
+Purple Book,"antihemophilic factor (recombinant), rAHF",Advate / Kogenate / Kovaltry,Hemophilia A (prophylaxis),Hematology – Hemophilia,Enzyme / Protein Replacement,F8,0.8,20–40 IU/kg IV,Every 2–3 days,Lifelong
+Purple Book,"antihemophilic factor (recombinant), fc",Eloctate / Elocta,"Hemophilia A (prophylaxis, extended half-life)",Hematology – Hemophilia,Fusion Protein,F8,0.6,25–65 IU/kg IV,Every 3–5 days,Lifelong
+Purple Book,"antihemophilic factor (recombinant), pegylated-aucl",Adynovate / Jivi,Hemophilia A (prophylaxis),Hematology – Hemophilia,Enzyme / Protein Replacement,F8,0.5,40–60 IU/kg IV,Twice weekly,Lifelong
+Purple Book,"coagulation factor ix (recombinant), glycopegylated",Rebinyn / Refixia,Hemophilia B (prophylaxis),Hematology – Hemophilia,Enzyme / Protein Replacement,F9,0.4,40 IU/kg IV,Once weekly,Lifelong
+Purple Book,coagulation factor viia (recombinant),Sevenfact / NovoSeven,Hemophilia A/B with inhibitors (prophylaxis),Hematology – Hemophilia,Enzyme / Protein Replacement,F7,0.4,90 mcg/kg IV q2h until hemostasis (acute); prophylaxis varies,Per bleed (on-demand); prophylaxis daily/twice weekly,Lifelong (on-demand or prophylaxis)
+Purple Book,coagulation factor viia (recombinant)-jncw,Alhemo / Pfizer rFVIIa,Hemophilia A/B with inhibitors,Hematology – Hemophilia,Enzyme / Protein Replacement,F7,0.1,Varies by indication,Daily to weekly SC (prophylaxis),Lifelong
+Purple Book,lanadelumab,Takhzyro,Hereditary angioedema (HAE) – attack prevention,Rare / Orphan – Immunology,Monoclonal Antibody,KLKB1,0.7,300 mg SC,Every 2 weeks (may extend to q4w after 6 months),Indefinite
+Purple Book,garadacimab,Garadacimab (trade name TBD),Hereditary angioedema (HAE) prevention,Rare / Orphan – Immunology,Monoclonal Antibody,F12,0.05,200 mg SC,Once monthly,Indefinite
+Purple Book,ranibizumab,Lucentis,Neovascular (wet) AMD,Ophthalmology,Monoclonal Antibody,VEGFA,0.3,0.5 mg intravitreal injection,Monthly (treat-and-extend after stabilization),Indefinite
+Purple Book,ranibizumab,Lucentis,Diabetic macular edema (DME),Ophthalmology,Monoclonal Antibody,VEGFA,0.3,0.3 mg intravitreal injection,Monthly (or PRN),Indefinite (while active)
+Purple Book,ranibizumab,Lucentis,Retinal vein occlusion (BRVO / CRVO),Ophthalmology,Monoclonal Antibody,VEGFA,0.3,0.5 mg intravitreal injection,"Monthly ×6, then PRN",Indefinite (chronic/recurrent)
+Purple Book,ranibizumab,Lucentis,Diabetic retinopathy,Ophthalmology,Monoclonal Antibody,VEGFA,0.3,0.3 mg intravitreal injection,Monthly,Indefinite
+Purple Book,brolucizumab-dbll,Beovu,Neovascular (wet) AMD,Ophthalmology,Monoclonal Antibody,VEGFA,0.6,6 mg intravitreal injection (monthly ×3 loading),Every 8–12 weeks (T&E),Indefinite
+Purple Book,brolucizumab-dbll,Beovu,Diabetic macular edema (DME),Ophthalmology,Monoclonal Antibody,VEGFA,0.6,6 mg intravitreal injection (monthly ×6 loading),Every 8–12 weeks (T&E),Indefinite
+Purple Book,aflibercept,Eylea / Eylea HD,Neovascular (wet) AMD,Ophthalmology,Fusion Protein,"VEGFA, PGF",9.3,2 mg intravitreal (monthly ×3); or 8 mg monthly ×4 (HD),Every 8 weeks (standard) / up to every 16 weeks (HD T&E),Indefinite
+Purple Book,aflibercept,Eylea / Eylea HD,Diabetic macular edema (DME),Ophthalmology,Fusion Protein,"VEGFA, PGF",9.3,"2 mg intravitreal monthly ×5, then q8w",Every 8 weeks,Indefinite
+Purple Book,aflibercept,Eylea / Eylea HD,Macular edema from retinal vein occlusion (RVO),Ophthalmology,Fusion Protein,"VEGFA, PGF",9.3,"2 mg intravitreal monthly ×6, then PRN",Monthly / PRN,Indefinite
+Purple Book,aflibercept,Eylea,Diabetic retinopathy (all DR),Ophthalmology,Fusion Protein,"VEGFA, PGF",9.3,2 mg intravitreal monthly ×5,Every 8 weeks,Indefinite
+Purple Book,faricimab,Vabysmo,Neovascular (wet) AMD,Ophthalmology,Monoclonal Antibody,"VEGFA, ANGPT2",4.4,6 mg intravitreal monthly ×4 (loading),Up to every 16 weeks (treat-and-extend),Indefinite
+Purple Book,faricimab,Vabysmo,Diabetic macular edema (DME),Ophthalmology,Monoclonal Antibody,"VEGFA, ANGPT2",4.4,6 mg intravitreal monthly ×4 (loading),Up to every 16 weeks (T&E),Indefinite
+Purple Book,insulin lispro,Humalog / Admelog / Lyumjev,Type 1 diabetes mellitus,Endocrinology – Diabetes,Peptide / Hormone,INSR,2.0,0.5–1 IU/kg/day total; mealtime dose ~0.1–0.2 IU/kg,Multiple daily injections (or continuous pump),Lifelong
+Purple Book,insulin lispro,Humalog / Admelog,Type 2 diabetes mellitus,Endocrinology – Diabetes,Peptide / Hormone,INSR,2.0,"4–10 IU per meal (initial), titrate","With meals, as prescribed",Lifelong (or while required)
+Purple Book,insulin glargine,Lantus / Toujeo / Basaglar,Type 1 diabetes mellitus,Endocrinology – Diabetes,Peptide / Hormone,INSR,2.5,0.2–0.4 IU/kg SC once daily,"Once daily (any time, consistent)",Lifelong
+Purple Book,insulin glargine,Lantus / Toujeo,Type 2 diabetes mellitus,Endocrinology – Diabetes,Peptide / Hormone,INSR,2.5,0.2 IU/kg once daily (starting); titrate to FBG target,Once daily,Lifelong
+Purple Book,insulin aspart,NovoLog / NovoRapid / Fiasp,Type 1 diabetes mellitus,Endocrinology – Diabetes,Peptide / Hormone,INSR,2.0,~5–10 IU per meal or per 15 g carbohydrate (individualized),Before each meal,Lifelong
+Purple Book,insulin aspart,NovoLog / Fiasp,Type 2 diabetes mellitus,Endocrinology – Diabetes,Peptide / Hormone,INSR,2.0,"4–10 IU per meal (starting), titrate",With meals,Lifelong (or while required)
+Purple Book,insulin icodec,Awiqli,Type 2 diabetes mellitus,Endocrinology – Diabetes,Peptide / Hormone,INSR,0.1,~70% of total daily insulin dose equivalent SC,Once weekly,Lifelong
+Purple Book,dulaglutide,Trulicity,Type 2 diabetes mellitus,Endocrinology – Diabetes,Fusion Protein,GLP1R,4.8,0.75 mg SC (starting); up to 4.5 mg weekly,Once weekly,Indefinite
+Purple Book,dulaglutide,Trulicity,Cardiovascular risk reduction (T2DM with CVD),Endocrinology – Diabetes,Fusion Protein,GLP1R,4.8,0.75–1.5 mg SC weekly,Once weekly,Indefinite
+Purple Book,somapacitan,Sogroya,Adult growth hormone deficiency (AGHD),Endocrinology – Growth,Peptide / Hormone,GHR,0.1,"1.5–8 mg SC (individualized, titrate)",Once weekly,Indefinite (adult GHD)
+Purple Book,somapacitan,Sogroya,Pediatric growth hormone deficiency,Endocrinology – Growth,Peptide / Hormone,GHR,0.1,0.16 mg/kg SC weekly (titrate),Once weekly,Until adequate adult height
+Purple Book,lonapegsomatropin,Skytrofa,Pediatric growth hormone deficiency,Endocrinology – Growth,Peptide / Hormone,GHR,0.1,0.24 mg/kg SC,Once weekly,Until adequate adult height (years)
+Purple Book,somatrogon,Ngenla,Pediatric growth hormone deficiency,Endocrinology – Growth,Peptide / Hormone,GHR,0.1,0.66 mg/kg SC,Once weekly,Until adequate adult height (years)
+Purple Book,tesamorelin,Egrifta WR,HIV-associated lipodystrophy (abdominal fat excess),Endocrinology – Metabolic,Peptide / Hormone,GHRHR,0.1,2 mg SC,Once daily,Indefinite (fat accumulates on discontinuation)
+Purple Book,evinacumab,Evkeeza,Homozygous familial hypercholesterolemia (HoFH),Endocrinology – Lipid,Monoclonal Antibody,ANGPTL3,0.1,15 mg/kg IV,Every 4 weeks,Indefinite
+Purple Book,lerodalcibep-liga,Lerodalcibep (Lepodisiran/approved name),LDL-C reduction (HeFH / ASCVD),Endocrinology – Lipid,Fusion Protein,PCSK9,0.05,300 mg SC,Once monthly,Indefinite
+Purple Book,denosumab,Prolia,Postmenopausal osteoporosis,Bone / Metabolic,Monoclonal Antibody,TNFSF11,4.0,60 mg SC,Every 6 months,Indefinite (rebound fracture risk if stopped without follow-on therapy)
+Purple Book,denosumab,Prolia,Glucocorticoid-induced osteoporosis,Bone / Metabolic,Monoclonal Antibody,TNFSF11,4.0,60 mg SC,Every 6 months,Indefinite while on glucocorticoids
+Purple Book,denosumab,Prolia,Osteoporosis in men at high fracture risk,Bone / Metabolic,Monoclonal Antibody,TNFSF11,4.0,60 mg SC,Every 6 months,Indefinite
+Purple Book,epoetin alfa,Epogen / Procrit,Anemia of chronic kidney disease (dialysis),Hematology – Anemia,Enzyme / Protein Replacement,EPOR,1.0,50–300 IU/kg IV/SC,3 times per week,Indefinite (until transplant or change in therapy)
+Purple Book,epoetin alfa,Epogen / Procrit,Anemia of CKD (non-dialysis),Hematology – Anemia,Enzyme / Protein Replacement,EPOR,1.0,50–200 IU/kg SC,3 times per week,Indefinite
+Purple Book,filgrastim,Neupogen / Granix,Severe chronic neutropenia (SCN),Hematology – Rare Blood,Enzyme / Protein Replacement,CSF3R,0.5,6–12 mcg/kg SC daily,Daily,Lifelong (congenital neutropenia)
+Purple Book,lecanemab,Leqembi,Early Alzheimer's disease (mild cognitive impairment / mild AD),Neurology – Neurodegeneration,Monoclonal Antibody,APP,0.4,10 mg/kg IV,Every 2 weeks,Indefinite (ongoing amyloid clearance and monitoring)
+Purple Book,aducanumab,Aduhelm,Early Alzheimer's disease,Neurology – Neurodegeneration,Monoclonal Antibody,APP,0.02,1–10 mg/kg IV (titrating protocol over ~6 months),Every 4 weeks,Indefinite
+Purple Book,donanemab-azbt,Kisunla,Early symptomatic Alzheimer's disease,Neurology – Neurodegeneration,Monoclonal Antibody,APP,0.2,700 mg IV q4w ×3 doses; then 1400 mg IV,Every 4 weeks,Until amyloid plaque clearance (~12–18 months); may discontinue after clearance
+Purple Book,eptinezumab-jjmr,Vyepti,Episodic migraine prevention,Neurology – Pain / Headache,Monoclonal Antibody,CALCA,0.5,100 mg IV (or 300 mg in high-frequency),Every 3 months,Indefinite (migraine is chronic)
+Purple Book,eptinezumab-jjmr,Vyepti,Chronic migraine prevention,Neurology – Pain / Headache,Monoclonal Antibody,CALCA,0.5,100–300 mg IV,Every 3 months,Indefinite
+Purple Book,sotatercept,Winrevair,Pulmonary arterial hypertension (PAH) – WHO Group I,Cardiovascular / Pulmonary,Fusion Protein,INHBA,0.3,0.3 mg/kg SC (titrate up to 0.7 mg/kg),Every 3 weeks,Indefinite (progressive disease)
+Purple Book,sacrosidase,Sucraid,Congenital sucrase-isomaltase deficiency (CSID),Enzyme Deficiency,Enzyme / Protein Replacement,SI,0.1,1–2 mL (8500 IU/mL) per meal (weight-adjusted),With every meal,Lifelong
+Purple Book,pancrelipase,Creon / Zenpep / Pancreaze,Exocrine pancreatic insufficiency (EPI),Enzyme Deficiency,Enzyme / Protein Replacement,PNLIP,1.5,500–2500 lipase IU/kg per meal (individualized),With every meal and snack,Lifelong
+Purple Book,pegunigalsidase alfa,Elfabrio,Fabry disease,Enzyme Deficiency,Enzyme / Protein Replacement,GLA,0.1,1 mg/kg IV,Every 2 weeks,Lifelong
+Purple Book,velmanase alfa-tycv,Lamzede,Alpha-mannosidosis,Enzyme Deficiency,Enzyme / Protein Replacement,MAN2B1,0.05,1 IU/kg IV,Every 2 weeks,Lifelong
+Purple Book,olipudase alfa,Xenpozyme,Acid sphingomyelinase deficiency (ASMD / NPD-A/B),Enzyme Deficiency,Enzyme / Protein Replacement,SMPD1,0.1,3 mg/kg IV,Every 2 weeks,Lifelong
+Purple Book,avalglucosidase alfa-ngpt,Nexviazyme,Late-onset Pompe disease (LOPD),Enzyme Deficiency,Enzyme / Protein Replacement,GAA,0.4,20 mg/kg IV,Every 2 weeks,Lifelong
+Purple Book,cipaglucosidase alfa-atga,Pombiliti,Late-onset Pompe disease (+miglustat),Enzyme Deficiency,Enzyme / Protein Replacement,GAA,0.2,20 mg/kg IV (+ 260 mg oral miglustat 1h prior),Every 2 weeks,Lifelong
+Purple Book,tividenofusp alfa-eknm,Avlayah,MPS II (Hunter syndrome),Enzyme Deficiency,Enzyme / Protein Replacement,IDS,0.05,3 mg/kg IV,Once weekly,Lifelong
+Purple Book,pegzilarginase,Loargys,Arginase 1 deficiency (hyperargininemia),Enzyme Deficiency,Enzyme / Protein Replacement,ARG1,0.05,0.1 mg/kg IV (start); titrate to 0.2 mg/kg,Once weekly,Lifelong
+Purple Book,alpha,Prolastin-C / Glassia,Alpha-1 antitrypsin deficiency (AATD) with emphysema,Enzyme Deficiency,Enzyme / Protein Replacement,SERPINA1,0.4,60 mg/kg IV,Once weekly,Lifelong augmentation
+Purple Book,"immune globulin intravenous, human",Gammagard / Privigen / Gamunex / Flebogamma,Primary immunodeficiency disease (PIDD),Hematology – Immunodeficiency,Polyclonal Immunoglobulin,IGHG1 (polyclonal IgG),1.5,400–600 mg/kg IV,Every 3–4 weeks,Lifelong
+Purple Book,"immune globulin intravenous, human",Gammagard / Privigen,Chronic inflammatory demyelinating polyneuropathy (CIDP),Neurology – Neuromuscular,Polyclonal Immunoglobulin,IGHG1 (polyclonal IgG),1.5,1–2 g/kg IV (loading); then 0.5–1 g/kg,Every 3–4 weeks,Indefinite (or until CIDP remission)
+Purple Book,"immune globulin intravenous, human",Privigen / Gammagard,Immune thrombocytopenic purpura (ITP) – acute,Hematology – Rare Blood,Polyclonal Immunoglobulin,IGHG1 (polyclonal IgG),1.5,0.4–1 g/kg IV,1–3 days (acute); repeat courses PRN,As needed for platelet-stabilization
+Purple Book,"immune globulin subcutaneous (human), 20% liquid",Hizentra / Cuvitru,Primary immunodeficiency disease,Hematology – Immunodeficiency,Polyclonal Immunoglobulin,IGHG1 (polyclonal IgG),0.8,~0.2–0.4 g/kg total weekly dose SC (divided),Weekly (or every 2 weeks for facilitated SC),Lifelong
+Purple Book,"immune globulin subcutaneous (human), 20% liquid",Hizentra,CIDP,Neurology – Neuromuscular,Polyclonal Immunoglobulin,IGHG1 (polyclonal IgG),0.8,0.2–0.4 g/kg SC weekly,Weekly,Indefinite
+Purple Book,daxibotulinumtoxina,Daxxify,Cervical dystonia,Neurology – Movement Disorder,Peptide / Hormone,SNAP25,0.15,125–250 IU IM (injected into affected muscles),Every ~24 weeks (longest-acting BoNT-A),Indefinite (repeated every ~6 months)
+Purple Book,letibotulinumtoxina,Letybo,Glabellar (frown) lines,Aesthetic / Neurology,Peptide / Hormone,SNAP25,0.05,30–40 IU IM (5-point injection),Every 3–4 months,Indefinite (periodic)
+Purple Book,nirsevimab,Beyfortus,RSV prevention in infants and young children,Infectious Disease – Prevention,Monoclonal Antibody,RSV F (viral),1.8,50 mg IM (<5 kg) or 100 mg IM (≥5 kg),Once per RSV season,Annual (each RSV season during high-risk years)
+Purple Book,clesrovimab-cfor,Clesrovimab (approved name TBD),RSV prevention in infants (≤8 months at birth; ≤24 months at high risk),Infectious Disease – Prevention,Monoclonal Antibody,RSV F (viral),0.05,1000 mg IM,Once per RSV season,Annual during high-risk period
+Purple Book,pegloticase,Krystexxa,Refractory chronic gout,Rheumatology / Metabolic,Enzyme / Protein Replacement,UOX,0.3,8 mg IV,Every 2 weeks,Until therapeutic goal (months to years; may stop if serum urate normalizes)
+Purple Book,papzimeos,PAPZIMEOS (Precigen),Recurrent respiratory papillomatosis (HPV-associated),Rare / ENT,Allergen / Vaccine,HPV E6/E7 (viral),0.01,Intralesional injection (per surgical session),Repeated at each surgical debulking (~every 1–6 months),Long-term (until disease control)
 Orange Book,Abacavir Sulfate; Dolutegravir Sodium; Lamivudine,TRIUMEQ,HIV infection,Infectious – HIV,chemical,"pol, P",0.71,600MG BASE; 50MG BASE … oral,Once or twice daily,Indefinite (lifelong maintenance)
 Orange Book,Abacavir Sulfate; Lamivudine,ABACAVIR SULFATE AND LAMIVUDINE,HIV infection,Infectious – HIV,chemical,"pol, P",,600MG BASE; 300MG oral,Once or twice daily,Indefinite (lifelong maintenance)
 Orange Book,Abaloparatide,TYMLOS,Osteoporosis,Bone / Metabolic,protein,PTH1R,0.02,3.12MG/1.56ML (2MG/mL) SC,Weekly or monthly,Indefinite (lifelong maintenance)

@@ -40,7 +40,7 @@ COLS = ["Source", "Drug", "Brand", "Disease / Indication", "Disease Category",
 merged = []
 
 # Purple Book — already one row per drug-disease pair
-with open(PB_CSV, encoding="utf-8") as f:
+with open(PB_CSV, encoding="utf-8-sig") as f:
     for r in csv.DictReader(f):
         merged.append({
             "Source": "Purple Book",
@@ -48,7 +48,7 @@ with open(PB_CSV, encoding="utf-8") as f:
             "Brand": r["Brand Name(s)"].strip(),
             "Disease / Indication": r["Disease / Indication"].strip(),
             "Disease Category": r["Disease Category"].strip(),
-            "Modality": "Biologic",
+            "Modality": (r.get("Drug Modality") or "Biologic").strip(),
             "Drug Target (Gene)": norm_target(r["Drug Target (Gene)"]),
             "Annual Revenue 2024 (USD B)": r["Annual Revenue 2024 (USD B)"].strip(),
             "Dose": r["Dose"].strip(),
@@ -60,7 +60,7 @@ with open(PB_CSV, encoding="utf-8") as f:
 with open(OB_CSV, encoding="utf-8") as f:
     for r in csv.DictReader(f):
         drug = r["Drug"].strip()
-        modality = substance.get(drug.upper(), "chemical")
+        modality = (r.get("Drug Modality") or substance.get(drug.upper(), "chemical")).strip()
         diseases = [d.strip() for d in r["Disease / Indication"].split(";") if d.strip()]
         if not diseases:
             diseases = [""]
@@ -79,15 +79,24 @@ with open(OB_CSV, encoding="utf-8") as f:
                 "Duration of Use": r["Duration"].strip(),
             })
 
-with open(MERGED, "w", newline="", encoding="utf-8") as f:
-    w = csv.DictWriter(f, fieldnames=COLS)
-    w.writeheader()
-    w.writerows(merged)
+def _write_csv(path):
+    with open(path, "w", newline="", encoding="utf-8") as f:
+        w = csv.DictWriter(f, fieldnames=COLS)
+        w.writeheader()
+        w.writerows(merged)
+
+try:
+    _write_csv(MERGED)
+    print(f"Merged CSV -> {MERGED}")
+except PermissionError:
+    alt = MERGED.replace(".csv", ".NEW.csv")
+    _write_csv(alt)
+    print(f"!! {MERGED} is locked (open in Excel?). Wrote {alt} instead — "
+          f"close the file and run: mv {alt} {MERGED}")
 
 n_pb = sum(1 for m in merged if m["Source"] == "Purple Book")
 n_ob = sum(1 for m in merged if m["Source"] == "Orange Book")
 print(f"Merged rows: {len(merged)}  (Purple Book {n_pb}, Orange Book {n_ob})")
-print(f"Merged CSV -> {MERGED}")
 
 # ══════════════════════════════════════════════════════════════════════════
 # Build dashboard from merged data
@@ -97,10 +106,15 @@ df["rev"] = pd.to_numeric(df["Annual Revenue 2024 (USD B)"], errors="coerce").fi
 
 SRC_COLORS = {"Purple Book": "#7C3AED", "Orange Book": "#D97706"}
 MOD_COLORS = {
-    "Biologic": "#7C3AED", "chemical": "#2563EB", "protein": "#9333EA",
-    "nucleicAcid": "#0891B2", "polymer": "#D97706", "mixture": "#059669",
-    "structurallyDiverse": "#DC2626", "concept": "#9CA3AF",
-    "specifiedSubstanceG1": "#F97316", "unknown": "#6B7280",
+    # Purple Book biologic formats
+    "Monoclonal Antibody": "#7C3AED", "Fusion Protein": "#A855F7",
+    "Enzyme / Protein Replacement": "#C084FC", "Peptide / Hormone": "#6D28D9",
+    "Polyclonal Immunoglobulin": "#9333EA", "Allergen / Vaccine": "#D8B4FE",
+    "Biologic": "#7C3AED",
+    # Orange Book GSRS substance classes
+    "chemical": "#2563EB", "protein": "#0EA5E9", "nucleicAcid": "#0891B2",
+    "polymer": "#D97706", "mixture": "#059669", "structurallyDiverse": "#DC2626",
+    "concept": "#9CA3AF", "specifiedSubstanceG1": "#F97316", "unknown": "#6B7280",
 }
 
 # Distinct category palette (granular PB scheme)
@@ -132,9 +146,14 @@ def build_sankey():
     dcat = df.drop_duplicates(subset=["Drug", "Disease Category"])
 
     sources = ["Purple Book", "Orange Book"]
-    mods = [m for m in ["Biologic", "chemical", "protein", "nucleicAcid",
-                        "polymer", "mixture", "structurallyDiverse", "concept",
-                        "specifiedSubstanceG1", "unknown"] if (du.Modality == m).any()]
+    # PB biologic subtypes first, then OB GSRS classes — dynamic on what's present
+    _mod_order = ["Monoclonal Antibody", "Fusion Protein", "Enzyme / Protein Replacement",
+                  "Peptide / Hormone", "Polyclonal Immunoglobulin", "Allergen / Vaccine",
+                  "Biologic", "chemical", "protein", "nucleicAcid", "polymer", "mixture",
+                  "structurallyDiverse", "concept", "specifiedSubstanceG1", "unknown"]
+    present = set(du["Modality"])
+    mods = [m for m in _mod_order if m in present]
+    mods += [m for m in sorted(present) if m not in mods]   # any extras
     cat_counts = dcat["Disease Category"].value_counts()
     top_cats = cat_counts.head(14).index.tolist()
 
@@ -191,20 +210,30 @@ def build_source_donut():
                       margin=dict(l=10, r=10, t=50, b=30), height=380, paper_bgcolor="#F8FAFC")
     return fig
 
-def build_modality_donut():
-    du = df.drop_duplicates(subset=["Drug"])
+def build_modality_pie(source):
+    """Separate modality pie for one book (Purple = biologic formats,
+    Orange = GSRS substance classes)."""
+    du = df[df.Source == source].drop_duplicates(subset=["Drug"])
     mc = du["Modality"].value_counts()
+    n = int(mc.sum())
+    sub = ("biologic formats" if source == "Purple Book"
+           else "FDA GSRS substance class")
+    pull_set = ({"Fusion Protein", "Enzyme / Protein Replacement",
+                 "Peptide / Hormone", "Polyclonal Immunoglobulin", "Allergen / Vaccine"}
+                if source == "Purple Book" else {"protein", "nucleicAcid"})
     fig = go.Figure(go.Pie(
-        labels=mc.index.tolist(), values=mc.values.tolist(), hole=0.55,
-        marker=dict(colors=[MOD_COLORS.get(m, "#9CA3AF") for m in mc.index], line=dict(color="white", width=2)),
-        textinfo="label+percent", textfont=dict(size=10),
-        pull=[0.05 if m in ("protein", "nucleicAcid", "Biologic") else 0 for m in mc.index]))
-    fig.add_annotation(text=f"<b>{n_drugs}</b><br>drugs", x=0.5, y=0.5, showarrow=False,
+        labels=mc.index.tolist(), values=mc.values.tolist(), hole=0.5,
+        marker=dict(colors=[MOD_COLORS.get(m, "#9CA3AF") for m in mc.index],
+                    line=dict(color="white", width=2)),
+        textinfo="label+percent", textfont=dict(size=10), sort=True,
+        pull=[0.06 if m in pull_set else 0 for m in mc.index],
+        hovertemplate="<b>%{label}</b><br>%{value} drugs (%{percent})<extra></extra>"))
+    fig.add_annotation(text=f"<b>{n}</b><br>drugs", x=0.5, y=0.5, showarrow=False,
                        font=dict(size=12, color="#1E3A5F"))
-    fig.update_layout(title=dict(text="<b>Drug Modality Distribution</b><br>"
-                                 "<sup>Biologic (Purple) vs GSRS class (Orange)</sup>", font=dict(size=14)),
-                      showlegend=True, legend=dict(font=dict(size=9), x=1.02, xanchor="left"),
-                      margin=dict(l=10, r=120, t=55, b=10), height=380, paper_bgcolor="#F8FAFC")
+    fig.update_layout(
+        title=dict(text=f"<b>{source} — Drug Modality</b><br><sup>{sub}</sup>", font=dict(size=13)),
+        showlegend=True, legend=dict(font=dict(size=9), orientation="h", y=-0.08, x=0.5, xanchor="center"),
+        margin=dict(l=10, r=10, t=55, b=40), height=420, paper_bgcolor="#F8FAFC")
     return fig
 
 
@@ -361,7 +390,8 @@ def to_div(fig, div_id):
 print("Building figures …")
 f_sankey = build_sankey()
 f_srcd   = build_source_donut()
-f_modd   = build_modality_donut()
+f_modpb  = build_modality_pie("Purple Book")
+f_modob  = build_modality_pie("Orange Book")
 f_catbar = build_category_bar()
 f_tgt_pb = build_target_bar("Purple Book")
 f_tgt_ob = build_target_bar("Orange Book")
@@ -580,8 +610,11 @@ footer{{text-align:center;font-size:clamp(0.65rem,1.8vw,0.75rem);color:var(--sub
 <div class="sec s1">Step 1 — Combined Pipeline: Source → Modality → Disease</div>
 <div class="g1"><div class="card">{to_div(f_sankey,"sankey")}</div></div>
 
-<div class="sec s2">Step 2 — Source &amp; Modality Composition</div>
-<div class="g2"><div class="card">{to_div(f_srcd,"srcd")}</div><div class="card">{to_div(f_modd,"modd")}</div></div>
+<div class="sec s2">Step 2 — Source Composition</div>
+<div class="g1"><div class="card">{to_div(f_srcd,"srcd")}</div></div>
+
+<div class="sec s2">Step 2b — Drug Modality by Source (Purple Book vs Orange Book)</div>
+<div class="g2"><div class="card">{to_div(f_modpb,"modpb")}</div><div class="card">{to_div(f_modob,"modob")}</div></div>
 
 <div class="sec s3">Step 3 — Disease Categories</div>
 <div class="g1"><div class="card">{to_div(f_catbar,"catbar")}</div></div>
@@ -607,7 +640,7 @@ footer{{text-align:center;font-size:clamp(0.65rem,1.8vw,0.75rem);color:var(--sub
   Merged file: fda_all_drugs_chronic_indications.csv &nbsp;|&nbsp; {n_drugs} drugs · {n_pairs} drug–indication pairs
 </footer>
 <script>
-const IDS=['sankey','srcd','modd','catbar','tgtpb','tgtob','sun','heat','scat','rev','cov'];
+const IDS=['sankey','srcd','modpb','modob','catbar','tgtpb','tgtob','sun','heat','scat','rev','cov'];
 function bp(){{const w=window.innerWidth;return w<480?0:w<900?1:2;}}
 function resizeAll(){{IDS.forEach(id=>{{const el=document.getElementById(id);if(!el||!el.data)return;
   const w=el.parentElement?el.parentElement.clientWidth-16:undefined;
