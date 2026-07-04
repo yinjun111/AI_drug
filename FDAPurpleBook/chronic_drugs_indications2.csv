@@ -1,0 +1,176 @@
+Drug (Proper Name),Brand Name(s),Disease / Indication,Disease Category,Drug Target (Gene),Annual Revenue 2024 (USD B),Dose,Frequency,Duration of Use
+adalimumab,Humira / biosimilars,Rheumatoid arthritis,Autoimmune – Rheumatology,TNF,8.99,40 mg SC,Every 2 weeks,Indefinite (lifelong maintenance)
+adalimumab,Humira / biosimilars,Psoriatic arthritis,Autoimmune – Rheumatology,TNF,8.99,40 mg SC,Every 2 weeks,Indefinite
+adalimumab,Humira / biosimilars,Ankylosing spondylitis / axSpA,Autoimmune – Rheumatology,TNF,8.99,40 mg SC,Every 2 weeks,Indefinite
+adalimumab,Humira / biosimilars,Juvenile idiopathic arthritis,Autoimmune – Rheumatology,TNF,8.99,10–20 mg SC (weight-based),Every 2 weeks,Indefinite
+etanercept,Enbrel / biosimilars,Rheumatoid arthritis,Autoimmune – Rheumatology,TNF,3.5,50 mg SC,Once weekly,Indefinite
+etanercept,Enbrel / biosimilars,Psoriatic arthritis,Autoimmune – Rheumatology,TNF,3.5,50 mg SC,Once weekly,Indefinite
+etanercept,Enbrel / biosimilars,Ankylosing spondylitis,Autoimmune – Rheumatology,TNF,3.5,50 mg SC,Once weekly,Indefinite
+etanercept,Enbrel / biosimilars,Juvenile idiopathic arthritis,Autoimmune – Rheumatology,TNF,3.5,0.8 mg/kg SC (max 50 mg),Once weekly,Indefinite
+infliximab,Remicade / biosimilars,Rheumatoid arthritis,Autoimmune – Rheumatology,TNF,1.5,"3 mg/kg IV (wk 0, 2, 6 induction)",Every 8 weeks (maintenance),Indefinite
+infliximab,Remicade / biosimilars,Ankylosing spondylitis / axSpA,Autoimmune – Rheumatology,TNF,1.5,"5 mg/kg IV (wk 0, 2, 6 induction)",Every 6 weeks (maintenance),Indefinite
+infliximab,Remicade / biosimilars,Psoriatic arthritis,Autoimmune – Rheumatology,TNF,1.5,"5 mg/kg IV (wk 0, 2, 6 induction)",Every 8 weeks (maintenance),Indefinite
+secukinumab,Cosentyx,Psoriatic arthritis,Autoimmune – Rheumatology,IL17A,6.14,"150 mg SC (weekly ×5, then q4w; or 300 mg if prior anti-TNF failure)",Every 4 weeks,Indefinite
+secukinumab,Cosentyx,Ankylosing spondylitis / AS,Autoimmune – Rheumatology,IL17A,6.14,"150 mg SC (weekly ×5, then q4w)",Every 4 weeks,Indefinite
+secukinumab,Cosentyx,Non-radiographic axSpA,Autoimmune – Rheumatology,IL17A,6.14,"150 mg SC (weekly ×5, then q4w)",Every 4 weeks,Indefinite
+ixekizumab,Taltz,Psoriatic arthritis,Autoimmune – Rheumatology,IL17A,2.5,"160 mg SC (wk 0), then 80 mg",Every 4 weeks,Indefinite
+ixekizumab,Taltz,Ankylosing spondylitis,Autoimmune – Rheumatology,IL17A,2.5,"160 mg SC (wk 0), then 80 mg",Every 4 weeks,Indefinite
+ixekizumab,Taltz,Non-radiographic axSpA,Autoimmune – Rheumatology,IL17A,2.5,80 mg SC,Every 4 weeks,Indefinite
+guselkumab,Tremfya,Psoriatic arthritis,Autoimmune – Rheumatology,IL23A,3.67,"100 mg SC (wk 0 & 4, then q8w)",Every 8 weeks,Indefinite
+tocilizumab,Actemra,Rheumatoid arthritis,Autoimmune – Rheumatology,IL6R,1.51,4–8 mg/kg IV q4w; or 162 mg SC,Every 1–2 weeks (SC) / every 4 weeks (IV),Indefinite
+tocilizumab,Actemra,Giant cell arteritis,Autoimmune – Rheumatology,IL6R,1.51,162 mg SC (+ steroid taper),Every week,Indefinite (disease recurs off therapy)
+tocilizumab,Actemra,Juvenile idiopathic arthritis (SJIA/PJIA),Autoimmune – Rheumatology,IL6R,1.51,8–12 mg/kg IV (weight-based),Every 2–4 weeks,Indefinite
+rituximab,Rituxan / biosimilars,Rheumatoid arthritis (anti-TNF inadequate responders),Autoimmune – Rheumatology,MS4A1,2.0,1000 mg IV ×2 doses (2 wks apart),Repeat course every 24 weeks (or on relapse),Indefinite maintenance
+rituximab,Rituxan / biosimilars,ANCA-associated vasculitis (GPA / MPA),Autoimmune – Rheumatology,MS4A1,2.0,375 mg/m² IV ×4 (induction); then 500 mg IV ×2 (at 6 and 12 mo),Every 6 months (maintenance),≥2 years (long-term remission maintenance)
+rituximab,Rituxan / biosimilars,Pemphigus vulgaris,Autoimmune – Dermatology,MS4A1,2.0,1000 mg IV ×2 doses (2 wks apart),"Repeat at 12 mo, 18 mo, then PRN",Indefinite (disease relapse common)
+bimekizumab,Bimzelx,Psoriatic arthritis,Autoimmune – Rheumatology,"IL17A, IL17F",0.5,160 mg SC,Every 4 weeks,Indefinite
+bimekizumab,Bimzelx,Ankylosing spondylitis / nr-axSpA,Autoimmune – Rheumatology,"IL17A, IL17F",0.5,160 mg SC,Every 4 weeks,Indefinite
+adalimumab,Humira / biosimilars,Plaque psoriasis,Autoimmune – Dermatology,TNF,8.99,"80 mg SC (wk 0), then 40 mg (wk 1), then 40 mg",Every 2 weeks,Indefinite
+adalimumab,Humira / biosimilars,Hidradenitis suppurativa,Autoimmune – Dermatology,TNF,8.99,"160 mg SC (day 1), 80 mg (day 15), then 40 mg",Weekly,Indefinite
+adalimumab,Humira / biosimilars,Non-infectious uveitis,Autoimmune – Dermatology,TNF,8.99,"80 mg SC (wk 0), then 40 mg (wk 1), then 40 mg",Every 2 weeks,Indefinite
+etanercept,Enbrel / biosimilars,Plaque psoriasis,Autoimmune – Dermatology,TNF,3.5,"50 mg SC twice weekly ×12 wks (induction), then 50 mg",Once weekly (maintenance),Indefinite
+infliximab,Remicade / biosimilars,Plaque psoriasis,Autoimmune – Dermatology,TNF,1.5,"5 mg/kg IV (wk 0, 2, 6 induction)",Every 8 weeks,Indefinite
+secukinumab,Cosentyx,Plaque psoriasis,Autoimmune – Dermatology,IL17A,6.14,"300 mg SC weekly ×5 (induction), then 300 mg",Every 4 weeks,Indefinite
+ixekizumab,Taltz,Plaque psoriasis,Autoimmune – Dermatology,IL17A,2.5,160 mg SC (wk 0); 80 mg q2w ×5 doses,Every 4 weeks (maintenance),Indefinite
+guselkumab,Tremfya,Plaque psoriasis,Autoimmune – Dermatology,IL23A,3.67,100 mg SC (wk 0 & 4),Every 8 weeks,Indefinite
+risankizumab,Skyrizi,Plaque psoriasis,Autoimmune – Dermatology,IL23A,11.72,150 mg SC (2 × 75 mg at wk 0 & 4),Every 12 weeks,Indefinite
+risankizumab,Skyrizi,Psoriatic arthritis,Autoimmune – Rheumatology,IL23A,11.72,"150 mg SC (wk 0 & 4, then q12w)",Every 12 weeks,Indefinite
+bimekizumab,Bimzelx,Plaque psoriasis,Autoimmune – Dermatology,"IL17A, IL17F",0.5,320 mg SC q4w ×16 wks (induction),Every 8 weeks (maintenance),Indefinite
+dupilumab,Dupixent,Atopic dermatitis (adults),Autoimmune – Dermatology,IL4R,14.15,"600 mg SC loading (2 × 300 mg), then 300 mg",Every 2 weeks,Indefinite
+dupilumab,Dupixent,Prurigo nodularis,Autoimmune – Dermatology,IL4R,14.15,"600 mg SC loading, then 300 mg",Every 2 weeks,Indefinite (recurrent pruritic condition)
+tralokinumab,Adbry,Atopic dermatitis,Autoimmune – Dermatology,IL13,0.3,"600 mg SC loading (4 × 150 mg), then 300 mg q2w; may step down to q4w if controlled",Every 2–4 weeks,Indefinite
+lebrikizumab,Ebglyss,Atopic dermatitis,Autoimmune – Dermatology,IL13,0.1,"500 mg SC ×2 at wk 0, then 250 mg",Every 2 weeks,Indefinite
+nemolizumab-ilto,Nemluvio,Atopic dermatitis,Autoimmune – Dermatology,IL31RA,0.05,30 mg SC,Every 4 weeks,Indefinite
+nemolizumab-ilto,Nemluvio,Prurigo nodularis,Autoimmune – Dermatology,IL31RA,0.05,30 mg SC,Every 4 weeks,Indefinite
+spesolimab,Spevigo,Generalized pustular psoriasis – acute flare,Autoimmune – Dermatology,IL1RL2,0.2,900 mg IV (single dose per flare),Per flare episode,As needed for acute flares
+spesolimab,Spevigo,Generalized pustular psoriasis – maintenance,Autoimmune – Dermatology,IL1RL2,0.2,600 mg SC,Every 12 weeks,Indefinite (chronic prophylaxis)
+adalimumab,Humira / biosimilars,Crohn's disease,Autoimmune – Gastroenterology,TNF,8.99,"160 mg SC (wk 0), 80 mg (wk 2), then 40 mg",Every 2 weeks,Indefinite
+adalimumab,Humira / biosimilars,Ulcerative colitis,Autoimmune – Gastroenterology,TNF,8.99,"160 mg SC (wk 0), 80 mg (wk 2), then 40 mg",Every 2 weeks,Indefinite
+infliximab,Remicade / biosimilars,Crohn's disease,Autoimmune – Gastroenterology,TNF,1.5,"5 mg/kg IV (wk 0, 2, 6 induction)",Every 8 weeks,Indefinite
+infliximab,Remicade / biosimilars,Ulcerative colitis,Autoimmune – Gastroenterology,TNF,1.5,"5 mg/kg IV (wk 0, 2, 6 induction)",Every 8 weeks,Indefinite
+ustekinumab,Stelara,Crohn's disease,Autoimmune – Gastroenterology,IL12B,4.5,"~260–520 mg IV (single weight-based induction), then 90 mg SC",Every 8 weeks (SC maintenance),Indefinite
+ustekinumab,Stelara,Ulcerative colitis,Autoimmune – Gastroenterology,IL12B,4.5,"~260–520 mg IV (single induction), then 90 mg SC",Every 8 weeks,Indefinite
+ustekinumab,Stelara,Plaque psoriasis,Autoimmune – Dermatology,IL12B,4.5,45 mg (≤100 kg) or 90 mg SC at wk 0 & 4,Every 12 weeks,Indefinite
+ustekinumab,Stelara,Psoriatic arthritis,Autoimmune – Rheumatology,IL12B,4.5,45 mg or 90 mg SC at wk 0 & 4,Every 12 weeks,Indefinite
+vedolizumab,Entyvio,Ulcerative colitis,Autoimmune – Gastroenterology,"ITGA4, ITGB7",5.4,"300 mg IV (wk 0, 2, 6 induction)",Every 8 weeks (maintenance),Indefinite
+vedolizumab,Entyvio,Crohn's disease,Autoimmune – Gastroenterology,"ITGA4, ITGB7",5.4,"300 mg IV (wk 0, 2, 6 induction)",Every 8 weeks (maintenance),Indefinite
+risankizumab,Skyrizi,Crohn's disease,Autoimmune – Gastroenterology,IL23A,11.72,"600 mg IV ×3 (q8w induction), then 360 mg SC",Every 8 weeks,Indefinite
+risankizumab,Skyrizi,Ulcerative colitis,Autoimmune – Gastroenterology,IL23A,11.72,"600 mg IV ×3 (q8w induction), then 180 mg SC",Every 8 weeks,Indefinite
+mirikizumab,Omvoh,Ulcerative colitis,Autoimmune – Gastroenterology,IL23A,0.3,"300 mg IV ×3 (q4w induction), then 200 mg SC",Every 4 weeks,Indefinite
+dupilumab,Dupixent,Moderate-to-severe asthma,Autoimmune – Pulmonology,IL4R,14.15,200 or 300 mg SC (dose by eosinophil/OCS status),Every 2 weeks,Indefinite
+dupilumab,Dupixent,CRSwNP (chronic rhinosinusitis with nasal polyps),Autoimmune – Pulmonology,IL4R,14.15,300 mg SC,Every 2 weeks,Indefinite
+dupilumab,Dupixent,Eosinophilic esophagitis (EoE),Autoimmune – Gastroenterology,IL4R,14.15,300 mg SC,Once weekly,Indefinite
+dupilumab,Dupixent,COPD with type-2 inflammation (eosinophilic),Autoimmune – Pulmonology,IL4R,14.15,300 mg SC,Every 2 weeks,Indefinite
+omalizumab,Xolair,Moderate-to-severe allergic asthma,Autoimmune – Pulmonology,IGHE,3.7,75–375 mg SC (IgE- and weight-based),Every 2–4 weeks,Indefinite
+omalizumab,Xolair,Chronic spontaneous urticaria,Autoimmune – Dermatology,IGHE,3.7,150 or 300 mg SC,Every 4 weeks,Indefinite (while disease is active)
+omalizumab,Xolair,Nasal polyps / CRSwNP,Autoimmune – Pulmonology,IGHE,3.7,75–600 mg SC (IgE/weight-based),Every 2–4 weeks,Indefinite
+omalizumab,Xolair,IgE-mediated food allergy (multi-food),Allergy / Immunology,IGHE,3.7,75–600 mg SC (IgE/weight-based),Every 2–4 weeks,Indefinite (ongoing protection)
+mepolizumab,Nucala,Severe eosinophilic asthma,Autoimmune – Pulmonology,IL5,2.0,100 mg SC,Every 4 weeks,Indefinite
+mepolizumab,Nucala,EGPA (eosinophilic granulomatosis with polyangiitis),Autoimmune – Rheumatology,IL5,2.0,300 mg SC (3 × 100 mg),Every 4 weeks,Indefinite
+mepolizumab,Nucala,Hypereosinophilic syndrome (HES),Hematology – Rare Blood,IL5,2.0,300 mg SC (3 × 100 mg),Every 4 weeks,Indefinite
+mepolizumab,Nucala,CRSwNP,Autoimmune – Pulmonology,IL5,2.0,100 mg SC,Every 4 weeks,Indefinite
+benralizumab,Fasenra,Severe eosinophilic asthma,Autoimmune – Pulmonology,IL5RA,1.3,30 mg SC q4w ×3 doses (induction),Every 8 weeks (maintenance),Indefinite
+tezepelumab,Tezspire,Severe asthma (uncontrolled),Autoimmune – Pulmonology,TSLP,0.8,210 mg SC,Every 4 weeks,Indefinite
+depemokimab,Nuraev (Asthma) / Nucala Ultra,Severe eosinophilic asthma / EGPA,Autoimmune – Pulmonology,IL5,0.05,100 mg SC,Every 6 months,Indefinite (longest-acting IL-5 inhibitor)
+peanut (arachis hypogaea) allergen powder,Palforzia,Peanut allergy (desensitization),Allergy / Immunology,"FCER1A, IL4R",0.2,Gradual oral up-titration to 300 mg/day maintenance,Daily oral dosing,≥3 years (lifelong maintenance while on therapy)
+short ragweed pollen allergen extract,Grastek / Ragwitek,Ragweed allergic rhinitis,Allergy / Immunology,"FCER1A, IL4R",0.1,1 tablet (6 Amb a 1-U) sublingual daily,Daily,3–5 years (standard SLIT course)
+ofatumumab,Kesimpta,Relapsing multiple sclerosis,Neurology – Demyelinating,MS4A1,1.2,"20 mg SC at wk 0, 1, 2; then 20 mg",Every 4 weeks,Indefinite
+natalizumab-sztn,Tysabri,Relapsing multiple sclerosis,Neurology – Demyelinating,ITGA4,1.5,300 mg IV,Every 4 weeks,Indefinite (JC virus monitoring required)
+natalizumab-sztn,Tysabri,Crohn's disease,Autoimmune – Gastroenterology,ITGA4,1.5,300 mg IV,Every 4 weeks,Indefinite
+ocrelizumab and hyaluronidase-ocsq,Ocrevus / Ocrevus Zunovo,Relapsing MS,Neurology – Demyelinating,MS4A1,6.7,600 mg IV or 920 mg SC,Every 6 months,Indefinite
+ocrelizumab and hyaluronidase-ocsq,Ocrevus / Ocrevus Zunovo,Primary progressive MS (PPMS),Neurology – Demyelinating,MS4A1,6.7,600 mg IV or 920 mg SC,Every 6 months,Indefinite
+ublituximab-xiiy,Briumvi,Relapsing multiple sclerosis,Neurology – Demyelinating,MS4A1,0.3,150 mg IV then 450 mg IV,Every 6 months,Indefinite
+satralizumab-mwge,Enspryng,NMOSD (AQP4-IgG+),Neurology – Demyelinating,IL6R,0.3,"120 mg SC at wk 0, 2, 4; then 120 mg",Every 4 weeks,Indefinite
+inebilizumab-cdon,Uplizna,NMOSD,Neurology – Demyelinating,CD19,0.2,300 mg IV ×2 doses (2 wks apart induction),300 mg every 6 months,Indefinite
+efgartigimod alfa-fcab,Vyvgart,Generalized myasthenia gravis (gMG),Neurology – Neuromuscular,FCGRT,0.6,10 mg/kg IV weekly ×4 doses per cycle,Repeat cycles every 4–8 weeks based on response,Indefinite cycling
+efgartigimod alfa and hyaluronidase,Vyvgart Hytrulo,Generalized myasthenia gravis,Neurology – Neuromuscular,FCGRT,0.6,"1000 mg/11,250 U SC weekly ×4 per cycle",Repeat cycles every 4–8 weeks,Indefinite
+rozanolixizumab,Rystiggo,Generalized myasthenia gravis,Neurology – Neuromuscular,FCGRT,0.1,7 mg/kg SC weekly ×6 weeks per cycle,Repeat cycles as needed,Indefinite
+nipocalimab,Imaavy,Generalized myasthenia gravis,Neurology – Neuromuscular,FCGRT,0.05,30 mg/kg IV loading; then 15 mg/kg,Every 2 weeks,Indefinite
+anifrolumab,Saphnelo,Systemic lupus erythematosus (SLE),Autoimmune – Rheumatology,IFNAR1,0.5,300 mg IV,Every 4 weeks,Indefinite
+axatilimab-csfr,Niktimvo,Chronic graft-versus-host disease (cGVHD),Hematology – Rare Blood,CSF1R,0.1,0.3 mg/kg IV,Every 2 weeks,Indefinite (while cGVHD persists)
+sibeprenlimab-szsi,Vrumvit,IgA nephropathy (IgAN),Nephrology,TNFSF13,0.05,3 mg/kg SC,Every 4 weeks,Indefinite (progressive disease)
+ropeginterferon alfa-2b-njft,Besremi,Polycythemia vera (PV),Hematology – Myeloproliferative,"IFNAR1, IFNAR2",0.2,100–500 mcg SC (titrated),Every 2 weeks,Indefinite
+eculizumab,Soliris,Paroxysmal nocturnal hemoglobinuria (PNH),Hematology – Complement,C5,1.5,600 mg IV q7d ×4; 900 mg at wk 5; then 900 mg,Every 14 days,Lifelong
+eculizumab,Soliris,Atypical hemolytic uremic syndrome (aHUS),Hematology – Complement,C5,1.5,900 mg IV q7d ×4; 1200 mg at wk 5; then 1200 mg,Every 14 days,Lifelong (or until sustained remission)
+eculizumab,Soliris,Generalized myasthenia gravis (refractory),Neurology – Neuromuscular,C5,1.5,900 mg IV q7d ×4; 1200 mg at wk 5; then 1200 mg,Every 14 days,Indefinite
+eculizumab,Soliris,NMOSD (AQP4-IgG+),Neurology – Demyelinating,C5,1.5,900 mg IV q7d ×4; 1200 mg at wk 5; then 1200 mg,Every 2 weeks,Indefinite
+ravulizumab,Ultomiris,Paroxysmal nocturnal hemoglobinuria (PNH),Hematology – Complement,C5,2.5,2400–3000 mg IV (weight-based loading); then 3000 mg,Every 8 weeks,Lifelong
+ravulizumab,Ultomiris,Atypical HUS (aHUS),Hematology – Complement,C5,2.5,2400–3000 mg IV (loading); then 3000 mg,Every 8 weeks,Lifelong
+ravulizumab,Ultomiris,Generalized myasthenia gravis,Neurology – Neuromuscular,C5,2.5,2700–3000 mg IV (loading); then 3000 mg,Every 8 weeks,Indefinite
+ravulizumab,Ultomiris,NMOSD,Neurology – Demyelinating,C5,2.5,2700–3000 mg IV (loading); then 3000 mg,Every 8 weeks,Indefinite
+crovalimab-akkz,Piasky,Paroxysmal nocturnal hemoglobinuria (PNH),Hematology – Complement,C5,0.3,341 mg IV ×1; 170 mg SC ×4 weekly; then 340 mg SC,Every 4 weeks,Lifelong
+sutimlimab-jome,Enjaymo,Cold agglutinin disease (CAD),Hematology – Complement,C1S,0.2,6500 mg (<75 kg) or 7500 mg (≥75 kg) IV,Every 2 weeks,Indefinite
+pozelimab-bbfg,Veopoz,CHAPLE disease (CD55 deficiency),Hematology – Complement,C5,0.05,30 mg/kg IV loading; then 12 mg/kg SC,Once weekly,Lifelong (ultra-rare)
+emicizumab,Hemlibra,Hemophilia A with inhibitors (prophylaxis),Hematology – Hemophilia,"F9, F10",4.9,3 mg/kg SC q1w ×4 (loading); then 1.5 mg/kg q1w,Weekly (or 3 mg/kg q2w or 6 mg/kg q4w),Lifelong
+emicizumab,Hemlibra,Hemophilia A without inhibitors (prophylaxis),Hematology – Hemophilia,"F9, F10",4.9,Same loading/maintenance dosing as above,Weekly / biweekly / monthly options,Lifelong
+concizumab,Alhemo,Hemophilia A or B with inhibitors,Hematology – Hemophilia,TFPI,0.05,0.2 mg/kg SC daily,Once daily,Lifelong
+marstacimab,Marstacimab (trade name pending),Hemophilia A / B (with or without inhibitors),Hematology – Hemophilia,TFPI,0.05,~300 mg SC loading; then 150–300 mg,Weekly,Lifelong
+"antihemophilic factor (recombinant), rAHF",Advate / Kogenate / Kovaltry,Hemophilia A (prophylaxis),Hematology – Hemophilia,F8,0.8,20–40 IU/kg IV,Every 2–3 days,Lifelong
+"antihemophilic factor (recombinant), fc",Eloctate / Elocta,"Hemophilia A (prophylaxis, extended half-life)",Hematology – Hemophilia,F8,0.6,25–65 IU/kg IV,Every 3–5 days,Lifelong
+"antihemophilic factor (recombinant), pegylated-aucl",Adynovate / Jivi,Hemophilia A (prophylaxis),Hematology – Hemophilia,F8,0.5,40–60 IU/kg IV,Twice weekly,Lifelong
+"coagulation factor ix (recombinant), glycopegylated",Rebinyn / Refixia,Hemophilia B (prophylaxis),Hematology – Hemophilia,F9,0.4,40 IU/kg IV,Once weekly,Lifelong
+coagulation factor viia (recombinant),Sevenfact / NovoSeven,Hemophilia A/B with inhibitors (prophylaxis),Hematology – Hemophilia,F7,0.4,90 mcg/kg IV q2h until hemostasis (acute); prophylaxis varies,Per bleed (on-demand); prophylaxis daily/twice weekly,Lifelong (on-demand or prophylaxis)
+coagulation factor viia (recombinant)-jncw,Alhemo / Pfizer rFVIIa,Hemophilia A/B with inhibitors,Hematology – Hemophilia,F7,0.1,Varies by indication,Daily to weekly SC (prophylaxis),Lifelong
+lanadelumab,Takhzyro,Hereditary angioedema (HAE) – attack prevention,Rare / Orphan – Immunology,KLKB1,0.7,300 mg SC,Every 2 weeks (may extend to q4w after 6 months),Indefinite
+garadacimab,Garadacimab (trade name TBD),Hereditary angioedema (HAE) prevention,Rare / Orphan – Immunology,F12,0.05,200 mg SC,Once monthly,Indefinite
+ranibizumab,Lucentis,Neovascular (wet) AMD,Ophthalmology,VEGFA,0.3,0.5 mg intravitreal injection,Monthly (treat-and-extend after stabilization),Indefinite
+ranibizumab,Lucentis,Diabetic macular edema (DME),Ophthalmology,VEGFA,0.3,0.3 mg intravitreal injection,Monthly (or PRN),Indefinite (while active)
+ranibizumab,Lucentis,Retinal vein occlusion (BRVO / CRVO),Ophthalmology,VEGFA,0.3,0.5 mg intravitreal injection,"Monthly ×6, then PRN",Indefinite (chronic/recurrent)
+ranibizumab,Lucentis,Diabetic retinopathy,Ophthalmology,VEGFA,0.3,0.3 mg intravitreal injection,Monthly,Indefinite
+brolucizumab-dbll,Beovu,Neovascular (wet) AMD,Ophthalmology,VEGFA,0.6,6 mg intravitreal injection (monthly ×3 loading),Every 8–12 weeks (T&E),Indefinite
+brolucizumab-dbll,Beovu,Diabetic macular edema (DME),Ophthalmology,VEGFA,0.6,6 mg intravitreal injection (monthly ×6 loading),Every 8–12 weeks (T&E),Indefinite
+aflibercept,Eylea / Eylea HD,Neovascular (wet) AMD,Ophthalmology,"VEGFA, PGF",9.3,2 mg intravitreal (monthly ×3); or 8 mg monthly ×4 (HD),Every 8 weeks (standard) / up to every 16 weeks (HD T&E),Indefinite
+aflibercept,Eylea / Eylea HD,Diabetic macular edema (DME),Ophthalmology,"VEGFA, PGF",9.3,"2 mg intravitreal monthly ×5, then q8w",Every 8 weeks,Indefinite
+aflibercept,Eylea / Eylea HD,Macular edema from retinal vein occlusion (RVO),Ophthalmology,"VEGFA, PGF",9.3,"2 mg intravitreal monthly ×6, then PRN",Monthly / PRN,Indefinite
+aflibercept,Eylea,Diabetic retinopathy (all DR),Ophthalmology,"VEGFA, PGF",9.3,2 mg intravitreal monthly ×5,Every 8 weeks,Indefinite
+faricimab,Vabysmo,Neovascular (wet) AMD,Ophthalmology,"VEGFA, ANGPT2",4.4,6 mg intravitreal monthly ×4 (loading),Up to every 16 weeks (treat-and-extend),Indefinite
+faricimab,Vabysmo,Diabetic macular edema (DME),Ophthalmology,"VEGFA, ANGPT2",4.4,6 mg intravitreal monthly ×4 (loading),Up to every 16 weeks (T&E),Indefinite
+insulin lispro,Humalog / Admelog / Lyumjev,Type 1 diabetes mellitus,Endocrinology – Diabetes,INSR,2.0,0.5–1 IU/kg/day total; mealtime dose ~0.1–0.2 IU/kg,Multiple daily injections (or continuous pump),Lifelong
+insulin lispro,Humalog / Admelog,Type 2 diabetes mellitus,Endocrinology – Diabetes,INSR,2.0,"4–10 IU per meal (initial), titrate","With meals, as prescribed",Lifelong (or while required)
+insulin glargine,Lantus / Toujeo / Basaglar,Type 1 diabetes mellitus,Endocrinology – Diabetes,INSR,2.5,0.2–0.4 IU/kg SC once daily,"Once daily (any time, consistent)",Lifelong
+insulin glargine,Lantus / Toujeo,Type 2 diabetes mellitus,Endocrinology – Diabetes,INSR,2.5,0.2 IU/kg once daily (starting); titrate to FBG target,Once daily,Lifelong
+insulin aspart,NovoLog / NovoRapid / Fiasp,Type 1 diabetes mellitus,Endocrinology – Diabetes,INSR,2.0,~5–10 IU per meal or per 15 g carbohydrate (individualized),Before each meal,Lifelong
+insulin aspart,NovoLog / Fiasp,Type 2 diabetes mellitus,Endocrinology – Diabetes,INSR,2.0,"4–10 IU per meal (starting), titrate",With meals,Lifelong (or while required)
+insulin icodec,Awiqli,Type 2 diabetes mellitus,Endocrinology – Diabetes,INSR,0.1,~70% of total daily insulin dose equivalent SC,Once weekly,Lifelong
+dulaglutide,Trulicity,Type 2 diabetes mellitus,Endocrinology – Diabetes,GLP1R,4.8,0.75 mg SC (starting); up to 4.5 mg weekly,Once weekly,Indefinite
+dulaglutide,Trulicity,Cardiovascular risk reduction (T2DM with CVD),Endocrinology – Diabetes,GLP1R,4.8,0.75–1.5 mg SC weekly,Once weekly,Indefinite
+somapacitan,Sogroya,Adult growth hormone deficiency (AGHD),Endocrinology – Growth,GHR,0.1,"1.5–8 mg SC (individualized, titrate)",Once weekly,Indefinite (adult GHD)
+somapacitan,Sogroya,Pediatric growth hormone deficiency,Endocrinology – Growth,GHR,0.1,0.16 mg/kg SC weekly (titrate),Once weekly,Until adequate adult height
+lonapegsomatropin,Skytrofa,Pediatric growth hormone deficiency,Endocrinology – Growth,GHR,0.1,0.24 mg/kg SC,Once weekly,Until adequate adult height (years)
+somatrogon,Ngenla,Pediatric growth hormone deficiency,Endocrinology – Growth,GHR,0.1,0.66 mg/kg SC,Once weekly,Until adequate adult height (years)
+tesamorelin,Egrifta WR,HIV-associated lipodystrophy (abdominal fat excess),Endocrinology – Metabolic,GHRHR,0.1,2 mg SC,Once daily,Indefinite (fat accumulates on discontinuation)
+evinacumab,Evkeeza,Homozygous familial hypercholesterolemia (HoFH),Endocrinology – Lipid,ANGPTL3,0.1,15 mg/kg IV,Every 4 weeks,Indefinite
+lerodalcibep-liga,Lerodalcibep (Lepodisiran/approved name),LDL-C reduction (HeFH / ASCVD),Endocrinology – Lipid,PCSK9,0.05,300 mg SC,Once monthly,Indefinite
+denosumab,Prolia,Postmenopausal osteoporosis,Bone / Metabolic,TNFSF11,4.0,60 mg SC,Every 6 months,Indefinite (rebound fracture risk if stopped without follow-on therapy)
+denosumab,Prolia,Glucocorticoid-induced osteoporosis,Bone / Metabolic,TNFSF11,4.0,60 mg SC,Every 6 months,Indefinite while on glucocorticoids
+denosumab,Prolia,Osteoporosis in men at high fracture risk,Bone / Metabolic,TNFSF11,4.0,60 mg SC,Every 6 months,Indefinite
+epoetin alfa,Epogen / Procrit,Anemia of chronic kidney disease (dialysis),Hematology – Anemia,EPOR,1.0,50–300 IU/kg IV/SC,3 times per week,Indefinite (until transplant or change in therapy)
+epoetin alfa,Epogen / Procrit,Anemia of CKD (non-dialysis),Hematology – Anemia,EPOR,1.0,50–200 IU/kg SC,3 times per week,Indefinite
+filgrastim,Neupogen / Granix,Severe chronic neutropenia (SCN),Hematology – Rare Blood,CSF3R,0.5,6–12 mcg/kg SC daily,Daily,Lifelong (congenital neutropenia)
+lecanemab,Leqembi,Early Alzheimer's disease (mild cognitive impairment / mild AD),Neurology – Neurodegeneration,APP,0.4,10 mg/kg IV,Every 2 weeks,Indefinite (ongoing amyloid clearance and monitoring)
+aducanumab,Aduhelm,Early Alzheimer's disease,Neurology – Neurodegeneration,APP,0.02,1–10 mg/kg IV (titrating protocol over ~6 months),Every 4 weeks,Indefinite
+donanemab-azbt,Kisunla,Early symptomatic Alzheimer's disease,Neurology – Neurodegeneration,APP,0.2,700 mg IV q4w ×3 doses; then 1400 mg IV,Every 4 weeks,Until amyloid plaque clearance (~12–18 months); may discontinue after clearance
+eptinezumab-jjmr,Vyepti,Episodic migraine prevention,Neurology – Pain / Headache,CALCA,0.5,100 mg IV (or 300 mg in high-frequency),Every 3 months,Indefinite (migraine is chronic)
+eptinezumab-jjmr,Vyepti,Chronic migraine prevention,Neurology – Pain / Headache,CALCA,0.5,100–300 mg IV,Every 3 months,Indefinite
+sotatercept,Winrevair,Pulmonary arterial hypertension (PAH) – WHO Group I,Cardiovascular / Pulmonary,INHBA,0.3,0.3 mg/kg SC (titrate up to 0.7 mg/kg),Every 3 weeks,Indefinite (progressive disease)
+sacrosidase,Sucraid,Congenital sucrase-isomaltase deficiency (CSID),Enzyme Deficiency,SI,0.1,1–2 mL (8500 IU/mL) per meal (weight-adjusted),With every meal,Lifelong
+pancrelipase,Creon / Zenpep / Pancreaze,Exocrine pancreatic insufficiency (EPI),Enzyme Deficiency,PNLIP,1.5,500–2500 lipase IU/kg per meal (individualized),With every meal and snack,Lifelong
+pegunigalsidase alfa,Elfabrio,Fabry disease,Enzyme Deficiency,GLA,0.1,1 mg/kg IV,Every 2 weeks,Lifelong
+velmanase alfa-tycv,Lamzede,Alpha-mannosidosis,Enzyme Deficiency,MAN2B1,0.05,1 IU/kg IV,Every 2 weeks,Lifelong
+olipudase alfa,Xenpozyme,Acid sphingomyelinase deficiency (ASMD / NPD-A/B),Enzyme Deficiency,SMPD1,0.1,3 mg/kg IV,Every 2 weeks,Lifelong
+avalglucosidase alfa-ngpt,Nexviazyme,Late-onset Pompe disease (LOPD),Enzyme Deficiency,GAA,0.4,20 mg/kg IV,Every 2 weeks,Lifelong
+cipaglucosidase alfa-atga,Pombiliti,Late-onset Pompe disease (+miglustat),Enzyme Deficiency,GAA,0.2,20 mg/kg IV (+ 260 mg oral miglustat 1h prior),Every 2 weeks,Lifelong
+tividenofusp alfa-eknm,Avlayah,MPS II (Hunter syndrome),Enzyme Deficiency,IDS,0.05,3 mg/kg IV,Once weekly,Lifelong
+pegzilarginase,Loargys,Arginase 1 deficiency (hyperargininemia),Enzyme Deficiency,ARG1,0.05,0.1 mg/kg IV (start); titrate to 0.2 mg/kg,Once weekly,Lifelong
+alpha,Prolastin-C / Glassia,Alpha-1 antitrypsin deficiency (AATD) with emphysema,Enzyme Deficiency,SERPINA1,0.4,60 mg/kg IV,Once weekly,Lifelong augmentation
+"immune globulin intravenous, human",Gammagard / Privigen / Gamunex / Flebogamma,Primary immunodeficiency disease (PIDD),Hematology – Immunodeficiency,IGHG1 (polyclonal IgG),1.5,400–600 mg/kg IV,Every 3–4 weeks,Lifelong
+"immune globulin intravenous, human",Gammagard / Privigen,Chronic inflammatory demyelinating polyneuropathy (CIDP),Neurology – Neuromuscular,IGHG1 (polyclonal IgG),1.5,1–2 g/kg IV (loading); then 0.5–1 g/kg,Every 3–4 weeks,Indefinite (or until CIDP remission)
+"immune globulin intravenous, human",Privigen / Gammagard,Immune thrombocytopenic purpura (ITP) – acute,Hematology – Rare Blood,IGHG1 (polyclonal IgG),1.5,0.4–1 g/kg IV,1–3 days (acute); repeat courses PRN,As needed for platelet-stabilization
+"immune globulin subcutaneous (human), 20% liquid",Hizentra / Cuvitru,Primary immunodeficiency disease,Hematology – Immunodeficiency,IGHG1 (polyclonal IgG),0.8,~0.2–0.4 g/kg total weekly dose SC (divided),Weekly (or every 2 weeks for facilitated SC),Lifelong
+"immune globulin subcutaneous (human), 20% liquid",Hizentra,CIDP,Neurology – Neuromuscular,IGHG1 (polyclonal IgG),0.8,0.2–0.4 g/kg SC weekly,Weekly,Indefinite
+daxibotulinumtoxina,Daxxify,Cervical dystonia,Neurology – Movement Disorder,SNAP25,0.15,125–250 IU IM (injected into affected muscles),Every ~24 weeks (longest-acting BoNT-A),Indefinite (repeated every ~6 months)
+letibotulinumtoxina,Letybo,Glabellar (frown) lines,Aesthetic / Neurology,SNAP25,0.05,30–40 IU IM (5-point injection),Every 3–4 months,Indefinite (periodic)
+nirsevimab,Beyfortus,RSV prevention in infants and young children,Infectious Disease – Prevention,RSV F (viral),1.8,50 mg IM (<5 kg) or 100 mg IM (≥5 kg),Once per RSV season,Annual (each RSV season during high-risk years)
+clesrovimab-cfor,Clesrovimab (approved name TBD),RSV prevention in infants (≤8 months at birth; ≤24 months at high risk),Infectious Disease – Prevention,RSV F (viral),0.05,1000 mg IM,Once per RSV season,Annual during high-risk period
+pegloticase,Krystexxa,Refractory chronic gout,Rheumatology / Metabolic,UOX,0.3,8 mg IV,Every 2 weeks,Until therapeutic goal (months to years; may stop if serum urate normalizes)
+papzimeos,PAPZIMEOS (Precigen),Recurrent respiratory papillomatosis (HPV-associated),Rare / ENT,HPV E6/E7 (viral),0.01,Intralesional injection (per surgical session),Repeated at each surgical debulking (~every 1–6 months),Long-term (until disease control)

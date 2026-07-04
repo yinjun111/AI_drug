@@ -1,0 +1,7 @@
+# Large raw data downloads (regenerable via build_revenue_csv.py / direct download)
+sdud_2023.csv
+nadac_2024.csv
+
+# Backup files
+*.bak
+*.catbak

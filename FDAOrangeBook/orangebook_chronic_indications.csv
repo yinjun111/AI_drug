@@ -1,0 +1,881 @@
+Drug,Brand,Disease / Indication,Category,Target,Revenue ($B),Dose,Frequency,Duration,_ing,_rev_val
+Abacavir Sulfate; Dolutegravir Sodium; Lamivudine,TRIUMEQ,Infectious disease,Infectious,pol | P,0.71,600MG BASE; 50MG BASE … oral,Once or twice daily,Indefinite (lifelong maintenance),ABACAVIR SULFATE; DOLUTEGRAVIR SODIUM; LAMIVUDINE,712.19
+Abacavir Sulfate; Lamivudine,ABACAVIR SULFATE AND LAMIVUDINE,Infectious disease,Infectious,pol | P,,600MG BASE; 300MG oral,Once or twice daily,Indefinite (lifelong maintenance),ABACAVIR SULFATE; LAMIVUDINE,0.0
+Abaloparatide,TYMLOS,Osteoporosis,Metabolic,PTH1R,0.02,3.12MG/1.56ML (2MG/mL) SC,Weekly or monthly,Indefinite (lifelong maintenance),ABALOPARATIDE,24.33
+Abemaciclib,VERZENIO,Breast cancer (HR+/HER2-),Oncology,CDK4 | CDK6,0.63,200MG oral,Once or twice daily,Long-term (until progression / disease control),ABEMACICLIB,633.21
+Abiraterone Acetate,ABIRATERONE ACETATE,Prostate cancer (mCRPC),Oncology,CYP17A1,0.01,500MG oral,Once or twice daily,Long-term (until progression / disease control),ABIRATERONE ACETATE,11.47
+Abiraterone Acetate; Niraparib Tosylate,AKEEGA,Prostate cancer (mCRPC),Oncology,CYP17A1 | PARP2 | PARP1,,500MG; 100MG BASE oral,Once or twice daily,Long-term (until progression / disease control),ABIRATERONE ACETATE; NIRAPARIB TOSYLATE,0.0
+Abrocitinib,CIBINQO,Cancer,Oncology,JAK1,0.02,200MG oral,Once or twice daily,Long-term (until progression / disease control),ABROCITINIB,17.22
+Acalabrutinib,CALQUENCE,B-cell malignancies (CLL/MCL),Oncology,BTK,,100MG oral,Once or twice daily,Long-term (until progression / disease control),ACALABRUTINIB,0.0
+Acalabrutinib Maleate,CALQUENCE,B-cell malignancies (CLL/MCL),Oncology,BTK,0.12,100MG BASE oral,Once or twice daily,Long-term (until progression / disease control),ACALABRUTINIB MALEATE,124.65
+Acarbose,ACARBOSE,Hypertension; Heart failure; Diabetic nephropathy,Metabolic,AMY2A | MGAM,0.00,25MG oral,Once or twice daily,Indefinite (lifelong maintenance),ACARBOSE,2.98
+Acebutolol Hydrochloride,ACEBUTOLOL HYDROCHLORIDE,Cardiovascular disease,Cardiovascular,ADRB1,0.00,200MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),ACEBUTOLOL HYDROCHLORIDE,0.5
+Acetazolamide,ACETAZOLAMIDE,Hypertension; Heart failure; Diabetic nephropathy,Neurology,CA1 | CA2 | CA12 | CA4,,500MG oral,Once daily,Indefinite (lifelong maintenance),ACETAZOLAMIDE,0.0
+Acetazolamide Sodium,ACETAZOLAMIDE SODIUM,Hypertension; Heart failure; Diabetic nephropathy,Neurology,CA1 | CA2 | CA12 | CA4,,500MG BASE/VIAL,As directed,Indefinite (lifelong maintenance),ACETAZOLAMIDE SODIUM,0.0
+Acitretin,ACITRETIN,Acne; Psoriasis; Photoageing,Dermatology,RXRB,0.00,10MG oral,Once or twice daily,Indefinite (lifelong maintenance),ACITRETIN,4.33
+Aclidinium Bromide,TUDORZA PRESSAIR,Respiratory disease,Respiratory,CHRM3,,0.4MG//inh inh,Once daily,Indefinite (lifelong maintenance),ACLIDINIUM BROMIDE,0.0
+Aclidinium Bromide; Formoterol Fumarate,DUAKLIR PRESSAIR,Asthma; COPD,Respiratory,CHRM3 | ADRB2,,0.4MG//inh; 0.012MG//inh inh,Once daily,Indefinite (lifelong maintenance),ACLIDINIUM BROMIDE; FORMOTEROL FUMARATE,0.0
+Adapalene,ADAPALENE,Acne; Psoriasis; Photoageing,Dermatology,RARG,0.02,0.3% topical,Once or twice daily,Indefinite (lifelong maintenance),ADAPALENE,22.15
+Adapalene; Benzoyl Peroxide,DIFFERIN EPIDUO,Acne; Psoriasis; Photoageing,Dermatology,RARG,0.00,0.3%; 2.5% topical,Once or twice daily,Indefinite (lifelong maintenance),ADAPALENE; BENZOYL PEROXIDE,0.03
+Adapalene; Benzoyl Peroxide; Clindamycin Phosphate,CABTREO,Acne; Psoriasis; Photoageing,Dermatology,RARG | rpsB,,0.15%; 3.1% … topical,Once or twice daily,Indefinite (lifelong maintenance),ADAPALENE; BENZOYL PEROXIDE; CLINDAMYCIN PHOSPHATE,0.0
+Adefovir Dipivoxil,ADEFOVIR DIPIVOXIL,Infectious disease,Infectious,P,0.00,10MG oral,Once or twice daily,Indefinite (lifelong maintenance),ADEFOVIR DIPIVOXIL,1.19
+Afatinib Dimaleate,GILOTRIF,Non-small cell lung cancer (EGFR+),Oncology,EGFR | ERBB2 | ERBB4,0.01,40MG BASE oral,Once or twice daily,Long-term (until progression / disease control),AFATINIB DIMALEATE,5.83
+Albuterol Sulfate,ALBUTEROL SULFATE,Asthma; COPD,Respiratory,ADRB2,0.98,0.09MG BASE//inh inh,Once daily,Indefinite (lifelong maintenance),ALBUTEROL SULFATE,978.15
+Albuterol Sulfate; Budesonide,AIRSUPRA,Asthma; COPD,Respiratory,ADRB2 | NR3C1,0.00,0.09MG BASE//inh; 0.08MG//inh inh,Twice daily,Indefinite (lifelong maintenance),ALBUTEROL SULFATE; BUDESONIDE,0.39
+Albuterol Sulfate; Ipratropium Bromide,COMBIVENT RESPIMAT,Asthma; COPD,Respiratory,ADRB2 | CHRM3,,0.1MG BASE//inh; 0.02MG//inh inh,Twice daily,Indefinite (lifelong maintenance),ALBUTEROL SULFATE; IPRATROPIUM BROMIDE,0.0
+Alectinib Hydrochloride,ALECENSA,Non-small cell lung cancer (ALK+),Oncology,ALK | RET | ALK,0.09,150MG BASE oral,Once or twice daily,Long-term (until progression / disease control),ALECTINIB HYDROCHLORIDE,91.42
+Alendronate Sodium,ALENDRONATE SODIUM,Metabolic disorder,Metabolic,FDPS,0.00,70MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),ALENDRONATE SODIUM,0.36
+Alendronate Sodium; Cholecalciferol,FOSAMAX PLUS D,Metabolic disorder,Metabolic,FDPS | VDR,,"70MG BASE; 5,600 IU oral",Once or twice daily,Indefinite (lifelong maintenance),ALENDRONATE SODIUM; CHOLECALCIFEROL,0.0
+Alfuzosin Hydrochloride,ALFUZOSIN HYDROCHLORIDE,Metabolic disorder,Metabolic,ADRA1A,0.00,10MG oral,Once daily,Indefinite (lifelong maintenance),ALFUZOSIN HYDROCHLORIDE,2.06
+Aliskiren Hemifumarate,ALISKIREN HEMIFUMARATE,Cardiovascular disease,Cardiovascular,REN,0.00,300MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),ALISKIREN HEMIFUMARATE,0.34
+Alitretinoin,PANRETIN,Acne; Psoriasis; Photoageing,Dermatology,RXRB,,0.1% BASE topical,Once or twice daily,Indefinite (lifelong maintenance),ALITRETINOIN,0.0
+Allopurinol,ALLOPURINOL,Gout; Hyperuricemia,Metabolic,XDH,,300MG oral,Once or twice daily,Indefinite (lifelong maintenance),ALLOPURINOL,0.0
+Allopurinol Sodium,ALLOPURINOL SODIUM,Gout; Hyperuricemia,Metabolic,XDH,,500MG BASE/VIAL,As directed,Indefinite (lifelong maintenance),ALLOPURINOL SODIUM,0.0
+Alogliptin Benzoate,NESINA,Type 2 diabetes,Metabolic,DPP4,0.13,25MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),ALOGLIPTIN BENZOATE,125.44
+Alogliptin Benzoate; Metformin Hydrochloride,KAZANO,Type 2 diabetes,Metabolic,DPP4 | MT-ND6 | GPD2,0.01,12.5MG BASE; 500MG oral,Once or twice daily,Indefinite (lifelong maintenance),ALOGLIPTIN BENZOATE; METFORMIN HYDROCHLORIDE,6.72
+Alogliptin Benzoate; Pioglitazone Hydrochloride,OSENI,Type 2 diabetes,Metabolic,DPP4 | PPARG,0.00,25MG BASE; 45MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),ALOGLIPTIN BENZOATE; PIOGLITAZONE HYDROCHLORIDE,0.16
+Alpelisib,PIQRAY,Cancer,Oncology,PIK3CA,0.14,200MG oral,Once or twice daily,Long-term (until progression / disease control),ALPELISIB,138.69
+Alpha-tocopherol Acetate; Ascorbic Acid; Biotin; Cholecalciferol; Cyanocobalamin; Dexpanthenol; Folic Acid; Niacinamide; Pyridoxine Hydrochloride; Riboflavin 5'-phosphate Sodium; Thiamine Hydrochloride; Vitamin a Palmitate; Vitamin k,INFUVITE ADULT,Metabolic disorder,Metabolic,VDR,,2 IU/mL; 40MG/mL … IV,As directed,Indefinite (lifelong maintenance),ALPHA-TOCOPHEROL ACETATE; ASCORBIC ACID; BIOTIN; CHOLECALCIFEROL; CYANOCOBALAMIN; DEXPANTHENOL; FOLIC ACID; NIACINAMIDE; PYRIDOXINE HYDROCHLORIDE; RIBOFLAVIN 5'-PHOSPHATE SODIUM; THIAMINE HYDROCHLORIDE; VITAMIN A PALMITATE; VITAMIN K,0.0
+Amantadine Hydrochloride,AMANTADINE HYDROCHLORIDE,Neurological disorder,Neurology,GRIN1 | M,0.02,137MG BASE oral,Once daily,Indefinite (lifelong maintenance),AMANTADINE HYDROCHLORIDE,16.78
+Ambrisentan,AMBRISENTAN,Cardiovascular disease,Cardiovascular,EDNRB,0.08,10MG oral,Once or twice daily,Indefinite (lifelong maintenance),AMBRISENTAN,75.64
+Amcinonide,AMCINONIDE,Skin disorder,Dermatology,NR3C1,,0.1% topical,Once or twice daily,Indefinite (lifelong maintenance),AMCINONIDE,0.0
+Amifampridine Phosphate,FIRDAPSE,Metabolic disorder,Metabolic,KCNQ1,0.03,10MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),AMIFAMPRIDINE PHOSPHATE,28.68
+Amiloride Hydrochloride; Hydrochlorothiazide,AMILORIDE HYDROCHLORIDE AND HYDROCHLOROTHIAZIDE,Cardiovascular disease,Cardiovascular,SCNN1A | SLC12A3,,5MG ANHYDROUS; 50MG oral,Once or twice daily,Indefinite (lifelong maintenance),AMILORIDE HYDROCHLORIDE; HYDROCHLOROTHIAZIDE,0.0
+Aminophylline,AMINOPHYLLINE,Psoriasis; Psoriatic arthritis,Respiratory,PDE4A | PDE3A | ADORA1,,25MG/mL,As directed,Indefinite (lifelong maintenance),AMINOPHYLLINE,0.0
+Amiodarone Hydrochloride,AMIODARONE HYDROCHLORIDE,Cardiovascular disease,Cardiovascular,KCNH2,0.01,360MG/200ML (1.8MG/mL),As directed,Indefinite (lifelong maintenance),AMIODARONE HYDROCHLORIDE,10.23
+Amitriptyline Hydrochloride,AMITRIPTYLINE HYDROCHLORIDE,Psychiatric disorder,Psychiatric,SLC6A4 | SLC6A2,,150MG oral,Once or twice daily,Indefinite (lifelong maintenance),AMITRIPTYLINE HYDROCHLORIDE,0.0
+Amitriptyline Hydrochloride; Chlordiazepoxide,CHLORDIAZEPOXIDE AND AMITRIPTYLINE HYDROCHLORIDE,Anxiety; Insomnia; Epilepsy,Psychiatric,SLC6A4 | SLC6A2 | GABRA1,,12.5MG BASE; 5MG oral,Once or twice daily,Indefinite (lifelong maintenance),AMITRIPTYLINE HYDROCHLORIDE; CHLORDIAZEPOXIDE,0.0
+Amitriptyline Hydrochloride; Perphenazine,PERPHENAZINE AND AMITRIPTYLINE HYDROCHLORIDE,Schizophrenia; Bipolar disorder; Nausea,Psychiatric,SLC6A4 | SLC6A2 | DRD2,,10MG; 2MG oral,Once or twice daily,Indefinite (lifelong maintenance),AMITRIPTYLINE HYDROCHLORIDE; PERPHENAZINE,0.0
+Amlodipine Benzoate,KATERZIA,Hypertension; Angina,Cardiovascular,CACNA1C,0.20,1MG BASE/mL oral,Once or twice daily,Indefinite (lifelong maintenance),AMLODIPINE BENZOATE,197.26
+Amlodipine Besylate,AMLODIPINE BESYLATE,Hypertension; Angina,Cardiovascular,CACNA1C,0.00,10MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),AMLODIPINE BESYLATE,1.64
+Amlodipine Besylate; Atorvastatin Calcium,CADUET,Hypertension; Angina,Cardiovascular,CACNA1C | HMGCR,,10MG BASE; 80MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),AMLODIPINE BESYLATE; ATORVASTATIN CALCIUM,0.0
+Amlodipine Besylate; Benazepril Hydrochloride,AMLODIPINE BESYLATE AND BENAZEPRIL HYDROCHLORIDE,Hypertension; Heart failure; CKD,Cardiovascular,CACNA1C | ACE,,2.5MG BASE; 10MG oral,Once or twice daily,Indefinite (lifelong maintenance),AMLODIPINE BESYLATE; BENAZEPRIL HYDROCHLORIDE,0.0
+Amlodipine Besylate; Hydrochlorothiazide; Olmesartan Medoxomil,TRIBENZOR,Hypertension; Angina,Cardiovascular,CACNA1C | SLC12A3 | AGTR1,,10MG BASE; 25MG … oral,Once or twice daily,Indefinite (lifelong maintenance),AMLODIPINE BESYLATE; HYDROCHLOROTHIAZIDE; OLMESARTAN MEDOXOMIL,0.0
+Amlodipine Besylate; Hydrochlorothiazide; Valsartan,EXFORGE HCT,Hypertension; Angina,Cardiovascular,CACNA1C | SLC12A3 | AGTR1,,10MG BASE; 25MG … oral,Once or twice daily,Indefinite (lifelong maintenance),AMLODIPINE BESYLATE; HYDROCHLOROTHIAZIDE; VALSARTAN,0.0
+Amlodipine Besylate; Indapamide; Telmisartan,WIDAPLIK,Hypertension; Angina,Cardiovascular,CACNA1C | SLC12A3 | AGTR1,,5MG BASE; 2.5MG … oral,Once or twice daily,Indefinite (lifelong maintenance),AMLODIPINE BESYLATE; INDAPAMIDE; TELMISARTAN,0.0
+Amlodipine Besylate; Olmesartan Medoxomil,AZOR,Hypertension; Angina,Cardiovascular,CACNA1C | AGTR1,,10MG BASE; 40MG oral,Once or twice daily,Indefinite (lifelong maintenance),AMLODIPINE BESYLATE; OLMESARTAN MEDOXOMIL,0.0
+Amlodipine Besylate; Telmisartan,TELMISARTAN AND AMLODIPINE,Hypertension; Angina,Cardiovascular,CACNA1C | AGTR1,,5MG BASE; 40MG oral,Once or twice daily,Indefinite (lifelong maintenance),AMLODIPINE BESYLATE; TELMISARTAN,0.0
+Amlodipine Besylate; Valsartan,EXFORGE,Hypertension; Angina,Cardiovascular,CACNA1C | AGTR1,0.00,10MG BASE; 320MG oral,Once or twice daily,Indefinite (lifelong maintenance),AMLODIPINE BESYLATE; VALSARTAN,0.18
+Amoxapine,AMOXAPINE,Schizophrenia; Bipolar disorder; Nausea,Psychiatric,SLC6A4 | SLC6A2 | DRD2,0.00,25MG oral,Once or twice daily,Indefinite (lifelong maintenance),AMOXAPINE,0.03
+Amphetamine,ADZENYS XR-ODT,ADHD; Narcolepsy,Psychiatric,SLC6A3 | SLC6A2,,18.8MG BASE oral,Once daily,Indefinite (lifelong maintenance),AMPHETAMINE,0.0
+Amphetamine Aspartate; Amphetamine Sulfate; Dextroamphetamine Saccharate; Dextroamphetamine Sulfate,ADDERALL XR 10,ADHD; Narcolepsy,Psychiatric,SLC6A3 | SLC6A2 | SLC18A2,0.03,12.5MG; 12.5MG … oral,Once daily,Indefinite (lifelong maintenance),AMPHETAMINE ASPARTATE; AMPHETAMINE SULFATE; DEXTROAMPHETAMINE SACCHARATE; DEXTROAMPHETAMINE SULFATE,29.31
+Amphetamine Sulfate,AMPHETAMINE SULFATE,ADHD; Narcolepsy,Psychiatric,SLC6A3 | SLC6A2,0.00,5MG oral,Once or twice daily,Indefinite (lifelong maintenance),AMPHETAMINE SULFATE,0.34
+Amphetamine; Amphetamine Aspartate/dextroamphetamine Sulfate,DYANAVEL XR,ADHD; Narcolepsy,Psychiatric,SLC6A3 | SLC6A2,,4MG; 1MG BASE oral,Once daily,Indefinite (lifelong maintenance),AMPHETAMINE; AMPHETAMINE ASPARTATE/DEXTROAMPHETAMINE SULFATE,0.0
+Anastrozole,ANASTROZOLE,"Breast cancer (HR+, post-menopausal)",Oncology,CYP19A1,0.00,1MG oral,Once or twice daily,Long-term (until progression / disease control),ANASTROZOLE,0.49
+Apalutamide,APALUTAMIDE,Prostate cancer (mCRPC),Oncology,AR,0.09,240MG oral,Once or twice daily,Long-term (until progression / disease control),APALUTAMIDE,86.69
+Apixaban,APIXABAN,Atrial fibrillation; DVT/PE prevention,Cardiovascular,F10,2.30,5MG oral,Once or twice daily,Indefinite (lifelong maintenance),APIXABAN,2301.11
+Apomorphine Hydrochloride,APOKYN,Chronic pain,Pain,DRD2,0.00,98MG/20ML (4.9MG/mL) SC,Weekly or monthly,Indefinite (lifelong maintenance),APOMORPHINE HYDROCHLORIDE,0.69
+Apraclonidine Hydrochloride,APRACLONIDINE HYDROCHLORIDE,Cardiovascular disease,Cardiovascular,ADRA2A,0.00,1% BASE ophthalmic,Once daily,Indefinite (lifelong maintenance),APRACLONIDINE HYDROCHLORIDE,0.06
+Apremilast,APREMILAST,Psoriatic arthritis; Psoriasis,Autoimmune,PDE4A,0.64,30MG oral,Once or twice daily,Indefinite (lifelong maintenance),APREMILAST,640.89
+Arformoterol Tartrate,ARFORMOTEROL TARTRATE,Asthma; COPD,Respiratory,ADRB2,,0.015MG BASE/2ML inh,As directed,Indefinite (lifelong maintenance),ARFORMOTEROL TARTRATE,0.0
+Aripiprazole,ABILIFY,Generalized anxiety disorder,Psychiatric,DRD2 | HTR1A | HTR2A,1.60,30MG oral,Once or twice daily,Indefinite (lifelong maintenance),ARIPIPRAZOLE,1601.25
+Aripiprazole Lauroxil,ARISTADA,Generalized anxiety disorder,Psychiatric,DRD2 | HTR2A | HTR1A,0.63,675MG/2.4ML (281.25MG/mL),Once daily,Indefinite (lifelong maintenance),ARIPIPRAZOLE LAUROXIL,634.23
+Armodafinil,ARMODAFINIL,ADHD; Narcolepsy,Psychiatric,SLC6A3,0.01,250MG oral,Once or twice daily,Indefinite (lifelong maintenance),ARMODAFINIL,5.83
+Arsenic Trioxide,ARSENIC TRIOXIDE,Cancer,Oncology,TXNRD1,0.00,2MG/mL,As directed,Long-term (until progression / disease control),ARSENIC TRIOXIDE,3.1
+Asciminib Hydrochloride,SCEMBLIX,Chronic myeloid leukaemia (CML),Oncology,ABL1,0.09,100MG BASE oral,Once or twice daily,Long-term (until progression / disease control),ASCIMINIB HYDROCHLORIDE,85.06
+Ascorbic Acid; Biotin; Cholecalciferol; Cyanocobalamin; Dexpanthenol; Folic Acid; Niacinamide; Pyridoxine; Riboflavin; Thiamine; Tocopherol Acetate; Vitamin a; Vitamin k,INFUVITE PEDIATRIC,Metabolic disorder,Metabolic,VDR,,80MG/VIAL; 0.02MG/VIAL … IV,As directed,Indefinite (lifelong maintenance),ASCORBIC ACID; BIOTIN; CHOLECALCIFEROL; CYANOCOBALAMIN; DEXPANTHENOL; FOLIC ACID; NIACINAMIDE; PYRIDOXINE; RIBOFLAVIN; THIAMINE; TOCOPHEROL ACETATE; VITAMIN A; VITAMIN K,0.0
+Asenapine,SECUADO,Psychiatric disorder,Psychiatric,Unknown,0.02,7.6MG/24HR transdermal,Once weekly,Indefinite (lifelong maintenance),ASENAPINE,19.75
+Asenapine Maleate,ASENAPINE MALEATE,Schizophrenia; Bipolar disorder; Nausea,Psychiatric,DRD2 | HTR2A,0.04,10MG BASE,As needed,Indefinite (lifelong maintenance),ASENAPINE MALEATE,37.53
+Aspirin,VAZALORE,Cardiovascular disease,Cardiovascular,PTGS2,0.09,325MG oral,Once or twice daily,Indefinite (lifelong maintenance),ASPIRIN,93.03
+Aspirin; Butalbital; Caffeine,LANORINAL,Anxiety; Insomnia; Epilepsy,Cardiovascular,PTGS2 | GABRA1 | ADORA1,,325MG; 50MG … oral,Once or twice daily,Indefinite (lifelong maintenance),ASPIRIN; BUTALBITAL; CAFFEINE,0.0
+Aspirin; Butalbital; Caffeine; Codeine Phosphate,"BUTALBITAL, ASPIRIN, CAFFEINE, AND CODEINE PHOSPHATE",Anxiety; Insomnia; Epilepsy,Cardiovascular,PTGS2 | GABRA1 | ADORA1 | OPRK1,,325MG; 50MG … oral,Once or twice daily,Indefinite (lifelong maintenance),ASPIRIN; BUTALBITAL; CAFFEINE; CODEINE PHOSPHATE,0.0
+Aspirin; Caffeine; Orphenadrine Citrate,ORPHENGESIC,Allergic rhinitis; Urticaria,Cardiovascular,PTGS2 | ADORA1 | HRH1 | SLC6A2 | GRIN1 | SCN1A,,385MG; 30MG … oral,Once or twice daily,Indefinite (lifelong maintenance),ASPIRIN; CAFFEINE; ORPHENADRINE CITRATE,0.0
+Aspirin; Dipyridamole,ASPIRIN AND DIPYRIDAMOLE,Cardiovascular disease,Cardiovascular,PTGS2 | SLC29A1 | PDE5A,,25MG; 200MG oral,Once daily,Indefinite (lifelong maintenance),ASPIRIN; DIPYRIDAMOLE,0.0
+Aspirin; Hydrocodone Bitartrate,HYDROCODONE BITARTRATE AND ASPIRIN,Chronic pain; Cancer pain,Cardiovascular,PTGS2 | OPRK1,,500MG; 5MG oral,Once or twice daily,Indefinite (lifelong maintenance),ASPIRIN; HYDROCODONE BITARTRATE,0.0
+Atazanavir Sulfate,ATAZANAVIR SULFATE,Infectious disease,Infectious,pol,0.00,50MG BASE/PACKET oral,Once daily,Indefinite (lifelong maintenance),ATAZANAVIR SULFATE,2.3
+Atazanavir Sulfate; Cobicistat,EVOTAZ,Infectious disease,Infectious,pol | CYP3A4,0.01,300MG BASE; 150MG oral,Once or twice daily,Indefinite (lifelong maintenance),ATAZANAVIR SULFATE; COBICISTAT,10.43
+Atenolol,ATENOLOL,Cardiovascular disease,Cardiovascular,ADRB1,0.02,100MG oral,Once or twice daily,Indefinite (lifelong maintenance),ATENOLOL,20.75
+Atenolol; Chlorthalidone,ATENOLOL AND CHLORTHALIDONE,Cardiovascular disease,Cardiovascular,ADRB1 | SLC12A3,,50MG; 25MG oral,Once or twice daily,Indefinite (lifelong maintenance),ATENOLOL; CHLORTHALIDONE,0.0
+Atomoxetine Hydrochloride,ATOMOXETINE HYDROCHLORIDE,ADHD,Psychiatric,SLC6A2,,4MG BASE/mL oral,Once or twice daily,Indefinite (lifelong maintenance),ATOMOXETINE HYDROCHLORIDE,0.0
+Atorvastatin Calcium,ATORVALIQ,Dyslipidemia; CV risk reduction,Metabolic,HMGCR,0.00,80MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),ATORVASTATIN CALCIUM,1.15
+Atorvastatin Calcium; Ezetimibe,LYPQOZET,Dyslipidemia; CV risk reduction,Metabolic,HMGCR | NPC1L1,,10MG BASE; 10MG oral,Once or twice daily,Indefinite (lifelong maintenance),ATORVASTATIN CALCIUM; EZETIMIBE,0.0
+Avapritinib,AYVAKIT,Cancer,Oncology,KIT | PDGFRA,0.01,300MG oral,Once or twice daily,Long-term (until progression / disease control),AVAPRITINIB,10.46
+Avutometinib Potassium; Defactinib Hydrochloride,AVMAPKI FAKZYNJA CO-PACK (COPACKAGED),Cancer,Oncology,MAP2K1 | MAP2K2 | PTK2 | PTK2B,,0.8MG BASE; 200MG BASE oral,Once or twice daily,Long-term (until progression / disease control),AVUTOMETINIB POTASSIUM; DEFACTINIB HYDROCHLORIDE,0.0
+Axitinib,INLYTA,Cancer,Oncology,FLT1,0.09,5MG oral,Once or twice daily,Long-term (until progression / disease control),AXITINIB,92.84
+Azacitidine,AZACITIDINE,MDS; AML,GI,DNMT3A | DNMT1,0.02,300MG oral,Once or twice daily,Indefinite (lifelong maintenance),AZACITIDINE,18.18
+Azathioprine,AZASAN,Transplant rejection; Autoimmune,Autoimmune,PPAT,0.00,50MG oral,Once or twice daily,Indefinite (lifelong maintenance),AZATHIOPRINE,0.07
+Azathioprine Sodium,AZATHIOPRINE SODIUM,Transplant rejection; Autoimmune,Autoimmune,PPAT,,100MG BASE/VIAL,As directed,Indefinite (lifelong maintenance),AZATHIOPRINE SODIUM,0.0
+Azilsartan Kamedoxomil,AZILSARTAN MEDOXOMIL,Cardiovascular disease,Cardiovascular,AGTR1,0.00,80MG MEDOXOMIL oral,Once or twice daily,Indefinite (lifelong maintenance),AZILSARTAN KAMEDOXOMIL,3.26
+Azilsartan Kamedoxomil; Chlorthalidone,EDARBYCLOR,Cardiovascular disease,Cardiovascular,AGTR1 | SLC12A3,0.00,40MG MEDOXOMIL; 25MG oral,Once or twice daily,Indefinite (lifelong maintenance),AZILSARTAN KAMEDOXOMIL; CHLORTHALIDONE,3.42
+Bacitracin Zinc; Hydrocortisone; Neomycin Sulfate; Polymyxin b Sulfate,"NEOMYCIN AND POLYMYXIN B SULFATES, BACITRACIN ZINC AND HYDROCORTISONE",Metabolic disorder,Metabolic,NR3C1 | rpsB,0.01,400 UNITS/GM; 1% … ophthalmic,Once or twice daily,Indefinite (lifelong maintenance),BACITRACIN ZINC; HYDROCORTISONE; NEOMYCIN SULFATE; POLYMYXIN B SULFATE,10.68
+Bacitracin Zinc; Neomycin Sulfate; Polymyxin b Sulfate,LUMI-SPORYN,Metabolic disorder,Metabolic,rpsB,,400 UNITS/GM; 3.5MG BASE/GM … ophthalmic,Once or twice daily,Indefinite (lifelong maintenance),BACITRACIN ZINC; NEOMYCIN SULFATE; POLYMYXIN B SULFATE,0.0
+Bacitracin Zinc; Polymyxin b Sulfate,BACITRACIN ZINC AND POLYMYXIN B SULFATE,Metabolic disorder,Metabolic,C55-isoprenyl pyrophosphate inhibitor; Cell outer ,,"500 UNITS/GM; 10,000 UNITS/GM ophthalmic",Once or twice daily,Indefinite (lifelong maintenance),BACITRACIN ZINC; POLYMYXIN B SULFATE,0.0
+Baclofen,BACLOFEN,Spasticity; Trigeminal neuralgia,Neurology,GABBR1,0.15,25MG/5ML oral,Once or twice daily,Indefinite (lifelong maintenance),BACLOFEN,151.56
+Balsalazide Disodium,BALSALAZIDE DISODIUM,GI disorder,GI,ALOX5 | PPARG | PTGS2,,750MG oral,Once or twice daily,Indefinite (lifelong maintenance),BALSALAZIDE DISODIUM,0.0
+Baricitinib,OLUMIANT,Autoimmune disease,Autoimmune,JAK1 | JAK2,0.05,4MG oral,Once or twice daily,Indefinite (lifelong maintenance),BARICITINIB,50.19
+"Bazedoxifene Acetate; Estrogens, Conjugated",DUAVEE,Metabolic disorder,Metabolic,ESR2,0.00,20MG BASE; 0.45MG oral,Once or twice daily,Indefinite (lifelong maintenance),"BAZEDOXIFENE ACETATE; ESTROGENS, CONJUGATED",0.08
+Beclomethasone Dipropionate,BECLOMETHASONE DIPROPIONATE,Respiratory disease,Respiratory,NR3C1,0.01,0.08MG/ACTUATION nasal,As directed,Indefinite (lifelong maintenance),BECLOMETHASONE DIPROPIONATE,6.71
+Beclomethasone Dipropionate; Formoterol Fumarate; Glycopyrrolate,TRIMBOW,Asthma; COPD,Respiratory,NR3C1 | ADRB2 | CHRM3 | CHRM1,,0.172MG//inh; 0.0049MG//inh … inh,Twice daily,Indefinite (lifelong maintenance),BECLOMETHASONE DIPROPIONATE; FORMOTEROL FUMARATE; GLYCOPYRROLATE,0.0
+Belinostat,BELEODAQ,Haematological malignancies,Oncology,HDAC1,0.00,500MG/VIAL IV,Once daily,Long-term (until progression / disease control),BELINOSTAT,3.56
+Bempedoic Acid; Ezetimibe,NEXLIZET,Hypercholesterolemia,Metabolic,ACLY | NPC1L1,0.01,180MG; 10MG oral,Once or twice daily,Indefinite (lifelong maintenance),BEMPEDOIC ACID; EZETIMIBE,7.99
+Benazepril Hydrochloride,BENAZEPRIL HYDROCHLORIDE,Hypertension; Heart failure; CKD,Cardiovascular,ACE,0.01,40MG oral,Once or twice daily,Indefinite (lifelong maintenance),BENAZEPRIL HYDROCHLORIDE,9.68
+Benazepril Hydrochloride; Hydrochlorothiazide,LOTENSIN HCT,Hypertension; Heart failure; CKD,Cardiovascular,ACE | SLC12A3,,20MG; 25MG oral,Once or twice daily,Indefinite (lifelong maintenance),BENAZEPRIL HYDROCHLORIDE; HYDROCHLOROTHIAZIDE,0.0
+Bendamustine Hydrochloride,BELRAPZO,Cancer,Oncology,DNA inhibitor,0.03,100MG/4ML (25MG/mL) IV,As directed,Long-term (until progression / disease control),BENDAMUSTINE HYDROCHLORIDE,27.98
+Benzgalantamine Gluconate,ZUNVEYL,Alzheimer's disease; Myasthenia gravis,Neurology,ACHE,,15MG BASE oral,Once daily,Indefinite (lifelong maintenance),BENZGALANTAMINE GLUCONATE,0.0
+Benzoyl Peroxide,EPSOLAY,Skin disorder,Dermatology,Releases active oxygen,0.02,5% topical,Once or twice daily,Indefinite (lifelong maintenance),BENZOYL PEROXIDE,15.37
+Benzoyl Peroxide; Clindamycin Phosphate,ACANYA,Skin disorder,Dermatology,rpsB,0.00,3.75%; 1.2% BASE topical,Once or twice daily,Indefinite (lifelong maintenance),BENZOYL PEROXIDE; CLINDAMYCIN PHOSPHATE,3.31
+Benzoyl Peroxide; Erythromycin,BENZAMYCIN,Skin disorder,Dermatology,rpsB,0.00,5%; 3% topical,Once or twice daily,Indefinite (lifelong maintenance),BENZOYL PEROXIDE; ERYTHROMYCIN,0.08
+Benzoyl Peroxide; Tretinoin,TWYNEO,Acne; Psoriasis; Photoageing,Dermatology,RARG,,3%; 0.1% topical,Once or twice daily,Indefinite (lifelong maintenance),BENZOYL PEROXIDE; TRETINOIN,0.0
+Benztropine Mesylate,BENZTROPINE MESYLATE,Neurological disorder,Neurology,CHRM1,,1MG/mL,As directed,Indefinite (lifelong maintenance),BENZTROPINE MESYLATE,0.0
+Betamethasone Acetate; Betamethasone Sodium Phosphate,CELESTONE SOLUSPAN,Skin disorder,Dermatology,NR3C1,,3MG/mL; 3MG BASE/mL,As directed,Indefinite (lifelong maintenance),BETAMETHASONE ACETATE; BETAMETHASONE SODIUM PHOSPHATE,0.0
+Betamethasone Dipropionate,BETAMETHASONE DIPROPIONATE,Skin disorder,Dermatology,NR3C1,,0.05% BASE/SPRAY topical,As directed,Indefinite (lifelong maintenance),BETAMETHASONE DIPROPIONATE,0.0
+Betamethasone Dipropionate; Calcipotriene,ENSTILAR,Psoriasis,Dermatology,NR3C1 | VDR,0.01,0.064%; 0.005% topical,As directed,Indefinite (lifelong maintenance),BETAMETHASONE DIPROPIONATE; CALCIPOTRIENE,8.84
+Betamethasone Dipropionate; Clotrimazole,CLOTRIMAZOLE AND BETAMETHASONE DIPROPIONATE,Skin disorder,Dermatology,NR3C1 | ERG11,,0.05% BASE; 1% topical,Once or twice daily,Indefinite (lifelong maintenance),BETAMETHASONE DIPROPIONATE; CLOTRIMAZOLE,0.0
+Betamethasone Valerate,BETA-VAL,Skin disorder,Dermatology,NR3C1,,0.1% BASE topical,Once or twice daily,Indefinite (lifelong maintenance),BETAMETHASONE VALERATE,0.0
+Betaxolol Hydrochloride,BETAXOLOL HYDROCHLORIDE,Cardiovascular disease,Cardiovascular,ADRB1,0.00,0.25% BASE ophthalmic,As directed,Indefinite (lifelong maintenance),BETAXOLOL HYDROCHLORIDE,0.51
+Bethanechol Chloride,BETHANECHOL CHLORIDE,GI disorder,GI,CHRM3 | CHRM2,,5MG oral,Once or twice daily,Indefinite (lifelong maintenance),BETHANECHOL CHLORIDE,0.0
+Bexagliflozin,BRENZAVVY,Type 2 diabetes; Heart failure; CKD,Metabolic,SLC5A2,,20MG oral,Once or twice daily,Indefinite (lifelong maintenance),BEXAGLIFLOZIN,0.0
+Bexarotene,BEXAROTENE,Acne; Psoriasis; Photoageing,Oncology,RXRB,0.00,1% topical,Once or twice daily,Long-term (until progression / disease control),BEXAROTENE,4.1
+Bicalutamide,BICALUTAMIDE,Prostate cancer (mCRPC),Oncology,AR,,50MG oral,Once or twice daily,Long-term (until progression / disease control),BICALUTAMIDE,0.0
+Bictegravir Sodium; Emtricitabine; Tenofovir Alafenamide Fumarate,BIKTARVY,Infectious disease,Infectious,pol,6.27,50MG BASE; 200MG … oral,Once or twice daily,Indefinite (lifelong maintenance),BICTEGRAVIR SODIUM; EMTRICITABINE; TENOFOVIR ALAFENAMIDE FUMARATE,6269.98
+Bimatoprost,BIMATOPROST,Glaucoma; Ocular hypertension,Ophthalmology,PTGFR,0.04,0.03% topical,As directed,Indefinite (lifelong maintenance),BIMATOPROST,37.98
+Binimetinib,MEKTOVI,Cancer,Oncology,MAP2K1 | MAP2K2,0.03,15MG oral,Once or twice daily,Long-term (until progression / disease control),BINIMETINIB,26.88
+Bisoprolol Fumarate,BISOPROLOL FUMARATE,Cardiovascular disease,Cardiovascular,ADRB1,0.01,5MG oral,Once or twice daily,Indefinite (lifelong maintenance),BISOPROLOL FUMARATE,8.84
+Bisoprolol Fumarate; Hydrochlorothiazide,ZIAC,Cardiovascular disease,Cardiovascular,ADRB1 | SLC12A3,,10MG; 6.25MG oral,Once or twice daily,Indefinite (lifelong maintenance),BISOPROLOL FUMARATE; HYDROCHLOROTHIAZIDE,0.0
+Bortezomib,BORTEZOMIB,Multiple myeloma,Oncology,PSMD1,0.04,3.5MG/1.4ML (2.5MG/mL) SC,As directed,Long-term (until progression / disease control),BORTEZOMIB,41.22
+Bosentan,BOSENTAN,Cardiovascular disease,Cardiovascular,EDNRB,0.04,125MG oral,Once or twice daily,Indefinite (lifelong maintenance),BOSENTAN,36.98
+Bosutinib Monohydrate,BOSULIF,Chronic myeloid leukaemia (CML),Oncology,ABL1,0.08,500MG BASE oral,Once or twice daily,Long-term (until progression / disease control),BOSUTINIB MONOHYDRATE,84.26
+Brexpiprazole,BREXPIPRAZOLE,Generalized anxiety disorder,GI,DRD2 | HTR1A | HTR2A,0.94,4MG oral,Once or twice daily,Indefinite (lifelong maintenance),BREXPIPRAZOLE,939.17
+Brigatinib,ALUNBRIG,Non-small cell lung cancer (EGFR+),Oncology,ALK | EGFR,0.01,180MG oral,Once or twice daily,Long-term (until progression / disease control),BRIGATINIB,8.21
+Brimonidine Tartrate,ALPHAGAN P,Glaucoma,Ophthalmology,ADRA2A,0.03,0.15% ophthalmic,Once daily,Indefinite (lifelong maintenance),BRIMONIDINE TARTRATE,29.55
+Brimonidine Tartrate; Brinzolamide,SIMBRINZA,Hypertension; Heart failure; Diabetic nephropathy,Ophthalmology,ADRA2A | CA2,0.01,0.2%; 1% ophthalmic,As directed,Indefinite (lifelong maintenance),BRIMONIDINE TARTRATE; BRINZOLAMIDE,7.78
+Brimonidine Tartrate; Carbachol,YUVEZZI,Hypertension; Heart failure; Diabetic nephropathy,Ophthalmology,ADRA2A | CHRM3,,0.1%; 2.75% ophthalmic,Once daily,Indefinite (lifelong maintenance),BRIMONIDINE TARTRATE; CARBACHOL,0.0
+Brimonidine Tartrate; Timolol Maleate,COMBIGAN,Asthma; COPD,Ophthalmology,ADRA2A | ADRB1 | ADRB2,0.03,0.2%; 0.5% BASE ophthalmic,Once daily,Indefinite (lifelong maintenance),BRIMONIDINE TARTRATE; TIMOLOL MALEATE,26.96
+Brinzolamide,AZOPT,Hypertension; Heart failure; Diabetic nephropathy,Ophthalmology,CA2,0.00,1% ophthalmic,As directed,Indefinite (lifelong maintenance),BRINZOLAMIDE,3.62
+Brivaracetam,BRIVARACETAM,Neurological disorder,Neurology,SV2A,0.39,100MG oral,Once or twice daily,Indefinite (lifelong maintenance),BRIVARACETAM,390.77
+Budesonide,BUDESONIDE,Respiratory disease,Respiratory,NR3C1,0.56,9MG oral,Once daily,Indefinite (lifelong maintenance),BUDESONIDE,560.75
+Budesonide; Formoterol Fumarate,SYMBICORT AEROSPHERE,Asthma; COPD,Respiratory,NR3C1 | ADRB2,,0.16MG//inh; 0.0048MG//inh inh,Twice daily,Indefinite (lifelong maintenance),BUDESONIDE; FORMOTEROL FUMARATE,0.0
+Budesonide; Formoterol Fumarate Dihydrate,BREYNA,Asthma; COPD,Respiratory,NR3C1 | ADRB2,1.83,0.16MG//inh; 0.0045MG//inh inh,Twice daily,Indefinite (lifelong maintenance),BUDESONIDE; FORMOTEROL FUMARATE DIHYDRATE,1830.24
+Budesonide; Formoterol Fumarate; Glycopyrrolate,BREZTRI AEROSPHERE,Asthma; COPD,Respiratory,NR3C1 | ADRB2 | CHRM3 | CHRM1,,0.16MG//inh; 0.0048MG//inh … inh,Twice daily,Indefinite (lifelong maintenance),BUDESONIDE; FORMOTEROL FUMARATE; GLYCOPYRROLATE,0.0
+Bumetanide,BUMETANIDE,Cardiovascular disease,Cardiovascular,SLC12A1,0.02,2MG oral,Once or twice daily,Indefinite (lifelong maintenance),BUMETANIDE,17.25
+Buprenorphine,BRIXADI,Opioid use disorder; Chronic pain,Pain,OPRM1 | OPRK1,1.06,300MG/1.5ML (200MG/mL) SC,Once daily,Indefinite (lifelong maintenance),BUPRENORPHINE,1055.03
+Buprenorphine Hydrochloride,BELBUCA,Opioid use disorder; Chronic pain,Pain,OPRM1 | OPRK1,0.08,0.9MG BASE,As needed,Indefinite (lifelong maintenance),BUPRENORPHINE HYDROCHLORIDE,80.17
+Buprenorphine Hydrochloride; Naloxone Hydrochloride,SUBOXONE,Opioid use disorder; Chronic pain,Pain,OPRM1 | OPRK1 | OPRK1,2.05,11.4MG BASE; 2.9MG BASE,As needed,Indefinite (lifelong maintenance),BUPRENORPHINE HYDROCHLORIDE; NALOXONE HYDROCHLORIDE,2045.85
+Bupropion Hydrobromide,APLENZIN,Depression; Smoking cessation,Psychiatric,SLC6A3 | SLC6A2,0.27,522MG oral,Once daily,Indefinite (lifelong maintenance),BUPROPION HYDROBROMIDE,269.51
+Bupropion Hydrochloride,BUPROPION HYDROCHLORIDE,Depression; Smoking cessation,Psychiatric,SLC6A3 | SLC6A2,0.00,300MG oral,Once daily,Indefinite (lifelong maintenance),BUPROPION HYDROCHLORIDE,1.05
+Bupropion Hydrochloride; Dextromethorphan Hydrobromide,AUVELITY,Depression; Smoking cessation,Psychiatric,SLC6A3 | SLC6A2 | SIGMAR1 | GRIN2A,0.07,105MG; 45MG oral,Once daily,Indefinite (lifelong maintenance),BUPROPION HYDROCHLORIDE; DEXTROMETHORPHAN HYDROBROMIDE,70.84
+Bupropion Hydrochloride; Naltrexone Hydrochloride,CONTRAVE,Depression; Smoking cessation,Psychiatric,SLC6A3 | SLC6A2 | OPRK1,0.01,90MG; 8MG oral,Once daily,Indefinite (lifelong maintenance),BUPROPION HYDROCHLORIDE; NALTREXONE HYDROCHLORIDE,6.61
+Buspirone Hydrochloride,BUCAPSOL,Generalized anxiety disorder,Psychiatric,HTR1A,0.13,5MG oral,Once or twice daily,Indefinite (lifelong maintenance),BUSPIRONE HYDROCHLORIDE,131.37
+Cabazitaxel,CABAZITAXEL,Cancer,Oncology,TUBB4B,,60MG/1.5ML (40MG/mL) IV,As directed,Long-term (until progression / disease control),CABAZITAXEL,0.0
+Cabotegravir,APRETUDE,Infectious disease,Infectious,pol,0.10,600MG/3ML (200MG/mL),Once daily,Indefinite (lifelong maintenance),CABOTEGRAVIR,98.39
+Cabotegravir Sodium,VOCABRIA,Infectious disease,Infectious,pol,,30MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),CABOTEGRAVIR SODIUM,0.0
+Cabotegravir; Rilpivirine,CABENUVA KIT,Infectious disease,Infectious,pol,,600MG/3ML (200MG/mL); 900MG/3ML (300MG/mL),Once daily,Indefinite (lifelong maintenance),CABOTEGRAVIR; RILPIVIRINE,0.0
+Cabozantinib S-malate,CABOMETYX,Cancer,Oncology,KDR | MET,0.21,60MG BASE oral,Once or twice daily,Long-term (until progression / disease control),CABOZANTINIB S-MALATE,205.38
+Calcipotriene,CALCIPOTRIENE,Psoriasis,Dermatology,VDR,0.00,0.005% topical,Once or twice daily,Indefinite (lifelong maintenance),CALCIPOTRIENE,0.29
+Calcitonin Salmon,CALCITONIN-SALMON,Metabolic disorder,Metabolic,CALCR,0.00,200 IU/mL,As directed,Indefinite (lifelong maintenance),CALCITONIN SALMON,1.37
+Calcitriol,CALCITRIOL,Metabolic disorder,Metabolic,VDR,0.02,1MCG/mL oral,Once or twice daily,Indefinite (lifelong maintenance),CALCITRIOL,22.93
+Calcium Acetate,CALCIUM ACETATE,Metabolic disorder,Metabolic,Phosphate sequestering agent,0.04,667MG oral,Once or twice daily,Indefinite (lifelong maintenance),CALCIUM ACETATE,43.42
+Calcium Chloride; Magnesium Chloride; Potassium Chloride; Sodium Acetate; Sodium Chloride,TPN ELECTROLYTES IN PLASTIC CONTAINER,Metabolic disorder,Metabolic,Supplement,,16.5MG/mL; 25.4MG/mL …,As directed,Indefinite (lifelong maintenance),CALCIUM CHLORIDE; MAGNESIUM CHLORIDE; POTASSIUM CHLORIDE; SODIUM ACETATE; SODIUM CHLORIDE,0.0
+Calcium Chloride; Magnesium Chloride; Potassium Chloride; Sodium Acetate; Sodium Chloride; Sodium Citrate,BALANCED SALT,Metabolic disorder,Metabolic,Supplement,0.01,0.48MG/mL; 0.3MG/mL …,As directed,Indefinite (lifelong maintenance),CALCIUM CHLORIDE; MAGNESIUM CHLORIDE; POTASSIUM CHLORIDE; SODIUM ACETATE; SODIUM CHLORIDE; SODIUM CITRATE,7.09
+Calcium Chloride; Magnesium Chloride; Potassium Chloride; Sodium Bicarbonate; Sodium Chloride; Sodium Phosphate,PHOXILLUM B22K 4/0 IN PLASTIC CONTAINER,Hypertension; Heart failure; Diabetic nephropathy,Metabolic,Supplement; Saline laxative,,3.68GM/1000ML; 3.05GM/1000ML …,As directed,Indefinite (lifelong maintenance),CALCIUM CHLORIDE; MAGNESIUM CHLORIDE; POTASSIUM CHLORIDE; SODIUM BICARBONATE; SODIUM CHLORIDE; SODIUM PHOSPHATE,0.0
+Calcium Chloride; Magnesium Chloride; Potassium Chloride; Sodium Chloride,PLEGISOL IN PLASTIC CONTAINER,Metabolic disorder,Metabolic,Supplement,,17.6MG/100ML; 325.3MG/100ML …,As directed,Indefinite (lifelong maintenance),CALCIUM CHLORIDE; MAGNESIUM CHLORIDE; POTASSIUM CHLORIDE; SODIUM CHLORIDE,0.0
+Calcium Chloride; Potassium Chloride; Sodium Chloride,RINGER'S IN PLASTIC CONTAINER,Metabolic disorder,Metabolic,Supplement,,33MG/100ML; 30MG/100ML …,As directed,Indefinite (lifelong maintenance),CALCIUM CHLORIDE; POTASSIUM CHLORIDE; SODIUM CHLORIDE,0.0
+Calcium Chloride; Potassium Chloride; Sodium Chloride; Sodium Lactate,LACTATED RINGER'S IN PLASTIC CONTAINER,Metabolic disorder,Metabolic,Supplement,,20MG/100ML; 30MG/100ML …,As directed,Indefinite (lifelong maintenance),CALCIUM CHLORIDE; POTASSIUM CHLORIDE; SODIUM CHLORIDE; SODIUM LACTATE,0.0
+Calcium Gluconate,CALCIUM GLUCONATE,Metabolic disorder,Metabolic,Mineral supplement,,2GM/100ML (20MG/mL) IV,As directed,Indefinite (lifelong maintenance),CALCIUM GLUCONATE,0.0
+Canagliflozin,CANAGLIFLOZIN,Type 2 diabetes; Heart failure; CKD,Metabolic,SLC5A2,0.23,300MG oral,Once or twice daily,Indefinite (lifelong maintenance),CANAGLIFLOZIN,230.11
+Canagliflozin; Metformin Hydrochloride,INVOKAMET,Type 2 diabetes; Heart failure; CKD,Metabolic,SLC5A2 | MT-ND6 | GPD2,0.01,150MG; 1GM oral,Once or twice daily,Indefinite (lifelong maintenance),CANAGLIFLOZIN; METFORMIN HYDROCHLORIDE,12.56
+Candesartan Cilexetil,ATACAND,Cardiovascular disease,Cardiovascular,AGTR1,,32MG oral,Once or twice daily,Indefinite (lifelong maintenance),CANDESARTAN CILEXETIL,0.0
+Candesartan Cilexetil; Hydrochlorothiazide,ATACAND HCT,Cardiovascular disease,Cardiovascular,AGTR1 | SLC12A3,,32MG; 25MG oral,Once or twice daily,Indefinite (lifelong maintenance),CANDESARTAN CILEXETIL; HYDROCHLOROTHIAZIDE,0.0
+Cannabidiol,EPIDIOLEX,Epilepsy; Anxiety,Neurology,CNR1,0.95,100MG/mL oral,Once or twice daily,Indefinite (lifelong maintenance),CANNABIDIOL,951.41
+Capecitabine,CAPECITABINE,Colorectal / Breast cancer,Infectious,TYMS,,150MG oral,Once or twice daily,Indefinite (lifelong maintenance),CAPECITABINE,0.0
+Capmatinib Hydrochloride,TABRECTA,Cancer,Oncology,MET,0.01,200MG BASE oral,Once or twice daily,Long-term (until progression / disease control),CAPMATINIB HYDROCHLORIDE,8.71
+Captopril,CAPTOPRIL,Hypertension; Heart failure; CKD,Cardiovascular,ACE,0.00,12.5MG oral,Once or twice daily,Indefinite (lifelong maintenance),CAPTOPRIL,1.15
+Captopril; Hydrochlorothiazide,CAPTOPRIL AND HYDROCHLOROTHIAZIDE,Hypertension; Heart failure; CKD,Cardiovascular,ACE | SLC12A3,,25MG; 15MG oral,Once or twice daily,Indefinite (lifelong maintenance),CAPTOPRIL; HYDROCHLOROTHIAZIDE,0.0
+Carbamazepine,CARBAMAZEPINE,Hypertension; Heart failure; Diabetic nephropathy,Psychiatric,SCN1A,0.05,200MG oral,Once or twice daily,Indefinite (lifelong maintenance),CARBAMAZEPINE,51.17
+Carbidopa,CARBIDOPA,Hypertension; Heart failure; Diabetic nephropathy,Neurology,DDC,0.00,25MG oral,Once or twice daily,Indefinite (lifelong maintenance),CARBIDOPA,2.86
+Carbidopa; Entacapone; Levodopa,STALEVO 100,Hypertension; Heart failure; Diabetic nephropathy,Neurology,DDC | COMT | DRD3,,18.75MG; 200MG … oral,Once or twice daily,Indefinite (lifelong maintenance),CARBIDOPA; ENTACAPONE; LEVODOPA,0.0
+Carbidopa; Levodopa,CARBIDOPA AND LEVODOPA,Hypertension; Heart failure; Diabetic nephropathy,Neurology,DDC | DRD3,0.00,25MG; 250MG oral,Once or twice daily,Indefinite (lifelong maintenance),CARBIDOPA; LEVODOPA,3.97
+Carfilzomib,CARFILZOMIB,Multiple myeloma,Oncology,PSMD1,0.08,60MG/VIAL IV,Once daily,Long-term (until progression / disease control),CARFILZOMIB,82.38
+Carteolol Hydrochloride,CARTEOLOL HYDROCHLORIDE,Cardiovascular disease,Cardiovascular,ADRB1,0.00,1% ophthalmic,Once daily,Indefinite (lifelong maintenance),CARTEOLOL HYDROCHLORIDE,0.03
+Carvedilol,CARVEDILOL,Cardiovascular disease,Cardiovascular,ADRB1 | ADRA1A,0.06,25MG oral,Once or twice daily,Indefinite (lifelong maintenance),CARVEDILOL,58.8
+Carvedilol Phosphate,CARVEDILOL PHOSPHATE,Cardiovascular disease,Cardiovascular,ADRB1 | ADRA1A,0.00,80MG oral,Once daily,Indefinite (lifelong maintenance),CARVEDILOL PHOSPHATE,0.1
+Cedazuridine; Decitabine,INQOVI,MDS; AML,Infectious,CDA | DNMT3A | DNMT1,0.00,100MG; 35MG oral,Once or twice daily,Indefinite (lifelong maintenance),CEDAZURIDINE; DECITABINE,2.1
+Ceritinib,ZYKADIA,Non-small cell lung cancer (ALK+),Oncology,ALK | ALK | ALK,,150MG oral,Once or twice daily,Long-term (until progression / disease control),CERITINIB,0.0
+Chlorambucil,LEUKERAN,Cancer,Oncology,DNA inhibitor,,2MG oral,Once or twice daily,Long-term (until progression / disease control),CHLORAMBUCIL,0.0
+Chloroquine Phosphate,CHLOROQUINE PHOSPHATE,Autoimmune disease,Autoimmune,Ferriprotoporphyrin IX inhibitor,,250MG oral,Once or twice daily,Indefinite (lifelong maintenance),CHLOROQUINE PHOSPHATE,0.0
+Chlorothiazide Sodium,CHLOROTHIAZIDE SODIUM,Cardiovascular disease,Cardiovascular,SLC12A3,,500MG BASE/VIAL,As directed,Indefinite (lifelong maintenance),CHLOROTHIAZIDE SODIUM,0.0
+Chlorpromazine Hydrochloride,CHLORPROMAZINE HYDROCHLORIDE,Schizophrenia; Bipolar disorder; Nausea,Psychiatric,HTR2A | DRD2,,200MG oral,Once or twice daily,Indefinite (lifelong maintenance),CHLORPROMAZINE HYDROCHLORIDE,0.0
+Chlorthalidone,CHLORTHALIDONE,Psychiatric disorder,Psychiatric,SLC12A3,0.00,25MG oral,Once or twice daily,Indefinite (lifelong maintenance),CHLORTHALIDONE,0.91
+Cholestyramine,CHOLESTYRAMINE,Hypercholesterolemia; Bile acid diarrhea,Metabolic,Bile acids sequestering agent,0.00,4GM RESIN/PACKET oral,Once daily,Indefinite (lifelong maintenance),CHOLESTYRAMINE,1.18
+Choline Fenofibrate,FENOFIBRIC ACID,Hypertriglyceridemia; Mixed dyslipidemia,Metabolic,PPARA,,45MG FENOFIBRIC ACID oral,Once daily,Indefinite (lifelong maintenance),CHOLINE FENOFIBRATE,0.0
+Ciclesonide,ALVESCO,Respiratory disease,Respiratory,NR3C1,0.04,0.05MG/SPRAY nasal,Once daily,Indefinite (lifelong maintenance),CICLESONIDE,36.06
+Cilastatin Sodium; Imipenem,IMIPENEM AND CILASTATIN,Dyslipidemia; CV risk reduction,Metabolic,DPEP1 | dacB,0.00,500MG BASE/VIAL; 500MG/VIAL IV,Once daily,Indefinite (lifelong maintenance),CILASTATIN SODIUM; IMIPENEM,0.18
+Cilastatin Sodium; Imipenem; Relebactam,RECARBRIO,Hypertension; Heart failure; Diabetic nephropathy,Metabolic,DPEP1 | dacB | bla | bla | ampC | blaUOE-1,0.00,500MG BASE/VIAL; 500MG/VIAL … IV,Once daily,Indefinite (lifelong maintenance),CILASTATIN SODIUM; IMIPENEM; RELEBACTAM,0.95
+Cilostazol,CILOSTAZOL,Cardiovascular disease,Cardiovascular,PDE3A,0.00,50MG oral,Once or twice daily,Indefinite (lifelong maintenance),CILOSTAZOL,3.49
+Cimetidine,CIMETIDINE,GERD; Peptic ulcer disease,GI,HRH2,0.00,200MG oral,Once or twice daily,Indefinite (lifelong maintenance),CIMETIDINE,4.28
+Cimetidine Hydrochloride,CIMETIDINE HYDROCHLORIDE,GERD; Peptic ulcer disease,GI,HRH2,,300MG BASE/5ML oral,Once or twice daily,Indefinite (lifelong maintenance),CIMETIDINE HYDROCHLORIDE,0.0
+Cinacalcet Hydrochloride,CINACALCET HYDROCHLORIDE,Metabolic disorder,Metabolic,CASR,0.08,30MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),CINACALCET HYDROCHLORIDE,77.97
+Citalopram Hydrobromide,CELEXA,Psychiatric disorder,Psychiatric,SLC6A4,0.05,40MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),CITALOPRAM HYDROBROMIDE,48.19
+Cladribine,CLADRIBINE,Neurological disorder,Neurology,DNA inhibitor,0.06,10MG oral,Once or twice daily,Long-term (until progression / disease control),CLADRIBINE,62.25
+Clevidipine,CLEVIPREX,Hypertension; Angina,Cardiovascular,CACNA1C,0.00,50MG/100ML (0.5MG/mL) IV,As directed,Indefinite (lifelong maintenance),CLEVIDIPINE,0.08
+Clobazam,CLOBAZAM,Anxiety; Insomnia; Epilepsy,Neurology,GABRA1,0.20,20MG oral,Once or twice daily,Indefinite (lifelong maintenance),CLOBAZAM,195.08
+Clobetasol Propionate,BYQLOVI,Skin disorder,Dermatology,NR3C1,0.06,0.05% ophthalmic,As directed,Indefinite (lifelong maintenance),CLOBETASOL PROPIONATE,62.04
+Clofarabine,CLOFARABINE,Cancer,Oncology,RRM1 | POLA1,,20MG/20ML (1MG/mL) IV,As directed,Long-term (until progression / disease control),CLOFARABINE,0.0
+Clomipramine Hydrochloride,ANAFRANIL,Psychiatric disorder,Psychiatric,SLC6A4,,75MG oral,Once or twice daily,Indefinite (lifelong maintenance),CLOMIPRAMINE HYDROCHLORIDE,0.0
+Clonazepam,CLONAZEPAM,Anxiety; Insomnia; Epilepsy,Psychiatric,GABRA1,0.08,2MG oral,Once or twice daily,Indefinite (lifelong maintenance),CLONAZEPAM,76.81
+Clonidine,CATAPRES-TTS-1,Cardiovascular disease,Cardiovascular,ADRA2A,0.13,0.3MG/24HR transdermal,Once weekly,Indefinite (lifelong maintenance),CLONIDINE,126.41
+Clonidine Hydrochloride,CLONIDINE HYDROCHLORIDE,Cardiovascular disease,Cardiovascular,ADRA2A,0.00,0.1MG/mL oral,Once daily,Indefinite (lifelong maintenance),CLONIDINE HYDROCHLORIDE,1.78
+Clopidogrel Bisulfate,CLOPIDOGREL BISULFATE,Cardiovascular disease,Cardiovascular,P2RY12,0.00,300MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),CLOPIDOGREL BISULFATE,0.23
+Clozapine,CLOZAPINE,Schizophrenia; Bipolar disorder; Nausea,Psychiatric,HTR2A | DRD2,0.07,100MG oral,Once or twice daily,Indefinite (lifelong maintenance),CLOZAPINE,71.78
+Cobicistat; Darunavir; Emtricitabine; Tenofovir Alafenamide Fumarate,SYMTUZA,Infectious disease,Infectious,CYP3A4 | pol,0.68,150MG; 800MG … oral,Once or twice daily,Indefinite (lifelong maintenance),COBICISTAT; DARUNAVIR; EMTRICITABINE; TENOFOVIR ALAFENAMIDE FUMARATE,678.94
+Cobicistat; Elvitegravir; Emtricitabine; Tenofovir Alafenamide Fumarate,GENVOYA,Infectious disease,Infectious,CYP3A4 | pol,0.98,150MG; 150MG … oral,Once or twice daily,Indefinite (lifelong maintenance),COBICISTAT; ELVITEGRAVIR; EMTRICITABINE; TENOFOVIR ALAFENAMIDE FUMARATE,980.53
+Cobicistat; Elvitegravir; Emtricitabine; Tenofovir Disoproxil Fumarate,STRIBILD,Infectious disease,Infectious,CYP3A4 | pol,0.05,150MG; 150MG … oral,Once or twice daily,Indefinite (lifelong maintenance),COBICISTAT; ELVITEGRAVIR; EMTRICITABINE; TENOFOVIR DISOPROXIL FUMARATE,45.75
+Cobimetinib Fumarate,COTELLIC,Cancer,Oncology,MAP2K1 | MAP2K2,0.00,20MG BASE oral,Once or twice daily,Long-term (until progression / disease control),COBIMETINIB FUMARATE,3.08
+Colesevelam Hydrochloride,COLESEVELAM HYDROCHLORIDE,Hypercholesterolemia; Bile acid diarrhea,Metabolic,Bile acids sequestering agent,0.00,625MG oral,Once or twice daily,Indefinite (lifelong maintenance),COLESEVELAM HYDROCHLORIDE,2.22
+Colestipol Hydrochloride,COLESTID,Primary biliary cholangitis; Gallstones,Metabolic,Bile acids sequestering agent,0.01,1GM oral,Once or twice daily,Indefinite (lifelong maintenance),COLESTIPOL HYDROCHLORIDE,12.7
+Crisaborole,EUCRISA,Psoriasis; Psoriatic arthritis,Dermatology,PDE4A,0.14,2% topical,Once or twice daily,Indefinite (lifelong maintenance),CRISABOROLE,144.85
+Crizotinib,XALKORI,Non-small cell lung cancer (ALK+),Oncology,MET | ALK | ALK | ALK | ROS1 | MST1R,0.01,250MG oral,Once or twice daily,Long-term (until progression / disease control),CRIZOTINIB,14.7
+Cromolyn Sodium,CROMOLYN SODIUM,Asthma; Allergic rhinitis,Respiratory,Unknown,0.01,100MG/5ML oral,As directed,Indefinite (lifelong maintenance),CROMOLYN SODIUM,12.3
+Cupric Sulfate; Manganese Sulfate; Selenious Acid; Zinc Sulfate,MULTRYS,Metabolic disorder,Metabolic,Unknown; Supplement,0.00,0.3MG COPPER/mL; 55MCG BASE/mL … IV,As directed,Indefinite (lifelong maintenance),CUPRIC SULFATE; MANGANESE SULFATE; SELENIOUS ACID; ZINC SULFATE,0.82
+Cyanocobalamin,CYANOCOBALAMIN,Metabolic disorder,Metabolic,Supplement,,1MG/mL,As directed,Indefinite (lifelong maintenance),CYANOCOBALAMIN,0.0
+Cyclosporine,CEQUA,Transplant rejection prevention; Autoimmune,Autoimmune,PPIA,0.33,100MG/mL oral,Once or twice daily,Indefinite (lifelong maintenance),CYCLOSPORINE,331.73
+Dabigatran Etexilate Mesylate,DABIGATRAN ETEXILATE MESYLATE,Atrial fibrillation; DVT/PE prevention,Cardiovascular,F2,0.03,150MG BASE/PACKET oral,As directed,Indefinite (lifelong maintenance),DABIGATRAN ETEXILATE MESYLATE,33.2
+Dabrafenib Mesylate,TAFINLAR,Cancer,Oncology,BRAF,0.07,10MG BASE oral,Once or twice daily,Long-term (until progression / disease control),DABRAFENIB MESYLATE,74.18
+Dacomitinib,VIZIMPRO,Non-small cell lung cancer (EGFR+),Oncology,EGFR | ERBB2 | ERBB4,,45MG oral,Once or twice daily,Long-term (until progression / disease control),DACOMITINIB,0.0
+Dapagliflozin,DAPAGLIFLOZIN,Type 2 diabetes; Heart failure; CKD,Metabolic,SLC5A2,1.50,10MG oral,Once or twice daily,Indefinite (lifelong maintenance),DAPAGLIFLOZIN,1497.01
+Dapagliflozin; Metformin Hydrochloride,XIGDUO XR,Type 2 diabetes; Heart failure; CKD,Metabolic,SLC5A2 | MT-ND6 | GPD2,0.05,10MG; 500MG oral,Once daily,Indefinite (lifelong maintenance),DAPAGLIFLOZIN; METFORMIN HYDROCHLORIDE,53.75
+Dapagliflozin; Saxagliptin Hydrochloride,DAPAGLIFLOZIN AND SAXAGLIPTIN HYDROCHLORIDE,Type 2 diabetes,Metabolic,SLC5A2 | DPP4,,10MG; 5MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),DAPAGLIFLOZIN; SAXAGLIPTIN HYDROCHLORIDE,0.0
+Dapsone,ACZONE,Infectious disease,Infectious,folP1,0.01,100MG oral,Once or twice daily,Long-term (until progression / disease control),DAPSONE,11.51
+Darifenacin Hydrobromide,DARIFENACIN,Neurological disorder,Neurology,CHRM3 | CHRM2,,7.5MG BASE oral,Once daily,Indefinite (lifelong maintenance),DARIFENACIN HYDROBROMIDE,0.0
+Darolutamide,NUBEQA,Prostate cancer (mCRPC),Oncology,AR,0.08,300MG oral,Once or twice daily,Long-term (until progression / disease control),DAROLUTAMIDE,76.63
+Darunavir,DARUNAVIR,Infectious disease,Infectious,pol,0.10,800MG oral,Once or twice daily,Indefinite (lifelong maintenance),DARUNAVIR,101.88
+Dasatinib,DASATINIB,Chronic myeloid leukaemia (CML),Oncology,ABL1,0.55,140MG oral,Once or twice daily,Long-term (until progression / disease control),DASATINIB,549.56
+Decitabine,DECITABINE,MDS; AML,Infectious,DNMT3A | DNMT1,0.00,50MG/VIAL IV,As directed,Indefinite (lifelong maintenance),DECITABINE,1.57
+Deferasirox,DEFERASIROX,Iron overload,Other,Iron chelating agent,0.01,360MG oral,Once or twice daily,Indefinite (lifelong maintenance),DEFERASIROX,8.06
+Deferoxamine Mesylate,DEFEROXAMINE MESYLATE,Iron overload,Other,Iron chelating agent,0.00,500MG/VIAL,As directed,Indefinite (lifelong maintenance),DEFEROXAMINE MESYLATE,0.08
+Deflazacort,DEFLAZACORT,Autoimmune disease,Autoimmune,NR3C1,0.42,36MG oral,Once or twice daily,Indefinite (lifelong maintenance),DEFLAZACORT,424.39
+Degarelix Acetate,FIRMAGON,Cancer,Oncology,GNRHR,0.00,120MG BASE/VIAL SC,Once daily,Long-term (until progression / disease control),DEGARELIX ACETATE,1.89
+Delgocitinib,ANZUPGO,RA; Psoriatic arthritis; UC; Atopic dermatitis,Oncology,JAK3,,2% topical,Once or twice daily,Long-term (until progression / disease control),DELGOCITINIB,0.0
+Desipramine Hydrochloride,DESIPRAMINE HYDROCHLORIDE,Psychiatric disorder,Psychiatric,SLC6A2,,150MG oral,Once or twice daily,Indefinite (lifelong maintenance),DESIPRAMINE HYDROCHLORIDE,0.0
+Desmopressin Acetate,DDAVP,Metabolic disorder,Metabolic,AVPR2,0.00,0.2MG oral,Once or twice daily,Indefinite (lifelong maintenance),DESMOPRESSIN ACETATE,0.96
+Desogestrel; Ethinyl Estradiol,AVERI,Metabolic disorder,Metabolic,PGR | ESR1,0.01,"0.1MG,0.125MG,0.15MG; 0.025MG,0.025MG,0.025MG oral",Once or twice daily,Indefinite (lifelong maintenance),DESOGESTREL; ETHINYL ESTRADIOL,8.49
+Desonide,DESONIDE,Skin disorder,Dermatology,NR3C1,0.01,0.05% topical,Once or twice daily,Indefinite (lifelong maintenance),DESONIDE,8.32
+Desoximetasone,DESOXIMETASONE,Skin disorder,Dermatology,NR3C1,,0.25% topical,As directed,Indefinite (lifelong maintenance),DESOXIMETASONE,0.0
+Desvenlafaxine,DESVENLAFAXINE,Psychiatric disorder,Psychiatric,SLC6A4 | SLC6A2,,100MG oral,Once daily,Indefinite (lifelong maintenance),DESVENLAFAXINE,0.0
+Desvenlafaxine Succinate,DESVENLAFAXINE SUCCINATE,Psychiatric disorder,Psychiatric,SLC6A4 | SLC6A2,0.04,100MG BASE oral,Once daily,Indefinite (lifelong maintenance),DESVENLAFAXINE SUCCINATE,36.28
+Deucravacitinib,SOTYKTU,Cancer,Oncology,TYK2,0.03,6MG oral,Once or twice daily,Long-term (until progression / disease control),DEUCRAVACITINIB,27.44
+Deuruxolitinib Phosphate,LEQSELVI,Cancer,Oncology,JAK3 | JAK2 | JAK1 | TYK2,,8MG BASE oral,Once or twice daily,Long-term (until progression / disease control),DEURUXOLITINIB PHOSPHATE,0.0
+Deutetrabenazine,AUSTEDO,Neurological disorder,Neurology,SLC18A2,0.56,12MG oral,Once or twice daily,Indefinite (lifelong maintenance),DEUTETRABENAZINE,555.93
+Dexlansoprazole,DEXILANT,GI disorder,GI,ATP4A,0.04,60MG oral,Once daily,Indefinite (lifelong maintenance),DEXLANSOPRAZOLE,35.49
+Dexmethylphenidate Hydrochloride,FOCALIN,ADHD; Narcolepsy,Psychiatric,SLC6A3 | SLC6A2,0.50,10MG oral,Once or twice daily,Indefinite (lifelong maintenance),DEXMETHYLPHENIDATE HYDROCHLORIDE,504.65
+Dexmethylphenidate Hydrochloride; Serdexmethylphenidate Chloride,AZSTARYS,ADHD; Narcolepsy,Psychiatric,SLC6A3 | SLC6A2,0.08,10.4MG BASE; 52.3MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),DEXMETHYLPHENIDATE HYDROCHLORIDE; SERDEXMETHYLPHENIDATE CHLORIDE,80.51
+Dextroamphetamine,XELSTRYM,ADHD; Narcolepsy,Psychiatric,SLC6A3 | SLC6A2 | SLC18A2,0.00,18MG/9HR transdermal,Once weekly,Indefinite (lifelong maintenance),DEXTROAMPHETAMINE,0.21
+Dextroamphetamine Sulfate,DEXEDRINE SPANSULE,ADHD; Narcolepsy,Psychiatric,SLC6A3 | SLC6A2 | SLC18A2,,15MG oral,Once daily,Indefinite (lifelong maintenance),DEXTROAMPHETAMINE SULFATE,0.0
+Dicyclomine Hydrochloride,DICYCLOMINE HYDROCHLORIDE,GI disorder,GI,CHRM3 | CHRM1,,10MG oral,Once or twice daily,Indefinite (lifelong maintenance),DICYCLOMINE HYDROCHLORIDE,0.0
+Dienogest; Estradiol Valerate,NATAZIA,Metabolic disorder,Metabolic,ESR1,0.00,"N/A,2MG,3MG,N/A,N/A; 3MG,2MG,2MG,1MG,N/A oral",Once or twice daily,Indefinite (lifelong maintenance),DIENOGEST; ESTRADIOL VALERATE,4.51
+Difamilast,ADQUEY,Psoriasis; Psoriatic arthritis,Dermatology,PDE4A,,1% topical,Once or twice daily,Indefinite (lifelong maintenance),DIFAMILAST,0.0
+Digoxin,DIGOXIN,Heart failure; Atrial fibrillation,Cardiovascular,ATP1A1,0.01,0.25MG oral,Once or twice daily,Indefinite (lifelong maintenance),DIGOXIN,8.22
+Diltiazem Hydrochloride,CARDIZEM,Hypertension; Angina,Cardiovascular,CACNA1C,0.03,120MG oral,Once or twice daily,Indefinite (lifelong maintenance),DILTIAZEM HYDROCHLORIDE,32.14
+Dimethyl Fumarate,DIMETHYL FUMARATE,Neurological disorder,Neurology,KEAP1,0.13,240MG oral,Once daily,Indefinite (lifelong maintenance),DIMETHYL FUMARATE,132.39
+Dipyridamole,DIPYRIDAMOLE,Cardiovascular disease,Cardiovascular,SLC29A1 | PDE5A,,5MG/mL,As directed,Indefinite (lifelong maintenance),DIPYRIDAMOLE,0.0
+Disopyramide Phosphate,DISOPYRAMIDE PHOSPHATE,Cardiovascular disease,Cardiovascular,SCN1A,0.00,150MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),DISOPYRAMIDE PHOSPHATE,0.11
+Divalproex Sodium,DEPAKOTE,Neurological disorder,Neurology,ALDH5A1,0.18,500MG VALPROIC ACID oral,Once daily,Indefinite (lifelong maintenance),DIVALPROEX SODIUM,178.57
+Docetaxel,BEIZRAY,Cancer,Oncology,TUBB4B,0.02,160MG/16ML (10MG/mL) IV,As directed,Long-term (until progression / disease control),DOCETAXEL,15.05
+Dofetilide,DOFETILDE,Cardiovascular disease,Cardiovascular,KCNH2,0.00,0.5MG oral,Once or twice daily,Indefinite (lifelong maintenance),DOFETILIDE,2.65
+Dolutegravir Sodium,TIVICAY,Infectious disease,Infectious,pol,0.63,50MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),DOLUTEGRAVIR SODIUM,628.5
+Dolutegravir Sodium; Lamivudine,DOVATO,Infectious disease,Infectious,pol | P,0.51,50MG BASE; 300MG oral,Once or twice daily,Indefinite (lifelong maintenance),DOLUTEGRAVIR SODIUM; LAMIVUDINE,513.01
+Dolutegravir Sodium; Rilpivirine Hydrochloride,JULUCA,Infectious disease,Infectious,pol,0.22,50MG BASE; 25MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),DOLUTEGRAVIR SODIUM; RILPIVIRINE HYDROCHLORIDE,218.84
+Donepezil Hydrochloride,ARICEPT,Alzheimer's disease; Myasthenia gravis,Neurology,ACHE,0.01,23MG oral,Once or twice daily,Indefinite (lifelong maintenance),DONEPEZIL HYDROCHLORIDE,7.2
+Donepezil Hydrochloride; Memantine Hydrochloride,NAMZARIC,Alzheimer's disease; Myasthenia gravis,Neurology,ACHE | GRIN1,0.00,10MG; 28MG oral,Once daily,Indefinite (lifelong maintenance),DONEPEZIL HYDROCHLORIDE; MEMANTINE HYDROCHLORIDE,2.31
+Doravirine,PIFELTRO,Infectious disease,Infectious,pol,0.04,100MG oral,Once or twice daily,Indefinite (lifelong maintenance),DORAVIRINE,41.15
+Doravirine; Islatravir,IDVYNSO,Infectious disease,Infectious,pol | reverse,,100MG; 0.25MG oral,Once or twice daily,Indefinite (lifelong maintenance),DORAVIRINE; ISLATRAVIR,0.0
+Doravirine; Lamivudine; Tenofovir Disoproxil Fumarate,DELSTRIGO,Infectious disease,Infectious,pol | P,0.03,100MG; 300MG … oral,Once or twice daily,Indefinite (lifelong maintenance),DORAVIRINE; LAMIVUDINE; TENOFOVIR DISOPROXIL FUMARATE,29.54
+Dorzolamide Hydrochloride,DORZOLAMIDE HYDROCHLORIDE,Hypertension; Heart failure; Diabetic nephropathy,Ophthalmology,CA2,,2% BASE ophthalmic,Once daily,Indefinite (lifelong maintenance),DORZOLAMIDE HYDROCHLORIDE,0.0
+Dorzolamide Hydrochloride; Timolol Maleate,COSOPT,Hypertension; Heart failure; Diabetic nephropathy,Ophthalmology,CA2 | ADRB1 | ADRB2,0.00,2% BASE; 0.5% BASE ophthalmic,Once daily,Indefinite (lifelong maintenance),DORZOLAMIDE HYDROCHLORIDE; TIMOLOL MALEATE,0.46
+Doxazosin Mesylate,CARDURA,Cardiovascular disease,Cardiovascular,ADRA1A,0.00,8MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),DOXAZOSIN MESYLATE,4.76
+Doxepin Hydrochloride,DOXEPIN HYDROCHLORIDE,Psychiatric disorder,Psychiatric,SLC6A2,0.05,6MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),DOXEPIN HYDROCHLORIDE,51.99
+Doxercalciferol,DOXERCALCIFEROL,Metabolic disorder,Metabolic,VDR,,0.5MCG oral,Once or twice daily,Indefinite (lifelong maintenance),DOXERCALCIFEROL,0.0
+Doxylamine Succinate; Pyridoxine Hydrochloride,BONJESTA,Allergic rhinitis; Urticaria,Metabolic,HRH1,0.04,20MG; 20MG oral,Once daily,Indefinite (lifelong maintenance),DOXYLAMINE SUCCINATE; PYRIDOXINE HYDROCHLORIDE,40.72
+Dronedarone Hydrochloride,MULTAQ,Hypertension; Angina,Cardiovascular,CACNA1C | SCN1A | KCNJ2 | HCN4,0.02,400MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),DRONEDARONE HYDROCHLORIDE,24.86
+Drospirenone,SLYND,Heart failure; Hypertension; Hyperaldosteronism,Metabolic,NR3C2 | PGR,0.10,4MG oral,Once or twice daily,Indefinite (lifelong maintenance),DROSPIRENONE,95.95
+Drospirenone; Estetrol,NEXTSTELLIS,Heart failure; Hypertension; Hyperaldosteronism,Metabolic,NR3C2 | PGR | ESR2,,3MG; 14.2MG oral,Once or twice daily,Indefinite (lifelong maintenance),DROSPIRENONE; ESTETROL,0.0
+Drospirenone; Estradiol,ANGELIQ,Heart failure; Hypertension; Hyperaldosteronism,Metabolic,NR3C2 | PGR | ESR1,0.00,0.5MG; 1MG oral,Once or twice daily,Indefinite (lifelong maintenance),DROSPIRENONE; ESTRADIOL,0.44
+Drospirenone; Ethinyl Estradiol,LO-ZUMANDIMINE,Heart failure; Hypertension; Hyperaldosteronism,Metabolic,NR3C2 | PGR | ESR1,0.02,3MG; 0.03MG oral,Once or twice daily,Indefinite (lifelong maintenance),DROSPIRENONE; ETHINYL ESTRADIOL,20.19
+Drospirenone; Ethinyl Estradiol; Levomefolate Calcium,BEYAZ,Heart failure; Hypertension; Hyperaldosteronism,Metabolic,NR3C2 | PGR | ESR1,0.00,"3MG,N/A; 0.03MG,N/A … oral",Once or twice daily,Indefinite (lifelong maintenance),DROSPIRENONE; ETHINYL ESTRADIOL; LEVOMEFOLATE CALCIUM,0.84
+Droxidopa,DROXIDOPA,Neurological disorder,Neurology,ADRA1A,0.00,300MG oral,Once or twice daily,Indefinite (lifelong maintenance),DROXIDOPA,3.32
+Duloxetine Hydrochloride,DRIZALMA SPRINKLE,Psychiatric disorder,Psychiatric,SLC6A4 | SLC6A2,0.15,120MG BASE oral,Once daily,Indefinite (lifelong maintenance),DULOXETINE HYDROCHLORIDE,152.36
+Dutasteride,AVODART,Metabolic disorder,Metabolic,SRD5A1,,0.5MG oral,Once or twice daily,Indefinite (lifelong maintenance),DUTASTERIDE,0.0
+Dutasteride; Tamsulosin Hydrochloride,JALYN,Metabolic disorder,Metabolic,SRD5A1 | ADRA1A,,0.5MG; 0.4MG oral,Once or twice daily,Indefinite (lifelong maintenance),DUTASTERIDE; TAMSULOSIN HYDROCHLORIDE,0.0
+Duvelisib,COPIKTRA,Cancer,Oncology,,0.00,25MG oral,Once or twice daily,Long-term (until progression / disease control),DUVELISIB,3.32
+Edoxaban Tosylate,SAVAYSA,Atrial fibrillation; DVT/PE prevention,Cardiovascular,F10,0.00,60MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),EDOXABAN TOSYLATE,0.6
+Efavirenz,EFAVIRENZ,Infectious disease,Infectious,pol,0.00,50MG oral,Once or twice daily,Indefinite (lifelong maintenance),EFAVIRENZ,0.81
+Efavirenz; Emtricitabine; Tenofovir Disoproxil Fumarate,"EFAVIRENZ, EMTRICITABINE, AND TENOFOVIR DISOPROXIL FUMARATE",Infectious disease,Infectious,pol,,600MG; 200MG … oral,Once or twice daily,Indefinite (lifelong maintenance),EFAVIRENZ; EMTRICITABINE; TENOFOVIR DISOPROXIL FUMARATE,0.0
+Efavirenz; Lamivudine; Tenofovir Disoproxil Fumarate,SYMFI,Infectious disease,Infectious,pol | P,0.00,600MG; 300MG … oral,Once or twice daily,Indefinite (lifelong maintenance),EFAVIRENZ; LAMIVUDINE; TENOFOVIR DISOPROXIL FUMARATE,0.91
+Elagolix Sodium,ORILISSA,GI disorder,GI,GNRHR,0.06,200MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),ELAGOLIX SODIUM,61.78
+"Elagolix Sodium,estradiol,norethindrone Acetate; Elagolix Sodium",ORIAHNN (COPACKAGED),GI disorder,GI,GNRHR,,"300MG BASE,1MG,0.5MG; 300MG BASE oral",Once or twice daily,Indefinite (lifelong maintenance),"ELAGOLIX SODIUM,ESTRADIOL,NORETHINDRONE ACETATE; ELAGOLIX SODIUM",0.0
+Eltrombopag Choline,ALVAIZ,Autoimmune disease,Autoimmune,MPL,,54MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),ELTROMBOPAG CHOLINE,0.0
+Eltrombopag Olamine,ELTROMBOPAG OLAMINE,Autoimmune disease,Autoimmune,MPL,0.43,75MG ACID oral,Once or twice daily,Indefinite (lifelong maintenance),ELTROMBOPAG OLAMINE,425.98
+Empagliflozin,JARDIANCE,Type 2 diabetes; Heart failure; CKD,Metabolic,SLC5A2,3.62,25MG oral,Once or twice daily,Indefinite (lifelong maintenance),EMPAGLIFLOZIN,3615.91
+Empagliflozin; Linagliptin,GLYXAMBI,Type 2 diabetes,Metabolic,SLC5A2 | DPP4,0.02,25MG; 5MG oral,Once or twice daily,Indefinite (lifelong maintenance),EMPAGLIFLOZIN; LINAGLIPTIN,16.98
+Empagliflozin; Linagliptin; Metformin Hydrochloride,TRIJARDY XR,Type 2 diabetes,Metabolic,SLC5A2 | DPP4 | MT-ND6 | GPD2,,25MG; 5MG … oral,Once daily,Indefinite (lifelong maintenance),EMPAGLIFLOZIN; LINAGLIPTIN; METFORMIN HYDROCHLORIDE,0.0
+Empagliflozin; Metformin Hydrochloride,SYNJARDY,Type 2 diabetes; Heart failure; CKD,Metabolic,SLC5A2 | MT-ND6 | GPD2,0.14,12.5MG; 500MG oral,Once or twice daily,Indefinite (lifelong maintenance),EMPAGLIFLOZIN; METFORMIN HYDROCHLORIDE,139.12
+Emtricitabine,EMTRICITABINE,Infectious disease,Infectious,pol,0.00,10MG/mL oral,Once or twice daily,Indefinite (lifelong maintenance),EMTRICITABINE,0.59
+Emtricitabine; Rilpivirine Hydrochloride; Tenofovir Alafenamide Fumarate,ODEFSEY,Infectious disease,Infectious,pol,0.53,200MG; 25MG BASE … oral,Once or twice daily,Indefinite (lifelong maintenance),EMTRICITABINE; RILPIVIRINE HYDROCHLORIDE; TENOFOVIR ALAFENAMIDE FUMARATE,525.04
+Emtricitabine; Rilpivirine Hydrochloride; Tenofovir Disoproxil Fumarate,COMPLERA,Infectious disease,Infectious,pol,0.05,200MG; 25MG BASE … oral,Once or twice daily,Indefinite (lifelong maintenance),EMTRICITABINE; RILPIVIRINE HYDROCHLORIDE; TENOFOVIR DISOPROXIL FUMARATE,51.01
+Emtricitabine; Tenofovir Alafenamide Fumarate,DESCOVY,Infectious disease,Infectious,pol,1.03,200MG; 25MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),EMTRICITABINE; TENOFOVIR ALAFENAMIDE FUMARATE,1033.52
+Emtricitabine; Tenofovir Disoproxil Fumarate,TRUVADA,Infectious disease,Infectious,pol,0.04,200MG; 300MG oral,Once or twice daily,Indefinite (lifelong maintenance),EMTRICITABINE; TENOFOVIR DISOPROXIL FUMARATE,40.69
+Enalapril Maleate,ENALAPRIL MALEATE,Hypertension; Heart failure; CKD,Cardiovascular,ACE,0.04,20MG oral,Once or twice daily,Indefinite (lifelong maintenance),ENALAPRIL MALEATE,44.67
+Enalapril Maleate; Hydrochlorothiazide,VASERETIC,Hypertension; Heart failure; CKD,Cardiovascular,ACE | SLC12A3,,10MG; 25MG oral,Once or twice daily,Indefinite (lifelong maintenance),ENALAPRIL MALEATE; HYDROCHLOROTHIAZIDE,0.0
+Enasidenib Mesylate,IDHIFA,Cancer,Oncology,IDH2,0.01,100MG BASE oral,Once or twice daily,Long-term (until progression / disease control),ENASIDENIB MESYLATE,10.04
+Encorafenib,BRAFTOVI,Cancer,Oncology,BRAF,0.03,75MG oral,Once or twice daily,Long-term (until progression / disease control),ENCORAFENIB,31.34
+Ensartinib Hydrochloride,ENSACOVE,Non-small cell lung cancer (ALK+),Oncology,ALK,,100MG BASE oral,Once or twice daily,Long-term (until progression / disease control),ENSARTINIB HYDROCHLORIDE,0.0
+Entacapone,COMTAN,Neurological disorder,Neurology,COMT,0.00,200MG oral,Once or twice daily,Indefinite (lifelong maintenance),ENTACAPONE,0.78
+Entecavir,BARACLUDE,Infectious disease,Infectious,P,0.02,1MG oral,Once or twice daily,Indefinite (lifelong maintenance),ENTECAVIR,16.0
+Entrectinib,ROZLYTREK,Non-small cell lung cancer (ALK+),Oncology,NTRK1 | ROS1 | ALK,0.01,50MG/PACKET oral,As directed,Long-term (until progression / disease control),ENTRECTINIB,6.25
+Enzalutamide,ENZALUTAMIDE,Prostate cancer (mCRPC),Oncology,AR,0.28,80MG oral,Once or twice daily,Long-term (until progression / disease control),ENZALUTAMIDE,281.04
+Eplerenone,EPLERENONE,Heart failure; Hypertension; Hyperaldosteronism,Cardiovascular,NR3C2,0.01,50MG oral,Once or twice daily,Indefinite (lifelong maintenance),EPLERENONE,5.67
+Epoprostenol Sodium,EPOPROSTENOL SODIUM,Cardiovascular disease,Cardiovascular,PTGIR,0.01,1.5MG BASE/VIAL,As directed,Indefinite (lifelong maintenance),EPOPROSTENOL SODIUM,10.06
+Erdafitinib,BALVERSA,Cancer,Oncology,FGFR3,0.00,5MG oral,Once or twice daily,Long-term (until progression / disease control),ERDAFITINIB,0.23
+Eribulin Mesylate,ERIBULIN MESYLATE,Cancer,Oncology,TUBB4B,0.01,1MG/2ML (0.5MG/mL) IV,As directed,Long-term (until progression / disease control),ERIBULIN MESYLATE,10.83
+Erlotinib Hydrochloride,ERLOTINIB HYDROCHLORIDE,Non-small cell lung cancer (EGFR+),Oncology,EGFR,0.00,25MG BASE oral,Once or twice daily,Long-term (until progression / disease control),ERLOTINIB HYDROCHLORIDE,0.24
+Ertugliflozin,STEGLATRO,Type 2 diabetes; Heart failure; CKD,Metabolic,SLC5A2,0.31,15MG oral,Once or twice daily,Indefinite (lifelong maintenance),ERTUGLIFLOZIN,308.09
+Ertugliflozin; Metformin Hydrochloride,SEGLUROMET,Type 2 diabetes; Heart failure; CKD,Metabolic,SLC5A2 | MT-ND6 | GPD2,0.02,7.5MG; 500MG oral,Once or twice daily,Indefinite (lifelong maintenance),ERTUGLIFLOZIN; METFORMIN HYDROCHLORIDE,19.32
+Ertugliflozin; Sitagliptin Phosphate,STEGLUJAN,Type 2 diabetes,Metabolic,SLC5A2 | DPP4,0.00,15MG; 100MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),ERTUGLIFLOZIN; SITAGLIPTIN PHOSPHATE,2.87
+Escitalopram Oxalate,ESCITALOPRAM,Psychiatric disorder,Psychiatric,SLC6A4,0.01,20MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),ESCITALOPRAM OXALATE,5.25
+Eslicarbazepine Acetate,APTIOM,Hypertension; Heart failure; Diabetic nephropathy,Neurology,SCN1A,0.25,800MG oral,Once or twice daily,Indefinite (lifelong maintenance),ESLICARBAZEPINE ACETATE,245.14
+Esmolol Hydrochloride,BREVIBLOC,Asthma; COPD,Cardiovascular,ADRB1 | ADRB2,0.00,2.5GM/250ML (10MG/mL) IV,As directed,Indefinite (lifelong maintenance),ESMOLOL HYDROCHLORIDE,4.86
+Esomeprazole Magnesium,ESOMEPRAZOLE MAGNESIUM,GI disorder,GI,ATP4A,0.09,20MG BASE oral,Once daily,Indefinite (lifelong maintenance),ESOMEPRAZOLE MAGNESIUM,86.31
+Esomeprazole Magnesium; Naproxen,NAPROXEN AND ESOMEPRAZOLE MAGNESIUM,GI disorder,GI,ATP4A | PTGS2,,20MG BASE; 375MG oral,Once daily,Indefinite (lifelong maintenance),ESOMEPRAZOLE MAGNESIUM; NAPROXEN,0.0
+Esomeprazole Sodium,ESOMEPRAZOLE SODIUM,GI disorder,GI,ATP4A,,40MG BASE/VIAL IV,As directed,Indefinite (lifelong maintenance),ESOMEPRAZOLE SODIUM,0.0
+Estradiol,CLIMARA,Metabolic disorder,Metabolic,ESR1,0.12,10MCG,As directed,Indefinite (lifelong maintenance),ESTRADIOL,119.83
+Estradiol Acetate,FEMRING,Metabolic disorder,Metabolic,ESR1,0.00,0.1MG BASE/24HR,Once daily,Indefinite (lifelong maintenance),ESTRADIOL ACETATE,1.45
+Estradiol Cypionate,DEPO-ESTRADIOL,Metabolic disorder,Metabolic,ESR1,,5MG/mL,As directed,Indefinite (lifelong maintenance),ESTRADIOL CYPIONATE,0.0
+Estradiol Valerate,DELESTROGEN,Metabolic disorder,Metabolic,ESR1,,20MG/mL,As directed,Indefinite (lifelong maintenance),ESTRADIOL VALERATE,0.0
+Estradiol; Levonorgestrel,CLIMARA PRO,Metabolic disorder,Metabolic,ESR1 | PGR,,0.045MG/24HR; 0.015MG/24HR transdermal,Once daily,Indefinite (lifelong maintenance),ESTRADIOL; LEVONORGESTREL,0.0
+Estradiol; Norethindrone Acetate,ACTIVELLA,Metabolic disorder,Metabolic,ESR1 | PGR,0.01,1MG; 0.5MG oral,Once or twice daily,Indefinite (lifelong maintenance),ESTRADIOL; NORETHINDRONE ACETATE,10.14
+Estradiol; Norethindrone Acetate; Relugolix,MYFEMBREE,Metabolic disorder,Metabolic,ESR1 | PGR | GNRHR,0.04,1MG; 0.5MG … oral,Once or twice daily,Indefinite (lifelong maintenance),ESTRADIOL; NORETHINDRONE ACETATE; RELUGOLIX,37.35
+Estradiol; Progesterone,BIJUVA,Metabolic disorder,Metabolic,ESR1 | PGR,0.00,1MG; 100MG oral,Once or twice daily,Indefinite (lifelong maintenance),ESTRADIOL; PROGESTERONE,0.21
+"Estrogens, Conjugated",CONJUGATED ESTROGENS,Metabolic disorder,Metabolic,ESR2,0.14,1.25MG oral,Once or twice daily,Indefinite (lifelong maintenance),"ESTROGENS, CONJUGATED",135.73
+"Estrogens, Conjugated; Medroxyprogesterone Acetate",PREMPRO,Metabolic disorder,Metabolic,ESR2 | PGR,0.04,0.625MG; 5MG oral,Once or twice daily,Indefinite (lifelong maintenance),"ESTROGENS, CONJUGATED; MEDROXYPROGESTERONE ACETATE",35.88
+Ethacrynic Acid,EDECRIN,Cardiovascular disease,Cardiovascular,SLC12A1,0.00,25MG oral,Once or twice daily,Indefinite (lifelong maintenance),ETHACRYNIC ACID,0.48
+Ethinyl Estradiol; Ethynodiol Diacetate,KELNOR,Metabolic disorder,Metabolic,ESR1 | PGR,0.02,0.035MG; 1MG oral,Once or twice daily,Indefinite (lifelong maintenance),ETHINYL ESTRADIOL; ETHYNODIOL DIACETATE,19.45
+Ethinyl Estradiol; Etonogestrel,ELURYNG,Metabolic disorder,Metabolic,ESR1 | PGR,0.12,0.015MG/24HR; 0.12MG/24HR,As directed,Indefinite (lifelong maintenance),ETHINYL ESTRADIOL; ETONOGESTREL,123.79
+Ethinyl Estradiol; Levonorgestrel,AFIRMELLE,Metabolic disorder,Metabolic,ESR1 | PGR,0.07,0.02MG; 0.1MG oral,Once or twice daily,Indefinite (lifelong maintenance),ETHINYL ESTRADIOL; LEVONORGESTREL,65.5
+Ethinyl Estradiol; Norelgestromin,ONSURA,Metabolic disorder,Metabolic,ESR1 | PGR,0.14,0.035MG/24HR; 0.15MG/24HR transdermal,Once daily,Indefinite (lifelong maintenance),ETHINYL ESTRADIOL; NORELGESTROMIN,139.49
+Ethinyl Estradiol; Norethindrone,ARANELLE,Metabolic disorder,Metabolic,ESR1 | PGR,0.00,"0.035MG,0.035MG,0.035MG; 0.5MG,1MG,0.5MG oral",Once or twice daily,Indefinite (lifelong maintenance),ETHINYL ESTRADIOL; NORETHINDRONE,1.79
+Ethinyl Estradiol; Norethindrone Acetate,AUROVELA 24 FE,Metabolic disorder,Metabolic,ESR1 | PGR,0.00,"0.01MG,0.01MG; 1MG,N/A oral",Once or twice daily,Indefinite (lifelong maintenance),ETHINYL ESTRADIOL; NORETHINDRONE ACETATE,4.22
+Ethinyl Estradiol; Norgestimate,ESTARYLLA,Metabolic disorder,Metabolic,ESR1 | PGR,0.02,0.035MG; 0.25MG oral,Once or twice daily,Indefinite (lifelong maintenance),ETHINYL ESTRADIOL; NORGESTIMATE,24.41
+Ethinyl Estradiol; Norgestrel,CRYSELLE,Metabolic disorder,Metabolic,ESR1 | PGR,0.00,0.03MG; 0.3MG oral,Once or twice daily,Indefinite (lifelong maintenance),ETHINYL ESTRADIOL; NORGESTREL,3.94
+Ethinyl Estradiol; Segesterone Acetate,ANNOVERA,Metabolic disorder,Metabolic,ESR1 | PGR,0.02,0.013MG/24HR; 0.15MG/24HR,As directed,Indefinite (lifelong maintenance),ETHINYL ESTRADIOL; SEGESTERONE ACETATE,19.29
+Ethosuximide,ETHOSUXIMIDE,Hypertension; Angina,Neurology,CACNA1H,0.00,250MG/5ML oral,Once or twice daily,Indefinite (lifelong maintenance),ETHOSUXIMIDE,0.37
+Everolimus,AFINITOR,Transplant rejection; Oncology,Autoimmune,FKBP1A,0.25,1MG oral,Once or twice daily,Long-term (until progression / disease control),EVEROLIMUS,245.41
+Exemestane,AROMASIN,"Breast cancer (HR+, post-menopausal)",Oncology,CYP19A1,0.01,25MG oral,Once or twice daily,Long-term (until progression / disease control),EXEMESTANE,5.54
+Ezetimibe,EZETIMIBE,Hypercholesterolemia,Metabolic,NPC1L1,0.03,10MG oral,Once or twice daily,Indefinite (lifelong maintenance),EZETIMIBE,32.63
+Ezetimibe; Simvastatin,EZETIMIBE AND SIMVASTATIN,Dyslipidemia; CV risk reduction,Metabolic,NPC1L1 | HMGCR,,10MG; 80MG oral,Once or twice daily,Indefinite (lifelong maintenance),EZETIMIBE; SIMVASTATIN,0.0
+Famotidine,FAMOTIDINE,GERD; Peptic ulcer disease,GI,HRH2,0.31,20MG oral,Once or twice daily,Indefinite (lifelong maintenance),FAMOTIDINE,313.86
+Famotidine; Ibuprofen,IBUPROFEN AND FAMOTIDINE,GERD; Peptic ulcer disease,GI,HRH2 | PTGS2,,26.6MG; 800MG oral,Once or twice daily,Indefinite (lifelong maintenance),FAMOTIDINE; IBUPROFEN,0.0
+Febuxostat,FEBUXOSTAT,Gout; Hyperuricemia,Metabolic,XDH,0.00,80MG oral,Once or twice daily,Indefinite (lifelong maintenance),FEBUXOSTAT,4.73
+Fedratinib Hydrochloride,INREBIC,Cancer,Oncology,JAK2 | FLT3,0.00,100MG BASE oral,Once or twice daily,Long-term (until progression / disease control),FEDRATINIB HYDROCHLORIDE,1.79
+Felbamate,FELBAMATE,Neurological disorder,Neurology,GRIN1,0.03,600MG oral,Once or twice daily,Indefinite (lifelong maintenance),FELBAMATE,29.04
+Felodipine,FELODIPINE,Hypertension; Angina,Cardiovascular,NR3C2 | CACNA1C,0.00,2.5MG oral,Once daily,Indefinite (lifelong maintenance),FELODIPINE,0.67
+Fenofibrate,ANTARA (MICRONIZED),Hypertriglyceridemia; Mixed dyslipidemia,Metabolic,PPARA,0.00,150MG oral,Once or twice daily,Indefinite (lifelong maintenance),FENOFIBRATE,0.04
+Fentanyl,FENTANYL-100,Chronic pain; Cancer pain,Pain,OPRM1,0.46,100MCG/HR transdermal,Once daily,Indefinite (lifelong maintenance),FENTANYL,464.81
+Fentanyl Citrate,FENTANYL CITRATE,Chronic pain; Cancer pain,Pain,OPRM1,,0.05MG BASE/mL,As directed,Indefinite (lifelong maintenance),FENTANYL CITRATE,0.0
+Ferric Carboxymaltose,INJECTAFER,Hypertension; Heart failure; Diabetic nephropathy,Metabolic,Supplement,0.09,500MG IRON/10ML (50MG IRON/mL) IV,As directed,Indefinite (lifelong maintenance),FERRIC CARBOXYMALTOSE,91.05
+Ferric Citrate,AURYXIA,Metabolic disorder,Metabolic,Phosphate sequestering agent,0.04,210MG IRON oral,Once or twice daily,Indefinite (lifelong maintenance),FERRIC CITRATE,37.19
+Ferric Derisomaltose,MONOFERRIC,Metabolic disorder,Metabolic,Supplement,0.02,1GM/10ML (100MG/mL) IV,As directed,Indefinite (lifelong maintenance),FERRIC DERISOMALTOSE,23.27
+Ferric Hexacyanoferrate(ii),RADIOGARDASE (PRUSSIAN BLUE),Metabolic disorder,Metabolic,Radioactive metals chelating agent,,500MG oral,Once or twice daily,Indefinite (lifelong maintenance),FERRIC HEXACYANOFERRATE(II),0.0
+Ferric Maltol,ACCRUFER,Metabolic disorder,Metabolic,Supplement,0.01,30MG IRON oral,Once or twice daily,Indefinite (lifelong maintenance),FERRIC MALTOL,7.55
+Ferric Oxyhydroxide,VELPHORO,Metabolic disorder,Metabolic,Phosphate sequestering agent,0.09,500MG IRON oral,Once or twice daily,Indefinite (lifelong maintenance),FERRIC OXYHYDROXIDE,93.0
+Fesoterodine Fumarate,FESOTERODINE FUMARATE,Neurological disorder,Neurology,CHRM3 | CHRM2,0.03,8MG oral,Once daily,Indefinite (lifelong maintenance),FESOTERODINE FUMARATE,29.64
+Finasteride,FINASTERIDE,Metabolic disorder,Metabolic,SRD5A2,,5MG oral,Once or twice daily,Indefinite (lifelong maintenance),FINASTERIDE,0.0
+Finasteride; Tadalafil,FINASTERIDE AND TADALAFIL,Metabolic disorder,Metabolic,SRD5A2 | PDE5A,,5MG; 5MG oral,Once or twice daily,Indefinite (lifelong maintenance),FINASTERIDE; TADALAFIL,0.0
+Finerenone,KERENDIA,Heart failure; Hypertension; Hyperaldosteronism,Cardiovascular,NR3C2,0.07,40MG oral,Once or twice daily,Indefinite (lifelong maintenance),FINERENONE,69.32
+Fingolimod Hydrochloride,FINGOLIMOD HYDROCHLORIDE,Multiple sclerosis,Neurology,S1PR5,0.19,0.5MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),FINGOLIMOD HYDROCHLORIDE,185.21
+Fingolimod Lauryl Sulfate,TASCENSO ODT,Multiple sclerosis,Neurology,S1PR5,,0.5MG BASE oral,Once daily,Indefinite (lifelong maintenance),FINGOLIMOD LAURYL SULFATE,0.0
+Flecainide Acetate,FLECAINIDE ACETATE,Cardiovascular disease,Cardiovascular,SCN5A,0.00,50MG oral,Once or twice daily,Indefinite (lifelong maintenance),FLECAINIDE ACETATE,4.97
+Fludarabine Phosphate,FLUDARABINE PHOSPHATE,Metabolic disorder,Metabolic,RRM1 | POLA1,,50MG/VIAL,As directed,Indefinite (lifelong maintenance),FLUDARABINE PHOSPHATE,0.0
+Fluocinolone Acetonide,DERMOTIC,Skin disorder,Dermatology,NR3C1,0.01,0.01% topical,As directed,Indefinite (lifelong maintenance),FLUOCINOLONE ACETONIDE,6.8
+Fluocinolone Acetonide; Hydroquinone; Tretinoin,TRI-LUMA,Acne; Psoriasis; Photoageing,Dermatology,NR3C1 | RARG,,0.01%; 4% … topical,Once or twice daily,Indefinite (lifelong maintenance),FLUOCINOLONE ACETONIDE; HYDROQUINONE; TRETINOIN,0.0
+Fluocinolone Acetonide; Neomycin Sulfate,NEO-SYNALAR,Skin disorder,Dermatology,NR3C1 | rpsB,,0.025%; 3.5MG BASE/GM topical,Once or twice daily,Indefinite (lifelong maintenance),FLUOCINOLONE ACETONIDE; NEOMYCIN SULFATE,0.0
+Fluocinonide,FLUOCINONIDE,Skin disorder,Dermatology,NR3C1,,0.1% topical,Once or twice daily,Indefinite (lifelong maintenance),FLUOCINONIDE,0.0
+Fluoroestradiol F-18,CERIANNA,Metabolic disorder,Metabolic,Diagnostic agent,,50ML (4-100mCi/mL) IV,As directed,Indefinite (lifelong maintenance),FLUOROESTRADIOL F-18,0.0
+Fluorouracil,CARAC,Cancer,Oncology,TYMS,0.00,2% topical,As directed,Long-term (until progression / disease control),FLUOROURACIL,0.18
+Fluoxetine Hydrochloride,FLUOXETINE HYDROCHLORIDE,Psychiatric disorder,Psychiatric,SLC6A4,0.15,90MG BASE oral,Once daily,Indefinite (lifelong maintenance),FLUOXETINE HYDROCHLORIDE,154.27
+Fluoxetine Hydrochloride; Olanzapine,OLANZAPINE AND FLUOXETINE HYDROCHLORIDE,Schizophrenia; Bipolar disorder; Nausea,Psychiatric,SLC6A4 | HTR2A | HTR2C | DRD2,,25MG BASE; 3MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),FLUOXETINE HYDROCHLORIDE; OLANZAPINE,0.0
+Fluphenazine Decanoate,FLUPHENAZINE DECANOATE,Schizophrenia; Bipolar disorder; Nausea,Psychiatric,DRD2,,25MG/mL,As directed,Indefinite (lifelong maintenance),FLUPHENAZINE DECANOATE,0.0
+Fluphenazine Hydrochloride,FLUPHENAZINE HYDROCHLORIDE,Schizophrenia; Bipolar disorder; Nausea,Psychiatric,DRD2,,5MG/mL oral,As directed,Indefinite (lifelong maintenance),FLUPHENAZINE HYDROCHLORIDE,0.0
+Flurandrenolide,CORDRAN,Skin disorder,Dermatology,NR3C1,,0.004MG/SQ CM topical,As directed,Indefinite (lifelong maintenance),FLURANDRENOLIDE,0.0
+Flutamide,FLUTAMIDE,Prostate cancer (mCRPC),Oncology,AR,,125MG oral,Once or twice daily,Long-term (until progression / disease control),FLUTAMIDE,0.0
+Fluticasone Furoate,ARNUITY ELLIPTA,Respiratory disease,Respiratory,NR3C1,,0.0275MG/SPRAY nasal,Once daily,Indefinite (lifelong maintenance),FLUTICASONE FUROATE,0.0
+Fluticasone Furoate; Umeclidinium Bromide; Vilanterol Trifenatate,TRELEGY ELLIPTA,Asthma; COPD,Respiratory,NR3C1 | CHRM3 | ADRB2,,0.2MG//inh; 0.0625MG BASE//inh … inh,Once daily,Indefinite (lifelong maintenance),FLUTICASONE FUROATE; UMECLIDINIUM BROMIDE; VILANTEROL TRIFENATATE,0.0
+Fluticasone Furoate; Vilanterol Trifenatate,BREO ELLIPTA,Asthma; COPD,Respiratory,NR3C1 | ADRB2,,0.2MG//inh; 0.025MG BASE//inh inh,Once daily,Indefinite (lifelong maintenance),FLUTICASONE FUROATE; VILANTEROL TRIFENATATE,0.0
+Fluticasone Propionate,FLONASE ALLERGY RELIEF,Respiratory disease,Respiratory,NR3C1,0.02,0.093MG/SPRAY nasal,Once daily,Indefinite (lifelong maintenance),FLUTICASONE PROPIONATE,23.99
+Fluticasone Propionate; Salmeterol Xinafoate,ADVAIR HFA,Asthma; COPD,Respiratory,NR3C1 | ADRB2,0.39,0.232MG//inh; 0.014MG BASE//inh inh,Once daily,Indefinite (lifelong maintenance),FLUTICASONE PROPIONATE; SALMETEROL XINAFOATE,388.7
+Fluvastatin Sodium,FLUVASTATIN SODIUM,Dyslipidemia; CV risk reduction,Metabolic,HMGCR,,80MG BASE oral,Once daily,Indefinite (lifelong maintenance),FLUVASTATIN SODIUM,0.0
+Fluvoxamine Maleate,FLUVOXAMINE MALEATE,Psychiatric disorder,Psychiatric,SLC6A4,,100MG oral,Once or twice daily,Indefinite (lifelong maintenance),FLUVOXAMINE MALEATE,0.0
+Folic Acid,FOLIC ACID,Metabolic disorder,Metabolic,,0.07,1MG oral,Once or twice daily,Indefinite (lifelong maintenance),FOLIC ACID,67.22
+Formoterol Fumarate,FORMOTEROL FUMARATE,Asthma; COPD,Respiratory,ADRB2,0.01,0.02MG/2ML inh,As directed,Indefinite (lifelong maintenance),FORMOTEROL FUMARATE,12.21
+Formoterol Fumarate; Glycopyrrolate,BEVESPI AEROSPHERE,Asthma; COPD,Respiratory,ADRB2 | CHRM3 | CHRM1,,0.0048MG//inh; 0.0090MG//inh inh,Twice daily,Indefinite (lifelong maintenance),FORMOTEROL FUMARATE; GLYCOPYRROLATE,0.0
+Formoterol Fumarate; Mometasone Furoate,DULERA,Asthma; COPD,Respiratory,ADRB2 | NR3C1,0.34,0.005MG//inh; 0.2MG//inh inh,Twice daily,Indefinite (lifelong maintenance),FORMOTEROL FUMARATE; MOMETASONE FUROATE,344.92
+Fosamprenavir Calcium,FOSAMPRENAVIR CALCIUM,Infectious disease,Infectious,pol,,700MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),FOSAMPRENAVIR CALCIUM,0.0
+Foscarbidopa; Foslevodopa,VYALEV,Hypertension; Heart failure; Diabetic nephropathy,Neurology,DDC | ADRB1,,120MG/10ML; 2400MG/10ML (12MG/mL … SC,Weekly or monthly,Indefinite (lifelong maintenance),FOSCARBIDOPA; FOSLEVODOPA,0.0
+Fosinopril Sodium,FOSINOPRIL SODIUM,Hypertension; Heart failure; CKD,Cardiovascular,ACE,0.00,10MG oral,Once or twice daily,Indefinite (lifelong maintenance),FOSINOPRIL SODIUM,0.33
+Fosinopril Sodium; Hydrochlorothiazide,FOSINOPRIL SODIUM AND HYDROCHLOROTHIAZIDE,Hypertension; Heart failure; CKD,Cardiovascular,ACE | SLC12A3,,10MG; 12.5MG oral,Once or twice daily,Indefinite (lifelong maintenance),FOSINOPRIL SODIUM; HYDROCHLOROTHIAZIDE,0.0
+Fosphenytoin Sodium,CEREBYX,Neurological disorder,Neurology,SCN1A,0.00,50MG PHENYTOIN NA/mL,As directed,Indefinite (lifelong maintenance),FOSPHENYTOIN SODIUM,0.19
+Fostamatinib Disodium,TAVALISSE,Cancer,Oncology,SYK,0.02,150MG BASE oral,Once or twice daily,Long-term (until progression / disease control),FOSTAMATINIB DISODIUM,21.43
+Fruquintinib,FRUZAQLA,Cancer,Oncology,FLT1,0.00,5MG oral,Once or twice daily,Long-term (until progression / disease control),FRUQUINTINIB,0.37
+Fulvestrant,FASLODEX,"Breast cancer (ER+, metastatic)",Oncology,ESR1,0.00,250MG/5ML (50MG/mL),As directed,Long-term (until progression / disease control),FULVESTRANT,3.17
+Furosemide,FUROSCIX,Cardiovascular disease,Cardiovascular,SLC12A1,0.08,80MG/2.67ML (30MG/mL) SC,Weekly or monthly,Indefinite (lifelong maintenance),FUROSEMIDE,77.76
+Futibatinib,LYTGOBI,Cancer,Oncology,FGFR3,0.00,4MG oral,Once or twice daily,Long-term (until progression / disease control),FUTIBATINIB,0.45
+Gabapentin,GABAPENTIN,Neurological disorder,Neurology,CACNA1H,0.40,800MG oral,Once or twice daily,Indefinite (lifelong maintenance),GABAPENTIN,395.36
+Gabapentin Enacarbil,HORIZANT,Hypertension; Heart failure; Diabetic nephropathy,Neurology,CACNA1H,0.02,600MG oral,Once daily,Indefinite (lifelong maintenance),GABAPENTIN ENACARBIL,15.8
+Galantamine Hydrobromide,GALANTAMINE HYDROBROMIDE,Alzheimer's disease; Myasthenia gravis,Neurology,ACHE,,8MG BASE oral,Once daily,Indefinite (lifelong maintenance),GALANTAMINE HYDROBROMIDE,0.0
+Gefitinib,GEFITINIB,Non-small cell lung cancer (EGFR+),Oncology,EGFR,0.00,250MG oral,Once or twice daily,Long-term (until progression / disease control),GEFITINIB,0.11
+Gemcitabine Hydrochloride,AVGEMSI,Infectious disease,Infectious,RRM1 | POLA1,,225MG BASE,As directed,Indefinite (lifelong maintenance),GEMCITABINE HYDROCHLORIDE,0.0
+Gilteritinib Fumarate,XOSPATA,Cancer,Oncology,FLT3 | AXL,0.03,40MG BASE oral,Once or twice daily,Long-term (until progression / disease control),GILTERITINIB FUMARATE,34.32
+Glasdegib Maleate,DAURISMO,Cancer,Oncology,SMO,,100MG BASE oral,Once or twice daily,Long-term (until progression / disease control),GLASDEGIB MALEATE,0.0
+Glatiramer Acetate,COPAXONE,Multiple sclerosis,Neurology,Unknown,0.18,40MG/mL SC,Weekly or monthly,Indefinite (lifelong maintenance),GLATIRAMER ACETATE,177.89
+Glimepiride,GLIMEPIRIDE,Type 2 diabetes,Metabolic,KCNJ11,,1MG oral,Once or twice daily,Indefinite (lifelong maintenance),GLIMEPIRIDE,0.0
+Glimepiride; Pioglitazone Hydrochloride,DUETACT,Type 2 diabetes,Metabolic,KCNJ11 | PPARG,,4MG; 30MG oral,Once or twice daily,Indefinite (lifelong maintenance),GLIMEPIRIDE; PIOGLITAZONE HYDROCHLORIDE,0.0
+Glipizide,GLIPIZIDE,Type 2 diabetes,Metabolic,KCNJ11,0.05,10MG oral,Once daily,Indefinite (lifelong maintenance),GLIPIZIDE,47.18
+Glipizide; Metformin Hydrochloride,GLIPIZIDE AND METFORMIN HYDROCHLORIDE,Type 2 diabetes,Metabolic,KCNJ11 | MT-ND6 | GPD2,,2.5MG; 250MG oral,Once or twice daily,Indefinite (lifelong maintenance),GLIPIZIDE; METFORMIN HYDROCHLORIDE,0.0
+Glyburide,DIABETA,Type 2 diabetes,Metabolic,KCNJ11,0.00,5MG oral,Once or twice daily,Indefinite (lifelong maintenance),GLYBURIDE,4.1
+Glyburide; Metformin Hydrochloride,GLYBURIDE AND METFORMIN HYDROCHLORIDE,Type 2 diabetes,Metabolic,KCNJ11 | MT-ND6 | GPD2,,1.25MG; 250MG oral,Once or twice daily,Indefinite (lifelong maintenance),GLYBURIDE; METFORMIN HYDROCHLORIDE,0.0
+Glycopyrrolate,CUVPOSA,Respiratory disease,Respiratory,CHRM3 | CHRM1,0.01,2MG oral,Once or twice daily,Indefinite (lifelong maintenance),GLYCOPYRROLATE,6.76
+Glycopyrrolate; Neostigmine Methylsulfate,PREVDUO,Alzheimer's disease; Myasthenia gravis,Respiratory,CHRM3 | CHRM1 | ACHE,,0.6MG/3ML (0.2MG/mL); 3MG/3ML (1MG/mL) IV,As directed,Indefinite (lifelong maintenance),GLYCOPYRROLATE; NEOSTIGMINE METHYLSULFATE,0.0
+Glycopyrronium Tosylate,QBREXZA,Respiratory disease,Respiratory,CHRM3,0.01,2.4% BASE topical,As directed,Indefinite (lifelong maintenance),GLYCOPYRRONIUM TOSYLATE,10.7
+Goserelin Acetate,ZOLADEX,Cancer,Oncology,GNRHR,,10.8MG BASE,As directed,Long-term (until progression / disease control),GOSERELIN ACETATE,0.0
+Guanfacine Hydrochloride,GUANFACINE HYDROCHLORIDE,Psychiatric disorder,Psychiatric,ADRA2A,0.16,4MG BASE oral,Once daily,Indefinite (lifelong maintenance),GUANFACINE HYDROCHLORIDE,162.77
+Halcinonide,HALCINONIDE,Skin disorder,Dermatology,NR3C1,,0.1% topical,As directed,Indefinite (lifelong maintenance),HALCINONIDE,0.0
+Halobetasol Propionate,BRYHALI,Skin disorder,Dermatology,NR3C1,0.00,0.05% topical,Once or twice daily,Indefinite (lifelong maintenance),HALOBETASOL PROPIONATE,0.14
+Halobetasol Propionate; Tazarotene,DUOBRII,Acne; Psoriasis; Photoageing,Dermatology,NR3C1 | RARG,0.00,0.01%; 0.045% topical,Once or twice daily,Indefinite (lifelong maintenance),HALOBETASOL PROPIONATE; TAZAROTENE,1.11
+Haloperidol,HALOPERIDOL,Migraine (acute),Psychiatric,HTR2A | DRD2,,0.5MG oral,Once or twice daily,Indefinite (lifelong maintenance),HALOPERIDOL,0.0
+Haloperidol Decanoate,HALOPERIDOL DECANOATE,Migraine (acute),Psychiatric,HTR2A | DRD2,,50MG BASE/mL,As directed,Indefinite (lifelong maintenance),HALOPERIDOL DECANOATE,0.0
+Haloperidol Lactate,HALOPERIDOL,Migraine (acute),Psychiatric,HTR2A | DRD2,,2MG BASE/mL oral,As directed,Indefinite (lifelong maintenance),HALOPERIDOL LACTATE,0.0
+Homatropine Methylbromide; Hydrocodone Bitartrate,HYCODAN,Chronic pain; Cancer pain,Pain,OPRK1,,1.5MG; 5MG oral,Once or twice daily,Indefinite (lifelong maintenance),HOMATROPINE METHYLBROMIDE; HYDROCODONE BITARTRATE,0.0
+Hydralazine Hydrochloride,HYDRALAZINE HYDROCHLORIDE,Cardiovascular disease,Cardiovascular,Unknown,,50MG oral,Once or twice daily,Indefinite (lifelong maintenance),HYDRALAZINE HYDROCHLORIDE,0.0
+Hydralazine Hydrochloride; Isosorbide Dinitrate,BIDIL,Cardiovascular disease,Cardiovascular,GUCY1B1,0.00,37.5MG; 20MG oral,Once or twice daily,Indefinite (lifelong maintenance),HYDRALAZINE HYDROCHLORIDE; ISOSORBIDE DINITRATE,1.44
+Hydrochlorothiazide,HYDROCHLOROTHIAZIDE,Cardiovascular disease,Cardiovascular,SLC12A3,,50MG oral,Once or twice daily,Indefinite (lifelong maintenance),HYDROCHLOROTHIAZIDE,0.0
+Hydrochlorothiazide; Irbesartan,AVALIDE,Cardiovascular disease,Cardiovascular,SLC12A3 | AGTR1,,12.5MG; 300MG oral,Once or twice daily,Indefinite (lifelong maintenance),HYDROCHLOROTHIAZIDE; IRBESARTAN,0.0
+Hydrochlorothiazide; Lisinopril,ZESTORETIC,Hypertension; Heart failure; CKD,Cardiovascular,SLC12A3 | ACE,,25MG; 20MG oral,Once or twice daily,Indefinite (lifelong maintenance),HYDROCHLOROTHIAZIDE; LISINOPRIL,0.0
+Hydrochlorothiazide; Losartan Potassium,HYZAAR,Cardiovascular disease,Cardiovascular,SLC12A3 | AGTR1,0.00,25MG; 100MG oral,Once or twice daily,Indefinite (lifelong maintenance),HYDROCHLOROTHIAZIDE; LOSARTAN POTASSIUM,0.0
+Hydrochlorothiazide; Metoprolol Tartrate,LOPRESSOR HCT,Cardiovascular disease,Cardiovascular,SLC12A3 | ADRB1,,25MG; 50MG oral,Once or twice daily,Indefinite (lifelong maintenance),HYDROCHLOROTHIAZIDE; METOPROLOL TARTRATE,0.0
+Hydrochlorothiazide; Moexipril Hydrochloride,MOEXIPRIL HYDROCHLORIDE AND HYDROCHLOROTHIAZIDE,Hypertension; Heart failure; CKD,Cardiovascular,SLC12A3 | ACE,,12.5MG; 7.5MG oral,Once or twice daily,Indefinite (lifelong maintenance),HYDROCHLOROTHIAZIDE; MOEXIPRIL HYDROCHLORIDE,0.0
+Hydrochlorothiazide; Olmesartan Medoxomil,BENICAR HCT,Cardiovascular disease,Cardiovascular,SLC12A3 | AGTR1,,25MG; 40MG oral,Once or twice daily,Indefinite (lifelong maintenance),HYDROCHLOROTHIAZIDE; OLMESARTAN MEDOXOMIL,0.0
+Hydrochlorothiazide; Quinapril Hydrochloride,QUINAPRIL HYDROCHLORIDE AND HYDROCHLOROTHIAZIDE,Hypertension; Heart failure; CKD,Cardiovascular,SLC12A3 | ACE,,12.5MG; 10MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),HYDROCHLOROTHIAZIDE; QUINAPRIL HYDROCHLORIDE,0.0
+Hydrochlorothiazide; Spironolactone,ALDACTAZIDE,Heart failure; Hypertension; Hyperaldosteronism,Cardiovascular,SLC12A3 | NR3C2,,25MG; 25MG oral,Once or twice daily,Indefinite (lifelong maintenance),HYDROCHLOROTHIAZIDE; SPIRONOLACTONE,0.0
+Hydrochlorothiazide; Telmisartan,MICARDIS HCT,Cardiovascular disease,Cardiovascular,SLC12A3 | AGTR1,,25MG; 80MG oral,Once or twice daily,Indefinite (lifelong maintenance),HYDROCHLOROTHIAZIDE; TELMISARTAN,0.0
+Hydrochlorothiazide; Triamterene,MAXZIDE,Cardiovascular disease,Cardiovascular,SLC12A3 | SCNN1A,,25MG; 37.5MG oral,Once or twice daily,Indefinite (lifelong maintenance),HYDROCHLOROTHIAZIDE; TRIAMTERENE,0.0
+Hydrochlorothiazide; Valsartan,DIOVAN HCT,Cardiovascular disease,Cardiovascular,SLC12A3 | AGTR1,0.00,25MG; 320MG oral,Once or twice daily,Indefinite (lifelong maintenance),HYDROCHLOROTHIAZIDE; VALSARTAN,0.11
+Hydrocodone Bitartrate,HYDROCODONE BITARTRATE,Chronic pain; Cancer pain,Pain,OPRK1,,100MG oral,Once daily,Indefinite (lifelong maintenance),HYDROCODONE BITARTRATE,0.0
+Hydrocodone Bitartrate; Ibuprofen,REPREXAIN,Chronic pain; Cancer pain,Pain,OPRK1 | PTGS2,,7.5MG; 200MG oral,Once or twice daily,Indefinite (lifelong maintenance),HYDROCODONE BITARTRATE; IBUPROFEN,0.0
+Hydromorphone Hydrochloride,DILAUDID,Chronic pain; Cancer pain,Pain,OPRM1,0.11,8MG oral,Once or twice daily,Indefinite (lifelong maintenance),HYDROMORPHONE HYDROCHLORIDE,113.14
+Hydroxocobalamin,CYANOKIT,Metabolic disorder,Metabolic,Cyanide sequestering agent,,5GM/VIAL (5GM/KIT),As directed,Indefinite (lifelong maintenance),HYDROXOCOBALAMIN,0.0
+Hydroxychloroquine Sulfate,HYDROXYCHLOROQUINE SULFATE,SLE; RA; Malaria prevention,Autoimmune,TLR7 | TLR9,,300MG oral,Once or twice daily,Indefinite (lifelong maintenance),HYDROXYCHLOROQUINE SULFATE,0.0
+Hydroxyurea,HYDREA,Sickle cell disease; Chronic myeloid leukaemia,Oncology,RRM1,0.01,100MG oral,Once or twice daily,Long-term (until progression / disease control),HYDROXYUREA,14.78
+Ibandronate Sodium,IBANDRONATE SODIUM,Metabolic disorder,Metabolic,FDPS,,3MG BASE/3ML IV,As directed,Indefinite (lifelong maintenance),IBANDRONATE SODIUM,0.0
+Ibrutinib,IMBRUVICA,B-cell malignancies (CLL/MCL),Oncology,BTK,0.22,420MG oral,Once or twice daily,Long-term (until progression / disease control),IBRUTINIB,217.0
+Icosapent Ethyl,ICOSAPENT ETHYL,Metabolic disorder,Metabolic,Unknown,0.13,500MG oral,Once or twice daily,Indefinite (lifelong maintenance),ICOSAPENT ETHYL,125.05
+Idelalisib,IDELALISIB,Cancer,Oncology,PIK3CD,,150MG oral,Once or twice daily,Long-term (until progression / disease control),IDELALISIB,0.0
+Iloperidone,FANAPT,Schizophrenia; Bipolar disorder; Nausea,Psychiatric,DRD2 | HTR2A,0.11,12MG oral,Once or twice daily,Indefinite (lifelong maintenance),ILOPERIDONE,108.29
+Iloprost,AURLUMYN,Cardiovascular disease,Cardiovascular,PTGIR,,100MCG/mL (100MCG/mL) IV,As directed,Indefinite (lifelong maintenance),ILOPROST,0.0
+Imatinib Mesylate,GLEEVEC,Chronic myeloid leukaemia (CML),Oncology,ABL1 | PDGFRB | KIT | ABL1,0.04,400MG BASE oral,Once or twice daily,Long-term (until progression / disease control),IMATINIB MESYLATE,44.69
+Imipramine Hydrochloride,IMIPRAMINE HYDROCHLORIDE,Psychiatric disorder,Psychiatric,SLC6A4 | SLC6A2,0.00,10MG oral,Once or twice daily,Indefinite (lifelong maintenance),IMIPRAMINE HYDROCHLORIDE,3.72
+Imipramine Pamoate,IMIPRAMINE PAMOATE,Psychiatric disorder,Psychiatric,SLC6A4 | SLC6A2,,75MG HYDROCHLORIDE oral,Once or twice daily,Indefinite (lifelong maintenance),IMIPRAMINE PAMOATE,0.0
+Inavolisib,ITOVEBI,Cancer,Oncology,PIK3CA,,9MG oral,Once or twice daily,Long-term (until progression / disease control),INAVOLISIB,0.0
+Indapamide,INDAPAMIDE,Cardiovascular disease,Cardiovascular,SLC12A3,0.00,1.25MG oral,Once or twice daily,Indefinite (lifelong maintenance),INDAPAMIDE,0.99
+Ipratropium Bromide,ATROVENT HFA,Respiratory disease,Respiratory,CHRM3,,0.021MG//inh inh,Twice daily,Indefinite (lifelong maintenance),IPRATROPIUM BROMIDE,0.0
+Irbesartan,AVAPRO,Cardiovascular disease,Cardiovascular,AGTR1,0.01,300MG oral,Once or twice daily,Indefinite (lifelong maintenance),IRBESARTAN,9.09
+Irinotecan Hydrochloride,CAMPTOSAR,Cancer,Oncology,TOP1,0.02,300MG/15ML (20MG/mL),As directed,Long-term (until progression / disease control),IRINOTECAN HYDROCHLORIDE,22.11
+Iron Dextran,INFED,Metabolic disorder,Metabolic,Supplement,0.01,100MG IRON/2ML (50MG IRON/mL),As directed,Indefinite (lifelong maintenance),IRON DEXTRAN,7.96
+Iron Sucrose,IRON SUCROSE,Metabolic disorder,Metabolic,Supplement,0.32,200MG IRON/10ML (20MG IRON/mL) IV,As directed,Indefinite (lifelong maintenance),IRON SUCROSE,317.71
+Isoniazid,ISONIAZID,Tuberculosis prophylaxis/treatment,Infectious,inhA,0.00,50MG/5ML oral,Once or twice daily,Long-term (until progression / disease control),ISONIAZID,1.52
+Isotretinoin,ABSORICA,Acne; Psoriasis; Photoageing,Dermatology,RARG,0.06,32MG oral,Once or twice daily,Indefinite (lifelong maintenance),ISOTRETINOIN,58.06
+Isradipine,ISRADIPINE,Hypertension; Angina,Cardiovascular,CACNA1C,0.00,2.5MG oral,Once or twice daily,Indefinite (lifelong maintenance),ISRADIPINE,0.28
+Ivabradine Hydrochloride,IVABRADINE HYDROCHLORIDE,Cardiovascular disease,Cardiovascular,HCN4,,5MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),IVABRADINE HYDROCHLORIDE,0.0
+Ivosidenib,TIBSOVO,Cancer,Oncology,IDH1,0.04,250MG oral,Once or twice daily,Long-term (until progression / disease control),IVOSIDENIB,40.42
+Ixazomib Citrate,NINLARO,Multiple myeloma,Oncology,PSMD1,0.02,4MG BASE oral,Once or twice daily,Long-term (until progression / disease control),IXAZOMIB CITRATE,16.52
+Labetalol Hydrochloride,LABETALOL HYDROCHLORIDE,Cardiovascular disease,Cardiovascular,ADRA1A,0.04,300MG/300ML (1MG/mL) IV,As directed,Indefinite (lifelong maintenance),LABETALOL HYDROCHLORIDE,37.82
+Lacosamide,LACOSAMIDE,Neurological disorder,Neurology,SCN1A,0.26,200MG oral,Once or twice daily,Indefinite (lifelong maintenance),LACOSAMIDE,256.75
+Lamivudine,EPIVIR,Infectious disease,Infectious,pol | P,0.00,300MG oral,Once or twice daily,Indefinite (lifelong maintenance),LAMIVUDINE,2.43
+Lamivudine; Tenofovir Disoproxil Fumarate,CIMDUO,Infectious disease,Infectious,pol | P,0.00,300MG; 300MG oral,Once or twice daily,Indefinite (lifelong maintenance),LAMIVUDINE; TENOFOVIR DISOPROXIL FUMARATE,0.11
+Lamivudine; Zidovudine,LAMIVUDINE AND ZIDOVUDINE,Infectious disease,Infectious,pol | P,,150MG; 300MG oral,Once or twice daily,Indefinite (lifelong maintenance),LAMIVUDINE; ZIDOVUDINE,0.0
+Lamotrigine,LAMICTAL,Psychiatric disorder,Psychiatric,SCN1A,0.22,200MG oral,Once or twice daily,Indefinite (lifelong maintenance),LAMOTRIGINE,216.46
+Landiolol Hydrochloride,RAPIBLYK,Cardiovascular disease,Cardiovascular,ADRB1,,280MG BASE/VIAL IV,Once daily,Indefinite (lifelong maintenance),LANDIOLOL HYDROCHLORIDE,0.0
+Lanreotide Acetate,LANREOTIDE ACETATE,Dyslipidemia; CV risk reduction,GI,SSTR5 | SSTR2,0.01,120MG BASE/0.5ML (120MG BASE/0.5ML) SC,Weekly or monthly,Indefinite (lifelong maintenance),LANREOTIDE ACETATE,8.74
+Lansoprazole,LANSOPRAZOLE,GI disorder,GI,ATP4A,0.02,30MG oral,Once daily,Indefinite (lifelong maintenance),LANSOPRAZOLE,16.83
+Lanthanum Carbonate,FOSRENOL,Hypertension; Heart failure; Diabetic nephropathy,Metabolic,Phosphate sequestering agent,0.01,750MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),LANTHANUM CARBONATE,12.54
+Lapatinib Ditosylate,LAPATINIB DITOSYLATE,Non-small cell lung cancer (EGFR+),Oncology,ERBB2 | EGFR,0.00,250MG BASE oral,Once or twice daily,Long-term (until progression / disease control),LAPATINIB DITOSYLATE,3.15
+Larotrectinib Sulfate,VITRAKVI,Cancer,Oncology,NTRK1,0.02,20MG BASE/mL oral,Once or twice daily,Long-term (until progression / disease control),LAROTRECTINIB SULFATE,17.13
+Latanoprost,IYUZEH,Glaucoma; Ocular hypertension,Ophthalmology,PTGFR,0.00,0.005% ophthalmic,Once daily,Indefinite (lifelong maintenance),LATANOPROST,0.38
+Latanoprost; Netarsudil Dimesylate,ROCKLATAN,Glaucoma; Ocular hypertension,Ophthalmology,PTGFR | ROCK2,0.02,0.005%; 0.02% BASE ophthalmic,Once daily,Indefinite (lifelong maintenance),LATANOPROST; NETARSUDIL DIMESYLATE,18.26
+Latanoprostene Bunod,LATANOPROSTENE BUNOD,Glaucoma; Ocular hypertension,Ophthalmology,PTGFR,0.01,0.024% ophthalmic,Once daily,Indefinite (lifelong maintenance),LATANOPROSTENE BUNOD,9.86
+Lazertinib Mesylate,LAZCLUZE,Non-small cell lung cancer (EGFR+),Oncology,EGFR,,240MG BASE oral,Once or twice daily,Long-term (until progression / disease control),LAZERTINIB MESYLATE,0.0
+Leflunomide,ARAVA,Rheumatoid arthritis; Psoriatic arthritis,Autoimmune,DHODH,0.00,100MG oral,Once or twice daily,Indefinite (lifelong maintenance),LEFLUNOMIDE,0.03
+Lenacapavir Sodium,SUNLENCA,HIV infection (long-acting),Infectious,gag,0.01,300MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),LENACAPAVIR SODIUM,6.35
+Lenalidomide,LENALIDOMIDE,Cancer,Oncology,CRBN,0.51,25MG oral,Once or twice daily,Long-term (until progression / disease control),LENALIDOMIDE,508.33
+Leniolisib Phosphate,JOENJA,Cancer,Oncology,PIK3CD,0.01,70MG BASE oral,Once or twice daily,Long-term (until progression / disease control),LENIOLISIB PHOSPHATE,9.55
+Lenvatinib Mesylate,LENVIMA,Cancer,Oncology,FLT1,0.22,10MG BASE oral,Once or twice daily,Long-term (until progression / disease control),LENVATINIB MESYLATE,217.23
+Letermovir,PREVYMIS,Infectious disease,Infectious,TRM1,0.05,480MG oral,Once or twice daily,Indefinite (lifelong maintenance),LETERMOVIR,46.15
+Letrozole,FEMARA,"Breast cancer (HR+, post-menopausal)",Oncology,CYP19A1,0.00,2.5MG oral,Once or twice daily,Long-term (until progression / disease control),LETROZOLE,4.06
+Letrozole; Ribociclib Succinate,KISQALI FEMARA CO-PACK (COPACKAGED),Breast cancer (HR+/HER2-),Oncology,CYP19A1 | CDK4 | CDK6,,2.5MG; 200MG BASE oral,Once or twice daily,Long-term (until progression / disease control),LETROZOLE; RIBOCICLIB SUCCINATE,0.0
+Leuprolide Acetate,ELIGARD KIT,Prostate / Breast cancer; Endometriosis,Oncology,GNRHR,0.00,45MG SC,Once daily,Long-term (until progression / disease control),LEUPROLIDE ACETATE,0.13
+Leuprolide Mesylate,CAMCEVI ETM,Prostate / Breast cancer; Endometriosis,Oncology,GNRHR,,42MG BASE SC,As directed,Long-term (until progression / disease control),LEUPROLIDE MESYLATE,0.0
+Levalbuterol Hydrochloride,LEVALBUTEROL HYDROCHLORIDE,Asthma; COPD,Respiratory,ADRB2,,0.021% BASE inh,As directed,Indefinite (lifelong maintenance),LEVALBUTEROL HYDROCHLORIDE,0.0
+Levalbuterol Tartrate,XOPENEX HFA,Asthma; COPD,Respiratory,ADRB2,,0.045MG BASE//inh inh,Twice daily,Indefinite (lifelong maintenance),LEVALBUTEROL TARTRATE,0.0
+Levetiracetam,KEPPRA,Hypertension; Angina,Neurology,SV2A | CACNA1B,0.13,750MG oral,Once or twice daily,Indefinite (lifelong maintenance),LEVETIRACETAM,125.31
+Levobunolol Hydrochloride,BETAGAN,Asthma; COPD,Cardiovascular,ADRB1 | ADRB2,,0.5% ophthalmic,Once daily,Indefinite (lifelong maintenance),LEVOBUNOLOL HYDROCHLORIDE,0.0
+Levodopa,INBRIJA,Parkinson's disease,Neurology,DRD3,0.00,42MG inh,Once daily,Indefinite (lifelong maintenance),LEVODOPA,1.28
+Levomilnacipran Hydrochloride,FETZIMA,Psychiatric disorder,Psychiatric,SLC6A4 | SLC6A2,0.03,120MG BASE oral,Once daily,Indefinite (lifelong maintenance),LEVOMILNACIPRAN HYDROCHLORIDE,27.41
+Levonorgestrel,ATHENTIA NEXT,Metabolic disorder,Metabolic,PGR,0.41,1.5MG oral,Once or twice daily,Indefinite (lifelong maintenance),LEVONORGESTREL,405.11
+Levothyroxine Sodium,ERMEZA,Hypothyroidism,Metabolic,THRA,0.12,"0.3MG **See current Annual Edition, 1.8 Description of Speci oral",Once or twice daily,Indefinite (lifelong maintenance),LEVOTHYROXINE SODIUM,118.77
+Linaclotide,LINZESS,IBS-C; Chronic idiopathic constipation,GI,GUCY2C,0.80,290MCG oral,Once or twice daily,Indefinite (lifelong maintenance),LINACLOTIDE,799.02
+Linagliptin,LINAGLIPTIN,Type 2 diabetes,Metabolic,DPP4,0.32,5MG oral,Once or twice daily,Indefinite (lifelong maintenance),LINAGLIPTIN,318.3
+Linagliptin; Metformin Hydrochloride,JENTADUETO,Type 2 diabetes,Metabolic,DPP4 | MT-ND6 | GPD2,0.09,2.5MG; 850MG oral,Once or twice daily,Indefinite (lifelong maintenance),LINAGLIPTIN; METFORMIN HYDROCHLORIDE,92.04
+Liothyronine Sodium,CYTOMEL,Hypothyroidism,Metabolic,THRA,0.00,0.05MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),LIOTHYRONINE SODIUM,0.59
+Liraglutide,LIRAGLUTIDE,Type 2 diabetes; Obesity; CV risk reduction,Metabolic,GLP1R,1.42,18MG/3ML (6MG/mL) SC,Weekly or monthly,Indefinite (lifelong maintenance),LIRAGLUTIDE,1418.08
+Lisdexamfetamine Dimesylate,ARYNTA,Psychiatric disorder,Psychiatric,SLC6A3 | SLC6A2 | SLC18A2,2.76,60MG oral,Once or twice daily,Indefinite (lifelong maintenance),LISDEXAMFETAMINE DIMESYLATE,2760.31
+Lisinopril,LISINOPRIL,Hypertension; Heart failure; CKD,Cardiovascular,ACE,0.20,40MG oral,Once or twice daily,Indefinite (lifelong maintenance),LISINOPRIL,195.01
+Lithium Carbonate,LITHIUM CARBONATE,Hypertension; Heart failure; Diabetic nephropathy,Psychiatric,IMPA1 | GSK3A,0.03,300MG oral,Once or twice daily,Indefinite (lifelong maintenance),LITHIUM CARBONATE,34.41
+Lithium Citrate,LITHIUM CITRATE,Bipolar disorder,Psychiatric,IMPA1 | GSK3A,,300MG CARBONATE/5ML oral,Once or twice daily,Indefinite (lifelong maintenance),LITHIUM CITRATE,0.0
+Lomustine,GLEOSTINE,Cancer,Oncology,DNA inhibitor,,100MG oral,Once or twice daily,Long-term (until progression / disease control),LOMUSTINE,0.0
+Lopinavir; Ritonavir,KALETRA,Infectious disease,Infectious,pol | CYP3A4,0.00,200MG; 50MG oral,Once or twice daily,Indefinite (lifelong maintenance),LOPINAVIR; RITONAVIR,0.18
+Lorlatinib,LORBRENA,Non-small cell lung cancer (ALK+),Oncology,ALK | ALK,0.03,100MG oral,Once or twice daily,Long-term (until progression / disease control),LORLATINIB,34.95
+Losartan Potassium,ARBLI,Cardiovascular disease,Cardiovascular,AGTR1,0.16,100MG oral,Once or twice daily,Indefinite (lifelong maintenance),LOSARTAN POTASSIUM,158.79
+Lovastatin,LOVASTATIN,Dyslipidemia; CV risk reduction,Metabolic,HMGCR,0.01,10MG oral,Once or twice daily,Indefinite (lifelong maintenance),LOVASTATIN,5.0
+Loxapine,ADASUVE,Schizophrenia; Bipolar disorder; Nausea,Psychiatric,HTR2A | HTR2C | DRD2,0.00,10MG inh,Once daily,Indefinite (lifelong maintenance),LOXAPINE,3.24
+Loxapine Succinate,LOXAPINE SUCCINATE,Schizophrenia; Bipolar disorder; Nausea,Psychiatric,HTR2A | HTR2C | DRD2,,5MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),LOXAPINE SUCCINATE,0.0
+Lubiprostone,AMITIZA,GI disorder,GI,CLCN2,0.04,24MCG oral,Once or twice daily,Indefinite (lifelong maintenance),LUBIPROSTONE,44.77
+Lurasidone Hydrochloride,LATUDA,Schizophrenia; Bipolar disorder; Nausea,Psychiatric,HTR2A | DRD2,1.26,120MG oral,Once or twice daily,Indefinite (lifelong maintenance),LURASIDONE HYDROCHLORIDE,1263.8
+Macitentan,MACITENTAN,Cardiovascular disease,Cardiovascular,EDNRB,0.39,10MG oral,Once or twice daily,Indefinite (lifelong maintenance),MACITENTAN,387.71
+Macitentan; Tadalafil,OPSYNVI,Cardiovascular disease,Cardiovascular,EDNRB | PDE5A,,10MG; 40MG oral,Once or twice daily,Indefinite (lifelong maintenance),MACITENTAN; TADALAFIL,0.0
+"Magnesium Chloride; Potassium Chloride; Potassium Phosphate, Monobasic; Sodium Acetate; Sodium Chloride; Sodium Gluconate; Sodium Phosphate, Dibasic, Heptahydrate",ISOLYTE S PH 7.4 IN PLASTIC CONTAINER,Metabolic disorder,Metabolic,Supplement,0.11,30MG/100ML; 37MG/100ML …,As directed,Indefinite (lifelong maintenance),"MAGNESIUM CHLORIDE; POTASSIUM CHLORIDE; POTASSIUM PHOSPHATE, MONOBASIC; SODIUM ACETATE; SODIUM CHLORIDE; SODIUM GLUCONATE; SODIUM PHOSPHATE, DIBASIC, HEPTAHYDRATE",107.34
+Magnesium Chloride; Potassium Chloride; Sodium Acetate; Sodium Chloride; Sodium Gluconate,ISOLYTE S IN PLASTIC CONTAINER,Metabolic disorder,Metabolic,Supplement,,30MG/100ML; 37MG/100ML …,As directed,Indefinite (lifelong maintenance),MAGNESIUM CHLORIDE; POTASSIUM CHLORIDE; SODIUM ACETATE; SODIUM CHLORIDE; SODIUM GLUCONATE,0.0
+Magnesium Chloride; Sodium Bicarbonate; Sodium Chloride,NORMOCARB HF 25,Hypertension; Heart failure; Diabetic nephropathy,Metabolic,,,0.21GM/100ML; 3.97GM/100ML …,As directed,Indefinite (lifelong maintenance),MAGNESIUM CHLORIDE; SODIUM BICARBONATE; SODIUM CHLORIDE,0.0
+Maraviroc,MARAVIROC,Infectious disease,Infectious,CCR5,0.01,300MG oral,Once or twice daily,Indefinite (lifelong maintenance),MARAVIROC,7.87
+Medroxyprogesterone Acetate,DEPO-PROVERA,Metabolic disorder,Metabolic,PGR,0.00,10MG oral,Once or twice daily,Indefinite (lifelong maintenance),MEDROXYPROGESTERONE ACETATE,0.03
+Memantine Hydrochloride,MEMANTINE HYDROCHLORIDE,Alzheimer's disease,Neurology,GRIN1,0.01,7MG oral,Once daily,Indefinite (lifelong maintenance),MEMANTINE HYDROCHLORIDE,8.62
+Mercaptopurine,MERCAPTOPURINE,Autoimmune disease,Autoimmune,PPAT,0.01,50MG oral,Once or twice daily,Indefinite (lifelong maintenance),MERCAPTOPURINE,11.41
+Mesalamine,APRISO,Inflammatory bowel disease (UC/CD),GI,ALOX5 | PPARG | PTGS2,0.24,1.2GM oral,Once daily,Indefinite (lifelong maintenance),MESALAMINE,240.18
+Metformin Hydrochloride,METFORMIN HYDROCHLORIDE,Type 2 diabetes,Metabolic,MT-ND6 | GPD2,0.24,500MG/5ML oral,Once or twice daily,Indefinite (lifelong maintenance),METFORMIN HYDROCHLORIDE,238.33
+Metformin Hydrochloride; Pioglitazone Hydrochloride,ACTOPLUS MET,Type 2 diabetes,Metabolic,MT-ND6 | GPD2 | PPARG,,850MG; 15MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),METFORMIN HYDROCHLORIDE; PIOGLITAZONE HYDROCHLORIDE,0.0
+Metformin Hydrochloride; Saxagliptin Hydrochloride,SAXAGLIPTIN AND METFORMIN HYDROCHLORIDE,Type 2 diabetes,Metabolic,MT-ND6 | GPD2 | DPP4,,500MG; 5MG BASE oral,Once daily,Indefinite (lifelong maintenance),METFORMIN HYDROCHLORIDE; SAXAGLIPTIN HYDROCHLORIDE,0.0
+Metformin Hydrochloride; Sitagliptin,ZITUVIMET,Type 2 diabetes,Metabolic,MT-ND6 | GPD2,,500MG; 50MG oral,Once or twice daily,Indefinite (lifelong maintenance),METFORMIN HYDROCHLORIDE; SITAGLIPTIN,0.0
+Metformin Hydrochloride; Sitagliptin Phosphate,JANUMET,Type 2 diabetes,Metabolic,MT-ND6 | GPD2 | DPP4,0.36,500MG; 50MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),METFORMIN HYDROCHLORIDE; SITAGLIPTIN PHOSPHATE,355.24
+Methadone Hydrochloride,METHADONE HYDROCHLORIDE,Chronic pain; Cancer pain,Pain,OPRM1,0.07,40MG oral,Once or twice daily,Indefinite (lifelong maintenance),METHADONE HYDROCHLORIDE,65.53
+Methazolamide,METHAZOLAMIDE,Hypertension; Heart failure; Diabetic nephropathy,Ophthalmology,CA7 | CA1 | CA2 | CA4,,25MG oral,Once or twice daily,Indefinite (lifelong maintenance),METHAZOLAMIDE,0.0
+Methimazole,METHIMAZOLE,Hyperthyroidism,Metabolic,TPO,,5MG oral,Once or twice daily,Indefinite (lifelong maintenance),METHIMAZOLE,0.0
+Methotrexate,JYLAMVO,RA; Psoriasis; Cancer,Autoimmune,DHFR,0.01,30MG/0.6ML (30MG/0.6ML) SC,Weekly or monthly,Indefinite (lifelong maintenance),METHOTREXATE,14.7
+Methotrexate Sodium,METHOTREXATE SODIUM,RA; Psoriasis; Cancer,Autoimmune,DHFR,0.01,2.5MG BASE/mL oral,Once or twice daily,Indefinite (lifelong maintenance),METHOTREXATE SODIUM,8.01
+Methsuximide,CELONTIN,Hypertension; Angina,Neurology,CACNA1H,0.00,300MG oral,Once or twice daily,Indefinite (lifelong maintenance),METHSUXIMIDE,0.51
+Methyldopa,METHYLDOPA,Cardiovascular disease,Cardiovascular,ADRA2A,0.00,250MG oral,Once or twice daily,Indefinite (lifelong maintenance),METHYLDOPA,0.35
+Methylnaltrexone Bromide,RELISTOR,Opioid use disorder; Alcohol use disorder,Pain,OPRM1,0.09,150MG oral,Once or twice daily,Indefinite (lifelong maintenance),METHYLNALTREXONE BROMIDE,88.69
+Methylphenidate,COTEMPLA XR-ODT,ADHD; Narcolepsy,Psychiatric,SLC6A3 | SLC6A2,0.02,25.9MG oral,Once daily,Indefinite (lifelong maintenance),METHYLPHENIDATE,21.29
+Methylphenidate Hydrochloride,APTENSIO XR,ADHD; Narcolepsy,Psychiatric,SLC6A3 | SLC6A2,1.37,20MG oral,Once or twice daily,Indefinite (lifelong maintenance),METHYLPHENIDATE HYDROCHLORIDE,1366.52
+Methyltestosterone,METHYLTESTOSTERONE,Metabolic disorder,Metabolic,AR,,10MG oral,Once or twice daily,Indefinite (lifelong maintenance),METHYLTESTOSTERONE,0.0
+Metolazone,METOLAZONE,Cardiovascular disease,Cardiovascular,SLC12A3,0.00,2.5MG oral,Once or twice daily,Indefinite (lifelong maintenance),METOLAZONE,3.83
+Metoprolol Succinate,KAPSPARGO SPRINKLE,Cardiovascular disease,Cardiovascular,ADRB1,0.15,200MG TARTRATE oral,Once daily,Indefinite (lifelong maintenance),METOPROLOL SUCCINATE,154.27
+Metoprolol Tartrate,LOPRESSOR,Cardiovascular disease,Cardiovascular,ADRB1,,12.5MG oral,Once or twice daily,Indefinite (lifelong maintenance),METOPROLOL TARTRATE,0.0
+Mexiletine Hydrochloride,MEXILETINE HYDROCHLORIDE,Cardiovascular disease,Cardiovascular,SCN1A,0.00,150MG oral,Once or twice daily,Indefinite (lifelong maintenance),MEXILETINE HYDROCHLORIDE,2.32
+Midodrine Hydrochloride,MIDODRINE HYDROCHLORIDE,Cardiovascular disease,Cardiovascular,ADRA1A,0.02,2.5MG oral,Once or twice daily,Indefinite (lifelong maintenance),MIDODRINE HYDROCHLORIDE,18.91
+Midostaurin,MIDOSTAURIN,Cancer,Oncology,FLT3 | KIT | PDGFRB | PRKD3 | KDR,0.01,25MG oral,Once or twice daily,Long-term (until progression / disease control),MIDOSTAURIN,12.04
+Miglitol,MIGLITOL,Type 2 diabetes,Metabolic,MGAM | GAA,0.00,25MG oral,Once or twice daily,Indefinite (lifelong maintenance),MIGLITOL,0.07
+Milnacipran Hydrochloride,MILNACIPRAN HYDROCHLORIDE,Psychiatric disorder,Psychiatric,SLC6A4 | SLC6A2,0.03,100MG oral,Once or twice daily,Indefinite (lifelong maintenance),MILNACIPRAN HYDROCHLORIDE,33.42
+Milsaperidone,BYSANTI,Psychiatric disorder,Psychiatric,,,12MG oral,Once or twice daily,Indefinite (lifelong maintenance),MILSAPERIDONE,0.0
+Minoxidil,MEN'S ROGAINE,Type 2 diabetes,Cardiovascular,KCNJ11,0.00,5% topical,As directed,Indefinite (lifelong maintenance),MINOXIDIL,2.7
+Mirabegron,MIRABEGRON,Overactive bladder,Neurology,ADRB3,0.24,50MG oral,Once daily,Indefinite (lifelong maintenance),MIRABEGRON,236.24
+Mirdametinib,GOMEKLI,Cancer,Oncology,,,1MG oral,Once or twice daily,Long-term (until progression / disease control),MIRDAMETINIB,0.0
+Mirtazapine,MIRTAZAPINE,Migraine (acute),Psychiatric,HTR2A | HTR2C | ADRA2A,0.00,30MG oral,Once or twice daily,Indefinite (lifelong maintenance),MIRTAZAPINE,0.04
+Mitoxantrone Hydrochloride,MITOXANTRONE HYDROCHLORIDE,Neurological disorder,Neurology,TOP2A,,20MG BASE/10ML (2MG BASE/mL),As directed,Long-term (until progression / disease control),MITOXANTRONE HYDROCHLORIDE,0.0
+Modafinil,MODAFINIL,ADHD; Narcolepsy,Psychiatric,SLC6A3,0.02,200MG oral,Once or twice daily,Indefinite (lifelong maintenance),MODAFINIL,23.46
+Moexipril Hydrochloride,MOEXIPRIL HYDROCHLORIDE,Hypertension; Heart failure; CKD,Cardiovascular,ACE,0.00,7.5MG oral,Once or twice daily,Indefinite (lifelong maintenance),MOEXIPRIL HYDROCHLORIDE,0.02
+Molindone Hydrochloride,MOLINDONE HYDROCHLORIDE,Schizophrenia; Bipolar disorder; Nausea,Psychiatric,DRD2 | HTR2A,0.00,5MG oral,Once or twice daily,Indefinite (lifelong maintenance),MOLINDONE HYDROCHLORIDE,0.33
+Momelotinib Dihydrochloride,OJJAARA,Cancer,Oncology,,0.00,200MG BASE oral,Once or twice daily,Long-term (until progression / disease control),MOMELOTINIB DIHYDROCHLORIDE,0.32
+Mometasone Furoate,ASMANEX HFA,Respiratory disease,Respiratory,NR3C1,0.03,0.05MG/SPRAY nasal,Once daily,Indefinite (lifelong maintenance),MOMETASONE FUROATE,29.49
+Mometasone Furoate; Olopatadine Hydrochloride,RYALTRIS,Allergic rhinitis; Urticaria,Respiratory,NR3C1 | HRH1,0.00,0.025MG/SPRAY; 0.665MG/SPRAY nasal,Once daily,Indefinite (lifelong maintenance),MOMETASONE FUROATE; OLOPATADINE HYDROCHLORIDE,1.17
+Montelukast Sodium,MONTELUKAST SODIUM,Asthma; Allergic rhinitis,Respiratory,CYSLTR1,0.00,10MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),MONTELUKAST SODIUM,0.91
+Morphine Sulfate,DURAMORPH PF,Chronic pain; Cancer pain,Pain,OPRM1,0.19,30MG oral,Once or twice daily,Indefinite (lifelong maintenance),MORPHINE SULFATE,193.36
+Mycophenolate Mofetil,CELLCEPT,Transplant rejection; Autoimmune,Autoimmune,IMPDH1,,500MG oral,Once or twice daily,Indefinite (lifelong maintenance),MYCOPHENOLATE MOFETIL,0.0
+Mycophenolate Mofetil Hydrochloride,CELLCEPT,Transplant rejection; Autoimmune,Autoimmune,IMPDH1,0.02,500MG/VIAL,As directed,Indefinite (lifelong maintenance),MYCOPHENOLATE MOFETIL HYDROCHLORIDE,17.46
+Mycophenolate Sodium,MYCOPHENOLATE SODIUM,Transplant rejection; Autoimmune,Autoimmune,IMPDH1,0.00,360MG BASE oral,Once daily,Indefinite (lifelong maintenance),MYCOPHENOLATE SODIUM,4.46
+Nadolol,NADOLOL,Asthma; COPD,Cardiovascular,ADRB1 | ADRB2,0.00,20MG oral,Once or twice daily,Indefinite (lifelong maintenance),NADOLOL,4.33
+Naltrexone,VIVITROL,Opioid use disorder; Alcohol use disorder,Pain,OPRK1,0.71,380MG/VIAL,Once daily,Indefinite (lifelong maintenance),NALTREXONE,712.86
+Naltrexone Hydrochloride,NALTREXONE HYDROCHLORIDE,Opioid use disorder; Alcohol use disorder,Pain,OPRK1,,50MG oral,Once or twice daily,Indefinite (lifelong maintenance),NALTREXONE HYDROCHLORIDE,0.0
+Nateglinide,NATEGLINIDE,Type 2 diabetes,Metabolic,KCNJ11,,60MG oral,Once or twice daily,Indefinite (lifelong maintenance),NATEGLINIDE,0.0
+Nebivolol Hydrochloride,BYSTOLIC,Asthma; COPD,Cardiovascular,ADRB1 | ADRB2,0.01,20MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),NEBIVOLOL HYDROCHLORIDE,12.77
+Nebivolol Hydrochloride; Valsartan,VYDUO,Asthma; COPD,Cardiovascular,ADRB1 | ADRB2 | AGTR1,,5MG BASE; 80MG oral,Once or twice daily,Indefinite (lifelong maintenance),NEBIVOLOL HYDROCHLORIDE; VALSARTAN,0.0
+Nefazodone Hydrochloride,NEFAZODONE HYDROCHLORIDE,Migraine (acute),Psychiatric,SLC6A4 | HTR2A | HTR2C | SLC6A2,0.00,50MG oral,Once or twice daily,Indefinite (lifelong maintenance),NEFAZODONE HYDROCHLORIDE,0.17
+Nelarabine,ARRANON,Cancer,Oncology,DNA inhibitor,0.00,250MG/50ML (5MG/mL) IV,As directed,Long-term (until progression / disease control),NELARABINE,3.08
+Nelfinavir Mesylate,VIRACEPT,Infectious disease,Infectious,pol,0.00,625MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),NELFINAVIR MESYLATE,0.2
+Neratinib Maleate,NERLYNX,Non-small cell lung cancer (EGFR+),Oncology,ERBB2 | EGFR | ERBB4,0.05,40MG BASE oral,Once or twice daily,Long-term (until progression / disease control),NERATINIB MALEATE,52.17
+Netarsudil Mesylate,RHOPRESSA,Glaucoma,Ophthalmology,ROCK2,0.02,0.02% BASE ophthalmic,Once daily,Indefinite (lifelong maintenance),NETARSUDIL MESYLATE,20.63
+Nevirapine,NEVIRAPINE,Psychiatric disorder,Psychiatric,pol,0.00,50MG/5ML oral,Once or twice daily,Indefinite (lifelong maintenance),NEVIRAPINE,0.6
+Niacin,NIACIN,Metabolic disorder,Metabolic,,0.00,1GM oral,Once daily,Indefinite (lifelong maintenance),NIACIN,0.92
+Nicardipine Hydrochloride,CARDENE,Hypertension; Angina,Cardiovascular,CACNA1C,0.00,40MG/200ML (0.2MG/mL) IV,As directed,Indefinite (lifelong maintenance),NICARDIPINE HYDROCHLORIDE,0.41
+Nifedipine,NIFEDIPINE,Hypertension; Angina,Cardiovascular,CACNA1C,0.04,60MG oral,Once daily,Indefinite (lifelong maintenance),NIFEDIPINE,39.12
+Nilotinib,CAVHANZA,Cancer,Oncology,,,80MG oral,Once daily,Long-term (until progression / disease control),NILOTINIB,0.0
+Nilotinib D-tartrate,NILOTINIB D-TARTRATE,Cancer,Oncology,,,200MG BASE oral,Once or twice daily,Long-term (until progression / disease control),NILOTINIB D-TARTRATE,0.0
+Nilotinib Hydrochloride,NILOTINIB HYDROCHLORIDE,Chronic myeloid leukaemia (CML),Oncology,ABL1 | ABL1,0.18,200MG BASE oral,Once or twice daily,Long-term (until progression / disease control),NILOTINIB HYDROCHLORIDE,180.38
+Nilotinib Tartrate,DANZITEN,Cancer,Oncology,,,95MG BASE oral,Once or twice daily,Long-term (until progression / disease control),NILOTINIB TARTRATE,0.0
+Nilutamide,NILUTAMIDE,Prostate cancer (mCRPC),Oncology,AR,,150MG oral,Once or twice daily,Long-term (until progression / disease control),NILUTAMIDE,0.0
+Nimodipine,NIMODIPINE,Hypertension; Angina,Cardiovascular,NR3C2 | CACNA1C,0.00,6MG/mL oral,Once or twice daily,Indefinite (lifelong maintenance),NIMODIPINE,0.29
+Niraparib Tosylate,ZEJULA,Cancer,Oncology,PARP2 | PARP1,0.06,300MG BASE oral,Once or twice daily,Long-term (until progression / disease control),NIRAPARIB TOSYLATE,56.49
+Nirmatrelvir; Ritonavir,PAXLOVID (COPACKAGED),Infectious disease,Infectious,pol | CYP3A4,,150MG; 100MG oral,Once or twice daily,Indefinite (lifelong maintenance),NIRMATRELVIR; RITONAVIR,0.0
+Nisoldipine,NISOLDIPINE,Hypertension; Angina,Cardiovascular,CACNA1C,,34MG oral,Once daily,Indefinite (lifelong maintenance),NISOLDIPINE,0.0
+Nitisinone,HARLIKU,Metabolic disorder,Metabolic,HPD,0.05,10MG oral,Once or twice daily,Indefinite (lifelong maintenance),NITISINONE,48.62
+Nizatidine,AXID AR,GERD; Peptic ulcer disease,GI,HRH2,0.00,75MG oral,Once or twice daily,Indefinite (lifelong maintenance),NIZATIDINE,0.45
+Norethindrone,CAMILA,Metabolic disorder,Metabolic,PGR,0.01,0.35MG oral,Once or twice daily,Indefinite (lifelong maintenance),NORETHINDRONE,7.33
+Norethindrone Acetate,NORETHINDRONE ACETATE,Metabolic disorder,Metabolic,PGR,,5MG oral,Once or twice daily,Indefinite (lifelong maintenance),NORETHINDRONE ACETATE,0.0
+Norgestrel,OPILL,Metabolic disorder,Metabolic,PGR,,0.075MG oral,Once or twice daily,Indefinite (lifelong maintenance),NORGESTREL,0.0
+Nortriptyline Hydrochloride,NORTRIPTYLINE HYDROCHLORIDE,Psychiatric disorder,Psychiatric,SLC6A4 | SLC6A2,,10MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),NORTRIPTYLINE HYDROCHLORIDE,0.0
+Nystatin,KLAYESTA,Dyslipidemia; CV risk reduction,Metabolic,Ergosterol sequestering agent,0.07,"100,000 UNITS/mL oral",Once or twice daily,Indefinite (lifelong maintenance),NYSTATIN,67.48
+Nystatin; Triamcinolone Acetonide,NYSTATIN AND TRIAMCINOLONE ACETONIDE,Dyslipidemia; CV risk reduction,Metabolic,NR3C1,,"100,000 UNITS/GM; 0.1% topical",Once or twice daily,Indefinite (lifelong maintenance),NYSTATIN; TRIAMCINOLONE ACETONIDE,0.0
+Octreotide Acetate,BYNFEZIA PEN,Dyslipidemia; CV risk reduction,GI,SSTR5,0.01,7MG BASE/2.8ML (2.5MG BASE/mL) SC,Weekly or monthly,Indefinite (lifelong maintenance),OCTREOTIDE ACETATE,5.44
+Olanzapine,OLANZAPINE,Schizophrenia; Bipolar disorder; Nausea,Psychiatric,HTR2A | HTR2C | DRD2,0.10,20MG oral,Once or twice daily,Indefinite (lifelong maintenance),OLANZAPINE,96.46
+Olanzapine Pamoate,ZYPREXA RELPREVV,Schizophrenia; Bipolar disorder; Nausea,Psychiatric,HTR2A | HTR2C | DRD2,,405MG BASE/VIAL,Once daily,Indefinite (lifelong maintenance),OLANZAPINE PAMOATE,0.0
+Olanzapine; Samidorphan L-malate,LYBALVI,Generalized anxiety disorder,Psychiatric,HTR2A | HTR2C | DRD2 | OPRK1 | OPRD1 | OPRM1,0.21,20MG; 10MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),OLANZAPINE; SAMIDORPHAN L-MALATE,207.18
+Olaparib,LYNPARZA,Ovarian / Breast / Prostate cancer,Oncology,PARP1,0.23,150MG oral,Once or twice daily,Long-term (until progression / disease control),OLAPARIB,234.46
+Olmesartan Medoxomil,BENICAR,Cardiovascular disease,Cardiovascular,AGTR1,0.02,40MG oral,Once or twice daily,Indefinite (lifelong maintenance),OLMESARTAN MEDOXOMIL,15.78
+Olodaterol Hydrochloride,STRIVERDI RESPIMAT,Asthma; COPD,Respiratory,ADRB2,,0.0025MG BASE//inh inh,Twice daily,Indefinite (lifelong maintenance),OLODATEROL HYDROCHLORIDE,0.0
+Olodaterol Hydrochloride; Tiotropium Bromide,STIOLTO RESPIMAT,Asthma; COPD,Respiratory,ADRB2 | CHRM3,,0.0025MG BASE//inh; 0.0025MG BASE//inh inh,Twice daily,Indefinite (lifelong maintenance),OLODATEROL HYDROCHLORIDE; TIOTROPIUM BROMIDE,0.0
+Olsalazine Sodium,DIPENTUM,GI disorder,GI,ALOX5 | PPARG | PTGS2,0.00,250MG oral,Once or twice daily,Indefinite (lifelong maintenance),OLSALAZINE SODIUM,0.24
+Olutasidenib,REZLIDHIA,Cancer,Oncology,IDH1,,150MG oral,Once or twice daily,Long-term (until progression / disease control),OLUTASIDENIB,0.0
+Omega-3-acid Ethyl Esters,LOVAZA,Metabolic disorder,Metabolic,Unknown,0.00,1GM CONTAINS AT LEAST 900MG OF THE ETHYL ESTERS OF OMEGA-3 F oral,Once or twice daily,Indefinite (lifelong maintenance),OMEGA-3-ACID ETHYL ESTERS,0.38
+Omeprazole,OMEPRAZOLE,GI disorder,GI,ATP4A,0.35,20MG oral,Once daily,Indefinite (lifelong maintenance),OMEPRAZOLE,347.08
+Omeprazole Magnesium,OMEPRAZOLE MAGNESIUM,GI disorder,GI,ATP4A,0.01,20MG BASE oral,Once daily,Indefinite (lifelong maintenance),OMEPRAZOLE MAGNESIUM,7.91
+Omeprazole; Sodium Bicarbonate,KONVOMEP,Hypertension; Heart failure; Diabetic nephropathy,GI,ATP4A,0.01,20MG/PACKET; 1.68GM/PACKET oral,Once or twice daily,Indefinite (lifelong maintenance),OMEPRAZOLE; SODIUM BICARBONATE,7.32
+Omidenepag Isopropyl,OMLONTI,Ophthalmic disorder,Ophthalmology,PTGER2,,0.002% ophthalmic,As directed,Indefinite (lifelong maintenance),OMIDENEPAG ISOPROPYL,0.0
+Orlistat,ALLI,Obesity,Metabolic,LIPF | PNLIP,0.01,120MG oral,Once or twice daily,Indefinite (lifelong maintenance),ORLISTAT,6.16
+Osilodrostat Phosphate,ISTURISA,Metabolic disorder,Metabolic,CYP11B1,0.01,5MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),OSILODROSTAT PHOSPHATE,13.25
+Osimertinib Mesylate,TAGRISSO,Non-small cell lung cancer (EGFR+),Oncology,EGFR,0.31,80MG BASE oral,Once or twice daily,Long-term (until progression / disease control),OSIMERTINIB MESYLATE,305.1
+Oxcarbazepine,OXCARBAZEPINE,Hypertension; Heart failure; Diabetic nephropathy,Psychiatric,SCN1A,0.09,600MG oral,Once or twice daily,Indefinite (lifelong maintenance),OXCARBAZEPINE,89.64
+Oxybutynin,OXYTROL,Neurological disorder,Neurology,CHRM3 | CHRM2,0.04,3.9MG/24HR transdermal,Once daily,Indefinite (lifelong maintenance),OXYBUTYNIN,36.68
+Oxybutynin Chloride,OXYBUTYNIN CHLORIDE,Neurological disorder,Neurology,CHRM3 | CHRM2,,5MG/5ML oral,Once or twice daily,Indefinite (lifelong maintenance),OXYBUTYNIN CHLORIDE,0.0
+Oxycodone,XTAMPZA ER,Chronic pain; Cancer pain,Pain,OPRM1,0.27,36MG oral,Once daily,Indefinite (lifelong maintenance),OXYCODONE,271.33
+Oxycodone Hydrochloride,OXYCODONE HYDROCHLORIDE,Chronic pain; Cancer pain,Pain,OPRM1,0.13,30MG oral,Once or twice daily,Indefinite (lifelong maintenance),OXYCODONE HYDROCHLORIDE,125.57
+Oxymorphone Hydrochloride,OXYMORPHONE HYDROCHLORIDE,Chronic pain; Cancer pain,Pain,OPRK1,,5MG oral,Once daily,Indefinite (lifelong maintenance),OXYMORPHONE HYDROCHLORIDE,0.0
+Ozanimod Hydrochloride,ZEPOSIA,Multiple sclerosis,Neurology,S1PR1,0.08,0.92MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),OZANIMOD HYDROCHLORIDE,84.07
+Paclitaxel,ABRAXANE,Cancer,Oncology,TUBB4B,0.12,100MG/VIAL IV,Once daily,Long-term (until progression / disease control),PACLITAXEL,116.51
+Pacritinib Citrate,VONJO,Cancer,Oncology,JAK2 | FLT3 | ACVR1 | IRAK1,0.00,100MG BASE oral,Once or twice daily,Long-term (until progression / disease control),PACRITINIB CITRATE,4.29
+Palbociclib,IBRANCE,Breast cancer (HR+/HER2-),Oncology,CCND1 | CDK4,0.67,125MG oral,Once or twice daily,Long-term (until progression / disease control),PALBOCICLIB,671.72
+Paliperidone,INVEGA,Schizophrenia; Bipolar disorder; Nausea,Psychiatric,DRD2 | HTR2A,4.28,9MG oral,Once daily,Indefinite (lifelong maintenance),PALIPERIDONE,4277.14
+Paliperidone Palmitate,ERZOFRI,Schizophrenia; Bipolar disorder; Nausea,Psychiatric,DRD2 | HTR2A,,819MG/2.625ML (312MG/mL),Once daily,Indefinite (lifelong maintenance),PALIPERIDONE PALMITATE,0.0
+Palopegteriparatide,YORVIPATH,Osteoporosis,Metabolic,PTH1R,,0.42MG TERIPARATIDE/1.4ML (0.3MG TERIPARATIDE/mL) SC,Weekly or monthly,Indefinite (lifelong maintenance),PALOPEGTERIPARATIDE,0.0
+Pamidronate Disodium,PAMIDRONATE DISODIUM,Metabolic disorder,Metabolic,FDPS,,90MG/10ML (9MG/mL),As directed,Indefinite (lifelong maintenance),PAMIDRONATE DISODIUM,0.0
+Pantoprazole Sodium,PANTOPRAZOLE SODIUM,GI disorder,GI,ATP4A,0.02,40MG BASE oral,Once daily,Indefinite (lifelong maintenance),PANTOPRAZOLE SODIUM,22.24
+Paricalcitol,PARICALCITOL,Metabolic disorder,Metabolic,VDR,0.07,0.01MG/2ML (0.005MG/mL) IV,As directed,Indefinite (lifelong maintenance),PARICALCITOL,73.2
+Paroxetine Hydrochloride,PAROXETINE,Psychiatric disorder,Psychiatric,SLC6A4,0.04,40MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),PAROXETINE HYDROCHLORIDE,38.29
+Paroxetine Mesylate,BRISDELLE,Psychiatric disorder,Psychiatric,SLC6A4,,7.5MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),PAROXETINE MESYLATE,0.0
+Pasireotide Diaspartate,SIGNIFOR,Dyslipidemia; CV risk reduction,Metabolic,SSTR5 | SSTR2 | SSTR1 | SSTR3,0.00,0.9MG BASE/mL (0.9MG BASE/mL) SC,Weekly or monthly,Indefinite (lifelong maintenance),PASIREOTIDE DIASPARTATE,4.43
+Pasireotide Pamoate,SIGNIFOR LAR KIT,Dyslipidemia; CV risk reduction,Metabolic,SSTR3 | SSTR5 | SSTR2 | SSTR1,,60MG BASE/VIAL,As directed,Indefinite (lifelong maintenance),PASIREOTIDE PAMOATE,0.0
+Patiromer Sorbitex Calcium,VELTASSA,Metabolic disorder,Metabolic,Potassium chelating agent,0.03,16.8GM BASE/PACKET oral,Once daily,Indefinite (lifelong maintenance),PATIROMER SORBITEX CALCIUM,32.83
+Pemetrexed,PEMETREXED,RA; Psoriasis; Cancer,Oncology,DHFR | TYMS | GART,0.05,500MG/20ML (25MG/mL) IV,As directed,Long-term (until progression / disease control),PEMETREXED,52.94
+Pemetrexed Dipotassium,AXTLE,RA; Psoriasis; Cancer,Oncology,GART | thyA | DHFR,,500MG BASE/VIAL IV,Once daily,Long-term (until progression / disease control),PEMETREXED DIPOTASSIUM,0.0
+Pemetrexed Disodium,ALIMTA,RA; Psoriasis; Cancer,Oncology,TYMS | DHFR | GART,0.02,500MG BASE/20ML (25MG BASE/mL) IV,As directed,Long-term (until progression / disease control),PEMETREXED DISODIUM,18.36
+Pemigatinib,PEMAZYRE,Cancer,Oncology,FGFR2 | FGFR3 | FGFR1,0.01,13.5MG oral,Once or twice daily,Long-term (until progression / disease control),PEMIGATINIB,6.26
+Penicillamine,CUPRIMINE,Autoimmune disease,Autoimmune,Copper chelating agent,,250MG oral,Once or twice daily,Indefinite (lifelong maintenance),PENICILLAMINE,0.0
+Pentostatin,NIPENT,Dyslipidemia; CV risk reduction,Metabolic,ADA,0.00,10MG/VIAL,As directed,Indefinite (lifelong maintenance),PENTOSTATIN,0.06
+Perampanel,FYCOMPA,Neurological disorder,Neurology,GRIA4,0.18,12MG oral,Once or twice daily,Indefinite (lifelong maintenance),PERAMPANEL,183.21
+Perphenazine,PERPHENAZINE,Schizophrenia; Bipolar disorder; Nausea,Psychiatric,DRD2,,2MG oral,Once or twice daily,Indefinite (lifelong maintenance),PERPHENAZINE,0.0
+Pexidartinib Hydrochloride,TURALIO,Cancer,Oncology,CSF1R | FLT3 | KIT,0.01,125MG BASE oral,Once or twice daily,Long-term (until progression / disease control),PEXIDARTINIB HYDROCHLORIDE,10.31
+Phenobarbital Sodium,SEZABY,Hypertension; Heart failure; Diabetic nephropathy,Neurology,,,100MG/VIAL IV,Once daily,Indefinite (lifelong maintenance),PHENOBARBITAL SODIUM,0.0
+Phenytoin,DILANTIN,Neurological disorder,Neurology,SCN1A,0.01,50MG oral,Once or twice daily,Indefinite (lifelong maintenance),PHENYTOIN,13.12
+Phenytoin Sodium,DILANTIN,Neurological disorder,Neurology,SCN1A,0.01,50MG/mL,As directed,Indefinite (lifelong maintenance),PHENYTOIN SODIUM,9.38
+Pilocarpine Hydrochloride,ISOPTO CARPINE,Ophthalmic disorder,Ophthalmology,CHRM3 | CHRM1,,7.5MG oral,Once or twice daily,Indefinite (lifelong maintenance),PILOCARPINE HYDROCHLORIDE,0.0
+Pimecrolimus,ELIDEL,Skin disorder,Dermatology,FKBP1A,0.07,1% topical,Once or twice daily,Indefinite (lifelong maintenance),PIMECROLIMUS,74.28
+Pindolol,PINDOLOL,Asthma; COPD,Cardiovascular,ADRB1 | ADRB2,0.00,5MG oral,Once or twice daily,Indefinite (lifelong maintenance),PINDOLOL,0.62
+Pioglitazone Hydrochloride,ACTOS,Metabolic disorder,Metabolic,PPARG,,45MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),PIOGLITAZONE HYDROCHLORIDE,0.0
+Pirfenidone,ESBRIET,Psychiatric disorder,Psychiatric,Unknown,0.00,801MG oral,Once or twice daily,Indefinite (lifelong maintenance),PIRFENIDONE,2.2
+Pirtobrutinib,JAYPIRCA,B-cell malignancies (CLL/MCL),Oncology,BTK,0.00,100MG oral,Once or twice daily,Long-term (until progression / disease control),PIRTOBRUTINIB,2.02
+Pitavastatin Calcium,LIVALO,Dyslipidemia; CV risk reduction,Metabolic,HMGCR,0.01,4MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),PITAVASTATIN CALCIUM,14.01
+Pitavastatin Magnesium,ZYPITAMAG,Dyslipidemia; CV risk reduction,Metabolic,HMGCR,0.00,4MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),PITAVASTATIN MAGNESIUM,0.04
+Pitolisant Hydrochloride,WAKIX,Psychiatric disorder,Psychiatric,HRH3,0.20,17.8MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),PITOLISANT HYDROCHLORIDE,197.3
+Plecanatide,TRULANCE,IBS-C; Chronic idiopathic constipation,GI,GUCY2C,0.07,3MG oral,Once or twice daily,Indefinite (lifelong maintenance),PLECANATIDE,72.41
+Pomalidomide,POMALIDOMIDE,Cancer,Oncology,CRBN,0.15,4MG oral,Once or twice daily,Long-term (until progression / disease control),POMALIDOMIDE,151.46
+Ponatinib Hydrochloride,ICLUSIG,Chronic myeloid leukaemia (CML),Oncology,ABL1,0.10,45MG BASE oral,Once or twice daily,Long-term (until progression / disease control),PONATINIB HYDROCHLORIDE,99.56
+Ponesimod,PONVORY,Multiple sclerosis,Neurology,S1PR1,0.00,20MG oral,Once or twice daily,Indefinite (lifelong maintenance),PONESIMOD,4.93
+Potassium Chloride,KLOR-CON,Metabolic disorder,Metabolic,Supplement,0.02,10MEQ oral,Once daily,Indefinite (lifelong maintenance),POTASSIUM CHLORIDE,15.82
+Potassium Chloride; Sodium Chloride,POTASSIUM CHLORIDE 0.149% IN SODIUM CHLORIDE 0.45% IN PLASTIC CONTAINER,Metabolic disorder,Metabolic,Supplement,,300MG/100ML; 900MG/100ML,As directed,Indefinite (lifelong maintenance),POTASSIUM CHLORIDE; SODIUM CHLORIDE,0.0
+Potassium Citrate,POTASSIUM CITRATE,Metabolic disorder,Metabolic,,0.00,15MEQ oral,Once daily,Indefinite (lifelong maintenance),POTASSIUM CITRATE,0.01
+"Potassium Phosphate, Dibasic; Potassium Phosphate, Monobasic",POTASSIUM PHOSPHATES,Metabolic disorder,Metabolic,,,1.18GM/250ML (4.72MG/mL); 1.12GM/250ML (4.48MG/mL) IV,As directed,Indefinite (lifelong maintenance),"POTASSIUM PHOSPHATE, DIBASIC; POTASSIUM PHOSPHATE, MONOBASIC",0.0
+Pralsetinib,GAVRETO,Cancer,Oncology,RET | RET | RET,0.00,100MG oral,Once or twice daily,Long-term (until progression / disease control),PRALSETINIB,1.96
+Pramipexole Dihydrochloride,PRAMIPEXOLE DIHYDROCHLORIDE,Neurological disorder,Neurology,DRD2,,0.375MG oral,Once daily,Indefinite (lifelong maintenance),PRAMIPEXOLE DIHYDROCHLORIDE,0.0
+Prasugrel Hydrochloride,EFFIENT,Cardiovascular disease,Cardiovascular,P2RY12,0.01,10MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),PRASUGREL HYDROCHLORIDE,5.37
+Pravastatin Sodium,PRAVASTATIN SODIUM,Dyslipidemia; CV risk reduction,Metabolic,HMGCR,,10MG oral,Once or twice daily,Indefinite (lifelong maintenance),PRAVASTATIN SODIUM,0.0
+Prazosin Hydrochloride,MINIPRESS,Cardiovascular disease,Cardiovascular,ADRA1A,0.07,5MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),PRAZOSIN HYDROCHLORIDE,68.71
+Pregabalin,LYRICA,Neuropathic pain; Fibromyalgia; Epilepsy,Neurology,CACNA1H,0.21,330MG oral,Once daily,Indefinite (lifelong maintenance),PREGABALIN,214.04
+Primaquine Phosphate,PRIMAQUINE,Metabolic disorder,Metabolic,Unknown,0.00,15MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),PRIMAQUINE PHOSPHATE,0.02
+Primidone,MYSOLINE,Anxiety; Insomnia; Epilepsy,Psychiatric,GABRA1 | SCN1A,0.00,250MG oral,Once or twice daily,Indefinite (lifelong maintenance),PRIMIDONE,4.85
+Probenecid,PROBALAN,Gout; Hyperuricemia,Metabolic,SLC22A6 | SLC22A8 | SLC22A11,0.00,500MG oral,Once or twice daily,Indefinite (lifelong maintenance),PROBENECID,1.06
+Probenecid; Sulopenem Etzadroxil,ORLYNVAH,Gout; Hyperuricemia,Metabolic,SLC22A6 | SLC22A8 | SLC22A11 | dacB,,500MG; 500MG oral,Once or twice daily,Indefinite (lifelong maintenance),PROBENECID; SULOPENEM ETZADROXIL,0.0
+Procarbazine Hydrochloride,MATULANE,Hypertension; Heart failure; Diabetic nephropathy,Oncology,DNA inhibitor,0.00,50MG BASE oral,Once or twice daily,Long-term (until progression / disease control),PROCARBAZINE HYDROCHLORIDE,2.04
+Progesterone,CRINONE,Metabolic disorder,Metabolic,PGR,0.00,100MG,As directed,Indefinite (lifelong maintenance),PROGESTERONE,2.65
+Propafenone Hydrochloride,PROPAFENONE HYDROCHLORIDE,Asthma; COPD,Cardiovascular,ADRB1 | ADRB2 | SCN1A,,225MG oral,Once daily,Indefinite (lifelong maintenance),PROPAFENONE HYDROCHLORIDE,0.0
+Propranolol Hydrochloride,HEMANGEOL,Asthma; COPD,Cardiovascular,ADRB1 | ADRB2,0.01,4.28MG/mL oral,Once or twice daily,Indefinite (lifelong maintenance),PROPRANOLOL HYDROCHLORIDE,12.05
+Propylthiouracil,PROPYLTHIOURACIL,Hyperthyroidism,Metabolic,TPO | DIO1,,50MG oral,Once or twice daily,Indefinite (lifelong maintenance),PROPYLTHIOURACIL,0.0
+Protriptyline Hydrochloride,PROTRIPTYLINE HYDROCHLORIDE,Psychiatric disorder,Psychiatric,SLC6A4 | SLC6A2,,5MG oral,Once or twice daily,Indefinite (lifelong maintenance),PROTRIPTYLINE HYDROCHLORIDE,0.0
+Prucalopride Succinate,MOTEGRITY,Migraine (acute),GI,HTR4,0.04,2MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),PRUCALOPRIDE SUCCINATE,40.98
+Pyridostigmine Bromide,MESTINON,Alzheimer's disease; Myasthenia gravis,Neurology,ACHE,0.00,60MG oral,Once or twice daily,Indefinite (lifelong maintenance),PYRIDOSTIGMINE BROMIDE,2.09
+Pyridoxine Hydrochloride,PYRIDOXINE HYDROCHLORIDE,Metabolic disorder,Metabolic,Supplement,0.00,100MG/mL,As directed,Indefinite (lifelong maintenance),PYRIDOXINE HYDROCHLORIDE,0.41
+Quetiapine Fumarate,QUETIAPINE FUMARATE,Schizophrenia; Bipolar disorder; Nausea,Psychiatric,HTR2A | HTR2C | DRD2,0.17,400MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),QUETIAPINE FUMARATE,174.52
+Quinapril Hydrochloride,QUINAPRIL HYDROCHLORIDE,Hypertension; Heart failure; CKD,Cardiovascular,ACE,0.00,5MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),QUINAPRIL HYDROCHLORIDE,0.06
+Quinidine Gluconate,QUINIDINE GLUCONATE,Cardiovascular disease,Cardiovascular,SCN1A,0.00,324MG oral,Once daily,Indefinite (lifelong maintenance),QUINIDINE GLUCONATE,0.61
+Quinidine Sulfate,QUINIDINE SULFATE,Cardiovascular disease,Cardiovascular,SCN1A,,200MG oral,Once or twice daily,Indefinite (lifelong maintenance),QUINIDINE SULFATE,0.0
+Quizartinib Dihydrochloride,VANFLYTA,Cancer,Oncology,FLT3,,26.5MG BASE oral,Once or twice daily,Long-term (until progression / disease control),QUIZARTINIB DIHYDROCHLORIDE,0.0
+Rabeprazole Sodium,ACIPHEX,GI disorder,GI,ATP4A,0.00,20MG oral,Once daily,Indefinite (lifelong maintenance),RABEPRAZOLE SODIUM,0.77
+Raloxifene Hydrochloride,EVISTA,Metabolic disorder,Metabolic,ESR2,0.00,60MG oral,Once or twice daily,Indefinite (lifelong maintenance),RALOXIFENE HYDROCHLORIDE,1.43
+Raltegravir Potassium,ISENTRESS,Infectious disease,Infectious,pol,0.10,600MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),RALTEGRAVIR POTASSIUM,102.52
+Ramipril,RAMIPRIL,Hypertension; Heart failure; CKD,Cardiovascular,ACE,0.00,1.25MG oral,Once or twice daily,Indefinite (lifelong maintenance),RAMIPRIL,2.42
+Ranitidine Hydrochloride,RANITIDINE HYDROCHLORIDE,GERD; Peptic ulcer disease,GI,HRH2,0.00,150MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),RANITIDINE HYDROCHLORIDE,0.02
+Ranolazine,RANOLAZINE,Cardiovascular disease,Cardiovascular,SCN5A | SCN4A,0.01,1GM oral,Once daily,Indefinite (lifelong maintenance),RANOLAZINE,11.57
+Rasagiline Mesylate,AZILECT,Neurological disorder,Neurology,MAOB,0.00,1MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),RASAGILINE MESYLATE,0.71
+Regorafenib,STIVARGA,Cancer,Oncology,ABL1 | RAF1 | KIT | FGFR1 | MAPK11 | FGFR2 | FRK | DDR2 | BR,0.06,40MG oral,Once or twice daily,Long-term (until progression / disease control),REGORAFENIB,58.11
+Relugolix,ORGOVYX,Cancer,Oncology,GNRHR,0.02,120MG oral,Once or twice daily,Long-term (until progression / disease control),RELUGOLIX,16.42
+Remibrutinib,RHAPSIDO,Cancer,Oncology,,,25MG oral,Once or twice daily,Long-term (until progression / disease control),REMIBRUTINIB,0.0
+Repaglinide,REPAGLINIDE,Type 2 diabetes,Metabolic,KCNJ11,,0.5MG oral,Once or twice daily,Indefinite (lifelong maintenance),REPAGLINIDE,0.0
+Repotrectinib,AUGTYRO,Cancer,Oncology,NTRK1 | NTRK2 | ROS1 | NTRK3 | CD74 | ROS1,,160MG oral,Once or twice daily,Long-term (until progression / disease control),REPOTRECTINIB,0.0
+Ribociclib Succinate,KISQALI,Breast cancer (HR+/HER2-),Oncology,CDK4 | CDK6,0.27,200MG BASE oral,Once or twice daily,Long-term (until progression / disease control),RIBOCICLIB SUCCINATE,265.79
+Riboflavin 5'-phosphate Sodium,EPIOXA HD/EPIOXA KIT,Metabolic disorder,Metabolic,Unknown,,0.146% BASE/mL; 0.146% BASE/mL ophthalmic,Once daily,Indefinite (lifelong maintenance),RIBOFLAVIN 5'-PHOSPHATE SODIUM,0.0
+Rilpivirine Hydrochloride,EDURANT,Infectious disease,Infectious,pol,0.02,25MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),RILPIVIRINE HYDROCHLORIDE,18.87
+Riluzole,RILUZOLE,Neurological disorder,Neurology,SCN1A,0.00,50MG/10ML oral,Once or twice daily,Long-term (until progression / disease control),RILUZOLE,0.97
+Rilzabrutinib,WAYRILZ,B-cell malignancies (CLL/MCL),Oncology,BTK,,400MG oral,Once or twice daily,Long-term (until progression / disease control),RILZABRUTINIB,0.0
+Riociguat,ADEMPAS,Cardiovascular disease,Cardiovascular,GUCY1B1,0.18,2.5MG oral,Once or twice daily,Indefinite (lifelong maintenance),RIOCIGUAT,175.35
+Ripretinib,QINLOCK,Cancer,Oncology,KIT | PDGFRA,0.01,50MG oral,Once or twice daily,Long-term (until progression / disease control),RIPRETINIB,13.57
+Risedronate Sodium,ACTONEL,Metabolic disorder,Metabolic,FDPS,0.00,150MG oral,Once or twice daily,Indefinite (lifelong maintenance),RISEDRONATE SODIUM,0.0
+Risperidone,PERSERIS KIT,Schizophrenia; Bipolar disorder; Nausea,Psychiatric,HTR2A | HTR2C | DRD2,0.19,4MG oral,Once or twice daily,Indefinite (lifelong maintenance),RISPERIDONE,189.15
+Ritlecitinib Tosylate,LITFULO,Cancer,Oncology,JAK3 | ITK,0.00,50MG BASE oral,Once or twice daily,Long-term (until progression / disease control),RITLECITINIB TOSYLATE,1.62
+Ritonavir,NORVIR,Infectious disease,Infectious,pol | CYP3A4,0.00,100MG oral,Once or twice daily,Indefinite (lifelong maintenance),RITONAVIR,4.51
+Rivaroxaban,RIVAROXABAN,Atrial fibrillation; DVT/PE prevention,Cardiovascular,F10,1.02,20MG oral,Once or twice daily,Indefinite (lifelong maintenance),RIVAROXABAN,1023.61
+Rivastigmine,EXELON,Neurological disorder,Neurology,BCHE,0.00,13.3MG/24HR transdermal,Once daily,Indefinite (lifelong maintenance),RIVASTIGMINE,2.96
+Rivastigmine Tartrate,RIVASTIGMINE TARTRATE,Neurological disorder,Neurology,BCHE,,1.5MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),RIVASTIGMINE TARTRATE,0.0
+Roflumilast,DALIRESP,COPD,Respiratory,PDE4A,0.02,500MCG oral,Once or twice daily,Indefinite (lifelong maintenance),ROFLUMILAST,17.06
+Romidepsin,ISTODAX,Haematological malignancies,Oncology,HDAC1,0.00,10MG/VIAL IV,Once daily,Long-term (until progression / disease control),ROMIDEPSIN,3.4
+Ropinirole Hydrochloride,ROPINIROLE HYDROCHLORIDE,Neurological disorder,Neurology,DRD2,0.02,2MG BASE oral,Once daily,Indefinite (lifelong maintenance),ROPINIROLE HYDROCHLORIDE,16.13
+Rosuvastatin Calcium,CRESTOR,Dyslipidemia; CV risk reduction,Metabolic,HMGCR,0.00,40MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),ROSUVASTATIN CALCIUM,1.77
+Rotigotine,NEUPRO,Neurological disorder,Neurology,DRD2,0.01,8MG/24HR transdermal,Once daily,Indefinite (lifelong maintenance),ROTIGOTINE,7.5
+Rufinamide,BANZEL,Neurological disorder,Neurology,SCN1A,0.24,400MG oral,Once or twice daily,Indefinite (lifelong maintenance),RUFINAMIDE,238.11
+Ruxolitinib Phosphate,JAKAFI,Cancer,Oncology,JAK1 | JAK2,0.45,25MG BASE oral,Once or twice daily,Long-term (until progression / disease control),RUXOLITINIB PHOSPHATE,447.86
+Sacubitril; Valsartan,ENTRESTO,Cardiovascular disease,Cardiovascular,MME | AGTR1,1.11,97MG; 103MG oral,Once or twice daily,Indefinite (lifelong maintenance),SACUBITRIL; VALSARTAN,1113.45
+Sapropterin Dihydrochloride,KUVAN,Metabolic disorder,Metabolic,PAH,0.05,100MG oral,Once or twice daily,Indefinite (lifelong maintenance),SAPROPTERIN DIHYDROCHLORIDE,49.64
+Saxagliptin Hydrochloride,SAXAGLIPTIN,Type 2 diabetes,Metabolic,DPP4,,2.5MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),SAXAGLIPTIN HYDROCHLORIDE,0.0
+Selegiline,EMSAM,Neurological disorder,Neurology,MAOB,0.01,12MG/24HR transdermal,Once daily,Indefinite (lifelong maintenance),SELEGILINE,6.94
+Selegiline Hydrochloride,SELEGILINE HYDROCHLORIDE,Neurological disorder,Neurology,MAOB,0.00,1.25MG oral,Once daily,Indefinite (lifelong maintenance),SELEGILINE HYDROCHLORIDE,0.05
+Selexipag,SELEXIPAG,Cardiovascular disease,Cardiovascular,PTGIR,0.41,1.6MG oral,Once or twice daily,Indefinite (lifelong maintenance),SELEXIPAG,410.93
+Selpercatinib,RETEVMO,Cancer,Oncology,RET | RET | RET,0.01,160MG oral,Once or twice daily,Long-term (until progression / disease control),SELPERCATINIB,14.91
+Selumetinib Sulfate,KOSELUGO,Cancer,Oncology,MAP2K1 | MAP2K2,0.11,7.5MG BASE oral,As directed,Long-term (until progression / disease control),SELUMETINIB SULFATE,111.72
+Semaglutide,OZEMPIC,Type 2 diabetes; Obesity; CV risk reduction,Metabolic,GLP1R,5.80,25MG oral,Once or twice daily,Indefinite (lifelong maintenance),SEMAGLUTIDE,5795.27
+Sertraline Hydrochloride,SERTRALINE HYDROCHLORIDE,Psychiatric disorder,Psychiatric,SLC6A4,0.22,100MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),SERTRALINE HYDROCHLORIDE,224.42
+Sevabertinib,HYRNUO,Cancer,Oncology,,,10MG oral,Once or twice daily,Long-term (until progression / disease control),SEVABERTINIB,0.0
+Sevelamer Carbonate,RENVELA,Hypertension; Heart failure; Diabetic nephropathy,Metabolic,Unknown,0.11,800MG oral,Once or twice daily,Indefinite (lifelong maintenance),SEVELAMER CARBONATE,106.78
+Sevelamer Hydrochloride,RENAGEL,Metabolic disorder,Metabolic,Phosphate sequestering agent,0.00,800MG oral,Once or twice daily,Indefinite (lifelong maintenance),SEVELAMER HYDROCHLORIDE,0.58
+Sildenafil Citrate,REVATIO,Cardiovascular disease,Cardiovascular,PDE5A,0.12,100MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),SILDENAFIL CITRATE,122.23
+Silodosin,SILODOSIN,Metabolic disorder,Metabolic,ADRA1A,0.00,4MG oral,Once or twice daily,Indefinite (lifelong maintenance),SILODOSIN,0.55
+Simvastatin,FLOLIPID,Dyslipidemia; CV risk reduction,Metabolic,HMGCR,,40MG oral,Once or twice daily,Indefinite (lifelong maintenance),SIMVASTATIN,0.0
+Siponimod,MAYZENT,Multiple sclerosis,Neurology,S1PR1,0.03,2MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),SIPONIMOD,33.87
+Sirolimus,FYARRO,Transplant rejection; Oncology,Autoimmune,FKBP1A,0.07,2MG oral,Once or twice daily,Indefinite (lifelong maintenance),SIROLIMUS,73.42
+Sitagliptin,ZITUVIO,Metabolic disorder,Metabolic,,,100MG oral,Once or twice daily,Indefinite (lifelong maintenance),SITAGLIPTIN,0.0
+Sitagliptin Hydrochloride,BRYNOVIN,Metabolic disorder,Metabolic,,,25MG BASE/mL oral,Once or twice daily,Indefinite (lifelong maintenance),SITAGLIPTIN HYDROCHLORIDE,0.0
+Sitagliptin Phosphate,JANUVIA,Type 2 diabetes,Metabolic,DPP4,1.39,100MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),SITAGLIPTIN PHOSPHATE,1387.99
+Sodium Bicarbonate,SODIUM BICARBONATE,Hypertension; Heart failure; Diabetic nephropathy,Metabolic,,,50MEQ/50ML (1MEQ/mL) IV,As directed,Indefinite (lifelong maintenance),SODIUM BICARBONATE,0.0
+Sodium Ferric Gluconate Complex,FERRLECIT,Metabolic disorder,Metabolic,Supplement,0.04,62.5MG IRON/5ML (12.5MG IRON/mL),As directed,Indefinite (lifelong maintenance),SODIUM FERRIC GLUCONATE COMPLEX,44.7
+Sodium Polystyrene Sulfonate,KALEXATE,Metabolic disorder,Metabolic,Potassium sequestering agent,0.00,15GM/60ML oral,Once or twice daily,Indefinite (lifelong maintenance),SODIUM POLYSTYRENE SULFONATE,4.54
+Sodium Zirconium Cyclosilicate,LOKELMA,Metabolic disorder,Metabolic,Potassium chelating agent,0.06,10GM/PACKET oral,Once or twice daily,Indefinite (lifelong maintenance),SODIUM ZIRCONIUM CYCLOSILICATE,57.55
+Solifenacin Succinate,SOLIFENACIN SUCCINATE,Neurological disorder,Neurology,CHRM3 | CHRM2,,5MG oral,Once or twice daily,Indefinite (lifelong maintenance),SOLIFENACIN SUCCINATE,0.0
+Solriamfetol Hydrochloride,SUNOSI,Psychiatric disorder,Psychiatric,Unknown,0.02,150MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),SOLRIAMFETOL HYDROCHLORIDE,20.82
+Sonidegib Phosphate,ODOMZO,Cancer,Oncology,SMO,0.00,200MG BASE oral,Once or twice daily,Long-term (until progression / disease control),SONIDEGIB PHOSPHATE,4.43
+Sorafenib Tosylate,NEXAVAR,Cancer,Oncology,RAF1 | PDGFRB | KIT | FLT3 | BRAF | FLT1 | RET,0.02,200MG BASE oral,Once or twice daily,Long-term (until progression / disease control),SORAFENIB TOSYLATE,19.28
+Sotagliflozin,INPEFA,Type 2 diabetes; Heart failure; CKD,Metabolic,SLC5A1 | SLC5A2,0.00,400MG oral,Once or twice daily,Indefinite (lifelong maintenance),SOTAGLIFLOZIN,0.12
+Sotalol Hydrochloride,BETAPACE,Asthma; COPD,Cardiovascular,ADRB1 | KCNH2 | ADRB2,0.01,160MG oral,Once or twice daily,Indefinite (lifelong maintenance),SOTALOL HYDROCHLORIDE,5.87
+Spironolactone,ALDACTONE,Heart failure; Hypertension; Hyperaldosteronism,Cardiovascular,NR3C2,0.01,100MG oral,Once or twice daily,Indefinite (lifelong maintenance),SPIRONOLACTONE,13.37
+Stiripentol,DIACOMIT,Neurological disorder,Neurology,Unknown,0.02,500MG/PACKET oral,Once or twice daily,Indefinite (lifelong maintenance),STIRIPENTOL,20.93
+Sulfasalazine,AZULFIDINE,GI disorder,GI,ALOX5 | PTGS2,0.00,500MG oral,Once or twice daily,Indefinite (lifelong maintenance),SULFASALAZINE,0.0
+Sunitinib Malate,SUNITINIB MALATE,Cancer,Oncology,CSF1R | KIT | FLT3 | PDGFRB | FLT1 | RET,0.00,50MG BASE oral,Once or twice daily,Long-term (until progression / disease control),SUNITINIB MALATE,4.98
+Sunvozertinib,ZEGFROVY,Cancer,Oncology,,,200MG oral,Once or twice daily,Long-term (until progression / disease control),SUNVOZERTINIB,0.0
+Tacrolimus,ASTAGRAF XL,Transplant rejection prevention; Autoimmune,Autoimmune,FKBP1A,0.14,4MG BASE oral,Once daily,Indefinite (lifelong maintenance),TACROLIMUS,135.83
+Tadalafil,ADCIRCA,Cardiovascular disease,Cardiovascular,PDE5A,0.04,20MG oral,Once or twice daily,Indefinite (lifelong maintenance),TADALAFIL,40.2
+Tafluprost,TAFLUPROST,Ophthalmic disorder,Ophthalmology,PTGFR,0.00,0.0015% ophthalmic,Once daily,Indefinite (lifelong maintenance),TAFLUPROST,1.51
+Talazoparib Tosylate,TALZENNA,Cancer,Oncology,PARP2 | PARP1,0.00,1MG BASE oral,Once or twice daily,Long-term (until progression / disease control),TALAZOPARIB TOSYLATE,2.83
+Tamoxifen Citrate,SOLTAMOX,Breast cancer (ER+); Osteoporosis,Oncology,ESR1,0.01,20MG BASE/10ML oral,Once or twice daily,Long-term (until progression / disease control),TAMOXIFEN CITRATE,5.84
+Tamsulosin Hydrochloride,TAMSULOSIN HYDROCHLORIDE,Metabolic disorder,Metabolic,ADRA1A,0.05,0.4MG oral,Once or twice daily,Indefinite (lifelong maintenance),TAMSULOSIN HYDROCHLORIDE,50.66
+Tapinarof,VTAMA,Hypertension; Heart failure; Diabetic nephropathy,Dermatology,AHR,0.03,1% topical,Once or twice daily,Indefinite (lifelong maintenance),TAPINAROF,33.66
+Tazarotene,ARAZLO,Acne; Psoriasis; Photoageing,Dermatology,RARG,0.01,0.045% topical,Once or twice daily,Indefinite (lifelong maintenance),TAZAROTENE,14.41
+Teduglutide,GATTEX KIT,Short bowel syndrome,Metabolic,GLP2R,,5MG/VIAL SC,Once daily,Indefinite (lifelong maintenance),TEDUGLUTIDE,0.0
+Telmisartan,MICARDIS,Cardiovascular disease,Cardiovascular,AGTR1,0.00,40MG oral,Once or twice daily,Indefinite (lifelong maintenance),TELMISARTAN,0.06
+Temozolomide,TEMODAR,Glioblastoma; Brain tumours,Oncology,DNA inhibitor,0.00,100MG/VIAL IV,Once daily,Long-term (until progression / disease control),TEMOZOLOMIDE,2.42
+Temsirolimus,TEMSIROLIMUS,Transplant rejection; Oncology,Autoimmune,FKBP1A,0.00,25MG/mL (25MG/mL) IV,As directed,Indefinite (lifelong maintenance),TEMSIROLIMUS,0.04
+Tenofovir Alafenamide Fumarate,TENOFOVIR ALAFENAMIDE,Infectious disease,Infectious,pol,0.22,25MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),TENOFOVIR ALAFENAMIDE FUMARATE,215.29
+Tenofovir Disoproxil Fumarate,TENOFOVIR DISOPROXIL FUMARATE,Infectious disease,Infectious,pol,0.00,300MG oral,Once or twice daily,Indefinite (lifelong maintenance),TENOFOVIR DISOPROXIL FUMARATE,4.8
+Tepotinib Hydrochloride,TEPMETKO,Cancer,Oncology,MET,0.00,225MG BASE oral,Once or twice daily,Long-term (until progression / disease control),TEPOTINIB HYDROCHLORIDE,0.52
+Terazosin Hydrochloride,TERAZOSIN HYDROCHLORIDE,Cardiovascular disease,Cardiovascular,ADRA1A,0.00,1MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),TERAZOSIN HYDROCHLORIDE,2.89
+Teriflunomide,AUBAGIO,Neurological disorder,Neurology,DHODH,0.16,14MG oral,Once or twice daily,Indefinite (lifelong maintenance),TERIFLUNOMIDE,160.46
+Teriparatide,BONSITY,Osteoporosis,Metabolic,PTH1R,0.08,0.56MG/2.24ML (0.25MG/mL) SC,Weekly or monthly,Indefinite (lifelong maintenance),TERIPARATIDE,76.18
+Testosterone,ANDROGEL,Metabolic disorder,Metabolic,AR,0.01,50MG/5GM PACKET transdermal,Once daily,Indefinite (lifelong maintenance),TESTOSTERONE,13.54
+Testosterone Cypionate,AZMIRO,Metabolic disorder,Metabolic,AR,,200MG/mL (200MG/mL),As directed,Indefinite (lifelong maintenance),TESTOSTERONE CYPIONATE,0.0
+Testosterone Enanthate,TESTOSTERONE ENANTHATE,Metabolic disorder,Metabolic,AR,,100MG/0.5ML (100MG/0.5ML) SC,Weekly or monthly,Indefinite (lifelong maintenance),TESTOSTERONE ENANTHATE,0.0
+Testosterone Undecanoate,AVEED,Metabolic disorder,Metabolic,AR,0.00,750MG/3ML (250MG/mL),Monthly or quarterly,Indefinite (lifelong maintenance),TESTOSTERONE UNDECANOATE,4.19
+Tetrabenazine,TETRABENAZINE,Neurological disorder,Neurology,SLC18A2,0.01,25MG oral,Once or twice daily,Indefinite (lifelong maintenance),TETRABENAZINE,7.95
+Thalidomide,THALIDOMIDE,Multiple myeloma; Lenalidomide: MDS,Oncology,CRBN,0.00,200MG oral,Once or twice daily,Long-term (until progression / disease control),THALIDOMIDE,4.92
+Theophylline,THEO-24,Psoriasis; Psoriatic arthritis,Respiratory,PDE4A | PDE3A | ADORA1,0.00,400MG oral,Once daily,Indefinite (lifelong maintenance),THEOPHYLLINE,1.89
+Thiamine Hydrochloride,THIAMINE HYDROCHLORIDE,Metabolic disorder,Metabolic,Supplement,0.01,100MG/mL,As directed,Indefinite (lifelong maintenance),THIAMINE HYDROCHLORIDE,11.83
+Thioridazine Hydrochloride,THIORIDAZINE HYDROCHLORIDE,Schizophrenia; Bipolar disorder; Nausea,Psychiatric,HTR2A | HTR2C | DRD2,,10MG oral,Once or twice daily,Indefinite (lifelong maintenance),THIORIDAZINE HYDROCHLORIDE,0.0
+Thiothixene,THIOTHIXENE,Schizophrenia; Bipolar disorder; Nausea,Psychiatric,DRD2 | HTR2A,,1MG oral,Once or twice daily,Indefinite (lifelong maintenance),THIOTHIXENE,0.0
+Tiagabine Hydrochloride,GABITRIL,Neurological disorder,Neurology,SLC6A1,0.00,16MG oral,Once or twice daily,Indefinite (lifelong maintenance),TIAGABINE HYDROCHLORIDE,3.72
+Ticagrelor,BRILINTA,Cardiovascular disease,Cardiovascular,P2RY12,0.26,90MG oral,Once or twice daily,Indefinite (lifelong maintenance),TICAGRELOR,258.67
+Timolol,BETIMOL,Asthma; COPD,Cardiovascular,ADRB1 | ADRB2,0.01,0.5% ophthalmic,Once daily,Indefinite (lifelong maintenance),TIMOLOL,12.08
+Timolol Maleate,ISTALOL,Asthma; COPD,Cardiovascular,ADRB1 | ADRB2,0.00,0.5% BASE ophthalmic,Once daily,Indefinite (lifelong maintenance),TIMOLOL MALEATE,0.33
+Tiotropium Bromide,SPIRIVA,Respiratory disease,Respiratory,CHRM3,1.08,0.0025MG BASE//inh inh,Twice daily,Indefinite (lifelong maintenance),TIOTROPIUM BROMIDE,1080.78
+Tipranavir,APTIVUS,Infectious disease,Infectious,pol,0.00,250MG oral,Once or twice daily,Indefinite (lifelong maintenance),TIPRANAVIR,0.13
+Tizanidine Hydrochloride,ONTRALFY,Neurological disorder,Neurology,ADRA2A,0.05,4MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),TIZANIDINE HYDROCHLORIDE,51.94
+Tofacitinib Citrate,TOFACITINIB CITRATE,RA; Psoriatic arthritis; UC; Atopic dermatitis,Autoimmune,JAK3,0.54,10MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),TOFACITINIB CITRATE,543.93
+Tolcapone,TASMAR,Neurological disorder,Neurology,COMT,,100MG oral,Once or twice daily,Indefinite (lifelong maintenance),TOLCAPONE,0.0
+Tolterodine Tartrate,DETROL,Neurological disorder,Neurology,CHRM3 | CHRM2,0.00,2MG oral,Once or twice daily,Indefinite (lifelong maintenance),TOLTERODINE TARTRATE,2.78
+Tolvaptan,JYNARQUE,Cardiovascular disease,Cardiovascular,AVPR2,0.24,30MG oral,Once or twice daily,Indefinite (lifelong maintenance),TOLVAPTAN,243.01
+Topiramate,EPRONTIA,Hypertension; Heart failure; Diabetic nephropathy,Psychiatric,CA2 | CA4 | GRIA4 | GRIK1 | GABRA1 | SCN1A,0.22,200MG oral,Once or twice daily,Indefinite (lifelong maintenance),TOPIRAMATE,216.08
+Topotecan Hydrochloride,HYCAMTIN,Cancer,Oncology,TOP1,0.00,4MG BASE/4ML (1MG BASE/mL) IV,As directed,Long-term (until progression / disease control),TOPOTECAN HYDROCHLORIDE,2.47
+Torsemide,SOAANZ,Cardiovascular disease,Cardiovascular,SLC12A1,0.01,40MG oral,Once or twice daily,Indefinite (lifelong maintenance),TORSEMIDE,9.5
+Tovorafenib,OJEMDA,Cancer,Oncology,RAF1,,100MG oral,Once or twice daily,Long-term (until progression / disease control),TOVORAFENIB,0.0
+Trametinib Dimethyl Sulfoxide,MEKINIST,Cancer,Oncology,MAP2K2 | MAP2K1,0.11,2MG oral,Once or twice daily,Long-term (until progression / disease control),TRAMETINIB DIMETHYL SULFOXIDE,107.03
+Trandolapril,TRANDOLAPRIL,Hypertension; Heart failure; CKD,Cardiovascular,ACE,,1MG oral,Once or twice daily,Indefinite (lifelong maintenance),TRANDOLAPRIL,0.0
+Trandolapril; Verapamil Hydrochloride,TRANDOLAPRIL AND VERAPAMIL HYDROCHLORIDE,Hypertension; Heart failure; CKD,Cardiovascular,ACE | CACNA1C,,1MG; 240MG oral,Once daily,Indefinite (lifelong maintenance),TRANDOLAPRIL; VERAPAMIL HYDROCHLORIDE,0.0
+Travoprost,IDOSE TR,Ophthalmic disorder,Ophthalmology,PTGFR,0.01,0.004% ophthalmic,Once daily,Indefinite (lifelong maintenance),TRAVOPROST,13.59
+Trazodone Hydrochloride,RALDESY,Migraine (acute),Psychiatric,SLC6A4 | HTR2A | HTR2C,0.17,10MG/mL oral,Once or twice daily,Indefinite (lifelong maintenance),TRAZODONE HYDROCHLORIDE,168.77
+Treprostinil,REMODULIN,Cardiovascular disease,Cardiovascular,PTGIR,0.38,0.6MG/mL inh,As directed,Indefinite (lifelong maintenance),TREPROSTINIL,375.66
+Treprostinil Diolamine,ORENITRAM,Cardiovascular disease,Cardiovascular,PTGIR,0.11,5MG BASE oral,Once daily,Indefinite (lifelong maintenance),TREPROSTINIL DIOLAMINE,106.37
+Treprostinil Sodium,YUTREPIA,Cardiovascular disease,Cardiovascular,PTGIR,,0.106MG BASE//inh inh,Once daily,Indefinite (lifelong maintenance),TREPROSTINIL SODIUM,0.0
+Tretinoin,ALTRENO,Acne; Psoriasis; Photoageing,Dermatology,RARG,0.15,0.05% topical,Once or twice daily,Indefinite (lifelong maintenance),TRETINOIN,151.32
+Triamcinolone Acetonide,KENALOG-10,Respiratory disease,Respiratory,NR3C1,0.03,40MG/mL,As directed,Indefinite (lifelong maintenance),TRIAMCINOLONE ACETONIDE,30.14
+Trientine Hydrochloride,SYPRINE,Chronic condition,Other,Copper chelating agent,0.01,250MG oral,Once or twice daily,Indefinite (lifelong maintenance),TRIENTINE HYDROCHLORIDE,9.1
+Trientine Tetrahydrochloride,CUVRIOR,Chronic condition,Other,Copper chelating agent,,300MG oral,Once or twice daily,Indefinite (lifelong maintenance),TRIENTINE TETRAHYDROCHLORIDE,0.0
+Trifluoperazine Hydrochloride,TRIFLUOPERAZINE HYDROCHLORIDE,Schizophrenia; Bipolar disorder; Nausea,Psychiatric,HTR2A | HTR2C | DRD2,,1MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),TRIFLUOPERAZINE HYDROCHLORIDE,0.0
+Trilaciclib Dihydrochloride,COSELA,Breast cancer (HR+/HER2-),Oncology,CDK6 | CDK4,0.01,300MG BASE/VIAL IV,Once daily,Long-term (until progression / disease control),TRILACICLIB DIHYDROCHLORIDE,6.18
+Trimipramine Maleate,TRIMIPRAMINE MALEATE,Schizophrenia; Bipolar disorder; Nausea,Psychiatric,HRH1 | DRD2 | HTR2A | HTR2C | SLC6A2 | ADRA1A,,25MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),TRIMIPRAMINE MALEATE,0.0
+Triptorelin Pamoate,TRELSTAR,Cancer,Oncology,GNRHR,0.00,22.5MG BASE/VIAL,Monthly or quarterly,Long-term (until progression / disease control),TRIPTORELIN PAMOATE,2.54
+Trospium Chloride,TROSPIUM CHLORIDE,Neurological disorder,Neurology,CHRM3 | CHRM2,0.00,60MG oral,Once daily,Indefinite (lifelong maintenance),TROSPIUM CHLORIDE,4.97
+Trospium Chloride; Xanomeline Tartrate,COBENFY,Neurological disorder,Neurology,CHRM3 | CHRM2 | CHRM4 | CHRM1,,30MG; 125MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),TROSPIUM CHLORIDE; XANOMELINE TARTRATE,0.0
+Tucatinib,TUKYSA,Cancer,Oncology,ERBB2,0.07,150MG oral,Once or twice daily,Long-term (until progression / disease control),TUCATINIB,69.51
+Umeclidinium Bromide,INCRUSE ELLIPTA,Respiratory disease,Respiratory,CHRM3,,0.0625MG BASE//inh inh,Once daily,Indefinite (lifelong maintenance),UMECLIDINIUM BROMIDE,0.0
+Umeclidinium Bromide; Vilanterol Trifenatate,ANORO ELLIPTA,Asthma; COPD,Respiratory,CHRM3 | ADRB2,,0.0625MG BASE//inh; 0.025MG BASE//inh inh,Once daily,Indefinite (lifelong maintenance),UMECLIDINIUM BROMIDE; VILANTEROL TRIFENATATE,0.0
+Upadacitinib,RINVOQ,Autoimmune disease,Autoimmune,,0.73,45MG oral,Once daily,Indefinite (lifelong maintenance),UPADACITINIB,725.08
+Ursodiol,ACTIGALL,Primary biliary cholangitis; Gallstones,GI,NR1H4,0.03,300MG oral,Once or twice daily,Indefinite (lifelong maintenance),URSODIOL,26.52
+Valbenazine Tosylate,INGREZZA,Neurological disorder,Neurology,SLC18A2,0.98,80MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),VALBENAZINE TOSYLATE,977.94
+Valproic Acid,VALPROIC ACID,Psychiatric disorder,Psychiatric,ALDH5A1,0.01,250MG oral,Once or twice daily,Indefinite (lifelong maintenance),VALPROIC ACID,14.84
+Valsartan,DIOVAN,Cardiovascular disease,Cardiovascular,AGTR1,0.04,320MG oral,Once or twice daily,Indefinite (lifelong maintenance),VALSARTAN,36.27
+Vandetanib,CAPRELSA,Non-small cell lung cancer (EGFR+),Oncology,SRC | PTK6 | TEK | FLT1 | RET | EPHA2 | ERBB2,0.00,300MG oral,Once or twice daily,Long-term (until progression / disease control),VANDETANIB,0.16
+Vardenafil Hydrochloride,VARDENAFIL HYDROCHLORIDE,Cardiovascular disease,Cardiovascular,PDE5A,,10MG oral,Once daily,Indefinite (lifelong maintenance),VARDENAFIL HYDROCHLORIDE,0.0
+Vemurafenib,ZELBORAF,Cancer,Oncology,BRAF,0.00,240MG oral,Once or twice daily,Long-term (until progression / disease control),VEMURAFENIB,3.82
+Venetoclax,VENCLEXTA,CLL; AML,Oncology,BCL2,0.08,100MG oral,Once or twice daily,Long-term (until progression / disease control),VENETOCLAX,78.71
+Venlafaxine Besylate,VENLAFAXINE BESYLATE,Psychiatric disorder,Psychiatric,Unknown,,112.5MG BASE oral,Once daily,Indefinite (lifelong maintenance),VENLAFAXINE BESYLATE,0.0
+Venlafaxine Hydrochloride,EFFEXOR XR,Psychiatric disorder,Psychiatric,SLC6A4 | SLC6A2,0.01,225MG BASE oral,Once daily,Indefinite (lifelong maintenance),VENLAFAXINE HYDROCHLORIDE,6.63
+Verapamil Hydrochloride,VERAPAMIL HYDROCHLORIDE,Hypertension; Angina,Cardiovascular,CACNA1C,0.02,300MG oral,Once daily,Indefinite (lifelong maintenance),VERAPAMIL HYDROCHLORIDE,24.1
+Vibegron,GEMTESA,Overactive bladder,Neurology,ADRB3,0.05,75MG oral,Once or twice daily,Indefinite (lifelong maintenance),VIBEGRON,47.6
+Vigabatrin,SABRIL,Neurological disorder,Neurology,ABAT,0.50,500MG oral,Once or twice daily,Indefinite (lifelong maintenance),VIGABATRIN,500.61
+Vilazodone Hydrochloride,VIIBRYD,Generalized anxiety disorder,Psychiatric,SLC6A4 | HTR1A,0.08,40MG oral,Once or twice daily,Indefinite (lifelong maintenance),VILAZODONE HYDROCHLORIDE,79.17
+Viloxazine Hydrochloride,QELBREE,Psychiatric disorder,Psychiatric,SLC6A2,0.21,200MG BASE oral,Once daily,Indefinite (lifelong maintenance),VILOXAZINE HYDROCHLORIDE,213.14
+Vimseltinib,ROMVIMZA,Cancer,Oncology,,,30MG oral,Once or twice daily,Long-term (until progression / disease control),VIMSELTINIB,0.0
+Vinorelbine Tartrate,VINORELBINE TARTRATE,Cancer,Oncology,TUBB4B,,10MG BASE/mL,As directed,Long-term (until progression / disease control),VINORELBINE TARTRATE,0.0
+Vismodegib,ERIVEDGE,Cancer,Oncology,SMO,0.04,150MG oral,Once or twice daily,Long-term (until progression / disease control),VISMODEGIB,37.6
+Vorinostat,ZOLINZA,Haematological malignancies,Oncology,HDAC1 | HDAC3 | HDAC6 | HDAC2,0.00,100MG oral,Once or twice daily,Long-term (until progression / disease control),VORINOSTAT,0.45
+Vortioxetine Hydrobromide,TRINTELLIX,Migraine (acute),Psychiatric,HTR1A | SLC6A4 | HTR3A,0.41,20MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),VORTIOXETINE HYDROBROMIDE,412.64
+Warfarin Sodium,JANTOVEN,Cardiovascular disease,Cardiovascular,VKORC1,0.01,1MG oral,Once or twice daily,Indefinite (lifelong maintenance),WARFARIN SODIUM,13.12
+Zafirlukast,ACCOLATE,Respiratory disease,Respiratory,CYSLTR1,,20MG oral,Once or twice daily,Indefinite (lifelong maintenance),ZAFIRLUKAST,0.0
+Zanubrutinib,BRUKINSA,B-cell malignancies (CLL/MCL),Oncology,BTK,0.04,160MG oral,Once or twice daily,Long-term (until progression / disease control),ZANUBRUTINIB,41.45
+Zileuton,ZILEUTON,Respiratory disease,Respiratory,ALOX5,0.01,600MG oral,Once daily,Indefinite (lifelong maintenance),ZILEUTON,10.39
+Zinc Acetate,GALZIN,Chronic condition,Other,Skin protectant; Blocks absorption of copper and i,0.00,50MG ZINC oral,Once or twice daily,Indefinite (lifelong maintenance),ZINC ACETATE,0.41
+Zinc Chloride,ZINC CHLORIDE,Metabolic disorder,Metabolic,,,1MG ZINC/mL,As directed,Indefinite (lifelong maintenance),ZINC CHLORIDE,0.0
+Zinc Sulfate,ZINC SULFATE,Metabolic disorder,Metabolic,,,30MG BASE/10ML (3MG BASE/mL) IV,As directed,Indefinite (lifelong maintenance),ZINC SULFATE,0.0
+Ziprasidone Hydrochloride,GEODON,Schizophrenia; Bipolar disorder; Nausea,Psychiatric,HTR2A | HTR2C | DRD2,,80MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance),ZIPRASIDONE HYDROCHLORIDE,0.0
+Ziprasidone Mesylate,GEODON,Schizophrenia; Bipolar disorder; Nausea,Psychiatric,HTR2A | HTR2C | DRD2,0.00,20MG BASE/VIAL,Once daily,Indefinite (lifelong maintenance),ZIPRASIDONE MESYLATE,2.85
+Zoledronic Acid,RECLAST,Metabolic disorder,Metabolic,FDPS,0.01,4MG BASE/100ML IV,As directed,Indefinite (lifelong maintenance),ZOLEDRONIC ACID,12.62
+Zongertinib,HERNEXEOS,Cancer,Oncology,,,60MG oral,Once or twice daily,Long-term (until progression / disease control),ZONGERTINIB,0.0
+Zonisamide,ZONEGRAN,Neurological disorder,Neurology,SCN1A,0.04,100MG/5ML oral,Once or twice daily,Indefinite (lifelong maintenance),ZONISAMIDE,39.27
