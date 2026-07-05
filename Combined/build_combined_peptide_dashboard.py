@@ -1,105 +1,57 @@
 """
-Merge Purple Book (biologics) + Orange Book (small molecules) chronic-use
-indication tables into fda_all_drugs_chronic_indications.csv, then build
-combined_chronic_use_dashboard.html with all plots + a sortable/filterable
-table driven by the merged data.
+Peptide / protein-focused chronic-use dashboard.
 
-Long format: one row per drug-disease-indication pair, with a Source column
-(Purple Book / Orange Book) and a Modality column (Biologic / GSRS class).
+Reads the pre-filtered peptide subset fda_all_drugs_chronic_indications_peptide.csv
+(same long-format schema as the full merged file, one row per drug-disease pair,
+Source + Modality columns) and builds combined_chronic_use_peptide_dashboard.html
+with the same set of plots + sortable/filterable table as the combined dashboard.
 """
 
-import csv, json, re
+import csv, json, re, io
 from collections import defaultdict, Counter
 import pandas as pd
 import plotly.graph_objects as go
 import plotly.express as px
 
-PB_CSV  = "purplebook_chronic_drugs_indications2.csv"
-OB_CSV  = "orangebook_chronic_indications_clean.csv"
-OB_GSRS = "../FDAOrangeBook/orangebook_substance_classes.csv"
-MERGED  = "fda_all_drugs_chronic_indications.csv"
-OUT_HTML = "combined_chronic_use_dashboard.html"
+PEPTIDE_CSV = "fda_all_drugs_chronic_indications_peptide.csv"
+OUT_HTML    = "combined_chronic_use_peptide_dashboard.html"
 
-# ── OB substance-class (modality) lookup ─────────────────────────────────────
-substance = {}
-try:
-    with open(OB_GSRS, encoding="utf-8") as f:
-        for r in csv.DictReader(f):
-            substance[r["Ingredient"].upper()] = r.get("Substance_Class", "chemical")
-except FileNotFoundError:
-    pass
-
-def norm_target(t: str) -> str:
-    return re.sub(r"\s*\|\s*", ", ", (t or "").strip())
-
-# ── Build merged long-format rows ─────────────────────────────────────────────
 COLS = ["Source", "Drug", "Brand", "Disease / Indication", "Disease Category",
         "Modality", "Drug Target (Gene)", "Annual Revenue 2024 (USD B)",
         "Dose", "Frequency", "Duration of Use"]
 
-merged = []
+def norm_target(t: str) -> str:
+    return re.sub(r"\s*\|\s*", ", ", (t or "").strip())
 
-# Purple Book — already one row per drug-disease pair
-with open(PB_CSV, encoding="utf-8-sig") as f:
-    for r in csv.DictReader(f):
-        merged.append({
-            "Source": "Purple Book",
-            "Drug": r["Drug (Proper Name)"].strip(),
-            "Brand": r["Brand Name(s)"].strip(),
-            "Disease / Indication": r["Disease / Indication"].strip(),
-            "Disease Category": r["Disease Category"].strip(),
-            "Modality": (r.get("Drug Modality") or "Biologic").strip(),
+# ── Read peptide CSV (repair corrupted en-dash bytes from Excel roundtrip) ────
+def load_peptide_csv(path):
+    raw = open(path, "rb").read()
+    raw = raw.replace(b"\x3f\x80\x3f", "–".encode("utf-8"))   # '? \x80 ?' -> '–'
+    text = raw.decode("utf-8", errors="replace").replace("�", "")
+    rows = []
+    for r in csv.DictReader(io.StringIO(text)):
+        rows.append({
+            "Source": (r["Source"] or "").strip(),
+            "Drug": (r["Drug"] or "").strip(),
+            "Brand": (r["Brand"] or "").strip(),
+            "Disease / Indication": (r["Disease / Indication"] or "").strip(),
+            "Disease Category": (r["Disease Category"] or "").strip(),
+            "Modality": (r["Modality"] or "").strip(),
             "Drug Target (Gene)": norm_target(r["Drug Target (Gene)"]),
-            "Annual Revenue 2024 (USD B)": r["Annual Revenue 2024 (USD B)"].strip(),
-            "Dose": r["Dose"].strip(),
-            "Frequency": r["Frequency"].strip(),
-            "Duration of Use": r["Duration of Use"].strip(),
+            "Annual Revenue 2024 (USD B)": (r["Annual Revenue 2024 (USD B)"] or "").strip(),
+            "Dose": (r["Dose"] or "").strip(),
+            "Frequency": (r["Frequency"] or "").strip(),
+            "Duration of Use": (r["Duration of Use"] or "").strip(),
         })
+    return rows
 
-# Orange Book — expand '; '-joined diseases into separate rows
-with open(OB_CSV, encoding="utf-8") as f:
-    for r in csv.DictReader(f):
-        drug = r["Drug"].strip()
-        modality = (r.get("Drug Modality") or substance.get(drug.upper(), "chemical")).strip()
-        diseases = [d.strip() for d in r["Disease / Indication"].split(";") if d.strip()]
-        if not diseases:
-            diseases = [""]
-        for dis in diseases:
-            merged.append({
-                "Source": "Orange Book",
-                "Drug": drug,
-                "Brand": r["Brand"].strip(),
-                "Disease / Indication": dis,
-                "Disease Category": r["Category"].strip(),
-                "Modality": modality,
-                "Drug Target (Gene)": norm_target(r["Target"]),
-                "Annual Revenue 2024 (USD B)": r["Revenue ($B)"].strip(),
-                "Dose": r["Dose"].strip(),
-                "Frequency": r["Frequency"].strip(),
-                "Duration of Use": r["Duration"].strip(),
-            })
-
-def _write_csv(path):
-    with open(path, "w", newline="", encoding="utf-8") as f:
-        w = csv.DictWriter(f, fieldnames=COLS)
-        w.writeheader()
-        w.writerows(merged)
-
-try:
-    _write_csv(MERGED)
-    print(f"Merged CSV -> {MERGED}")
-except PermissionError:
-    alt = MERGED.replace(".csv", ".NEW.csv")
-    _write_csv(alt)
-    print(f"!! {MERGED} is locked (open in Excel?). Wrote {alt} instead — "
-          f"close the file and run: mv {alt} {MERGED}")
-
+merged = load_peptide_csv(PEPTIDE_CSV)
 n_pb = sum(1 for m in merged if m["Source"] == "Purple Book")
 n_ob = sum(1 for m in merged if m["Source"] == "Orange Book")
-print(f"Merged rows: {len(merged)}  (Purple Book {n_pb}, Orange Book {n_ob})")
+print(f"Peptide rows: {len(merged)}  (Purple Book {n_pb}, Orange Book {n_ob})")
 
 # ══════════════════════════════════════════════════════════════════════════
-# Build dashboard from merged data
+# Build dashboard from peptide data
 # ══════════════════════════════════════════════════════════════════════════
 df = pd.DataFrame(merged)
 df["rev"] = pd.to_numeric(df["Annual Revenue 2024 (USD B)"], errors="coerce").fillna(0.0)
@@ -190,7 +142,7 @@ def build_sankey():
                   hovertemplate="%{source.label} → %{target.label}: %{value}<extra></extra>")))
     fig.update_layout(
         title=dict(text=f"<b>Combined Pipeline: {n_drugs} FDA Drugs → Modality → Disease Category</b><br>"
-                        "<sup>Purple Book biologics + Orange Book small molecules</sup>", font=dict(size=14)),
+                        "<sup>Purple Book biologics + Orange Book peptides</sup>", font=dict(size=14)),
         font=dict(size=9), margin=dict(l=10, r=10, t=55, b=10), height=560, paper_bgcolor="#F8FAFC")
     return fig
 
@@ -334,7 +286,7 @@ def build_revenue_bar():
         customdata=list(zip(g["src"], g["brand"], g["tgt"], g["cat"])),
         hovertemplate="<b>%{y}</b><br>%{customdata[0]} — %{customdata[1]}<br>Target: %{customdata[2]}<br>%{customdata[3]}<br>Revenue: $%{x:.2f}B<extra></extra>"))
     fig.update_layout(title=dict(text="<b>Top 25 Drugs by 2024 Global Revenue</b><br>"
-                                 "<sup>Purple = biologic · Orange = small molecule</sup>", font=dict(size=14)),
+                                 "<sup>Purple = biologic · Orange = peptide/protein</sup>", font=dict(size=14)),
                       xaxis=dict(title="Annual Revenue (USD B)", showgrid=True, gridcolor="#E2E8F0", tickprefix="$", ticksuffix="B"),
                       yaxis=dict(tickfont=dict(size=9)), margin=dict(l=10, r=70, t=60, b=40),
                       height=680, paper_bgcolor="#F8FAFC", plot_bgcolor="#F8FAFC")
@@ -359,6 +311,118 @@ def build_disease_coverage():
     return fig
 
 
+# ── FIG 10/11 — True peptide size by target gene (MW + amino acid length) ─────
+# Restricted to genuine peptides (short synthetic/hormone-analog chains, roughly
+# <60 residues) — excludes large recombinant enzymes, clotting factors, and Fc-
+# fusion proteins that also appear in the dataset (e.g. Factor VIII, etanercept,
+# aflibercept), since those are proteins, not peptides. Where a target has both
+# a peptide and a fusion-protein drug mapped to it (GLP1R), the peptide is used.
+# Molecular weight (Da) and amino-acid length are web-verified per drug (FDA
+# labels / DrugBank, July 2026).
+PEPTIDE_SIZE = {
+    # gene: (representative peptide drug, molecular weight in Da, amino-acid length)
+    "SSTR5":   ("Lanreotide",        1096,  8),
+    "GNRHR":   ("Triptorelin",       1312, 10),
+    "GUCY2C":  ("Linaclotide",       1527, 14),
+    "CACNA1B": ("Ziconotide",        2639, 25),
+    "CALCR":   ("Calcitonin Salmon", 3432, 32),
+    "GLP2R":   ("Teduglutide",       3752, 33),
+    "PTH1R":   ("Abaloparatide",     3961, 34),
+    "NPR2":    ("Vosoritide",        4100, 39),
+    "GLP1R":   ("Semaglutide",       4114, 31),
+    "GIPR":    ("Tirzepatide",       4811, 39),
+    "GHRHR":   ("Tesamorelin",       5136, 44),
+    "INSR":    ("Insulin Lispro",    5808, 51),
+}
+
+def build_size_bar(metric):
+    items = sorted(PEPTIDE_SIZE.items(), key=lambda kv: kv[1][1 if metric == "mw" else 2])
+    labels = [f"{v[0]} ({g})" for g, v in items]
+    vals  = [v[1 if metric == "mw" else 2] for _, v in items]
+    if metric == "mw":
+        title, xtitle, texts = "Molecular Weight", "Molecular Weight (Da)", [f"{v:,.0f} Da" for v in vals]
+    else:
+        title, xtitle, texts = "Amino Acid Length", "Amino Acids", [f"{v:,.0f} aa" for v in vals]
+    fig = go.Figure(go.Bar(
+        x=vals, y=labels, orientation="h",
+        marker=dict(color="#0891B2", line=dict(color="white", width=0.5)),
+        text=texts, textposition="outside",
+        hovertemplate="<b>%{y}</b><br>" + title + ": %{text}<extra></extra>"))
+    fig.update_layout(
+        title=dict(text=f"<b>Peptide {title} by Target Gene</b><br>"
+                        f"<sup>{len(items)} true peptides (short chains only) · rows labeled Drug (Target)</sup>", font=dict(size=13)),
+        xaxis=dict(title=xtitle, showgrid=True, gridcolor="#E2E8F0"),
+        yaxis=dict(tickfont=dict(size=10)),
+        margin=dict(l=10, r=80, t=55, b=40), height=480,
+        paper_bgcolor="#F8FAFC", plot_bgcolor="#F8FAFC")
+    return fig
+
+
+# ── FIG 12 — Native (endogenous) target protein length, all 35 targets + GLP-1 ─
+# Canonical human UniProt sequence length (full precursor unless noted) for each
+# of the 35 drug targets in this dataset, plus native GLP-1(7-37) itself (the
+# hormone semaglutide/liraglutide/etc. mimic) for comparison against its own
+# receptor GLP1R. UOX (uricase) is excluded: it is a non-functional pseudogene
+# in humans (three inactivating mutations during primate evolution), so there
+# is no native human protein to report.
+TARGET_LENGTH = {
+    "GLP1 (native hormone)": 31,
+    "SNAP25":  206,
+    "VEGFA":   191,
+    "TNF":     233,
+    "CACNA1B": 2339,
+    "GHRHR":   423,
+    "GNRHR":   328,
+    "SSTR5":   364,
+    "CALCR":   474,
+    "GLA":     429,
+    "PNLIP":   449,
+    "SERPINA1":418,
+    "F7":      406,
+    "F9":      415,
+    "GLP1R":   463,
+    "GIPR":    466,
+    "INHBA":   426,
+    "FCGRT":   290,
+    "EPOR":    508,
+    "ARG1":    322,
+    "GLP2R":   553,
+    "IDS":     550,
+    "PTH1R":   593,
+    "GHR":     620,
+    "SMPD1":   631,
+    "PCSK9":   692,
+    "CSF3R":   836,
+    "GAA":     952,
+    "MAN2B1":  1011,
+    "NPR2":    1047,
+    "GUCY2C":  1073,
+    "INSR":    1382,
+    "SI":      1827,
+    "F8":      2351,
+}
+
+def build_target_length_bar():
+    items = sorted(TARGET_LENGTH.items(), key=lambda kv: kv[1])
+    labels = [g for g, _ in items]
+    vals = [v for _, v in items]
+    fig = go.Figure(go.Bar(
+        x=vals, y=labels, orientation="h",
+        marker=dict(color=["#F97316" if l.startswith("GLP1 ") else "#7C3AED" for l in labels],
+                    line=dict(color="white", width=0.5)),
+        text=[f"{v:,} aa" for v in vals], textposition="outside",
+        hovertemplate="<b>%{y}</b><br>Native length: %{text}<extra></extra>"))
+    fig.update_layout(
+        title=dict(text="<b>Native (Endogenous) Target Protein Length</b><br>"
+                        f"<sup>{len(items)} targets — all 35 drug targets in this dataset plus native GLP-1 · "
+                        "UOX omitted (human pseudogene, no functional protein)</sup>", font=dict(size=13)),
+        xaxis=dict(title="Amino Acids (native UniProt length)", showgrid=True, gridcolor="#E2E8F0"),
+        yaxis=dict(tickfont=dict(size=9)),
+        margin=dict(l=10, r=80, t=55, b=40), height=900,
+        paper_bgcolor="#F8FAFC", plot_bgcolor="#F8FAFC")
+    return fig
+
+
 def to_div(fig, div_id):
     fig.update_layout(autosize=True)
     return fig.to_html(full_html=False, include_plotlyjs=False, div_id=div_id,
@@ -377,6 +441,9 @@ f_scat   = build_scatter()
 f_heat   = build_heatmap()
 f_rev    = build_revenue_bar()
 f_cov    = build_disease_coverage()
+f_sizemw = build_size_bar("mw")
+f_sizeaa = build_size_bar("aa")
+f_tgtlen = build_target_length_bar()
 
 
 # ── Sortable / filterable table (PB format: filter row under headers) ─────────
@@ -535,7 +602,7 @@ TABLE_HTML = build_table_html()
 
 HTML = f"""<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0"/>
-<title>FDA All Drugs — Combined Chronic Use Dashboard</title>
+<title>FDA Peptide &amp; Protein Drugs — Chronic Use Dashboard</title>
 <script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
 <style>
 :root{{--bg:#F0F4F8;--card:#fff;--text:#1E293B;--sub:#64748B;--border:#E2E8F0;--pad:clamp(10px,3vw,24px);--r:12px;}}
@@ -562,15 +629,16 @@ header p{{margin-top:6px;opacity:.9;font-size:clamp(0.75rem,2.2vw,0.9rem);line-h
 footer{{text-align:center;font-size:clamp(0.65rem,1.8vw,0.75rem);color:var(--sub);padding:18px var(--pad) 24px;line-height:1.6;}}
 </style></head><body>
 <header>
-  <h1>FDA All Approved Drugs — Combined Chronic Use Dashboard</h1>
-  <p>Merged from the <b>Purple Book</b> (biologics / BLA products) and the <b>Orange Book</b>
-     (small-molecule NDA/ANDA drugs) — {n_drugs} unique chronic / long-term drugs across
-     {n_pairs} drug–indication pairs, unified into <b>fda_all_drugs_chronic_indications.csv</b>.</p>
+  <h1>FDA Peptide &amp; Protein Drugs — Chronic Use Dashboard</h1>
+  <p>Peptide / protein-modality subset of the combined <b>Purple Book</b> (biologics) +
+     <b>Orange Book</b> (small molecules) chronic-use dataset — {n_drugs} unique chronic /
+     long-term peptide &amp; protein drugs across {n_pairs} drug–indication pairs, from
+     <b>fda_all_drugs_chronic_indications_peptide.csv</b>.</p>
 </header>
 <div class="pipeline">
   <div class="pipe-step"><strong>{n_drugs}</strong><span>total drugs</span></div>
   <div class="pipe-step"><strong>{n_pb_drug}</strong><span>Purple Book biologics</span></div>
-  <div class="pipe-step"><strong>{n_ob_drug}</strong><span>Orange Book small molecules</span></div>
+  <div class="pipe-step"><strong>{n_ob_drug}</strong><span>Orange Book peptides</span></div>
   <div class="pipe-step"><strong>{n_pairs}</strong><span>drug–indication pairs</span></div>
   <div class="pipe-step"><strong>{n_dis}</strong><span>unique diseases</span></div>
   <div class="pipe-step"><strong>{n_cats}</strong><span>disease categories</span></div>
@@ -579,7 +647,7 @@ footer{{text-align:center;font-size:clamp(0.65rem,1.8vw,0.75rem);color:var(--sub
 <div class="metrics">
   <div class="metric"><div class="mval">{n_drugs}</div><div class="mlabel">Unique chronic drugs</div></div>
   <div class="metric b"><div class="mval">{n_pb_drug}</div><div class="mlabel">Purple Book biologics</div></div>
-  <div class="metric o"><div class="mval">{n_ob_drug}</div><div class="mlabel">Orange Book small molecules</div></div>
+  <div class="metric o"><div class="mval">{n_ob_drug}</div><div class="mlabel">Orange Book peptides</div></div>
   <div class="metric t"><div class="mval">{n_cats}</div><div class="mlabel">Granular disease categories</div></div>
   <div class="metric g"><div class="mval">${top_rev_val:.0f}B</div><div class="mlabel">{top_rev_drug[:20]} — top 2024 revenue</div></div>
 </div>
@@ -608,16 +676,20 @@ footer{{text-align:center;font-size:clamp(0.65rem,1.8vw,0.75rem);color:var(--sub
 <div class="sec s6">Step 6 — Disease Coverage: Ranked by Number of Drugs</div>
 <div class="g1"><div class="card">{to_div(f_cov,"cov")}</div></div>
 
-<div class="sec s1" style="margin-top:24px;">Merged Source Data — fda_all_drugs_chronic_indications.csv ({n_pairs} pairs, sortable &amp; filterable)</div>
+<div class="sec s6">Step 7 — True Peptide Size by Target Gene</div>
+<div class="g2"><div class="card">{to_div(f_sizemw,"sizemw")}</div><div class="card">{to_div(f_sizeaa,"sizeaa")}</div></div>
+<div class="g1"><div class="card">{to_div(f_tgtlen,"tgtlen")}</div></div>
+
+<div class="sec s1" style="margin-top:24px;">Source Data — fda_all_drugs_chronic_indications_peptide.csv ({n_pairs} pairs, sortable &amp; filterable)</div>
 <div class="g1">{TABLE_HTML}</div>
 
 <footer>
   Data sources: FDA Purple Book (biologics, 2020–2026) + FDA Orange Book (small molecules, May 2026)<br>
   Targets: ChEMBL v34 · Indications: openFDA drug labels · Categories: unified granular scheme<br>
-  Merged file: fda_all_drugs_chronic_indications.csv &nbsp;|&nbsp; {n_drugs} drugs · {n_pairs} drug–indication pairs
+  Source file: fda_all_drugs_chronic_indications_peptide.csv &nbsp;|&nbsp; {n_drugs} peptide/protein drugs · {n_pairs} drug–indication pairs
 </footer>
 <script>
-const IDS=['sankey','srcd','modpb','modob','catbar','tgtpb','tgtob','heat','scat','rev','cov'];
+const IDS=['sankey','srcd','modpb','modob','catbar','tgtpb','tgtob','heat','scat','rev','cov','sizemw','sizeaa','tgtlen'];
 function bp(){{const w=window.innerWidth;return w<480?0:w<900?1:2;}}
 function resizeAll(){{IDS.forEach(id=>{{const el=document.getElementById(id);if(!el||!el.data)return;
   const w=el.parentElement?el.parentElement.clientWidth-16:undefined;
