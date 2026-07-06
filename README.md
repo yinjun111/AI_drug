@@ -8,7 +8,7 @@ indications**, built by merging the FDA's Purple Book (biologics) and Orange Boo
 - **`combined_chronic_use_dashboard.html`** — all 985 chronic-use drugs.
 - **`combined_chronic_use_peptide_dashboard.html`** — the peptide/protein-modality subset.
 
-Both are password protected — see [Access control](#access-control).
+Both are password protected.
 
 ## Data sources
 
@@ -77,11 +77,3 @@ Both dashboards share the same structure, walking from raw counts to drill-down 
 7. *(Peptide dashboard only)* True peptide size by target gene, and rare/orphan
    disease therapies split by category.
 8. A full sortable/filterable table of the underlying merged CSV.
-
-## Access control
-
-`index.html` and both dashboard files include a client-side JS password gate,
-stored per-browser-session via `sessionStorage`. This is a casual deterrent for
-informal sharing, **not real security** — the password is visible in the page
-source to anyone who views it, since these are static files with no backend to
-enforce access.
