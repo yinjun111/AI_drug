@@ -1,0 +1,128 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0"/>
+<title>FDA Chronic-Use Dashboards</title>
+<style>
+:root{--bg:#F0F4F8;--card:#fff;--text:#1E293B;--sub:#64748B;--border:#E2E8F0;--pad:clamp(14px,4vw,32px);--r:14px;}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--text);min-height:100vh;overflow-x:hidden;}
+header{background:linear-gradient(135deg,#1E3A5F 0%,#7C3AED 50%,#D97706 100%);color:#fff;padding:clamp(28px,6vw,48px) var(--pad);text-align:center;}
+header h1{font-size:clamp(1.3rem,4vw,2rem);font-weight:700;line-height:1.3;}
+header p{margin-top:10px;opacity:.92;font-size:clamp(0.85rem,2.4vw,1rem);max-width:640px;margin-left:auto;margin-right:auto;line-height:1.5;}
+main{max-width:920px;margin:0 auto;padding:clamp(24px,5vw,40px) var(--pad) 60px;}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;}
+.tile{background:var(--card);border-radius:var(--r);padding:24px 22px;box-shadow:0 1px 4px rgba(0,0,0,.07);border-top:5px solid #7C3AED;cursor:pointer;transition:transform .15s ease,box-shadow .15s ease;text-align:left;display:flex;flex-direction:column;gap:10px;}
+.tile:hover{transform:translateY(-3px);box-shadow:0 6px 16px rgba(0,0,0,.12);}
+.tile.o{border-top-color:#D97706;}
+.tile .badge{align-self:flex-start;font-size:.65rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:#fff;background:#7C3AED;padding:3px 10px;border-radius:4px;}
+.tile.o .badge{background:#D97706;}
+.tile h2{font-size:clamp(1.05rem,2.8vw,1.3rem);line-height:1.35;}
+.tile p{font-size:clamp(0.8rem,2.2vw,0.9rem);color:var(--sub);line-height:1.55;}
+.tile .stats{display:flex;gap:10px;flex-wrap:wrap;margin-top:4px;}
+.tile .stat{background:var(--bg);border-radius:8px;padding:6px 12px;font-size:.78rem;color:var(--text);}
+.tile .stat b{color:#7C3AED;}
+.tile.o .stat b{color:#D97706;}
+.tile .go{margin-top:6px;font-size:.85rem;font-weight:700;color:#7C3AED;display:flex;align-items:center;gap:6px;}
+.tile.o .go{color:#D97706;}
+footer{text-align:center;font-size:.75rem;color:var(--sub);padding:0 var(--pad) 24px;line-height:1.6;}
+
+/* password modal */
+.overlay{position:fixed;inset:0;z-index:9999;background:rgba(15,23,42,.55);display:none;align-items:center;justify-content:center;padding:20px;}
+.overlay.show{display:flex;}
+.modal{background:#fff;border-radius:14px;padding:26px 24px;max-width:340px;width:100%;box-shadow:0 12px 32px rgba(0,0,0,.25);text-align:center;}
+.modal h3{font-size:1.05rem;margin-bottom:6px;color:var(--text);}
+.modal p{font-size:.82rem;color:var(--sub);margin-bottom:16px;}
+.modal form{display:flex;flex-direction:column;gap:10px;}
+.modal input{padding:10px 12px;border-radius:8px;border:1px solid var(--border);font-size:1rem;width:100%;}
+.modal button{padding:10px 14px;border-radius:8px;border:none;background:#7C3AED;color:#fff;font-weight:700;cursor:pointer;font-size:.9rem;}
+.modal .err{color:#DC2626;font-size:.78rem;margin-top:8px;visibility:hidden;}
+.modal .cancel{background:none;color:var(--sub);font-weight:600;text-decoration:underline;cursor:pointer;border:none;font-size:.8rem;margin-top:4px;}
+</style></head><body>
+<header>
+  <h1>FDA Chronic-Use Drug Dashboards</h1>
+  <p>Two dashboards built from the combined Purple Book (biologics) and Orange Book
+     (small-molecule) chronic / long-term indication datasets. Select a dashboard below —
+     each is password protected.</p>
+</header>
+<main>
+  <div class="grid">
+    <div class="tile" data-href="combined_chronic_use_dashboard.html">
+      <span class="badge">All Drugs</span>
+      <h2>FDA All Approved Chronic Drugs Chronic Use Dashboard</h2>
+      <p>Merged from the Purple Book (biologics / BLA products) and the Orange Book
+         (small-molecule NDA/ANDA drugs).</p>
+      <div class="stats">
+        <span class="stat"><b>985</b> drugs</span>
+        <span class="stat"><b>1492</b> drug–indication pairs</span>
+        <span class="stat"><b>263</b> diseases</span>
+      </div>
+      <span class="go">Open dashboard &rarr;</span>
+    </div>
+    <div class="tile o" data-href="combined_chronic_use_peptide_dashboard.html">
+      <span class="badge">Peptides &amp; Proteins</span>
+      <h2>FDA Peptide &amp; Protein Drugs — Chronic Use Dashboard</h2>
+      <p>Peptide / protein-modality subset of the combined Purple Book + Orange Book
+         chronic-use dataset.</p>
+      <div class="stats">
+        <span class="stat"><b>53</b> drugs</span>
+        <span class="stat"><b>77</b> drug–indication pairs</span>
+      </div>
+      <span class="go">Open dashboard &rarr;</span>
+    </div>
+  </div>
+</main>
+<footer>Each dashboard requires the shared access password.</footer>
+
+<div class="overlay" id="overlay">
+  <div class="modal">
+    <h3>Password required</h3>
+    <p>Enter the password to open this dashboard.</p>
+    <form id="pwform">
+      <input id="pwinput" type="password" placeholder="Password" autocomplete="off" />
+      <button type="submit">Enter</button>
+      <button type="button" class="cancel" id="pwcancel">Cancel</button>
+    </form>
+    <p class="err" id="pwerror">Incorrect password</p>
+  </div>
+</div>
+
+<script>
+(function(){
+  var PW = "zy2026";
+  var overlay = document.getElementById('overlay');
+  var form = document.getElementById('pwform');
+  var input = document.getElementById('pwinput');
+  var error = document.getElementById('pwerror');
+  var cancel = document.getElementById('pwcancel');
+  var target = null;
+
+  document.querySelectorAll('.tile').forEach(function(tile){
+    tile.addEventListener('click', function(){
+      target = tile.getAttribute('data-href');
+      error.style.visibility = 'hidden';
+      input.value = '';
+      overlay.classList.add('show');
+      setTimeout(function(){ input.focus(); }, 50);
+    });
+  });
+
+  cancel.addEventListener('click', function(){
+    overlay.classList.remove('show');
+    target = null;
+  });
+
+  overlay.addEventListener('click', function(e){
+    if (e.target === overlay) { overlay.classList.remove('show'); target = null; }
+  });
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    if (input.value === PW) {
+      sessionStorage.setItem('dashAuthed', '1');
+      window.location.href = target;
+    } else {
+      error.style.visibility = 'visible';
+    }
+  });
+})();
+</script>
+</body></html>

@@ -423,6 +423,57 @@ def build_target_length_bar():
     return fig
 
 
+# ── FIG 13 — Rare / orphan disease therapies by 2024 revenue ──────────────────
+# Restricted to indications with unambiguous rare-disease status (Orphanet /
+# FDA orphan-designation consensus) — mostly enzyme replacement therapies and
+# hemophilia factor replacement. Excludes borderline cases (exocrine pancreatic
+# insufficiency, growth hormone deficiency) where the indication is common
+# enough, or broad enough, that "rare disease" doesn't unambiguously apply.
+RARE_DISEASE_INDICATIONS = {
+    "Fabry disease": "Enzyme Replacement",
+    "Late-onset Pompe disease (LOPD)": "Enzyme Replacement",
+    "Late-onset Pompe disease (+miglustat)": "Enzyme Replacement",
+    "Alpha-mannosidosis": "Enzyme Replacement",
+    "Acid sphingomyelinase deficiency (ASMD / NPD-A/B)": "Enzyme Replacement",
+    "MPS II (Hunter syndrome)": "Enzyme Replacement",
+    "Arginase 1 deficiency (hyperargininemia)": "Enzyme Replacement",
+    "Congenital sucrase-isomaltase deficiency (CSID)": "Enzyme Replacement",
+    "Alpha-1 antitrypsin deficiency (AATD) with emphysema": "Enzyme Replacement",
+    "Achondroplasia": "Skeletal / Growth",
+    "Short bowel syndrome": "Gastrointestinal",
+    "Severe chronic neutropenia (SCN)": "Hematology",
+    "Hemophilia A (prophylaxis)": "Hemophilia",
+    "Hemophilia A (prophylaxis, extended half-life)": "Hemophilia",
+    "Hemophilia B (prophylaxis)": "Hemophilia",
+    "Hemophilia A/B with inhibitors (prophylaxis)": "Hemophilia",
+    "Hemophilia A/B with inhibitors": "Hemophilia",
+}
+RARE_GROUP_COLORS = {
+    "Enzyme Replacement": "#7C3AED", "Hemophilia": "#DC2626",
+    "Skeletal / Growth": "#0891B2", "Gastrointestinal": "#059669", "Hematology": "#D97706",
+}
+
+def build_rare_disease_bar(group):
+    d = df[df["Disease / Indication"].isin(RARE_DISEASE_INDICATIONS)].copy()
+    d = d.drop_duplicates(subset=["Drug", "Disease / Indication"])
+    d["group"] = d["Disease / Indication"].map(RARE_DISEASE_INDICATIONS)
+    d = d[d["group"] == group]
+    d["label"] = d["Brand"].where(d["Brand"] != "", d["Drug"]) + " (" + d["Disease / Indication"] + ")"
+    d = d.sort_values("rev")
+    fig = go.Figure(go.Bar(
+        x=d["rev"], y=d["label"], orientation="h",
+        marker=dict(color=RARE_GROUP_COLORS[group], line=dict(color="white", width=0.5)),
+        text=[f"${v:.2f}B" if v > 0 else "n/a" for v in d["rev"]], textposition="outside",
+        hovertemplate="<b>%{y}</b><br>Revenue: %{text}<extra></extra>"))
+    fig.update_layout(
+        title=dict(text=f"<b>{group}</b><br><sup>{len(d)} indications</sup>", font=dict(size=13)),
+        xaxis=dict(title="Annual Revenue (USD B)", showgrid=True, gridcolor="#E2E8F0", tickprefix="$", ticksuffix="B"),
+        yaxis=dict(tickfont=dict(size=9)),
+        margin=dict(l=10, r=70, t=50, b=40), height=max(220, 70 + 55 * len(d)),
+        paper_bgcolor="#F8FAFC", plot_bgcolor="#F8FAFC")
+    return fig
+
+
 def to_div(fig, div_id):
     fig.update_layout(autosize=True)
     return fig.to_html(full_html=False, include_plotlyjs=False, div_id=div_id,
@@ -444,6 +495,7 @@ f_cov    = build_disease_coverage()
 f_sizemw = build_size_bar("mw")
 f_sizeaa = build_size_bar("aa")
 f_tgtlen = build_target_length_bar()
+f_rare = {g: build_rare_disease_bar(g) for g in RARE_GROUP_COLORS}
 
 
 # ── Sortable / filterable table (PB format: filter row under headers) ─────────
@@ -600,6 +652,10 @@ render();
 
 TABLE_HTML = build_table_html()
 
+RARE_GROUP_IDS = {g: f"rare{i}" for i, g in enumerate(RARE_GROUP_COLORS)}
+RARE_CARDS_HTML = "".join(
+    f'<div class="card">{to_div(f_rare[g], RARE_GROUP_IDS[g])}</div>' for g in RARE_GROUP_COLORS)
+
 HTML = f"""<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0"/>
 <title>FDA Peptide &amp; Protein Drugs — Chronic Use Dashboard</title>
@@ -628,6 +684,31 @@ header p{{margin-top:6px;opacity:.9;font-size:clamp(0.75rem,2.2vw,0.9rem);line-h
 .card{{background:var(--card);border-radius:var(--r);padding:8px 6px;box-shadow:0 1px 4px rgba(0,0,0,.07);overflow:hidden;min-width:0;}}
 footer{{text-align:center;font-size:clamp(0.65rem,1.8vw,0.75rem);color:var(--sub);padding:18px var(--pad) 24px;line-height:1.6;}}
 </style></head><body>
+<div id="pwgate" style="position:fixed;inset:0;z-index:9999;background:#1E3A5F;display:flex;align-items:center;justify-content:center;flex-direction:column;color:#fff;font-family:system-ui,-apple-system,sans-serif;padding:20px;text-align:center;">
+  <h2 style="font-size:1.3rem;margin-bottom:14px;">This dashboard is password protected</h2>
+  <form id="pwform" style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center;">
+    <input id="pwinput" type="password" placeholder="Enter password" autofocus style="padding:10px 14px;border-radius:8px;border:none;font-size:1rem;min-width:200px;" />
+    <button type="submit" style="padding:10px 18px;border-radius:8px;border:none;background:#7C3AED;color:#fff;font-weight:700;cursor:pointer;">Enter</button>
+  </form>
+  <p id="pwerror" style="color:#FCA5A5;margin-top:10px;font-size:.85rem;visibility:hidden;">Incorrect password</p>
+</div>
+<script>
+(function(){{
+  var PW = "zy2026";
+  var gate = document.getElementById('pwgate');
+  if (sessionStorage.getItem('dashAuthed') === '1') {{ gate.style.display = 'none'; }}
+  document.getElementById('pwform').addEventListener('submit', function(e){{
+    e.preventDefault();
+    var val = document.getElementById('pwinput').value;
+    if (val === PW) {{
+      sessionStorage.setItem('dashAuthed', '1');
+      gate.style.display = 'none';
+    }} else {{
+      document.getElementById('pwerror').style.visibility = 'visible';
+    }}
+  }});
+}})();
+</script>
 <header>
   <h1>FDA Peptide &amp; Protein Drugs — Chronic Use Dashboard</h1>
   <p>Peptide / protein-modality subset of the combined <b>Purple Book</b> (biologics) +
@@ -680,6 +761,9 @@ footer{{text-align:center;font-size:clamp(0.65rem,1.8vw,0.75rem);color:var(--sub
 <div class="g2"><div class="card">{to_div(f_sizemw,"sizemw")}</div><div class="card">{to_div(f_sizeaa,"sizeaa")}</div></div>
 <div class="g1"><div class="card">{to_div(f_tgtlen,"tgtlen")}</div></div>
 
+<div class="sec s6">Step 8 — Rare / Orphan Disease Therapies, split by category</div>
+<div class="g2">{RARE_CARDS_HTML}</div>
+
 <div class="sec s1" style="margin-top:24px;">Source Data — fda_all_drugs_chronic_indications_peptide.csv ({n_pairs} pairs, sortable &amp; filterable)</div>
 <div class="g1">{TABLE_HTML}</div>
 
@@ -689,7 +773,7 @@ footer{{text-align:center;font-size:clamp(0.65rem,1.8vw,0.75rem);color:var(--sub
   Source file: fda_all_drugs_chronic_indications_peptide.csv &nbsp;|&nbsp; {n_drugs} peptide/protein drugs · {n_pairs} drug–indication pairs
 </footer>
 <script>
-const IDS=['sankey','srcd','modpb','modob','catbar','tgtpb','tgtob','heat','scat','rev','cov','sizemw','sizeaa','tgtlen'];
+const IDS=['sankey','srcd','modpb','modob','catbar','tgtpb','tgtob','heat','scat','rev','cov','sizemw','sizeaa','tgtlen',{",".join(repr(v) for v in RARE_GROUP_IDS.values())}];
 function bp(){{const w=window.innerWidth;return w<480?0:w<900?1:2;}}
 function resizeAll(){{IDS.forEach(id=>{{const el=document.getElementById(id);if(!el||!el.data)return;
   const w=el.parentElement?el.parentElement.clientWidth-16:undefined;
