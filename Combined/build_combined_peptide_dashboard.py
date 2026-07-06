@@ -12,13 +12,16 @@ from collections import defaultdict, Counter
 import pandas as pd
 import plotly.graph_objects as go
 import plotly.express as px
+from aav_suitability import AAV_SUITABILITY
 
 PEPTIDE_CSV = "fda_all_drugs_chronic_indications_peptide.csv"
 OUT_HTML    = "combined_chronic_use_peptide_dashboard.html"
 
 COLS = ["Source", "Drug", "Brand", "Disease / Indication", "Disease Category",
         "Modality", "Drug Target (Gene)", "Annual Revenue 2024 (USD B)",
-        "Dose", "Frequency", "Duration of Use"]
+        "Dose", "Frequency", "Duration of Use",
+        "Amino Acid Length", "Molecular Weight (Da)",
+        "AAV Suitability", "AAV Rationale"]
 
 def norm_target(t: str) -> str:
     return re.sub(r"\s*\|\s*", ", ", (t or "").strip())
@@ -42,7 +45,15 @@ def load_peptide_csv(path):
             "Dose": (r["Dose"] or "").strip(),
             "Frequency": (r["Frequency"] or "").strip(),
             "Duration of Use": (r["Duration of Use"] or "").strip(),
+            "Amino Acid Length": (r.get("Amino Acid Length") or "").strip(),
+            "Molecular Weight (Da)": (r.get("Molecular Weight (Da)") or "").strip(),
         })
+    # Attach AAV suitability from the module (source of truth), so the dashboard
+    # is correct even if the CSV on disk hasn't been refreshed (e.g. Excel lock).
+    for row in rows:
+        score, _kb, rationale = AAV_SUITABILITY.get(row["Drug"], ("", None, ""))
+        row["AAV Suitability"] = score
+        row["AAV Rationale"] = rationale
     return rows
 
 merged = load_peptide_csv(PEPTIDE_CSV)
@@ -311,49 +322,50 @@ def build_disease_coverage():
     return fig
 
 
-# ── FIG 10/11 — True peptide size by target gene (MW + amino acid length) ─────
-# Restricted to genuine peptides (short synthetic/hormone-analog chains, roughly
-# <60 residues) — excludes large recombinant enzymes, clotting factors, and Fc-
-# fusion proteins that also appear in the dataset (e.g. Factor VIII, etanercept,
-# aflibercept), since those are proteins, not peptides. Where a target has both
-# a peptide and a fusion-protein drug mapped to it (GLP1R), the peptide is used.
-# Molecular weight (Da) and amino-acid length are web-verified per drug (FDA
-# labels / DrugBank, July 2026).
-PEPTIDE_SIZE = {
-    # gene: (representative peptide drug, molecular weight in Da, amino-acid length)
-    "SSTR5":   ("Lanreotide",        1096,  8),
-    "GNRHR":   ("Triptorelin",       1312, 10),
-    "GUCY2C":  ("Linaclotide",       1527, 14),
-    "CACNA1B": ("Ziconotide",        2639, 25),
-    "CALCR":   ("Calcitonin Salmon", 3432, 32),
-    "GLP2R":   ("Teduglutide",       3752, 33),
-    "PTH1R":   ("Abaloparatide",     3961, 34),
-    "NPR2":    ("Vosoritide",        4100, 39),
-    "GLP1R":   ("Semaglutide",       4114, 31),
-    "GIPR":    ("Tirzepatide",       4811, 39),
-    "GHRHR":   ("Tesamorelin",       5136, 44),
-    "INSR":    ("Insulin Lispro",    5808, 51),
-}
+# ── FIG 10/11 — Drug size by target gene (MW + amino acid length), all drugs ──
+# Covers every drug in the dataset with a defined single molecular species
+# (all except pancrelipase, an undefined porcine enzyme mixture with no single
+# MW/length). Amino acid length is residues in the mature active chain(s),
+# summed across chains for multimeric/dimeric proteins; molecular weight is
+# the drug substance as administered (incl. glycosylation/PEG where present).
+# Values are FDA-label-sourced (openFDA "Description" section) except where
+# marked approximate in the source data (recently approved or compositionally
+# variable drugs lacking a public authoritative figure).
+def _drug_size_rows():
+    seen, rows = set(), []
+    for m in merged:
+        d = m["Drug"]
+        if d in seen:
+            continue
+        seen.add(d)
+        aa, mw = m["Amino Acid Length"], m["Molecular Weight (Da)"]
+        if not aa or not mw:
+            continue
+        rows.append((d, m["Drug Target (Gene)"] or "—", int(aa), int(mw)))
+    return rows
+
+DRUG_SIZE_ROWS = _drug_size_rows()
 
 def build_size_bar(metric):
-    items = sorted(PEPTIDE_SIZE.items(), key=lambda kv: kv[1][1 if metric == "mw" else 2])
-    labels = [f"{v[0]} ({g})" for g, v in items]
-    vals  = [v[1 if metric == "mw" else 2] for _, v in items]
+    idx = 2 if metric == "aa" else 3
+    items = sorted(DRUG_SIZE_ROWS, key=lambda r: r[idx])
+    labels = [f"{d} ({g})" for d, g, _, _ in items]
+    vals = [r[idx] for r in items]
     if metric == "mw":
-        title, xtitle, texts = "Molecular Weight", "Molecular Weight (Da)", [f"{v:,.0f} Da" for v in vals]
+        title, xtitle, texts = "Molecular Weight", "Molecular Weight (Da, log scale)", [f"{v:,.0f} Da" for v in vals]
     else:
-        title, xtitle, texts = "Amino Acid Length", "Amino Acids", [f"{v:,.0f} aa" for v in vals]
+        title, xtitle, texts = "Amino Acid Length", "Amino Acids (log scale)", [f"{v:,.0f} aa" for v in vals]
     fig = go.Figure(go.Bar(
         x=vals, y=labels, orientation="h",
         marker=dict(color="#0891B2", line=dict(color="white", width=0.5)),
         text=texts, textposition="outside",
         hovertemplate="<b>%{y}</b><br>" + title + ": %{text}<extra></extra>"))
     fig.update_layout(
-        title=dict(text=f"<b>Peptide {title} by Target Gene</b><br>"
-                        f"<sup>{len(items)} true peptides (short chains only) · rows labeled Drug (Target)</sup>", font=dict(size=13)),
-        xaxis=dict(title=xtitle, showgrid=True, gridcolor="#E2E8F0"),
-        yaxis=dict(tickfont=dict(size=10)),
-        margin=dict(l=10, r=80, t=55, b=40), height=480,
+        title=dict(text=f"<b>Drug {title} by Target Gene</b><br>"
+                        f"<sup>{len(items)} drugs with a defined molecular species · log scale spans peptides to fusion proteins</sup>", font=dict(size=13)),
+        xaxis=dict(title=xtitle, type="log", showgrid=True, gridcolor="#E2E8F0"),
+        yaxis=dict(tickfont=dict(size=9)),
+        margin=dict(l=10, r=90, t=55, b=40), height=max(480, 17 * len(items) + 120),
         paper_bgcolor="#F8FAFC", plot_bgcolor="#F8FAFC")
     return fig
 
@@ -508,6 +520,8 @@ def build_table_html():
             "modality": m["Modality"], "target": m["Drug Target (Gene)"],
             "revenue": m["Annual Revenue 2024 (USD B)"], "dose": m["Dose"],
             "freq": m["Frequency"], "duration": m["Duration of Use"],
+            "aalen": m["Amino Acid Length"], "mw": m["Molecular Weight (Da)"],
+            "aav": m["AAV Suitability"], "aavc": m["AAV Rationale"],
         })
     rows_all.sort(key=lambda r: (-(float(r["revenue"]) if r["revenue"] else 0), r["drug"].lower()))
     tbl_json = json.dumps(rows_all, ensure_ascii=False)
@@ -537,9 +551,10 @@ def build_table_html():
   <div style="overflow-x:auto;border-radius:10px;border:1px solid #E2E8F0;box-shadow:0 1px 4px rgba(0,0,0,.06);">
     <table id="tblMain" style="width:100%;border-collapse:collapse;background:#fff;font-size:0.74rem;table-layout:fixed;">
       <colgroup>
-        <col style="width:8%"/><col style="width:10%"/><col style="width:8%"/><col style="width:14%"/>
-        <col style="width:11%"/><col style="width:7%"/><col style="width:8%"/><col style="width:6%"/>
-        <col style="width:8%"/><col style="width:6%"/><col style="width:14%"/>
+        <col style="width:6%"/><col style="width:9%"/><col style="width:6%"/><col style="width:11%"/>
+        <col style="width:9%"/><col style="width:6%"/><col style="width:6%"/><col style="width:5%"/>
+        <col style="width:7%"/><col style="width:5%"/><col style="width:8%"/><col style="width:5%"/>
+        <col style="width:6%"/><col style="width:6%"/>
       </colgroup>
       <thead>
         <tr style="background:#1E3A5F;color:#fff;text-align:left;">
@@ -554,6 +569,9 @@ def build_table_html():
           <th class="th-sort" data-col="dose"     style="padding:6px 8px;cursor:pointer;">Dose &#8597;</th>
           <th class="th-sort" data-col="freq"     style="padding:6px 8px;cursor:pointer;">Frequency &#8597;</th>
           <th class="th-sort" data-col="duration" style="padding:6px 8px;cursor:pointer;">Duration &#8597;</th>
+          <th class="th-sort" data-col="aalen"    style="padding:6px 8px;cursor:pointer;">AA Length &#8597;</th>
+          <th class="th-sort" data-col="mw"       style="padding:6px 8px;cursor:pointer;">MW (Da) &#8597;</th>
+          <th class="th-sort" data-col="aav"      style="padding:6px 8px;cursor:pointer;" title="AAV gene-therapy suitability">AAV Fit &#8597;</th>
         </tr>
         <tr style="background:#2D5A87;">
           <th style="padding:3px 5px;"><select class="col-filter" data-col="source" id="colSrcFilter"><option value="">All sources</option></select></th>
@@ -567,6 +585,9 @@ def build_table_html():
           <th style="padding:3px 5px;"><input  class="col-filter" data-col="dose"     placeholder="Dose…"/></th>
           <th style="padding:3px 5px;"><input  class="col-filter" data-col="freq"     placeholder="Freq…"/></th>
           <th style="padding:3px 5px;"><input  class="col-filter" data-col="duration" placeholder="Duration…"/></th>
+          <th style="padding:3px 5px;"><input  class="col-filter" data-col="aalen"    placeholder="≥ aa" type="number" min="0" step="1"/></th>
+          <th style="padding:3px 5px;"><input  class="col-filter" data-col="mw"       placeholder="≥ Da" type="number" min="0" step="1"/></th>
+          <th style="padding:3px 5px;"><select class="col-filter" data-col="aav" id="colAavFilter"><option value="">All AAV</option></select></th>
         </tr>
       </thead>
       <tbody id="tblBody"></tbody>
@@ -587,6 +608,10 @@ const CATC={cat_colors_json}, MODC={mod_colors_json}, SRCC={src_colors_json};
 [...new Set(TBL.map(r=>r.source))].sort().forEach(s=>document.getElementById('colSrcFilter').innerHTML+=`<option value="${{s}}">${{s}}</option>`);
 [...new Set(TBL.map(r=>r.category))].filter(Boolean).sort().forEach(c=>document.getElementById('colCatFilter').innerHTML+=`<option value="${{c}}">${{c}}</option>`);
 [...new Set(TBL.map(r=>r.modality))].filter(Boolean).sort().forEach(m=>document.getElementById('colModFilter').innerHTML+=`<option value="${{m}}">${{m}}</option>`);
+const AAVC={{High:'#059669',Medium:'#D97706',Low:'#94A3B8'}};
+const AAV_RANK={{High:0,Medium:1,Low:2}};
+const esc=s=>String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+['High','Medium','Low'].filter(v=>TBL.some(r=>r.aav===v)).forEach(v=>document.getElementById('colAavFilter').innerHTML+=`<option value="${{v}}">${{v}}</option>`);
 let sort={{col:'revenue',asc:false}}, page=0, ps=50;
 function filt(){{
   const q=document.getElementById('tblSearch').value.toLowerCase(); const cf={{}};
@@ -604,13 +629,18 @@ function filt(){{
     if(cf.dose&&!r.dose.toLowerCase().includes(cf.dose.toLowerCase()))return false;
     if(cf.freq&&!r.freq.toLowerCase().includes(cf.freq.toLowerCase()))return false;
     if(cf.duration&&!r.duration.toLowerCase().includes(cf.duration.toLowerCase()))return false;
+    if(cf.aalen&&(parseFloat(r.aalen)||0)<parseFloat(cf.aalen))return false;
+    if(cf.mw&&(parseFloat(r.mw)||0)<parseFloat(cf.mw))return false;
+    if(cf.aav&&r.aav!==cf.aav)return false;
     return true;
   }});
 }}
+const NUMERIC_COLS=new Set(['revenue','aalen','mw']);
 function render(){{
   let d=filt();
-  if(sort.col){{const c=sort.col,a=sort.asc;d=[...d].sort((x,y)=>{{
-    const vx=c==='revenue'?parseFloat(x[c])||0:x[c].toLowerCase(),vy=c==='revenue'?parseFloat(y[c])||0:y[c].toLowerCase();
+  if(sort.col){{const c=sort.col,a=sort.asc,isNum=NUMERIC_COLS.has(c),isAav=c==='aav';d=[...d].sort((x,y)=>{{
+    const vx=isAav?(AAV_RANK[x[c]]??9):isNum?parseFloat(x[c])||0:x[c].toLowerCase(),
+          vy=isAav?(AAV_RANK[y[c]]??9):isNum?parseFloat(y[c])||0:y[c].toLowerCase();
     return a?(vx>vy?1:vx<vy?-1:0):(vx<vy?1:vx>vy?-1:0);}});}}
   const tot=d.length,start=page*ps,slice=ps>={n}?d:d.slice(start,start+ps);
   const b=document.getElementById('tblBody');b.innerHTML='';
@@ -626,7 +656,10 @@ function render(){{
       ['category',r.category],['modality',`<span style="color:${{mc}};font-weight:600;">${{r.modality}}</span>`],
       ['target',`<span style="font-family:monospace;font-size:0.7rem;color:#7C3AED;">${{r.target||'—'}}</span>`],
       ['revenue',r.revenue?`<b style="color:#059669;">${{rev}}</b>`:'—'],
-      ['dose',r.dose||'—'],['freq',r.freq||'—'],['duration',r.duration||'—']];
+      ['dose',r.dose||'—'],['freq',r.freq||'—'],['duration',r.duration||'—'],
+      ['aalen',r.aalen?r.aalen+' aa':'—'],
+      ['mw',r.mw?Number(r.mw).toLocaleString()+' Da':'—'],
+      ['aav',r.aav?`<span title="${{esc(r.aavc)}}" style="background:${{AAVC[r.aav]}}22;color:${{AAVC[r.aav]}};font-weight:700;padding:2px 7px;border-radius:10px;font-size:0.66rem;white-space:nowrap;cursor:help;">${{r.aav}}</span>`:'—']];
     cells.forEach(([,html])=>{{const td=document.createElement('td');td.innerHTML=html;
       td.style.cssText='padding:5px 8px;vertical-align:top;line-height:1.35;word-break:break-word;overflow-wrap:anywhere;';tr.appendChild(td);}});
     b.appendChild(tr);
@@ -651,6 +684,81 @@ render();
 </script>"""
 
 TABLE_HTML = build_table_html()
+
+
+# ── Step 9 — AAV suitability: counts + Highly Recommended table ───────────────
+def _aav_counts():
+    seen, c = set(), Counter()
+    for m in merged:
+        d = m["Drug"]
+        if d in seen:
+            continue
+        seen.add(d)
+        c[m["AAV Suitability"] or "—"] += 1
+    return c
+
+AAV_COUNTS = _aav_counts()
+N_AAV_DRUGS = sum(AAV_COUNTS.values())
+
+def build_aav_high_table():
+    # One row per unique High-scored drug, with brand/target/modality/size/rationale.
+    seen, rows = set(), []
+    for m in merged:
+        d = m["Drug"]
+        if d in seen or m["AAV Suitability"] != "High":
+            continue
+        seen.add(d)
+        _score, gene_kb, rationale = AAV_SUITABILITY.get(d, ("", None, ""))
+        rows.append((d, m["Brand"], m["Drug Target (Gene)"], m["Modality"],
+                     m["Amino Acid Length"], gene_kb, rationale))
+    # Sort by gene size (smallest transgene first), then name.
+    rows.sort(key=lambda r: (r[5] if r[5] is not None else 99, r[0].lower()))
+
+    body = []
+    for d, brand, target, modality, aa, gene_kb, rationale in rows:
+        gk = f"{gene_kb:.1f} kb" if gene_kb is not None else "—"
+        aa_disp = f"{aa} aa" if aa else "—"
+        body.append(
+            f'<tr style="border-bottom:1px solid #E2E8F0;">'
+            f'<td style="padding:6px 8px;"><b style="color:#1E3A5F;">{d}</b></td>'
+            f'<td style="padding:6px 8px;">{brand or "—"}</td>'
+            f'<td style="padding:6px 8px;font-family:monospace;font-size:0.7rem;color:#7C3AED;">{target or "—"}</td>'
+            f'<td style="padding:6px 8px;">{modality or "—"}</td>'
+            f'<td style="padding:6px 8px;white-space:nowrap;">{aa_disp}</td>'
+            f'<td style="padding:6px 8px;white-space:nowrap;color:#059669;font-weight:700;">{gk}</td>'
+            f'<td style="padding:6px 8px;line-height:1.4;">{rationale}</td>'
+            f'</tr>')
+    return f"""
+<div style="padding:6px var(--pad,16px) 0;font-size:0.86rem;color:#334155;line-height:1.5;max-width:1100px;">
+  <p><b>Scoring.</b> Each drug is rated for delivery by an <b>AAV</b> vector that makes the
+  protein in the patient's own cells. Two gates: <b>(1) gene size &lt; 4.5 kb</b> — the AAV
+  genome fits ~4.5 kb of coding sequence (≈ expressed-chain amino acids × 3 bp; for
+  Fc-fusions/homodimers the AAV encodes one monomer that dimerizes); and
+  <b>(2) no un-encodable chemistry</b> — ribosomes cannot add PEG, fatty-acid/lipid chains,
+  D- or other non-natural amino acids, or substitute metal cofactors. Half-life extensions
+  (PEG, lipid, albumin-binding, Fc) are treated as <i>replaceable</i> by continuous
+  expression; toxins and gut-lumen enzymes are mechanistically incompatible.
+  <b>{AAV_COUNTS.get('High',0)} High</b>, {AAV_COUNTS.get('Medium',0)} Medium,
+  {AAV_COUNTS.get('Low',0)} Low across {N_AAV_DRUGS} drugs. Hover the
+  <b>AAV Fit</b> chip in the table above for any drug's rationale.</p>
+</div>
+<div style="padding:8px var(--pad,16px) 0;">
+  <div style="overflow-x:auto;border-radius:10px;border:1px solid #E2E8F0;box-shadow:0 1px 4px rgba(0,0,0,.06);">
+    <table style="width:100%;border-collapse:collapse;background:#fff;font-size:0.76rem;">
+      <colgroup><col style="width:12%"/><col style="width:13%"/><col style="width:9%"/><col style="width:13%"/>
+        <col style="width:7%"/><col style="width:7%"/><col style="width:39%"/></colgroup>
+      <thead><tr style="background:#059669;color:#fff;text-align:left;">
+        <th style="padding:7px 8px;">Drug</th><th style="padding:7px 8px;">Brand</th>
+        <th style="padding:7px 8px;">Target (Gene)</th><th style="padding:7px 8px;">Modality</th>
+        <th style="padding:7px 8px;">AA Length</th><th style="padding:7px 8px;">Gene ≈</th>
+        <th style="padding:7px 8px;">Why it's a strong AAV candidate</th>
+      </tr></thead>
+      <tbody>{"".join(body)}</tbody>
+    </table>
+  </div>
+</div>"""
+
+AAV_HIGH_TABLE = build_aav_high_table()
 
 RARE_GROUP_IDS = {g: f"rare{i}" for i, g in enumerate(RARE_GROUP_COLORS)}
 RARE_CARDS_HTML = "".join(
@@ -683,33 +791,9 @@ header p{{margin-top:6px;opacity:.9;font-size:clamp(0.75rem,2.2vw,0.9rem);line-h
 .g2{{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:10px;padding:8px var(--pad);}}
 .card{{background:var(--card);border-radius:var(--r);padding:8px 6px;box-shadow:0 1px 4px rgba(0,0,0,.07);overflow:hidden;min-width:0;}}
 footer{{text-align:center;font-size:clamp(0.65rem,1.8vw,0.75rem);color:var(--sub);padding:18px var(--pad) 24px;line-height:1.6;}}
-</style></head><body>
-<div id="pwgate" style="position:fixed;inset:0;z-index:9999;background:#1E3A5F;display:flex;align-items:center;justify-content:center;flex-direction:column;color:#fff;font-family:system-ui,-apple-system,sans-serif;padding:20px;text-align:center;">
-  <h2 style="font-size:1.3rem;margin-bottom:14px;">This dashboard is password protected</h2>
-  <form id="pwform" style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center;">
-    <input id="pwinput" type="password" placeholder="Enter password" autofocus style="padding:10px 14px;border-radius:8px;border:none;font-size:1rem;min-width:200px;" />
-    <button type="submit" style="padding:10px 18px;border-radius:8px;border:none;background:#7C3AED;color:#fff;font-weight:700;cursor:pointer;">Enter</button>
-  </form>
-  <p id="pwerror" style="color:#FCA5A5;margin-top:10px;font-size:.85rem;visibility:hidden;">Incorrect password</p>
-</div>
-<script>
-(function(){{
-  var PW = "zy2026";
-  var gate = document.getElementById('pwgate');
-  if (sessionStorage.getItem('dashAuthed') === '1') {{ gate.style.display = 'none'; }}
-  document.getElementById('pwform').addEventListener('submit', function(e){{
-    e.preventDefault();
-    var val = document.getElementById('pwinput').value;
-    if (val === PW) {{
-      sessionStorage.setItem('dashAuthed', '1');
-      gate.style.display = 'none';
-    }} else {{
-      document.getElementById('pwerror').style.visibility = 'visible';
-    }}
-  }});
-}})();
-</script>
-<header>
+</style></head><body>"""
+
+HTML_BODY = f"""<header>
   <h1>FDA Peptide &amp; Protein Drugs — Chronic Use Dashboard</h1>
   <p>Peptide / protein-modality subset of the combined <b>Purple Book</b> (biologics) +
      <b>Orange Book</b> (small molecules) chronic-use dataset — {n_drugs} unique chronic /
@@ -757,12 +841,15 @@ footer{{text-align:center;font-size:clamp(0.65rem,1.8vw,0.75rem);color:var(--sub
 <div class="sec s6">Step 6 — Disease Coverage: Ranked by Number of Drugs</div>
 <div class="g1"><div class="card">{to_div(f_cov,"cov")}</div></div>
 
-<div class="sec s6">Step 7 — True Peptide Size by Target Gene</div>
+<div class="sec s6">Step 7 — Drug Size by Target Gene (All Drugs, Amino Acid Length &amp; MW)</div>
 <div class="g2"><div class="card">{to_div(f_sizemw,"sizemw")}</div><div class="card">{to_div(f_sizeaa,"sizeaa")}</div></div>
 <div class="g1"><div class="card">{to_div(f_tgtlen,"tgtlen")}</div></div>
 
 <div class="sec s6">Step 8 — Rare / Orphan Disease Therapies, split by category</div>
 <div class="g2">{RARE_CARDS_HTML}</div>
+
+<div class="sec s5">Step 9 — AAV Gene-Therapy Suitability: Highly Recommended Candidates</div>
+{AAV_HIGH_TABLE}
 
 <div class="sec s1" style="margin-top:24px;">Source Data — fda_all_drugs_chronic_indications_peptide.csv ({n_pairs} pairs, sortable &amp; filterable)</div>
 <div class="g1">{TABLE_HTML}</div>
@@ -781,8 +868,10 @@ function resizeAll(){{IDS.forEach(id=>{{const el=document.getElementById(id);if(
 let _t;window.addEventListener('resize',()=>{{clearTimeout(_t);_t=setTimeout(resizeAll,150);}});
 document.addEventListener('DOMContentLoaded',()=>{{let a=0;const p=setInterval(()=>{{
   if(IDS.every(id=>{{const el=document.getElementById(id);return el&&el.data;}})||a++>40){{clearInterval(p);resizeAll();}}}},150);}});
-</script>
-</body></html>"""
+</script>"""
+
+import crypto_gate
+HTML = HTML + crypto_gate.dashboard_gate_html(HTML_BODY) + "</body></html>"
 
 with open(OUT_HTML, "w", encoding="utf-8") as f:
     f.write(HTML)

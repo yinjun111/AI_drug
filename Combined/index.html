@@ -86,14 +86,43 @@ footer{text-align:center;font-size:.75rem;color:var(--sub);padding:0 var(--pad) 
 </div>
 
 <script>
+
+const SALT_B64 = "Dzk43D55jZr2L5LbCKmYkw==";
+const ITERATIONS = 250000;
+
+function b64ToBytes(b64){ return Uint8Array.from(atob(b64), c => c.charCodeAt(0)); }
+function bytesToB64(bytes){ return btoa(String.fromCharCode(...new Uint8Array(bytes))); }
+
+async function deriveKeyFromPassword(password){
+  const enc = new TextEncoder();
+  const keyMaterial = await crypto.subtle.importKey('raw', enc.encode(password), {name:'PBKDF2'}, false, ['deriveKey']);
+  return crypto.subtle.deriveKey(
+    {name:'PBKDF2', salt: b64ToBytes(SALT_B64), iterations: ITERATIONS, hash:'SHA-256'},
+    keyMaterial,
+    {name:'AES-GCM', length:256},
+    true,
+    ['decrypt']
+  );
+}
+
+async function importRawKey(rawB64){
+  return crypto.subtle.importKey('raw', b64ToBytes(rawB64), {name:'AES-GCM'}, true, ['decrypt']);
+}
+
+const VERIFIER_IV_B64 = "iTr5BhjMU2vzXImn";
+const VERIFIER_CT_B64 = "fPcTuT+zsXYazxvvd77FCXrW";
+
+async function verifyKey(key){
+  await crypto.subtle.decrypt({name:'AES-GCM', iv: b64ToBytes(VERIFIER_IV_B64)}, key, b64ToBytes(VERIFIER_CT_B64));
+}
+
 (function(){
-  var PW = "zy2026";
-  var overlay = document.getElementById('overlay');
-  var form = document.getElementById('pwform');
-  var input = document.getElementById('pwinput');
-  var error = document.getElementById('pwerror');
-  var cancel = document.getElementById('pwcancel');
-  var target = null;
+  const overlay = document.getElementById('overlay');
+  const form = document.getElementById('pwform');
+  const input = document.getElementById('pwinput');
+  const error = document.getElementById('pwerror');
+  const cancel = document.getElementById('pwcancel');
+  let target = null;
 
   document.querySelectorAll('.tile').forEach(function(tile){
     tile.addEventListener('click', function(){
@@ -105,24 +134,23 @@ footer{text-align:center;font-size:.75rem;color:var(--sub);padding:0 var(--pad) 
     });
   });
 
-  cancel.addEventListener('click', function(){
-    overlay.classList.remove('show');
-    target = null;
-  });
+  cancel.addEventListener('click', function(){ overlay.classList.remove('show'); target = null; });
+  overlay.addEventListener('click', function(e){ if (e.target === overlay) { overlay.classList.remove('show'); target = null; } });
 
-  overlay.addEventListener('click', function(e){
-    if (e.target === overlay) { overlay.classList.remove('show'); target = null; }
-  });
-
-  form.addEventListener('submit', function(e){
+  form.addEventListener('submit', async function(e){
     e.preventDefault();
-    if (input.value === PW) {
-      sessionStorage.setItem('dashAuthed', '1');
+    error.style.visibility = 'hidden';
+    try {
+      const key = await deriveKeyFromPassword(input.value);
+      await verifyKey(key);
+      const raw = await crypto.subtle.exportKey('raw', key);
+      sessionStorage.setItem('dashKey', bytesToB64(raw));
       window.location.href = target;
-    } else {
+    } catch (err) {
       error.style.visibility = 'visible';
     }
   });
 })();
+
 </script>
 </body></html>

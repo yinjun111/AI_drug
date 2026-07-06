@@ -560,33 +560,9 @@ header p{{margin-top:6px;opacity:.9;font-size:clamp(0.75rem,2.2vw,0.9rem);line-h
 .g2{{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:10px;padding:8px var(--pad);}}
 .card{{background:var(--card);border-radius:var(--r);padding:8px 6px;box-shadow:0 1px 4px rgba(0,0,0,.07);overflow:hidden;min-width:0;}}
 footer{{text-align:center;font-size:clamp(0.65rem,1.8vw,0.75rem);color:var(--sub);padding:18px var(--pad) 24px;line-height:1.6;}}
-</style></head><body>
-<div id="pwgate" style="position:fixed;inset:0;z-index:9999;background:#1E3A5F;display:flex;align-items:center;justify-content:center;flex-direction:column;color:#fff;font-family:system-ui,-apple-system,sans-serif;padding:20px;text-align:center;">
-  <h2 style="font-size:1.3rem;margin-bottom:14px;">This dashboard is password protected</h2>
-  <form id="pwform" style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center;">
-    <input id="pwinput" type="password" placeholder="Enter password" autofocus style="padding:10px 14px;border-radius:8px;border:none;font-size:1rem;min-width:200px;" />
-    <button type="submit" style="padding:10px 18px;border-radius:8px;border:none;background:#7C3AED;color:#fff;font-weight:700;cursor:pointer;">Enter</button>
-  </form>
-  <p id="pwerror" style="color:#FCA5A5;margin-top:10px;font-size:.85rem;visibility:hidden;">Incorrect password</p>
-</div>
-<script>
-(function(){{
-  var PW = "zy2026";
-  var gate = document.getElementById('pwgate');
-  if (sessionStorage.getItem('dashAuthed') === '1') {{ gate.style.display = 'none'; }}
-  document.getElementById('pwform').addEventListener('submit', function(e){{
-    e.preventDefault();
-    var val = document.getElementById('pwinput').value;
-    if (val === PW) {{
-      sessionStorage.setItem('dashAuthed', '1');
-      gate.style.display = 'none';
-    }} else {{
-      document.getElementById('pwerror').style.visibility = 'visible';
-    }}
-  }});
-}})();
-</script>
-<header>
+</style></head><body>"""
+
+HTML_BODY = f"""<header>
   <h1>FDA All Approved Chronic Drugs Chronic Use Dashboard</h1>
   <p>Merged from the <b>Purple Book</b> (biologics / BLA products) and the <b>Orange Book</b>
      (small-molecule NDA/ANDA drugs) — {n_drugs} unique chronic / long-term drugs across
@@ -650,8 +626,10 @@ function resizeAll(){{IDS.forEach(id=>{{const el=document.getElementById(id);if(
 let _t;window.addEventListener('resize',()=>{{clearTimeout(_t);_t=setTimeout(resizeAll,150);}});
 document.addEventListener('DOMContentLoaded',()=>{{let a=0;const p=setInterval(()=>{{
   if(IDS.every(id=>{{const el=document.getElementById(id);return el&&el.data;}})||a++>40){{clearInterval(p);resizeAll();}}}},150);}});
-</script>
-</body></html>"""
+</script>"""
+
+import crypto_gate
+HTML = HTML + crypto_gate.dashboard_gate_html(HTML_BODY) + "</body></html>"
 
 with open(OUT_HTML, "w", encoding="utf-8") as f:
     f.write(HTML)
