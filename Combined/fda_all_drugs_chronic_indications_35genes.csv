@@ -1,0 +1,124 @@
+Source,Drug,Brand,Disease / Indication,Disease Category,Modality,Drug Target (Gene),Annual Revenue 2024 (USD B),Dose,Frequency,Duration of Use
+Purple Book,adalimumab,Humira / biosimilars,Rheumatoid arthritis,Autoimmune – Rheumatology,Monoclonal Antibody,TNF,8.99,40 mg SC,Every 2 weeks,Indefinite (lifelong maintenance)
+Purple Book,adalimumab,Humira / biosimilars,Psoriatic arthritis,Autoimmune – Rheumatology,Monoclonal Antibody,TNF,8.99,40 mg SC,Every 2 weeks,Indefinite
+Purple Book,adalimumab,Humira / biosimilars,Ankylosing spondylitis / axSpA,Autoimmune – Rheumatology,Monoclonal Antibody,TNF,8.99,40 mg SC,Every 2 weeks,Indefinite
+Purple Book,adalimumab,Humira / biosimilars,Juvenile idiopathic arthritis,Autoimmune – Rheumatology,Monoclonal Antibody,TNF,8.99,10–20 mg SC (weight-based),Every 2 weeks,Indefinite
+Purple Book,etanercept,Enbrel / biosimilars,Rheumatoid arthritis,Autoimmune – Rheumatology,Fusion Protein,TNF,3.5,50 mg SC,Once weekly,Indefinite
+Purple Book,etanercept,Enbrel / biosimilars,Psoriatic arthritis,Autoimmune – Rheumatology,Fusion Protein,TNF,3.5,50 mg SC,Once weekly,Indefinite
+Purple Book,etanercept,Enbrel / biosimilars,Ankylosing spondylitis,Autoimmune – Rheumatology,Fusion Protein,TNF,3.5,50 mg SC,Once weekly,Indefinite
+Purple Book,etanercept,Enbrel / biosimilars,Juvenile idiopathic arthritis,Autoimmune – Rheumatology,Fusion Protein,TNF,3.5,0.8 mg/kg SC (max 50 mg),Once weekly,Indefinite
+Purple Book,infliximab,Remicade / biosimilars,Rheumatoid arthritis,Autoimmune – Rheumatology,Monoclonal Antibody,TNF,1.5,"3 mg/kg IV (wk 0, 2, 6 induction)",Every 8 weeks (maintenance),Indefinite
+Purple Book,infliximab,Remicade / biosimilars,Ankylosing spondylitis / axSpA,Autoimmune – Rheumatology,Monoclonal Antibody,TNF,1.5,"5 mg/kg IV (wk 0, 2, 6 induction)",Every 6 weeks (maintenance),Indefinite
+Purple Book,infliximab,Remicade / biosimilars,Psoriatic arthritis,Autoimmune – Rheumatology,Monoclonal Antibody,TNF,1.5,"5 mg/kg IV (wk 0, 2, 6 induction)",Every 8 weeks (maintenance),Indefinite
+Purple Book,adalimumab,Humira / biosimilars,Plaque psoriasis,Autoimmune – Dermatology,Monoclonal Antibody,TNF,8.99,"80 mg SC (wk 0), then 40 mg (wk 1), then 40 mg",Every 2 weeks,Indefinite
+Purple Book,adalimumab,Humira / biosimilars,Hidradenitis suppurativa,Autoimmune – Dermatology,Monoclonal Antibody,TNF,8.99,"160 mg SC (day 1), 80 mg (day 15), then 40 mg",Weekly,Indefinite
+Purple Book,adalimumab,Humira / biosimilars,Non-infectious uveitis,Autoimmune – Dermatology,Monoclonal Antibody,TNF,8.99,"80 mg SC (wk 0), then 40 mg (wk 1), then 40 mg",Every 2 weeks,Indefinite
+Purple Book,etanercept,Enbrel / biosimilars,Plaque psoriasis,Autoimmune – Dermatology,Fusion Protein,TNF,3.5,"50 mg SC twice weekly ×12 wks (induction), then 50 mg",Once weekly (maintenance),Indefinite
+Purple Book,infliximab,Remicade / biosimilars,Plaque psoriasis,Autoimmune – Dermatology,Monoclonal Antibody,TNF,1.5,"5 mg/kg IV (wk 0, 2, 6 induction)",Every 8 weeks,Indefinite
+Purple Book,adalimumab,Humira / biosimilars,Crohn's disease,Autoimmune – Gastroenterology,Monoclonal Antibody,TNF,8.99,"160 mg SC (wk 0), 80 mg (wk 2), then 40 mg",Every 2 weeks,Indefinite
+Purple Book,adalimumab,Humira / biosimilars,Ulcerative colitis,Autoimmune – Gastroenterology,Monoclonal Antibody,TNF,8.99,"160 mg SC (wk 0), 80 mg (wk 2), then 40 mg",Every 2 weeks,Indefinite
+Purple Book,infliximab,Remicade / biosimilars,Crohn's disease,Autoimmune – Gastroenterology,Monoclonal Antibody,TNF,1.5,"5 mg/kg IV (wk 0, 2, 6 induction)",Every 8 weeks,Indefinite
+Purple Book,infliximab,Remicade / biosimilars,Ulcerative colitis,Autoimmune – Gastroenterology,Monoclonal Antibody,TNF,1.5,"5 mg/kg IV (wk 0, 2, 6 induction)",Every 8 weeks,Indefinite
+Purple Book,efgartigimod alfa-fcab,Vyvgart,Generalized myasthenia gravis (gMG),Neurology – Neuromuscular,Fusion Protein,FCGRT,0.6,10 mg/kg IV weekly ×4 doses per cycle,Repeat cycles every 4–8 weeks based on response,Indefinite cycling
+Purple Book,efgartigimod alfa and hyaluronidase,Vyvgart Hytrulo,Generalized myasthenia gravis,Neurology – Neuromuscular,Fusion Protein,FCGRT,0.6,"1000 mg/11,250 U SC weekly ×4 per cycle",Repeat cycles every 4–8 weeks,Indefinite
+Purple Book,rozanolixizumab,Rystiggo,Generalized myasthenia gravis,Neurology – Neuromuscular,Monoclonal Antibody,FCGRT,0.1,7 mg/kg SC weekly ×6 weeks per cycle,Repeat cycles as needed,Indefinite
+Purple Book,nipocalimab,Imaavy,Generalized myasthenia gravis,Neurology – Neuromuscular,Monoclonal Antibody,FCGRT,0.05,30 mg/kg IV loading; then 15 mg/kg,Every 2 weeks,Indefinite
+Purple Book,anifrolumab,Saphnelo,Systemic lupus erythematosus (SLE),Autoimmune – Rheumatology,Monoclonal Antibody,IFNAR1,0.5,300 mg IV,Every 4 weeks,Indefinite
+Purple Book,ropeginterferon alfa-2b-njft,Besremi,Polycythemia vera (PV),Hematology – Myeloproliferative,Enzyme / Protein Replacement,"IFNAR1, IFNAR2",0.2,100–500 mcg SC (titrated),Every 2 weeks,Indefinite
+Purple Book,emicizumab,Hemlibra,Hemophilia A with inhibitors (prophylaxis),Hematology – Hemophilia,Monoclonal Antibody,"F9, F10",4.9,3 mg/kg SC q1w ×4 (loading); then 1.5 mg/kg q1w,Weekly (or 3 mg/kg q2w or 6 mg/kg q4w),Lifelong
+Purple Book,emicizumab,Hemlibra,Hemophilia A without inhibitors (prophylaxis),Hematology – Hemophilia,Monoclonal Antibody,"F9, F10",4.9,Same loading/maintenance dosing as above,Weekly / biweekly / monthly options,Lifelong
+Purple Book,"antihemophilic factor (recombinant), rAHF",Advate / Kogenate / Kovaltry,Hemophilia A (prophylaxis),Hematology – Hemophilia,Enzyme / Protein Replacement,F8,0.8,20–40 IU/kg IV,Every 2–3 days,Lifelong
+Purple Book,"antihemophilic factor (recombinant), fc",Eloctate / Elocta,"Hemophilia A (prophylaxis, extended half-life)",Hematology – Hemophilia,Fusion Protein,F8,0.6,25–65 IU/kg IV,Every 3–5 days,Lifelong
+Purple Book,"antihemophilic factor (recombinant), pegylated-aucl",Adynovate / Jivi,Hemophilia A (prophylaxis),Hematology – Hemophilia,Enzyme / Protein Replacement,F8,0.5,40–60 IU/kg IV,Twice weekly,Lifelong
+Purple Book,"coagulation factor ix (recombinant), glycopegylated",Rebinyn / Refixia,Hemophilia B (prophylaxis),Hematology – Hemophilia,Enzyme / Protein Replacement,F9,0.4,40 IU/kg IV,Once weekly,Lifelong
+Purple Book,coagulation factor viia (recombinant),Sevenfact / NovoSeven,Hemophilia A/B with inhibitors (prophylaxis),Hematology – Hemophilia,Enzyme / Protein Replacement,F7,0.4,90 mcg/kg IV q2h until hemostasis (acute); prophylaxis varies,Per bleed (on-demand); prophylaxis daily/twice weekly,Lifelong (on-demand or prophylaxis)
+Purple Book,coagulation factor viia (recombinant)-jncw,Alhemo / Pfizer rFVIIa,Hemophilia A/B with inhibitors,Hematology – Hemophilia,Enzyme / Protein Replacement,F7,0.1,Varies by indication,Daily to weekly SC (prophylaxis),Lifelong
+Purple Book,ranibizumab,Lucentis,Neovascular (wet) AMD,Ophthalmology,Monoclonal Antibody,VEGFA,0.3,0.5 mg intravitreal injection,Monthly (treat-and-extend after stabilization),Indefinite
+Purple Book,ranibizumab,Lucentis,Diabetic macular edema (DME),Ophthalmology,Monoclonal Antibody,VEGFA,0.3,0.3 mg intravitreal injection,Monthly (or PRN),Indefinite (while active)
+Purple Book,ranibizumab,Lucentis,Retinal vein occlusion (BRVO / CRVO),Ophthalmology,Monoclonal Antibody,VEGFA,0.3,0.5 mg intravitreal injection,"Monthly ×6, then PRN",Indefinite (chronic/recurrent)
+Purple Book,ranibizumab,Lucentis,Diabetic retinopathy,Ophthalmology,Monoclonal Antibody,VEGFA,0.3,0.3 mg intravitreal injection,Monthly,Indefinite
+Purple Book,brolucizumab-dbll,Beovu,Neovascular (wet) AMD,Ophthalmology,Monoclonal Antibody,VEGFA,0.6,6 mg intravitreal injection (monthly ×3 loading),Every 8–12 weeks (T&E),Indefinite
+Purple Book,brolucizumab-dbll,Beovu,Diabetic macular edema (DME),Ophthalmology,Monoclonal Antibody,VEGFA,0.6,6 mg intravitreal injection (monthly ×6 loading),Every 8–12 weeks (T&E),Indefinite
+Purple Book,aflibercept,Eylea / Eylea HD,Neovascular (wet) AMD,Ophthalmology,Fusion Protein,"VEGFA, PGF",9.3,2 mg intravitreal (monthly ×3); or 8 mg monthly ×4 (HD),Every 8 weeks (standard) / up to every 16 weeks (HD T&E),Indefinite
+Purple Book,aflibercept,Eylea / Eylea HD,Diabetic macular edema (DME),Ophthalmology,Fusion Protein,"VEGFA, PGF",9.3,"2 mg intravitreal monthly ×5, then q8w",Every 8 weeks,Indefinite
+Purple Book,aflibercept,Eylea / Eylea HD,Macular edema from retinal vein occlusion (RVO),Ophthalmology,Fusion Protein,"VEGFA, PGF",9.3,"2 mg intravitreal monthly ×6, then PRN",Monthly / PRN,Indefinite
+Purple Book,aflibercept,Eylea,Diabetic retinopathy (all DR),Ophthalmology,Fusion Protein,"VEGFA, PGF",9.3,2 mg intravitreal monthly ×5,Every 8 weeks,Indefinite
+Purple Book,faricimab,Vabysmo,Neovascular (wet) AMD,Ophthalmology,Monoclonal Antibody,"VEGFA, ANGPT2",4.4,6 mg intravitreal monthly ×4 (loading),Up to every 16 weeks (treat-and-extend),Indefinite
+Purple Book,faricimab,Vabysmo,Diabetic macular edema (DME),Ophthalmology,Monoclonal Antibody,"VEGFA, ANGPT2",4.4,6 mg intravitreal monthly ×4 (loading),Up to every 16 weeks (T&E),Indefinite
+Purple Book,insulin lispro,Humalog / Admelog / Lyumjev,Type 1 diabetes mellitus,Endocrinology – Diabetes,Peptide / Hormone,INSR,2.0,0.5–1 IU/kg/day total; mealtime dose ~0.1–0.2 IU/kg,Multiple daily injections (or continuous pump),Lifelong
+Purple Book,insulin lispro,Humalog / Admelog,Type 2 diabetes mellitus,Endocrinology – Diabetes,Peptide / Hormone,INSR,2.0,"4–10 IU per meal (initial), titrate","With meals, as prescribed",Lifelong (or while required)
+Purple Book,insulin glargine,Lantus / Toujeo / Basaglar,Type 1 diabetes mellitus,Endocrinology – Diabetes,Peptide / Hormone,INSR,2.5,0.2–0.4 IU/kg SC once daily,"Once daily (any time, consistent)",Lifelong
+Purple Book,insulin glargine,Lantus / Toujeo,Type 2 diabetes mellitus,Endocrinology – Diabetes,Peptide / Hormone,INSR,2.5,0.2 IU/kg once daily (starting); titrate to FBG target,Once daily,Lifelong
+Purple Book,insulin aspart,NovoLog / NovoRapid / Fiasp,Type 1 diabetes mellitus,Endocrinology – Diabetes,Peptide / Hormone,INSR,2.0,~5–10 IU per meal or per 15 g carbohydrate (individualized),Before each meal,Lifelong
+Purple Book,insulin aspart,NovoLog / Fiasp,Type 2 diabetes mellitus,Endocrinology – Diabetes,Peptide / Hormone,INSR,2.0,"4–10 IU per meal (starting), titrate",With meals,Lifelong (or while required)
+Purple Book,insulin icodec,Awiqli,Type 2 diabetes mellitus,Endocrinology – Diabetes,Peptide / Hormone,INSR,0.1,~70% of total daily insulin dose equivalent SC,Once weekly,Lifelong
+Purple Book,dulaglutide,Trulicity,Type 2 diabetes mellitus,Endocrinology – Diabetes,Fusion Protein,GLP1R,4.8,0.75 mg SC (starting); up to 4.5 mg weekly,Once weekly,Indefinite
+Purple Book,dulaglutide,Trulicity,Cardiovascular risk reduction (T2DM with CVD),Endocrinology – Diabetes,Fusion Protein,GLP1R,4.8,0.75–1.5 mg SC weekly,Once weekly,Indefinite
+Purple Book,somapacitan,Sogroya,Adult growth hormone deficiency (AGHD),Endocrinology – Growth,Peptide / Hormone,GHR,0.1,"1.5–8 mg SC (individualized, titrate)",Once weekly,Indefinite (adult GHD)
+Purple Book,somapacitan,Sogroya,Pediatric growth hormone deficiency,Endocrinology – Growth,Peptide / Hormone,GHR,0.1,0.16 mg/kg SC weekly (titrate),Once weekly,Until adequate adult height
+Purple Book,lonapegsomatropin,Skytrofa,Pediatric growth hormone deficiency,Endocrinology – Growth,Peptide / Hormone,GHR,0.1,0.24 mg/kg SC,Once weekly,Until adequate adult height (years)
+Purple Book,somatrogon,Ngenla,Pediatric growth hormone deficiency,Endocrinology – Growth,Peptide / Hormone,GHR,0.1,0.66 mg/kg SC,Once weekly,Until adequate adult height (years)
+Purple Book,tesamorelin,Egrifta WR,HIV-associated lipodystrophy (abdominal fat excess),Endocrinology – Metabolic,Peptide / Hormone,GHRHR,0.1,2 mg SC,Once daily,Indefinite (fat accumulates on discontinuation)
+Purple Book,lerodalcibep-liga,Lerodalcibep (Lepodisiran/approved name),LDL-C reduction (HeFH / ASCVD),Endocrinology – Lipid,Fusion Protein,PCSK9,0.05,300 mg SC,Once monthly,Indefinite
+Purple Book,epoetin alfa,Epogen / Procrit,Anemia of chronic kidney disease (dialysis),Hematology – Anemia,Enzyme / Protein Replacement,EPOR,1.0,50–300 IU/kg IV/SC,3 times per week,Indefinite (until transplant or change in therapy)
+Purple Book,epoetin alfa,Epogen / Procrit,Anemia of CKD (non-dialysis),Hematology – Anemia,Enzyme / Protein Replacement,EPOR,1.0,50–200 IU/kg SC,3 times per week,Indefinite
+Purple Book,filgrastim,Neupogen / Granix,Severe chronic neutropenia (SCN),Hematology – Rare Blood,Enzyme / Protein Replacement,CSF3R,0.5,6–12 mcg/kg SC daily,Daily,Lifelong (congenital neutropenia)
+Purple Book,sotatercept,Winrevair,Pulmonary arterial hypertension (PAH) – WHO Group I,Cardiovascular / Pulmonary,Fusion Protein,INHBA,0.3,0.3 mg/kg SC (titrate up to 0.7 mg/kg),Every 3 weeks,Indefinite (progressive disease)
+Purple Book,sacrosidase,Sucraid,Congenital sucrase-isomaltase deficiency (CSID),Enzyme Deficiency,Enzyme / Protein Replacement,SI,0.1,1–2 mL (8500 IU/mL) per meal (weight-adjusted),With every meal,Lifelong
+Purple Book,pancrelipase,Creon / Zenpep / Pancreaze,Exocrine pancreatic insufficiency (EPI),Enzyme Deficiency,Enzyme / Protein Replacement,PNLIP,1.5,500–2500 lipase IU/kg per meal (individualized),With every meal and snack,Lifelong
+Purple Book,pegunigalsidase alfa,Elfabrio,Fabry disease,Enzyme Deficiency,Enzyme / Protein Replacement,GLA,0.1,1 mg/kg IV,Every 2 weeks,Lifelong
+Purple Book,velmanase alfa-tycv,Lamzede,Alpha-mannosidosis,Enzyme Deficiency,Enzyme / Protein Replacement,MAN2B1,0.05,1 IU/kg IV,Every 2 weeks,Lifelong
+Purple Book,olipudase alfa,Xenpozyme,Acid sphingomyelinase deficiency (ASMD / NPD-A/B),Enzyme Deficiency,Enzyme / Protein Replacement,SMPD1,0.1,3 mg/kg IV,Every 2 weeks,Lifelong
+Purple Book,avalglucosidase alfa-ngpt,Nexviazyme,Late-onset Pompe disease (LOPD),Enzyme Deficiency,Enzyme / Protein Replacement,GAA,0.4,20 mg/kg IV,Every 2 weeks,Lifelong
+Purple Book,cipaglucosidase alfa-atga,Pombiliti,Late-onset Pompe disease (+miglustat),Enzyme Deficiency,Enzyme / Protein Replacement,GAA,0.2,20 mg/kg IV (+ 260 mg oral miglustat 1h prior),Every 2 weeks,Lifelong
+Purple Book,tividenofusp alfa-eknm,Avlayah,MPS II (Hunter syndrome),Enzyme Deficiency,Enzyme / Protein Replacement,IDS,0.05,3 mg/kg IV,Once weekly,Lifelong
+Purple Book,pegzilarginase,Loargys,Arginase 1 deficiency (hyperargininemia),Enzyme Deficiency,Enzyme / Protein Replacement,ARG1,0.05,0.1 mg/kg IV (start); titrate to 0.2 mg/kg,Once weekly,Lifelong
+Purple Book,alpha,Prolastin-C / Glassia,Alpha-1 antitrypsin deficiency (AATD) with emphysema,Enzyme Deficiency,Enzyme / Protein Replacement,SERPINA1,0.4,60 mg/kg IV,Once weekly,Lifelong augmentation
+Purple Book,daxibotulinumtoxina,Daxxify,Cervical dystonia,Neurology – Movement Disorder,Peptide / Hormone,SNAP25,0.15,125–250 IU IM (injected into affected muscles),Every ~24 weeks (longest-acting BoNT-A),Indefinite (repeated every ~6 months)
+Purple Book,letibotulinumtoxina,Letybo,Glabellar (frown) lines,Aesthetic / Neurology,Peptide / Hormone,SNAP25,0.05,30–40 IU IM (5-point injection),Every 3–4 months,Indefinite (periodic)
+Purple Book,pegloticase,Krystexxa,Refractory chronic gout,Rheumatology / Metabolic,Enzyme / Protein Replacement,UOX,0.3,8 mg IV,Every 2 weeks,Until therapeutic goal (months to years; may stop if serum urate normalizes)
+Orange Book,Abaloparatide,TYMLOS,Osteoporosis,Bone / Metabolic,protein,PTH1R,0.02,3.12MG/1.56ML (2MG/mL) SC,Weekly or monthly,Indefinite (lifelong maintenance)
+Orange Book,Abaloparatide,TYMLOS,Menopausal / hormone therapy,Bone / Metabolic,protein,PTH1R,0.02,3.12MG/1.56ML (2MG/mL) SC,Weekly or monthly,Indefinite (lifelong maintenance)
+Orange Book,Calcitonin Salmon,CALCITONIN-SALMON,Osteoporosis,Bone / Metabolic,protein,CALCR,0.00,200 IU/mL,As directed,Indefinite (lifelong maintenance)
+Orange Book,Calcitonin Salmon,CALCITONIN-SALMON,Menopausal / hormone therapy,Bone / Metabolic,protein,CALCR,0.00,200 IU/mL,As directed,Indefinite (lifelong maintenance)
+Orange Book,Degarelix Acetate,FIRMAGON,Prostate cancer,Oncology – Solid Tumor,chemical,GNRHR,0.00,120MG BASE/VIAL SC,Once daily,Long-term (until progression / disease control)
+Orange Book,Elagolix Sodium,ORILISSA,Menopausal / hormone therapy,Gastroenterology – Other,chemical,GNRHR,0.06,200MG BASE oral,Once or twice daily,Indefinite (lifelong maintenance)
+Orange Book,"Elagolix Sodium,estradiol,norethindrone Acetate; Elagolix Sodium",ORIAHNN (COPACKAGED),Menopausal / hormone therapy,Gastroenterology – Other,chemical,GNRHR,,"300MG BASE,1MG,0.5MG; 300MG BASE oral",Once or twice daily,Indefinite (lifelong maintenance)
+Orange Book,Estradiol; Norethindrone Acetate; Relugolix,MYFEMBREE,Chronic pain,Endocrinology – Reproductive,chemical,"ESR1, PGR, GNRHR",0.04,1MG; 0.5MG … oral,Once or twice daily,Indefinite (lifelong maintenance)
+Orange Book,Estradiol; Norethindrone Acetate; Relugolix,MYFEMBREE,Endometriosis,Endocrinology – Reproductive,chemical,"ESR1, PGR, GNRHR",0.04,1MG; 0.5MG … oral,Once or twice daily,Indefinite (lifelong maintenance)
+Orange Book,Estradiol; Norethindrone Acetate; Relugolix,MYFEMBREE,Menopausal / hormone therapy,Endocrinology – Reproductive,chemical,"ESR1, PGR, GNRHR",0.04,1MG; 0.5MG … oral,Once or twice daily,Indefinite (lifelong maintenance)
+Orange Book,Exenatide Synthetic,EXENATIDE SYNTHETIC,Type 2 diabetes,Endocrinology – Diabetes,protein,GLP1R,,300MCG/1.2ML SC,Weekly or as directed,Indefinite (lifelong maintenance)
+Orange Book,Goserelin Acetate,ZOLADEX,Breast cancer,Oncology – Solid Tumor,chemical,GNRHR,,10.8MG BASE,As directed,Long-term (until progression / disease control)
+Orange Book,Goserelin Acetate,ZOLADEX,Endometriosis,Oncology – Solid Tumor,chemical,GNRHR,,10.8MG BASE,As directed,Long-term (until progression / disease control)
+Orange Book,Goserelin Acetate,ZOLADEX,Menopausal / hormone therapy,Oncology – Solid Tumor,chemical,GNRHR,,10.8MG BASE,As directed,Long-term (until progression / disease control)
+Orange Book,Lanreotide Acetate,LANREOTIDE ACETATE,Dyslipidemia,Gastroenterology – Other,protein,"SSTR5, SSTR2",0.01,120MG BASE/0.5ML (120MG BASE/0.5ML) SC,Weekly or monthly,Indefinite (lifelong maintenance)
+Orange Book,Lanreotide Acetate,LANREOTIDE ACETATE,CV risk reduction,Gastroenterology – Other,protein,"SSTR5, SSTR2",0.01,120MG BASE/0.5ML (120MG BASE/0.5ML) SC,Weekly or monthly,Indefinite (lifelong maintenance)
+Orange Book,Leuprolide Acetate,ELIGARD KIT,Prostate cancer,Oncology – Solid Tumor,chemical,GNRHR,0.00,45MG SC,Once daily,Long-term (until progression / disease control)
+Orange Book,Leuprolide Mesylate,CAMCEVI ETM,Prostate cancer,Oncology – Solid Tumor,chemical,GNRHR,,42MG BASE SC,As directed,Long-term (until progression / disease control)
+Orange Book,Levetiracetam,KEPPRA,Epilepsy / seizures,Neurology – Epilepsy,chemical,"SV2A, CACNA1B",0.13,750MG oral,Once or twice daily,Indefinite (lifelong maintenance)
+Orange Book,Linaclotide,LINZESS,Irritable bowel syndrome,Gastroenterology – Motility,protein,GUCY2C,0.92,290MCG oral,Once or twice daily,Indefinite (lifelong maintenance)
+Orange Book,Linaclotide,LINZESS,Chronic constipation,Gastroenterology – Motility,protein,GUCY2C,0.92,290MCG oral,Once or twice daily,Indefinite (lifelong maintenance)
+Orange Book,Liraglutide,LIRAGLUTIDE,Type 2 diabetes,Endocrinology – Diabetes,protein,GLP1R,1.42,18MG/3ML (6MG/mL) SC,Weekly or monthly,Indefinite (lifelong maintenance)
+Orange Book,Liraglutide,LIRAGLUTIDE,Diabetes mellitus,Endocrinology – Diabetes,protein,GLP1R,1.42,18MG/3ML (6MG/mL) SC,Weekly or monthly,Indefinite (lifelong maintenance)
+Orange Book,Miglitol,MIGLITOL,Type 2 diabetes,Endocrinology – Diabetes,chemical,"MGAM, GAA",0.00,25MG oral,Once or twice daily,Indefinite (lifelong maintenance)
+Orange Book,Miglitol,MIGLITOL,Diabetes mellitus,Endocrinology – Diabetes,chemical,"MGAM, GAA",0.00,25MG oral,Once or twice daily,Indefinite (lifelong maintenance)
+Orange Book,Octreotide Acetate,BYNFEZIA PEN,Acromegaly,Gastroenterology – Other,chemical,SSTR5,0.01,7MG BASE/2.8ML (2.5MG BASE/mL) SC,Weekly or monthly,Indefinite (lifelong maintenance)
+Orange Book,Orlistat,ALLI,Obesity / weight management,Endocrinology – Metabolic,chemical,"LIPF, PNLIP",0.01,120MG oral,Once or twice daily,Indefinite (lifelong maintenance)
+Orange Book,Palopegteriparatide,YORVIPATH,Osteoporosis,Bone / Metabolic,protein,PTH1R,,0.42MG TERIPARATIDE/1.4ML (0.3MG TERIPARATIDE/mL) SC,Weekly or monthly,Indefinite (lifelong maintenance)
+Orange Book,Pasireotide Diaspartate,SIGNIFOR,Cushing's syndrome,Endocrinology – Metabolic,chemical,"SSTR5, SSTR2, SSTR1, SSTR3",0.00,0.9MG BASE/mL (0.9MG BASE/mL) SC,Weekly or monthly,Indefinite (lifelong maintenance)
+Orange Book,Pasireotide Pamoate,SIGNIFOR LAR KIT,Cushing's syndrome,Endocrinology – Metabolic,chemical,"SSTR3, SSTR5, SSTR2, SSTR1",,60MG BASE/VIAL,As directed,Indefinite (lifelong maintenance)
+Orange Book,Plecanatide,TRULANCE,Irritable bowel syndrome,Gastroenterology – Motility,protein,GUCY2C,0.07,3MG oral,Once or twice daily,Indefinite (lifelong maintenance)
+Orange Book,Plecanatide,TRULANCE,Chronic constipation,Gastroenterology – Motility,protein,GUCY2C,0.07,3MG oral,Once or twice daily,Indefinite (lifelong maintenance)
+Orange Book,Relugolix,ORGOVYX,Prostate cancer,Oncology – Solid Tumor,chemical,GNRHR,0.02,120MG oral,Once or twice daily,Long-term (until progression / disease control)
+Orange Book,Semaglutide,OZEMPIC,Type 2 diabetes,Endocrinology – Diabetes,protein,GLP1R,16.7,25MG oral,Once or twice daily,Indefinite (lifelong maintenance)
+Orange Book,Semaglutide,OZEMPIC,Diabetes mellitus,Endocrinology – Diabetes,protein,GLP1R,16.7,25MG oral,Once or twice daily,Indefinite (lifelong maintenance)
+Orange Book,Semaglutide,OZEMPIC,Myocardial infarction (risk reduction),Endocrinology – Diabetes,protein,GLP1R,16.7,25MG oral,Once or twice daily,Indefinite (lifelong maintenance)
+Orange Book,Semaglutide,OZEMPIC,Stroke (risk reduction),Endocrinology – Diabetes,protein,GLP1R,16.7,25MG oral,Once or twice daily,Indefinite (lifelong maintenance)
+Orange Book,Teduglutide,GATTEX KIT,Short bowel syndrome,Endocrinology – Metabolic,protein,GLP2R,,5MG/VIAL SC,Once daily,Indefinite (lifelong maintenance)
+Orange Book,Teriparatide,BONSITY,Osteoporosis,Bone / Metabolic,protein,PTH1R,0.08,0.56MG/2.24ML (0.25MG/mL) SC,Weekly or monthly,Indefinite (lifelong maintenance)
+Orange Book,Teriparatide,BONSITY,Menopausal / hormone therapy,Bone / Metabolic,protein,PTH1R,0.08,0.56MG/2.24ML (0.25MG/mL) SC,Weekly or monthly,Indefinite (lifelong maintenance)
+Orange Book,Tirzepatide,MOUNJARO,Type 2 diabetes,Endocrinology – Diabetes,protein,"GIPR, GLP1R",11.5,60MG/2.4ML SC,Weekly or as directed,Indefinite (lifelong maintenance)
+Orange Book,Tirzepatide,MOUNJARO,Obesity / weight management,Endocrinology – Diabetes,protein,"GIPR, GLP1R",11.5,60MG/2.4ML SC,Weekly or as directed,Indefinite (lifelong maintenance)
+Orange Book,Triptorelin Pamoate,TRELSTAR,Prostate cancer,Oncology – Solid Tumor,protein,GNRHR,0.00,22.5MG BASE/VIAL,Monthly or quarterly,Long-term (until progression / disease control)
+Orange Book,Vosoritide,VOXZOGO,Achondroplasia,Endocrinology – Growth,protein,NPR2,,1.2MG/VIAL SC,Weekly or as directed,Indefinite (lifelong maintenance)
+Orange Book,Ziconotide Acetate,PRIALT,Chronic pain,Pain – Chronic,protein,CACNA1B,,500MCG/5ML intrathecal,Continuous infusion,Indefinite (lifelong maintenance)
