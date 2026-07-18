@@ -97,6 +97,85 @@ CAT_LIST = sorted(df["category"].unique())
 _palette = (px.colors.qualitative.Safe + px.colors.qualitative.Set3 + px.colors.qualitative.Bold)
 CAT_COLORS = {c: _palette[i % len(_palette)] for i, c in enumerate(CAT_LIST)}
 
+# ── FIG 0a — Top disease indications by revenue (first plot) ────────────────
+def build_disease_revenue_bar(n=25):
+    d = df[df["revenue"] > 0].sort_values("revenue", ascending=False).head(n).sort_values("revenue")
+    fig = go.Figure(go.Bar(
+        x=d["revenue"], y=d["disease"], orientation="h",
+        marker=dict(color=[CAT_COLORS.get(c, "#868E96") for c in d["category"]], line=dict(color="white", width=0.5)),
+        text=[f"${v:.2f}B" for v in d["revenue"]], textposition="outside",
+        customdata=list(zip(d["category"], d["n_drugs"], d["genes"])),
+        hovertemplate="<b>%{y}</b><br>%{customdata[0]}<br>Revenue: $%{x:.2f}B<br>"
+                      "%{customdata[1]} competing drug(s)<br>Target(s): %{customdata[2]}<extra></extra>"))
+    fig.update_layout(
+        title=dict(text=f"<b>Top {len(d)} Disease Indications by 2024 Revenue</b><br>"
+                        "<sup>known drug-level revenue in this 35-target dataset · colored by disease category</sup>", font=dict(size=14)),
+        xaxis=dict(title="Known 2024 Revenue (USD B)", showgrid=True, gridcolor="#E9ECEF",
+                   tickprefix="$", ticksuffix="B", range=[0, d["revenue"].max() * 1.18]),
+        yaxis=dict(tickfont=dict(size=9)),
+        margin=dict(l=10, r=70, t=60, b=40), height=max(420, 24 * len(d) + 120),
+        paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="#F8F9FA")
+    return fig
+
+
+# ── FIG 0b — Sankey: Disease → Target → Drug (second plot) ──────────────────
+# Same 3-level-Sankey pattern as the first plot on
+# combined_chronic_use_peptide_dashboard.html (there: Source → Modality →
+# Disease Category), but re-cut for this dataset's disease/target/drug
+# relationships. Restricted to the same top-revenue diseases as FIG 0a so the
+# two plots tell one connected story and the node count stays legible.
+def build_disease_target_drug_sankey(n_diseases=20):
+    top_diseases = set(df[df["revenue"] > 0].sort_values("revenue", ascending=False).head(n_diseases)["disease"])
+    disease_order = (df[df["disease"].isin(top_diseases)]
+                      .sort_values("revenue", ascending=False)["disease"].tolist())
+
+    triples = set()
+    for r in rows:
+        d = canon(r["Disease / Indication"].strip())
+        if d not in top_diseases:
+            continue
+        drug = r["Drug"].strip()
+        genes = {g.strip() for g in r["Drug Target (Gene)"].replace(";", ",").split(",") if g.strip()}
+        for g in genes:
+            triples.add((d, g, drug))
+
+    gene_list = sorted({g for _, g, _ in triples})
+    drug_list = sorted({dr for _, _, dr in triples}, key=lambda x: x.lower())
+
+    dis_cat = dict(zip(df["disease"], df["category"]))
+    labels, colors, idx = [], [], {}
+    def node(key, label, color):
+        idx[key] = len(labels); labels.append(label); colors.append(color)
+    for d in disease_order:
+        node(("dis", d), d, CAT_COLORS.get(dis_cat.get(d, ""), "#868E96"))
+    for g in gene_list:
+        node(("gene", g), g, "#7C3AED")
+    for dr in drug_list:
+        node(("drug", dr), dr, "#0CA678")
+
+    dg_val = Counter((d, g) for d, g, _ in triples)
+    gd_val = Counter((g, dr) for _, g, dr in triples)
+    S, T, V, LC = [], [], [], []
+    for (d, g), v in dg_val.items():
+        S.append(idx[("dis", d)]); T.append(idx[("gene", g)]); V.append(v); LC.append("rgba(124,58,237,0.25)")
+    for (g, dr), v in gd_val.items():
+        S.append(idx[("gene", g)]); T.append(idx[("drug", dr)]); V.append(v); LC.append("rgba(12,166,137,0.25)")
+
+    fig = go.Figure(go.Sankey(
+        arrangement="snap",
+        node=dict(pad=10, thickness=14, line=dict(color="white", width=0.5),
+                  label=labels, color=colors, hovertemplate="%{label}<extra></extra>"),
+        link=dict(source=S, target=T, value=V, color=LC,
+                  hovertemplate="%{source.label} → %{target.label}: %{value}<extra></extra>")))
+    fig.update_layout(
+        title=dict(text=f"<b>Disease → Target → Drug</b><br>"
+                        f"<sup>top {len(disease_order)} diseases by revenue, and every target/drug they connect to</sup>", font=dict(size=14)),
+        font=dict(size=9), margin=dict(l=10, r=10, t=60, b=10),
+        height=max(560, 22 * max(len(disease_order), len(gene_list), len(drug_list)) + 100),
+        paper_bgcolor="rgba(0,0,0,0)")
+    return fig
+
+
 # ── FIG 1 — Opportunity scatter: patients vs competing drugs ────────────────
 def build_opportunity_scatter():
     d = df_scored.copy()
@@ -353,6 +432,8 @@ def build_recommendations_html():
 </div>"""
 
 print("Building figures …")
+f_diskrev = build_disease_revenue_bar()
+f_dtd_sankey = build_disease_target_drug_sankey()
 f_scatter = build_opportunity_scatter()
 f_rank = build_opportunity_bar()
 f_revpat = build_revenue_vs_patients()
@@ -577,6 +658,12 @@ body{{background:#F8F9FA;}}
 </div>
 
 <div class="row row-deck row-cards">
+  <div class="col-12"><div class="card"><div class="card-body">{to_div(f_diskrev, "diskrev")}</div></div></div>
+</div>
+<div class="row row-deck row-cards">
+  <div class="col-12"><div class="card"><div class="card-body">{to_div(f_dtd_sankey, "dtdsankey")}</div></div></div>
+</div>
+<div class="row row-deck row-cards">
   <div class="col-12"><div class="card"><div class="card-body">{to_div(f_scatter, "scatter")}</div></div></div>
 </div>
 <div class="row row-deck row-cards">
@@ -619,7 +706,7 @@ body{{background:#F8F9FA;}}
 </div>
 </div>
 <script>
-const IDS=['scatter','rank','catbar','revpat'];
+const IDS=['diskrev','dtdsankey','scatter','rank','catbar','revpat'];
 function resizeAll(){{IDS.forEach(id=>{{const el=document.getElementById(id);if(!el||!el.data)return;
   const w=el.parentElement?el.parentElement.clientWidth-16:undefined;
   try{{Plotly.relayout(el,{{autosize:true,width:w||undefined}});}}catch(e){{}}}});}}
