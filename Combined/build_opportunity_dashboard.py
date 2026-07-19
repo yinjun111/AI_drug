@@ -3,8 +3,16 @@ Target x Disease Opportunity Dashboard.
 
 Combines, per disease indication in the curated 35-target biologics/peptide
 dataset (fda_all_drugs_chronic_indications_35genes.csv):
-  - Market size + competitive landscape: # approved competing drugs and their
-    known 2024 revenue, from the FDA Purple/Orange Book merged CSV.
+  - Disease market size + known drug-level capture: an independently
+    researched global market-size estimate per disease (web-searched against
+    market-research publishers — Grand View Research, Fortune Business
+    Insights, Precedence Research, etc. — see opportunity_data.py's
+    DISEASE_MARKET_SIZE for the full sourcing/range/caveat behind every
+    number), matched against this dataset's own known 2024 drug-level
+    revenue as a secondary "how much of that market do these specific drugs
+    already capture" figure. Market size is the primary metric everywhere
+    below — it is NOT the same thing as the drug revenue, which only
+    reflects the handful of drugs in this 35-target dataset.
   - Patient population + unmet need: prevalence-derived US patient estimates,
     sourced live from Orphanet (via the ToolUniverse MCP) for rare diseases,
     curated from CDC/registry literature for common chronic diseases
@@ -21,7 +29,8 @@ import pandas as pd
 import plotly.graph_objects as go
 import plotly.express as px
 
-from opportunity_data import canon, EPI_EXCLUDED, get_epi, US_POPULATION
+from opportunity_data import (canon, EPI_EXCLUDED, get_epi, US_POPULATION,
+                               MARKET_SIZE_EXCLUDED, get_market_size)
 
 SRC_CSV = "fda_all_drugs_chronic_indications_35genes.csv"
 OUT_HTML = "target_disease_opportunity_dashboard.html"
@@ -53,10 +62,12 @@ for r in rows:
 records = []
 for d, b in by_disease.items():
     n_drugs = len(b["drugs"])
-    revenue = sum(b["drugs"].values())
+    revenue = sum(b["drugs"].values())  # known drug-level revenue in THIS dataset only
     top_cat = b["cats"].most_common(1)[0][0] if b["cats"] else ""
     excluded_note = EPI_EXCLUDED.get(d)
+    market_excluded_note = MARKET_SIZE_EXCLUDED.get(d)
     epi = get_epi(d)
+    ms = get_market_size(d)
     rec = {
         "disease": d,
         "category": top_cat,
@@ -67,7 +78,20 @@ for d, b in by_disease.items():
         "revenue": round(revenue, 2),
         "excluded": excluded_note is not None,
         "excluded_note": excluded_note or "",
+        "market_excluded": market_excluded_note is not None,
+        "market_excluded_note": market_excluded_note or "",
     }
+    if ms is not None:
+        rec.update({
+            "market_size": ms["b"], "market_size_lo": ms["lo"], "market_size_hi": ms["hi"],
+            "market_size_year": ms["year"], "market_researched": ms["researched"],
+            "market_note": ms["note"],
+            "capture_rate": (revenue / ms["b"]) if ms["b"] else None,
+        })
+    else:
+        rec.update({"market_size": None, "market_size_lo": None, "market_size_hi": None,
+                     "market_size_year": None, "market_researched": False,
+                     "market_note": "", "capture_rate": None})
     if epi is not None:
         patients = epi["prevalence_per_100k"] / 100_000 * US_POPULATION
         rec.update({
@@ -75,21 +99,22 @@ for d, b in by_disease.items():
             "patients_est": patients,
             "epi_source": epi["source"],
             "epi_note": epi["note"],
-            "opportunity_score": patients / (n_drugs + 1),
         })
     else:
         rec.update({"prevalence_per_100k": None, "patients_est": None,
-                     "epi_source": "", "epi_note": "", "opportunity_score": None})
+                     "epi_source": "", "epi_note": ""})
     records.append(rec)
 
 df = pd.DataFrame(records)
 df_scored = df[~df["excluded"]].dropna(subset=["patients_est"]).copy()
+df_market = df[(~df["market_excluded"]) & df["market_size"].notna()].copy()
 
 n_diseases = len(df)
 n_scored = len(df_scored)
 n_rare = int((df_scored["epi_source"] == "orphanet").sum())
 n_targets = len({g.strip() for gs in df["genes"] for g in gs.split(",") if g.strip()})
 total_patients = df_scored["patients_est"].sum()
+total_market_size = df_market["market_size"].sum()
 total_revenue = df["revenue"].sum()
 
 SRC_COLORS = {"orphanet": "#0CA678", "curated": "#4263EB"}
@@ -97,21 +122,22 @@ CAT_LIST = sorted(df["category"].unique())
 _palette = (px.colors.qualitative.Safe + px.colors.qualitative.Set3 + px.colors.qualitative.Bold)
 CAT_COLORS = {c: _palette[i % len(_palette)] for i, c in enumerate(CAT_LIST)}
 
-# ── FIG 0a — Top disease indications by revenue (first plot) ────────────────
-def build_disease_revenue_bar(n=25):
-    d = df[df["revenue"] > 0].sort_values("revenue", ascending=False).head(n).sort_values("revenue")
+# ── FIG 0a — Top diseases by market size (first plot) ───────────────────────
+def build_disease_market_size_bar(n=25):
+    d = df_market.sort_values("market_size", ascending=False).head(n).sort_values("market_size")
     fig = go.Figure(go.Bar(
-        x=d["revenue"], y=d["disease"], orientation="h",
+        x=d["market_size"], y=d["disease"], orientation="h",
         marker=dict(color=[CAT_COLORS.get(c, "#868E96") for c in d["category"]], line=dict(color="white", width=0.5)),
-        text=[f"${v:.2f}B" for v in d["revenue"]], textposition="outside",
-        customdata=list(zip(d["category"], d["n_drugs"], d["genes"])),
-        hovertemplate="<b>%{y}</b><br>%{customdata[0]}<br>Revenue: $%{x:.2f}B<br>"
-                      "%{customdata[1]} competing drug(s)<br>Target(s): %{customdata[2]}<extra></extra>"))
+        text=[f"${v:.1f}B" for v in d["market_size"]], textposition="outside",
+        customdata=list(zip(d["category"], d["revenue"], d["genes"], d["market_size_year"])),
+        hovertemplate="<b>%{y}</b><br>%{customdata[0]}<br>Est. market size: $%{x:.1f}B (%{customdata[3]})<br>"
+                      "Known drug revenue in this dataset: $%{customdata[1]:.2f}B<br>"
+                      "Target(s): %{customdata[2]}<extra></extra>"))
     fig.update_layout(
-        title=dict(text=f"<b>Top {len(d)} Disease Indications by 2024 Revenue</b><br>"
-                        "<sup>known drug-level revenue in this 35-target dataset · colored by disease category</sup>", font=dict(size=14)),
-        xaxis=dict(title="Known 2024 Revenue (USD B)", showgrid=True, gridcolor="#E9ECEF",
-                   tickprefix="$", ticksuffix="B", range=[0, d["revenue"].max() * 1.18]),
+        title=dict(text=f"<b>Top {len(d)} Diseases by Market Size</b><br>"
+                        "<sup>independently researched global disease/treatment market size (not this dataset's drug revenue) · colored by disease category</sup>", font=dict(size=14)),
+        xaxis=dict(title="Estimated Global Market Size (USD B)", showgrid=True, gridcolor="#E9ECEF",
+                   tickprefix="$", ticksuffix="B", range=[0, d["market_size"].max() * 1.18]),
         yaxis=dict(tickfont=dict(size=9)),
         margin=dict(l=10, r=70, t=60, b=40), height=max(420, 24 * len(d) + 120),
         paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="#F8F9FA")
@@ -122,12 +148,12 @@ def build_disease_revenue_bar(n=25):
 # Same 3-level-Sankey pattern as the first plot on
 # combined_chronic_use_peptide_dashboard.html (there: Source → Modality →
 # Disease Category), but re-cut for this dataset's disease/target/drug
-# relationships. Restricted to the same top-revenue diseases as FIG 0a so the
-# two plots tell one connected story and the node count stays legible.
+# relationships. Restricted to the same top-market-size diseases as FIG 0a so
+# the two plots tell one connected story and the node count stays legible.
 def build_disease_target_drug_sankey(n_diseases=20):
-    top_diseases = set(df[df["revenue"] > 0].sort_values("revenue", ascending=False).head(n_diseases)["disease"])
+    top_diseases = set(df_market.sort_values("market_size", ascending=False).head(n_diseases)["disease"])
     disease_order = (df[df["disease"].isin(top_diseases)]
-                      .sort_values("revenue", ascending=False)["disease"].tolist())
+                      .sort_values("market_size", ascending=False)["disease"].tolist())
 
     triples = set()
     for r in rows:
@@ -169,90 +195,66 @@ def build_disease_target_drug_sankey(n_diseases=20):
                   hovertemplate="%{source.label} → %{target.label}: %{value}<extra></extra>")))
     fig.update_layout(
         title=dict(text=f"<b>Disease → Target → Drug</b><br>"
-                        f"<sup>top {len(disease_order)} diseases by revenue, and every target/drug they connect to</sup>", font=dict(size=14)),
+                        f"<sup>top {len(disease_order)} diseases by market size, and every target/drug they connect to</sup>", font=dict(size=14)),
         font=dict(size=9), margin=dict(l=10, r=10, t=60, b=10),
         height=max(560, 22 * max(len(disease_order), len(gene_list), len(drug_list)) + 100),
         paper_bgcolor="rgba(0,0,0,0)")
     return fig
 
 
-# ── FIG 1 — Opportunity scatter: patients vs competing drugs ────────────────
-def build_opportunity_scatter():
-    d = df_scored.copy()
+# ── FIG 1 — Patient population vs. disease market size ───────────────────────
+def build_market_vs_patients_scatter():
+    d = df_scored[df_scored["market_size"].notna() & (~df_scored["market_excluded"])].copy()
     d["rev_size"] = d["revenue"].clip(lower=0.05) + 0.3
     fig = px.scatter(
-        d, x="n_drugs", y="patients_est", size="rev_size", color="epi_source",
+        d, x="market_size", y="patients_est", size="rev_size", color="epi_source",
         color_discrete_map=SRC_COLORS, hover_name="disease",
         custom_data=["category", "revenue", "prevalence_per_100k", "genes"],
-        labels={"n_drugs": "# Approved Competing Drugs (in this target set)",
+        labels={"market_size": "Estimated Disease Market Size (USD B)",
                 "patients_est": "Estimated US Patients", "epi_source": "Prevalence source"},
-        log_y=True,
+        log_x=True, log_y=True,
     )
     fig.update_traces(
         hovertemplate="<b>%{hovertext}</b><br>Category: %{customdata[0]}<br>"
-                      "Est. US patients: %{y:,.0f}<br>Competing drugs: %{x}<br>"
-                      "Known 2024 revenue: $%{customdata[1]:.2f}B<br>"
+                      "Est. US patients: %{y:,.0f}<br>Market size: $%{x:.1f}B<br>"
+                      "Known drug revenue (this dataset): $%{customdata[1]:.2f}B<br>"
                       "Prevalence: %{customdata[2]} / 100,000<br>"
                       "Target(s): %{customdata[3]}<extra></extra>")
-    fig.add_annotation(x=0.02, y=0.98, xref="paper", yref="paper", showarrow=False,
-                        align="left", font=dict(size=10, color="#868E96"),
-                        text="↖ high patients, few competitors = whitespace")
     fig.update_layout(
-        title=dict(text="<b>Patient Population vs. Competitive Density</b><br>"
-                        "<sup>bubble size ∝ known 2024 revenue · log Y axis</sup>", font=dict(size=14)),
+        title=dict(text="<b>Patient Population vs. Disease Market Size</b><br>"
+                        "<sup>bubble size ∝ known drug revenue in this dataset · log-log</sup>", font=dict(size=14)),
         legend=dict(orientation="h", y=1.1, x=1, xanchor="right"),
         margin=dict(l=10, r=10, t=70, b=40), height=480,
         paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="#F8F9FA",
-        xaxis=dict(dtick=1, showgrid=True, gridcolor="#E9ECEF"),
+        xaxis=dict(showgrid=True, gridcolor="#E9ECEF"),
         yaxis=dict(showgrid=True, gridcolor="#E9ECEF"))
     return fig
 
 
-# ── FIG 2 — Top opportunity ranking bar ──────────────────────────────────────
-def build_opportunity_bar(n=20):
-    d = df_scored.sort_values("opportunity_score", ascending=False).head(n).sort_values("opportunity_score")
-    fig = go.Figure(go.Bar(
-        x=d["opportunity_score"], y=d["disease"], orientation="h",
-        marker=dict(color=[SRC_COLORS.get(s, "#868E96") for s in d["epi_source"]],
-                    line=dict(color="white", width=0.5)),
-        text=[f"{v:,.0f}" for v in d["opportunity_score"]], textposition="outside",
-        customdata=list(zip(d["patients_est"], d["n_drugs"], d["category"])),
-        hovertemplate="<b>%{y}</b><br>Opportunity score: %{x:,.0f}<br>"
-                      "Est. patients: %{customdata[0]:,.0f}<br>"
-                      "Competing drugs: %{customdata[1]}<br>%{customdata[2]}<extra></extra>"))
-    fig.update_layout(
-        title=dict(text=f"<b>Top {len(d)} Whitespace Opportunities</b><br>"
-                        "<sup>score = est. US patients ÷ (competing drugs + 1)</sup>", font=dict(size=13)),
-        xaxis=dict(title="Opportunity score (patients per competitor)", showgrid=True, gridcolor="#E9ECEF"),
-        yaxis=dict(tickfont=dict(size=9)),
-        margin=dict(l=10, r=60, t=55, b=40), height=max(420, 26 * len(d) + 100),
-        paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="#F8F9FA")
-    return fig
-
-
-# ── FIG 3 — Revenue vs patients (market realization check) ──────────────────
-def build_revenue_vs_patients():
+# ── FIG 2 — Known drug revenue vs patients (capture check, this dataset only) ─
+def build_capture_vs_patients():
     d = df_scored[df_scored["revenue"] > 0].copy()
     fig = px.scatter(
         d, x="patients_est", y="revenue", color="category", color_discrete_map=CAT_COLORS,
         hover_name="disease", log_x=True,
-        custom_data=["n_drugs", "genes"],
+        custom_data=["n_drugs", "genes", "market_size"],
         labels={"patients_est": "Estimated US Patients (log scale)",
-                "revenue": "Known 2024 Revenue (USD B)"})
+                "revenue": "Known Drug Revenue in This Dataset (USD B)"})
     fig.update_traces(marker=dict(size=10, line=dict(color="white", width=0.5)),
         hovertemplate="<b>%{hovertext}</b><br>Est. patients: %{x:,.0f}<br>"
-                      "Revenue: $%{y:.2f}B<br>Competing drugs: %{customdata[0]}<br>"
+                      "Known drug revenue: $%{y:.2f}B<br>Est. market size: $%{customdata[2]:.1f}B<br>"
+                      "Competing drugs: %{customdata[0]}<br>"
                       "Target(s): %{customdata[1]}<extra></extra>")
     fig.update_layout(
-        title=dict(text="<b>Revenue Realized vs. Patient Population</b><br>"
-                        "<sup>diseases below the trend = priced/penetrated below population size</sup>", font=dict(size=13)),
+        title=dict(text="<b>Known Drug Revenue vs. Patient Population</b><br>"
+                        "<sup>this dataset's specific drugs only — not the total disease market size shown above</sup>", font=dict(size=13)),
         showlegend=False, margin=dict(l=10, r=10, t=60, b=40), height=460,
         paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="#F8F9FA",
         xaxis=dict(showgrid=True, gridcolor="#E9ECEF"), yaxis=dict(showgrid=True, gridcolor="#E9ECEF"))
     return fig
 
 
-# ── FIG 4 — Category rollup: total patients + total revenue ─────────────────
+# ── FIG 3 — Category rollup: total patients + total known drug revenue ──────
 def build_category_bar():
     g = df_scored.groupby("category").agg(patients=("patients_est", "sum"),
                                            revenue=("revenue", "sum"), n=("disease", "nunique")).reset_index()
@@ -262,7 +264,7 @@ def build_category_bar():
         marker=dict(color=[CAT_COLORS.get(c, "#868E96") for c in g["category"]], line=dict(color="white", width=0.5)),
         text=[f"{v:,.0f}" for v in g["patients"]], textposition="outside",
         customdata=list(zip(g["revenue"], g["n"])),
-        hovertemplate="<b>%{y}</b><br>Est. patients: %{x:,.0f}<br>Revenue: $%{customdata[0]:.2f}B<br>%{customdata[1]} diseases<extra></extra>"))
+        hovertemplate="<b>%{y}</b><br>Est. patients: %{x:,.0f}<br>Known drug revenue: $%{customdata[0]:.2f}B<br>%{customdata[1]} diseases<extra></extra>"))
     fig.update_layout(
         title=dict(text="<b>Estimated US Patients by Disease Category</b>", font=dict(size=13)),
         xaxis=dict(title="Estimated US Patients", showgrid=True, gridcolor="#E9ECEF"),
@@ -279,57 +281,62 @@ def to_div(fig, div_id):
 
 
 # ── Final Recommendations — curated target-level calls, grounded in the ─────
-# aggregated disease data above. Rule of thumb: only recommend around
-# diseases clearing $5B in known 2024 revenue, with two explicit exceptions
-# called out below (hemophilia franchise-level size; SSTR2/5 repositioning
-# toward the CV-risk-reduction market) where the disease-level, not the
-# single-drug, revenue is what clears the bar.
+# researched disease market size (primary bar) with two explicit exceptions
+# where a bucket has no independent market of its own (CV risk reduction,
+# hemophilia inhibitor sub-populations) and this dataset's own known drug
+# revenue is what carries the argument instead.
 MARKET_BAR = 5.0  # USD B
 
 def dstat(name):
     row = df[df["disease"] == name]
     if row.empty:
-        return {"revenue": 0.0, "n_drugs": 0, "patients": None}
+        return {"revenue": 0.0, "n_drugs": 0, "patients": None, "market_size": None}
     r = row.iloc[0]
     return {"revenue": float(r["revenue"]), "n_drugs": int(r["n_drugs"]),
-            "patients": r["patients_est"] if pd.notna(r["patients_est"]) else None}
+            "patients": r["patients_est"] if pd.notna(r["patients_est"]) else None,
+            "market_size": r["market_size"] if pd.notna(r["market_size"]) else None}
 
-# Total hemophilia franchise revenue: dedup by drug across every hemophilia
-# A/B (+/- inhibitor) bucket, since the >$5B claim is at the disease-franchise
-# level, not any single factor product.
+# Total hemophilia franchise revenue in this dataset: dedup by drug across
+# every hemophilia A/B (+/- inhibitor) bucket — this dataset's own known
+# capture, to compare against the researched ~$14.1-16.2B total hemophilia
+# A+B market size (opportunity_data.DISEASE_MARKET_SIZE).
 _hemo_drugs = {}
 for _dname, _b in by_disease.items():
     if "hemophilia" in _dname.lower():
         for _drug, _rev in _b["drugs"].items():
             _hemo_drugs[_drug] = max(_rev, _hemo_drugs.get(_drug, 0.0))
 HEMOPHILIA_TOTAL_REVENUE = sum(_hemo_drugs.values())
+HEMOPHILIA_MARKET_SIZE = 15.15  # midpoint of researched $14.1-16.2B total hemophilia A+B market
 
 RECOMMENDATIONS = [
     dict(targets=["GIPR"], drug="tirzepatide, exenatide", verdict="EXPAND", color="#0CA678",
          diseases=[("Type 2 diabetes", dstat("Type 2 diabetes")),
                    ("Obesity / weight management", dstat("Obesity / weight management"))],
-         rationale="Both indications individually clear the $5B bar. Type 2 diabetes is the single "
-                    "largest bucket in this dataset ($41.02B, 10 competitors) — validated but crowded. "
-                    "Obesity is far less contested (2 competitors) against a very large treatable "
-                    "population; GIP co-agonism is the mechanism behind the newest, best-in-class "
-                    "efficacy data (tirzepatide), so incremental obesity share is the highest-confidence "
-                    "expansion path for this target."),
+         rationale="Both markets individually clear $5B. Type 2 diabetes is a ~$37-84B market "
+                    "($60.5B midpoint) where this dataset's known drug revenue ($41.02B, 10 "
+                    "competitors) already implies high capture — validated but crowded. Obesity is a "
+                    "~$7-28B market ($17.5B midpoint) with only 2 competitors and known revenue "
+                    "($11.51B) already close to the low end of researched estimates — GIP co-agonism "
+                    "is the mechanism behind the newest, best-in-class efficacy data (tirzepatide), so "
+                    "incremental obesity share is the highest-confidence expansion path for this target."),
     dict(targets=["GLP1R"], drug="semaglutide, dulaglutide, liraglutide, tirzepatide", verdict="EXPAND", color="#0CA678",
          diseases=[("Type 2 diabetes", dstat("Type 2 diabetes")),
                    ("Obesity / weight management", dstat("Obesity / weight management")),
                    ("Cardiovascular risk reduction (secondary prevention)", dstat("Cardiovascular risk reduction (secondary prevention)"))],
-         rationale="Same metabolic franchise as GIPR, plus a third, distinct >$5B pool: CV-outcomes "
-                    "labeling ($21.51B combined, driven by semaglutide $16.7B + dulaglutide $4.8B). "
-                    "Label expansion from glycemic control into CV risk reduction — not a new drug — is "
-                    "what unlocked that third pool, and is the single largest incremental revenue lever "
+         rationale="Same metabolic franchise as GIPR, plus a third pool with no independent market "
+                    "size of its own: CV-outcomes labeling isn't a distinct disease, but this dataset "
+                    "still shows $21.51B in known drug revenue (semaglutide $16.7B + dulaglutide $4.8B) "
+                    "already being generated purely from a label expansion — not a new drug — on top of "
+                    "the T2D/obesity markets above. That's the single largest incremental-revenue lever "
                     "of any target in this dataset."),
     dict(targets=["INSR"], drug="insulin aspart, glargine, lispro, icodec", verdict="DEFEND", color="#4263EB",
          diseases=[("Type 1 diabetes mellitus", dstat("Type 1 diabetes mellitus")),
                    ("Type 2 diabetes", dstat("Type 2 diabetes"))],
-         rationale="Type 1 diabetes alone clears $5B ($6.5B, 1.8M patients) and insulin remains a "
-                    "required component of the much larger Type 2 pool. Guideline-anchored and durable, "
-                    "but structurally the slowest-growth franchise here — GIP/GLP-1 agonists are taking "
-                    "the incremental T2D dollars, not insulin. Defend share; don't expect it to lead growth."),
+         rationale="Type 1 diabetes alone is a $13.5-18.7B market ($16.1B midpoint, 1.8M patients) and "
+                    "insulin remains a required component of the much larger Type 2 pool. Guideline-"
+                    "anchored and durable, but structurally the slowest-growth franchise here — GIP/"
+                    "GLP-1 agonists are taking the incremental T2D dollars, not insulin. Defend share; "
+                    "don't expect it to lead growth."),
     dict(targets=["TNF"], drug="adalimumab, etanercept, infliximab", verdict="DEFEND", color="#4263EB",
          diseases=[("Rheumatoid arthritis", dstat("Rheumatoid arthritis")),
                    ("Psoriatic arthritis", dstat("Psoriatic arthritis")),
@@ -337,47 +344,58 @@ RECOMMENDATIONS = [
                    ("Plaque psoriasis", dstat("Plaque psoriasis")),
                    ("Crohn's disease", dstat("Crohn's disease")),
                    ("Ulcerative colitis", dstat("Ulcerative colitis"))],
-         rationale="The broadest label franchise in the dataset — the same 3 drugs ($13.99B combined) "
-                    "clear $5B across 6+ separate indications spanning rheumatology, dermatology and GI. "
-                    "That breadth is also the risk: Humira, Enbrel and Remicade are all off-patent, and "
-                    "biosimilar erosion is the single biggest threat to any franchise analyzed here."),
+         rationale="The broadest label franchise in the dataset — the same 3 drugs span 6+ markets "
+                    "worth $6.5-33.5B each individually (RA $30.2B, plaque psoriasis $33.45B [broader "
+                    "all-psoriasis figure], PsA $12.6B, Crohn's $11.85B, UC $9.28B, AS $6.5B). Known "
+                    "drug revenue ($13.99B) is a small fraction of that combined total, but most of the "
+                    "gap is other mechanisms (IL-17, IL-23, JAK inhibitors) sharing the same markets, not "
+                    "unclaimed TNF whitespace. The real risk: Humira, Enbrel and Remicade are all "
+                    "off-patent, and biosimilar erosion is the single biggest threat to any franchise "
+                    "analyzed here."),
     dict(targets=["VEGFA", "PGF"], drug="aflibercept (+ brolucizumab, faricimab, ranibizumab)", verdict="EXPAND", color="#0CA678",
          diseases=[("Neovascular (wet) AMD", dstat("Neovascular (wet) AMD")),
                    ("Diabetic macular edema (DME)", dstat("Diabetic macular edema (DME)")),
                    ("Diabetic retinopathy", dstat("Diabetic retinopathy")),
                    ("Retinal vein occlusion (BRVO / CRVO)", dstat("Retinal vein occlusion (BRVO / CRVO)"))],
-         rationale="AMD and DME each clear $14.6B (shared 4-drug group); DR and RVO each clear $9.6B on "
-                    "the same drugs. Diabetic retinopathy stands out as the whitespace inside an "
-                    "otherwise-saturated franchise: 9.7M estimated patients against only 2 competitors, "
-                    "the largest patient pool of any indication these targets already touch."),
+         rationale="AMD ($10.05B) and DME ($4.2B) are separately-sized markets on the same 4-drug "
+                    "group; DR ($9.95B) and RVO ($2.6B) round it out. Diabetic retinopathy stands out as "
+                    "the biggest gap in an otherwise-mature franchise: 9.7M estimated patients against "
+                    "only 2 competitors and a market nearly as large as AMD's, but comparatively "
+                    "under-served by label/access."),
     dict(targets=["F9", "F10"], drug="coagulation factor IX (recombinant), glycoPEGylated", verdict="FRANCHISE PLAY", color="#D97706",
          diseases=[("Hemophilia B (prophylaxis)", dstat("Hemophilia B (prophylaxis)")),
                    ("Hemophilia A (prophylaxis)", dstat("Hemophilia A (prophylaxis)")),
                    ("Hemophilia A with inhibitors (prophylaxis)", dstat("Hemophilia A with inhibitors (prophylaxis)")),
                    ("Hemophilia A/B with inhibitors", dstat("Hemophilia A/B with inhibitors"))],
-         rationale=f"This specific product is only $0.4B on its own (Hemophilia B prophylaxis) — below "
-                    f"the $5B bar in isolation. But the hemophilia A+B franchise this drug competes in "
-                    f"totals ${HEMOPHILIA_TOTAL_REVENUE:.2f}B across factor replacement, extended-half-life "
-                    f"and non-factor (emicizumab, $4.9B) products. The disease-level market is large even "
-                    f"though this asset's current share isn't — the opportunity is share-shift within an "
-                    f"existing >$5B pool, not category creation."),
+         rationale=f"This specific product is only $0.4B in known revenue (Hemophilia B prophylaxis) — "
+                    f"well below the $5B bar in isolation. The researched hemophilia A+B market size is "
+                    f"${HEMOPHILIA_MARKET_SIZE:.1f}B (Grand View Research/Fortune Business Insights, "
+                    f"$14.1-16.2B range), while this dataset's own known revenue across every hemophilia "
+                    f"A/B/inhibitor drug totals only ${HEMOPHILIA_TOTAL_REVENUE:.2f}B — roughly half the "
+                    f"market already captured by approved factor/non-factor products, meaning real "
+                    f"remaining headroom (~${HEMOPHILIA_MARKET_SIZE - HEMOPHILIA_TOTAL_REVENUE:.1f}B) "
+                    f"sits inside a disease-class market that's already proven, not a new one to create."),
     dict(targets=["SSTR2", "SSTR5"], drug="Lanreotide Acetate", verdict="REPOSITION", color="#AE3EC9",
          diseases=[("Dyslipidemia", dstat("Dyslipidemia")),
                    ("Cardiovascular risk reduction (secondary prevention)", dstat("Cardiovascular risk reduction (secondary prevention)")),
                    ("Acromegaly", dstat("Acromegaly"))],
-         rationale="Lanreotide itself is commercially negligible today ($0.01B) — the smallest revenue "
-                    "line in this entire dataset. But it already sits in the same 'Cardiovascular risk "
-                    "reduction' bucket as semaglutide and dulaglutide, a $21.51B and growing market. "
-                    "Somatostatin-analog effects on the GH/IGF-1 and lipid axes are the mechanistic "
-                    "rationale for a fresh look here — not as a standalone play, but as an adjunct/"
-                    "combination angle into a market GLP-1s are currently defining alone."),
+         rationale="Lanreotide itself is commercially negligible today ($0.01B, in this dataset's "
+                    "Dyslipidemia row) — the smallest revenue line here. But dyslipidemia is a real, "
+                    "independently-sized $10-32B market ($21B midpoint), and the same molecule already "
+                    "carries $21.51B in known label-expansion revenue (mostly semaglutide/dulaglutide) "
+                    "under the adjacent CV-risk-reduction bucket. Somatostatin-analog effects on the "
+                    "GH/IGF-1 and lipid axes (the mechanism class's classical use is acromegaly, a "
+                    "$2.15B market) are the rationale for a fresh look here — not as a standalone play, "
+                    "but as an adjunct/combination angle into a market GLP-1s are currently defining alone."),
     dict(targets=["PNLIP"], drug="pancrelipase", verdict="HOLD / NICHE", color="#868E96",
          diseases=[("Exocrine pancreatic insufficiency (EPI)", dstat("Exocrine pancreatic insufficiency (EPI)")),
                    ("Obesity / weight management", dstat("Obesity / weight management"))],
-         rationale="Doesn't clear the $5B bar on its own merits: EPI is $1.5B / 837K patients with just "
-                    "1 competitor — real whitespace, but sub-scale. Lipase inhibition's other outlet "
-                    "(orlistat, in the $11.51B obesity market) is a legacy mechanism now eclipsed by "
-                    "GIP/GLP-1 agonists. Call: hold and defend the EPI niche; not a primary growth bet."),
+         rationale="EPI is a modest $2.3-3.0B market ($2.65B midpoint, 837K patients) where pancrelipase "
+                    "already holds an estimated ~57% share ($1.5B known revenue) as the sole competitor — "
+                    "real, but a mature, sub-scale niche, not a growth market. Lipase inhibition's other "
+                    "outlet (orlistat, inside the $7-28B obesity market) is a legacy mechanism now "
+                    "eclipsed by GIP/GLP-1 agonists. Call: hold and defend the EPI niche; not a primary "
+                    "growth bet."),
 ]
 
 def build_recommendations_html():
@@ -388,15 +406,20 @@ def build_recommendations_html():
                               for t in rec["targets"])
         chips = []
         for dname, s in rec["diseases"]:
-            rev = s["revenue"]
-            clears = rev >= MARKET_BAR
-            rev_html = f'<b style="color:{"#059669" if clears else "#B54708"};">${rev:.2f}B</b>' if rev else "—"
+            ms = s["market_size"]
+            clears = (ms or 0) >= MARKET_BAR
+            if ms:
+                ms_html = f'<b style="color:{"#059669" if clears else "#B54708"};">${ms:.1f}B market</b>'
+            else:
+                ms_html = '<span style="color:#868E96;">no independent market</span>'
+            rev_html = f'${s["revenue"]:.2f}B known rev' if s["revenue"] else "no known revenue"
             pat_html = f'{s["patients"]:,.0f} pts' if s["patients"] else ""
             chips.append(
                 f'<div style="background:#F8F9FA;border:1px solid #E9ECEF;border-radius:8px;'
                 f'padding:6px 10px;font-size:0.76rem;color:#495057;">'
                 f'<div style="font-weight:700;color:#212529;">{dname}</div>'
-                f'<div>{rev_html} &middot; {s["n_drugs"]} competitor(s)'
+                f'<div>{ms_html} &middot; {rev_html}</div>'
+                f'<div>{s["n_drugs"]} competitor(s)'
                 f'{" &middot; " + pat_html if pat_html else ""}</div></div>')
         cards.append(f"""
 <div class="col-md-6">
@@ -421,9 +444,10 @@ def build_recommendations_html():
       <h2 class="mb-0" style="font-size:1.15rem;font-weight:700;">Final Recommendations — Target Priority Calls</h2>
     </div>
     <p class="text-secondary small mb-0">
-      Called against a $5B known-2024-revenue bar per disease, with two explicit exceptions where the
-      <i>franchise</i>/adjacent-market size — not the single asset's current revenue — is what clears it
-      (hemophilia F9/F10, and SSTR2/5 repositioning toward cardiovascular risk reduction).
+      Called against a $5B researched-market-size bar per disease, with two explicit exceptions where a
+      bucket has no independent market of its own (CV risk reduction is a label on top of an
+      already-counted disease; hemophilia inhibitor sub-populations aren't separately tracked) and this
+      dataset's own known drug revenue carries the argument instead.
     </p>
   </div>
 </div>
@@ -432,11 +456,10 @@ def build_recommendations_html():
 </div>"""
 
 print("Building figures …")
-f_diskrev = build_disease_revenue_bar()
+f_diskrev = build_disease_market_size_bar()
 f_dtd_sankey = build_disease_target_drug_sankey()
-f_scatter = build_opportunity_scatter()
-f_rank = build_opportunity_bar()
-f_revpat = build_revenue_vs_patients()
+f_scatter = build_market_vs_patients_scatter()
+f_capture = build_capture_vs_patients()
 f_catbar = build_category_bar()
 RECOMMENDATIONS_HTML = build_recommendations_html()
 
@@ -445,15 +468,18 @@ RECOMMENDATIONS_HTML = build_recommendations_html()
 # dashboards' tables (combined_chronic_use_dashboard.html /
 # combined_chronic_use_peptide_dashboard.html): dark header row, a per-column
 # filter row underneath it, category-tinted row striping, and a footer pager.
-# Default sort is by revenue (descending), matching those dashboards.
+# Default sort is by market size (descending) — the primary metric.
 def build_table_html():
     tbl_rows = []
-    for _, r in df.sort_values("revenue", ascending=False).iterrows():
+    for _, r in df.sort_values("market_size", ascending=False, na_position="last").iterrows():
         tbl_rows.append({
             "disease": r["disease"], "category": r["category"], "genes": r["genes"],
-            "n_drugs": int(r["n_drugs"]), "drugs_list": r["drugs_list"], "revenue": r["revenue"],
+            "n_drugs": int(r["n_drugs"]), "drugs_list": r["drugs_list"],
+            "market_size": r["market_size"] if pd.notna(r["market_size"]) else None,
+            "market_note": (r["market_note"] or r["market_excluded_note"]),
+            "market_researched": bool(r["market_researched"]),
+            "revenue": r["revenue"],
             "patients": r["patients_est"] if pd.notna(r["patients_est"]) else None,
-            "score": r["opportunity_score"] if pd.notna(r["opportunity_score"]) else None,
             "source": r["epi_source"], "note": r["epi_note"] or r["excluded_note"],
         })
     tbl_json = json.dumps(tbl_rows, ensure_ascii=False)
@@ -484,8 +510,8 @@ def build_table_html():
     <div style="overflow-x:auto;border-radius:10px;border:1px solid #E2E8F0;box-shadow:0 1px 4px rgba(0,0,0,.06);">
       <table id="tblMain" style="width:100%;border-collapse:collapse;background:#fff;font-size:0.74rem;table-layout:fixed;">
         <colgroup>
-          <col style="width:16%"/><col style="width:10%"/><col style="width:10%"/><col style="width:7%"/>
-          <col style="width:20%"/><col style="width:8%"/><col style="width:10%"/><col style="width:10%"/><col style="width:9%"/>
+          <col style="width:15%"/><col style="width:9%"/><col style="width:9%"/><col style="width:6%"/>
+          <col style="width:18%"/><col style="width:10%"/><col style="width:8%"/><col style="width:10%"/><col style="width:8%"/>
         </colgroup>
         <thead>
           <tr style="background:#1E3A5F;color:#fff;text-align:left;">
@@ -494,9 +520,9 @@ def build_table_html():
             <th class="th-sort" data-col="genes"    style="padding:6px 8px;cursor:pointer;">Target(s) &#8597;</th>
             <th class="th-sort" data-col="n_drugs"  style="padding:6px 8px;cursor:pointer;">Drugs &#8597;</th>
             <th class="th-sort" data-col="drugs_list" style="padding:6px 8px;cursor:pointer;">Competing Drugs &#8597;</th>
-            <th class="th-sort" data-col="revenue"  style="padding:6px 8px;cursor:pointer;">Rev ($B) &#8597;</th>
+            <th class="th-sort" data-col="market_size" style="padding:6px 8px;cursor:pointer;" title="Researched disease market size">Market Size ($B) &#8597;</th>
+            <th class="th-sort" data-col="revenue"  style="padding:6px 8px;cursor:pointer;" title="Known drug revenue in this dataset only">Known Rev ($B) &#8597;</th>
             <th class="th-sort" data-col="patients" style="padding:6px 8px;cursor:pointer;">Est. US Patients &#8597;</th>
-            <th class="th-sort" data-col="score"    style="padding:6px 8px;cursor:pointer;">Opportunity Score &#8597;</th>
             <th class="th-sort" data-col="source"   style="padding:6px 8px;cursor:pointer;">Source &#8597;</th>
           </tr>
           <tr style="background:#2D5A87;">
@@ -505,9 +531,9 @@ def build_table_html():
             <th style="padding:3px 5px;"><input class="col-filter" data-col="genes" placeholder="Target…"/></th>
             <th style="padding:3px 5px;"><input class="col-filter" data-col="n_drugs" placeholder="&ge; n" type="number" min="0" step="1"/></th>
             <th style="padding:3px 5px;"><input class="col-filter" data-col="drugs_list" placeholder="Drug…"/></th>
+            <th style="padding:3px 5px;"><input class="col-filter" data-col="market_size" placeholder="&ge; $B" type="number" min="0" step="0.1"/></th>
             <th style="padding:3px 5px;"><input class="col-filter" data-col="revenue" placeholder="&ge; $B" type="number" min="0" step="0.1"/></th>
             <th style="padding:3px 5px;"><input class="col-filter" data-col="patients" placeholder="&ge; patients" type="number" min="0" step="1"/></th>
-            <th style="padding:3px 5px;"><input class="col-filter" data-col="score" placeholder="&ge; score" type="number" min="0" step="1"/></th>
             <th style="padding:3px 5px;"><select class="col-filter" data-col="source" id="colSrcFilter"><option value="">All sources</option></select></th>
           </tr>
         </thead>
@@ -529,14 +555,15 @@ const TBL=JSON.parse({json.dumps(tbl_json)});
 const CATC={cat_colors_json}, SRCC={src_colors_json};
 [...new Set(TBL.map(r=>r.category))].filter(Boolean).sort().forEach(c=>document.getElementById('colCatFilter').innerHTML+=`<option value="${{c}}">${{c}}</option>`);
 [...new Set(TBL.map(r=>r.source))].filter(Boolean).sort().forEach(s=>document.getElementById('colSrcFilter').innerHTML+=`<option value="${{s}}">${{s}}</option>`);
-const HAY_FIELDS=['disease','category','genes','drugs_list','n_drugs','revenue','patients','score','source','note'];
+const esc=s=>String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+const HAY_FIELDS=['disease','category','genes','drugs_list','n_drugs','market_size','revenue','patients','source','note','market_note'];
 const _hayCache=new WeakMap();
 function rowHaystack(r){{
   let h=_hayCache.get(r);
   if(h===undefined){{h=HAY_FIELDS.map(f=>r[f]==null?'':String(r[f])).join(' ').toLowerCase();_hayCache.set(r,h);}}
   return h;
 }}
-let sort={{col:'revenue',asc:false}}, page=0, ps=50;
+let sort={{col:'market_size',asc:false}}, page=0, ps=50;
 function filt(){{
   const q=document.getElementById('tblSearch').value.toLowerCase(); const cf={{}};
   document.querySelectorAll('.col-filter').forEach(el=>cf[el.dataset.col]=el.value);
@@ -547,14 +574,14 @@ function filt(){{
     if(cf.genes && !r.genes.toLowerCase().includes(cf.genes.toLowerCase())) return false;
     if(cf.n_drugs && r.n_drugs<parseFloat(cf.n_drugs)) return false;
     if(cf.drugs_list && !r.drugs_list.toLowerCase().includes(cf.drugs_list.toLowerCase())) return false;
+    if(cf.market_size && (r.market_size||0)<parseFloat(cf.market_size)) return false;
     if(cf.revenue && (r.revenue||0)<parseFloat(cf.revenue)) return false;
     if(cf.patients && (r.patients||0)<parseFloat(cf.patients)) return false;
-    if(cf.score && (r.score||0)<parseFloat(cf.score)) return false;
     if(cf.source && r.source!==cf.source) return false;
     return true;
   }});
 }}
-const NUM=new Set(['n_drugs','revenue','patients','score']);
+const NUM=new Set(['n_drugs','market_size','revenue','patients']);
 function render(){{
   let d=filt();
   if(sort.col){{const c=sort.col,a=sort.asc,isNum=NUM.has(c);
@@ -569,15 +596,17 @@ function render(){{
     tr.style.background=i%2===0?(CATC[r.category]?CATC[r.category]+'22':'#fff'):'#F8FAFC';
     tr.style.borderBottom='1px solid #E2E8F0';
     const sc=SRCC[r.source]||'#64748B';
+    const msTitle=esc(r.market_note);
+    const msBadge=r.market_researched?'':' <span style="color:#B54708;font-size:0.62rem;" title="No independently-tracked market found — showing known drug revenue as a labeled fallback">(proxy)</span>';
     tr.innerHTML=`
       <td style="padding:5px 8px;vertical-align:top;"><b style="color:#1E3A5F;">${{r.disease}}</b>${{r.note?`<div style="color:#64748B;font-size:0.68rem;line-height:1.35;margin-top:2px;">${{r.note}}</div>`:''}}</td>
       <td style="padding:5px 8px;vertical-align:top;">${{r.category||'—'}}</td>
       <td style="padding:5px 8px;vertical-align:top;font-family:monospace;font-size:0.7rem;color:#7C3AED;">${{r.genes||'—'}}</td>
       <td style="padding:5px 8px;vertical-align:top;">${{r.n_drugs}}</td>
       <td style="padding:5px 8px;vertical-align:top;color:#334155;">${{r.drugs_list||'—'}}</td>
+      <td style="padding:5px 8px;vertical-align:top;cursor:help;" title="${{msTitle}}">${{r.market_size!=null?'<b style="color:#7C3AED;">$'+r.market_size.toFixed(2)+'B</b>'+msBadge:'—'}}</td>
       <td style="padding:5px 8px;vertical-align:top;">${{r.revenue?'<b style="color:#059669;">$'+r.revenue+'B</b>':'—'}}</td>
       <td style="padding:5px 8px;vertical-align:top;">${{fmtN(r.patients)}}</td>
-      <td style="padding:5px 8px;vertical-align:top;">${{r.score!=null?'<b>'+fmtN(r.score)+'</b>':'—'}}</td>
       <td style="padding:5px 8px;vertical-align:top;">${{r.source?`<span style="background:${{sc}}22;color:${{sc}};font-weight:700;padding:2px 7px;border-radius:10px;font-size:0.66rem;white-space:nowrap;">${{r.source}}</span>`:'—'}}</td>`;
     b.appendChild(tr);
   }});
@@ -594,7 +623,7 @@ window.tblGo=p=>{{const np=Math.ceil(filt().length/ps);page=Math.max(0,Math.min(
 document.getElementById('tblSearch').addEventListener('input',()=>{{page=0;render();}});
 document.querySelectorAll('.col-filter').forEach(el=>el.addEventListener(el.tagName==='SELECT'?'change':'input',()=>{{page=0;render();}}));
 document.getElementById('clearFilters').addEventListener('click',()=>{{document.getElementById('tblSearch').value='';document.querySelectorAll('.col-filter').forEach(el=>el.value='');page=0;render();}});
-document.querySelectorAll('.th-sort').forEach(th=>th.addEventListener('click',()=>{{const c=th.dataset.col;if(sort.col===c)sort.asc=!sort.asc;else{{sort.col=c;sort.asc=c!=='revenue';}}page=0;render();}}));
+document.querySelectorAll('.th-sort').forEach(th=>th.addEventListener('click',()=>{{const c=th.dataset.col;if(sort.col===c)sort.asc=!sort.asc;else{{sort.col=c;sort.asc=false;}}page=0;render();}}));
 document.getElementById('tblPageSize').addEventListener('change',function(){{ps=parseInt(this.value);page=0;render();}});
 render();
 }})();
@@ -623,11 +652,11 @@ body{{background:#F8F9FA;}}
   <div class="container-xl py-3">
     <h2 class="page-title text-white">Target &times; Disease Opportunity Dashboard</h2>
     <p class="text-white-50 mb-0" style="max-width:820px;">
-      For each disease indication in the 35-target biologics/peptide dataset:
-      market size &amp; competitive landscape (known drugs + 2024 revenue, from
-      the FDA Purple/Orange Book merge) matched against estimated US patient
-      population &amp; unmet need (Orphanet prevalence via ToolUniverse for rare
-      diseases, curated CDC/registry estimates for common ones).
+      For each disease indication in the 35-target biologics/peptide dataset: an independently
+      researched global market-size estimate, matched against estimated US patient population &amp;
+      unmet need (Orphanet prevalence via ToolUniverse for rare diseases, curated CDC/registry
+      estimates for common ones), with this dataset's own known drug revenue shown separately as a
+      capture-rate check.
     </p>
   </div>
 </div>
@@ -653,7 +682,10 @@ body{{background:#F8F9FA;}}
     <div class="card card-sm"><div class="card-body"><div class="subheader">Est. US patients (scored)</div><div class="h1 mb-0">{total_patients/1e6:.1f}M</div></div></div>
   </div>
   <div class="col-sm-6" style="flex:1 1 0;min-width:170px;">
-    <div class="card card-sm"><div class="card-body"><div class="subheader">Known 2024 revenue</div><div class="h1 mb-0">${total_revenue:.0f}B</div></div></div>
+    <div class="card card-sm"><div class="card-body"><div class="subheader">Est. total market size</div><div class="h1 mb-0">${total_market_size:.0f}B</div></div></div>
+  </div>
+  <div class="col-sm-6" style="flex:1 1 0;min-width:170px;">
+    <div class="card card-sm"><div class="card-body"><div class="subheader">Known drug revenue (this dataset)</div><div class="h1 mb-0">${total_revenue:.0f}B</div></div></div>
   </div>
 </div>
 
@@ -667,11 +699,8 @@ body{{background:#F8F9FA;}}
   <div class="col-12"><div class="card"><div class="card-body">{to_div(f_scatter, "scatter")}</div></div></div>
 </div>
 <div class="row row-deck row-cards">
-  <div class="col-lg-6"><div class="card"><div class="card-body">{to_div(f_rank, "rank")}</div></div></div>
+  <div class="col-lg-6"><div class="card"><div class="card-body">{to_div(f_capture, "capture")}</div></div></div>
   <div class="col-lg-6"><div class="card"><div class="card-body">{to_div(f_catbar, "catbar")}</div></div></div>
-</div>
-<div class="row row-deck row-cards">
-  <div class="col-12"><div class="card"><div class="card-body">{to_div(f_revpat, "revpat")}</div></div></div>
 </div>
 
 <div class="row row-deck row-cards">
@@ -682,20 +711,27 @@ body{{background:#F8F9FA;}}
   <div class="col-12">
     <div class="card card-sm">
       <div class="card-body small text-secondary">
-        <b>Methodology &amp; caveats.</b> "Competing drugs" and "revenue" count only
-        drugs within this 35-target curated dataset, not all FDA-approved
-        therapies for a disease — an indication can look artificially
-        whitespace-y if it's mainly served by drugs outside this target list.
-        Revenue is drug-level (2024, from the Purple/Orange Book build), and a
-        multi-indication drug's full revenue is attributed to every disease it
-        treats. Patient estimates are order-of-magnitude: rare-disease figures
-        use Orphanet's own prevalence-class bucket midpoint (via the
-        ToolUniverse MCP, <code>Orphanet_get_epidemiology</code>), scaled to
-        the US population (335M); common-disease figures are curated from
-        CDC/registry literature (see <code>opportunity_data.py</code> for the
-        source note behind every number). Cosmetic indications and
-        secondary-prevention labels are excluded from patient/opportunity
-        scoring but still appear in the table.
+        <b>Methodology &amp; caveats.</b> <b>Market Size</b> is an independently researched global
+        disease/treatment market-size estimate (one web search per disease against market-research
+        publishers — Grand View Research, Fortune Business Insights, Precedence Research, GlobeNewswire,
+        Market.us, and similar — July 2026), and is the primary metric driving every chart, the table's
+        default sort, and the recommendations above. It is <i>not</i> the same thing as this dataset's
+        own <b>Known Rev</b> column, which is only the 2024 revenue of the specific drugs in this
+        35-target CSV. Nearly every disease showed real cross-publisher disagreement (often 2-10x)
+        driven by differing scope (drugs-only vs. drugs+diagnostics, "7 major markets" vs. truly global,
+        disease-subtype bundling) — hover the Market Size cell in the table for the exact range and
+        sources behind each figure. A few niche/ultra-rare diseases have no independently-tracked market
+        at all; those are flagged "(proxy)" and fall back to known drug revenue rather than a fabricated
+        number (see <code>opportunity_data.py</code>'s <code>DISEASE_MARKET_SIZE</code> for full sourcing
+        on every disease). Patient estimates are order-of-magnitude: rare-disease figures use Orphanet's
+        own prevalence-class bucket midpoint (via the ToolUniverse MCP,
+        <code>Orphanet_get_epidemiology</code>), scaled to the US population (335M); common-disease
+        figures are curated from CDC/registry literature. Cosmetic indications and secondary-prevention
+        labels are excluded from market-size/patient scoring but still appear in the table. A few drugs
+        also show only a sliver of their real commercial value because this dataset is scoped to
+        <i>chronic</i>-use indications only: filgrastim's $0.4B known revenue here is just its
+        chronic/congenital-SCN slice — G-CSFs are the leading drug class in the much larger, mostly-acute
+        ~$15.8-16.6B global neutropenia-treatment market (see the Severe chronic neutropenia row).
       </div>
     </div>
   </div>
@@ -706,7 +742,7 @@ body{{background:#F8F9FA;}}
 </div>
 </div>
 <script>
-const IDS=['diskrev','dtdsankey','scatter','rank','catbar','revpat'];
+const IDS=['diskrev','dtdsankey','scatter','capture','catbar'];
 function resizeAll(){{IDS.forEach(id=>{{const el=document.getElementById(id);if(!el||!el.data)return;
   const w=el.parentElement?el.parentElement.clientWidth-16:undefined;
   try{{Plotly.relayout(el,{{autosize:true,width:w||undefined}});}}catch(e){{}}}});}}
@@ -728,3 +764,4 @@ with open(OUT_HTML, "w", encoding="utf-8") as f:
     f.write(FINAL)
 print(f"Dashboard -> {OUT_HTML}  ({len(FINAL)//1024} KB)")
 print(f"Diseases: {n_diseases} total, {n_scored} scored, {n_rare} Orphanet-sourced, {n_targets} unique targets")
+print(f"Total market size: ${total_market_size:.0f}B, total known drug revenue: ${total_revenue:.0f}B")
