@@ -17,6 +17,7 @@ magnitude-ranked bars; neutral gray for "Other".
 """
 import csv
 import json
+import re
 import sys
 from collections import Counter, defaultdict
 
@@ -304,6 +305,64 @@ def build_cell_type_fig():
     return fig
 
 
+# ── FIG 6b — Gene / payload loads expressed by the cell ─────────────────────
+# Gene_Target values are free-text (some are single tags like "GLP-1", others
+# compound descriptive strings like "CD19 CAR + sIL-15 (secreted) + Allo-
+# Evasion edits (B2M-KO, CIITA-KO, HLA-E-KI, EGFR safety switch)") -- so this
+# re-tags each row against a fixed canonical vocabulary (substring match)
+# rather than naively splitting on ";", which would shred the descriptive
+# entries. A row can contribute to more than one bar (e.g. a CD19 CAR + IL-15
+# construct counts once for each).
+GENE_LOAD_TAG_RULES = [
+    ("GLP-1", re.compile(r"glp-?1", re.IGNORECASE)),
+    ("FGF21", re.compile(r"fgf-?21", re.IGNORECASE)),
+    ("Neurotrophic factors (BDNF/GDNF/VEGF/HGF)", re.compile(r"neurotrophic|bdnf|gdnf", re.IGNORECASE)),
+    ("CD19 CAR", re.compile(r"cd19", re.IGNORECASE)),
+    ("CD20 CAR", re.compile(r"cd20", re.IGNORECASE)),
+    ("BCMA CAR", re.compile(r"bcma", re.IGNORECASE)),
+    ("CAR (unspecified antigen)", re.compile(r"car construct", re.IGNORECASE)),
+    ("IL-15", re.compile(r"il-?15", re.IGNORECASE)),
+    ("hnCD16", re.compile(r"hncd16", re.IGNORECASE)),
+    ("Factor VIII", re.compile(r"factor viii", re.IGNORECASE)),
+    ("Factor IX", re.compile(r"factor ix", re.IGNORECASE)),
+    ("Telomerase (TERT)", re.compile(r"telomerase|\btert\b", re.IGNORECASE)),
+    ("Immune-evasion edits", re.compile(
+        r"immune-evasion|hypoimmune|allo-evasion|b2m-ko|ciita-ko|hla-e-ki|hla-i/ii knockout|cd47",
+        re.IGNORECASE)),
+]
+
+def build_gene_load_fig():
+    tag_counts = Counter()
+    for text in df["Gene_Target"]:
+        if not text:
+            continue
+        for tag, rx in GENE_LOAD_TAG_RULES:
+            if rx.search(text):
+                tag_counts[tag] += 1
+    if not tag_counts:
+        return None
+    labels, values = fold_other(tag_counts, top_n=8)
+    cmap = cat_color_map([l for l in labels if l != "Other"])
+    order = sorted(zip(labels, values), key=lambda x: x[1])
+    labels = [l for l, v in order]
+    values = [v for l, v in order]
+    colors = [cmap.get(l, OTHER_COLOR) for l in labels]
+    fig = go.Figure(go.Bar(
+        x=values, y=labels, orientation="h",
+        marker=dict(color=colors, line=dict(color="white", width=0.5)),
+        text=[f"{v:,}" for v in values], textposition="outside",
+        hovertemplate="<b>%{y}</b><br>%{x:,} records<extra></extra>"))
+    fig.update_layout(
+        title=dict(text="<b>Gene / Payload Loads Expressed by the Cell</b><br>"
+                        "<sup>engineered gene targets across all records · a construct with multiple genes counts once per gene</sup>",
+                   font=dict(size=13)),
+        xaxis=dict(title="Records", showgrid=True, gridcolor=GRID_COLOR, range=[0, max(values) * 1.18]),
+        yaxis=dict(tickfont=dict(size=10)),
+        margin=dict(l=10, r=60, t=60, b=40), height=max(360, 28 * len(labels) + 100),
+        paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor=PLOT_BG)
+    return fig
+
+
 # ── FIG 7 — Chinese companies: pipeline stage by disease area ──────────────
 PROGRESS_STAGE_ORDER = ["Preclinical", "IND-Enabling / Early Clinical", "Early Phase 1", "Phase 1",
                          "Phase 1/2", "Phase 2", "Phase 1/2/3", "Phase 2/3", "Phase 3", "Phase 4",
@@ -378,12 +437,13 @@ def to_div(fig, div_id):
                                "modeBarButtonsToRemove": ["select2d", "lasso2d", "autoScale2d"]})
 
 
+f_celltype = build_cell_type_fig()
+f_geneload = build_gene_load_fig()
 f_stage = build_stage_fig()
 f_area = build_disease_area_fig()
 f_sponsors = build_top_sponsors_fig()
 f_sankey = build_sankey_fig()
 f_geo = build_geo_fig()
-f_celltype = build_cell_type_fig()
 f_china = build_china_companies_fig()
 
 
@@ -522,6 +582,10 @@ body{{background:#F8F9FA;}}
 </div>
 
 <div class="row row-deck row-cards">
+  <div class="col-lg-6"><div class="card"><div class="card-body">{to_div(f_celltype, "celltype")}</div></div></div>
+  <div class="col-lg-6"><div class="card"><div class="card-body">{to_div(f_geneload, "geneload") if f_geneload is not None else ""}</div></div></div>
+</div>
+<div class="row row-deck row-cards">
   <div class="col-lg-6"><div class="card"><div class="card-body">{to_div(f_stage, "stage")}</div></div></div>
   <div class="col-lg-6"><div class="card"><div class="card-body">{to_div(f_area, "area")}</div></div></div>
 </div>
@@ -531,9 +595,6 @@ body{{background:#F8F9FA;}}
 <div class="row row-deck row-cards">
   <div class="col-lg-6"><div class="card"><div class="card-body">{to_div(f_sponsors, "sponsors")}</div></div></div>
   <div class="col-lg-6"><div class="card"><div class="card-body">{to_div(f_geo, "geo")}</div></div></div>
-</div>
-<div class="row row-deck row-cards">
-  <div class="col-12"><div class="card"><div class="card-body">{to_div(f_celltype, "celltype")}</div></div></div>
 </div>
 
 {f'''<div class="row row-deck row-cards">
@@ -663,7 +724,7 @@ render();
 }})();
 </script>
 <script>
-const IDS=['stage','area','sankey','sponsors','geo','celltype'{",'china'" if f_china is not None else ""}];
+const IDS=['celltype','stage','area','sankey','sponsors','geo'{",'geneload'" if f_geneload is not None else ""}{",'china'" if f_china is not None else ""}];
 function resizeAll(){{IDS.forEach(id=>{{const el=document.getElementById(id);if(!el||!el.data)return;
   const w=el.parentElement?el.parentElement.clientWidth-16:undefined;
   try{{Plotly.relayout(el,{{autosize:true,width:w||undefined}});}}catch(e){{}}}});}}
